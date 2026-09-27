@@ -129,8 +129,8 @@ export default async function GakkuHubPage() {
         </section>
 
         <RentalFeeHubLink locale={locale} />
-        <Link href={addLocalePrefix("/gakku/rentals", locale)} className="mt-4 block rounded-xl bg-primary p-5 text-center font-semibold text-white">{SCHOOL_RENTAL_COPY[locale].indexTitle} →</Link>
-        <Link href={addLocalePrefix(SCHOOL_SALE_INDEX_PATH, locale)} className="mt-6 block rounded-xl bg-primary p-5 text-center font-semibold text-white hover:opacity-90">{SCHOOL_SALE_COPY[locale].indexTitle} →</Link>
+        {/* 2026-09-28 浦松指示：賃貸・売買を分けず「物件を探す」1本（学区ごとに賃貸・売買の件数を並べる /gakku/sales へ） */}
+        <Link href={addLocalePrefix(SCHOOL_SALE_INDEX_PATH, locale)} className="mt-4 block rounded-xl bg-primary p-5 text-center font-semibold text-white hover:opacity-90">{SCHOOL_SALE_COPY[locale].indexTitle} →</Link>
 
         <p className="mt-10 rounded-xl border border-border bg-surface-dim p-4 text-sm leading-relaxed text-text">
           {c.hub.answer}
