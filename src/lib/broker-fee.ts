@@ -66,6 +66,11 @@ export function brokerFeeLine(p: Pick<PublicProperty, "dealType" | "spec">, loca
   return fee ? brokerFeeCopy(locale).line[fee] : null;
 }
 
+/** 借主手数料の賃料に対する倍率（税込）。未設定は不明。 */
+export function brokerFeeRate(fee: BrokerFee | undefined | null): number | null {
+  return fee ? BROKER_FEE_PERCENT[fee] / 100 : null;
+}
+
 export function isDiscountedBrokerFee(p: Pick<PublicProperty, "dealType" | "spec">): boolean {
   const fee = brokerFeeOf(p);
   return fee !== null && DISCOUNTED.includes(fee);
