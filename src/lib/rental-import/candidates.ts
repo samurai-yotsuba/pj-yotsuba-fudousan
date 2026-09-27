@@ -48,6 +48,11 @@ export function brokerIncomeYen(quote: string, rentYen: number): number | null {
 
 /** サブトラック（いい生活の新着）の掲載条件：AD＋借主手数料（税込）がこの額を超える。 */
 export const SUBTRACK_INCOME_THRESHOLD_YEN = 400_000;
+/**
+ * 写真付き個別掲載（2026-09-27 浦松指示）：ITANDI・いい生活の文京区の居住用賃貸で、
+ * 借主の仲介手数料を0.33ヶ月（税込）とした報酬「AD＋賃料×0.33」がこの額以上。
+ */
+export const P033_INCOME_THRESHOLD_YEN = 300_000;
 export type TenantBrokerFee = "full" | "half" | "p033" | "free";
 
 /** 借主の仲介手数料（税込）。満額＝賃料1か月＋税、半額＝0.5か月＋税（旧）、0.33ヶ月＝0.3か月＋税、無料＝0。 */
