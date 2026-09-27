@@ -1,3 +1,5 @@
+import { Faq } from "@/components/shared/Faq";
+import { SCHOOL_SALE_HUB_FAQ } from "@/lib/rental-school-hub-faq";
 import Link from "next/link";
 import type { LangCode } from "@/config/languages";
 import { getLocalizedProperty, type PublicProperty } from "@/lib/property-shared";
@@ -27,6 +29,8 @@ export function SchoolSaleIndex({ properties, summaries = [], locale }: { proper
         <Link href={addLocalePrefix(schoolSalePath(s.slug), locale)}>{c.sale.replace("{count}", String(sales.get(s.slug)?.length ?? 0))}</Link>
       </div>
     </li>)}</ul>
+    {/* 2026-09-28：学区で買うご家族向けQA。表示のみ（FAQPage JSON-LD の例外追加は浦松判断のため付けない） */}
+    <div className="mt-8"><Faq items={SCHOOL_SALE_HUB_FAQ[locale].items} heading={SCHOOL_SALE_HUB_FAQ[locale].heading} bare openFirst={false} ariaLabel={SCHOOL_SALE_HUB_FAQ[locale].heading} /></div>
   </article>;
 }
 export function SchoolSaleListings({ school, properties, locale, type }: { school: SchoolInfo; properties: PublicProperty[]; locale: LangCode; type?: string }) {

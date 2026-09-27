@@ -13,6 +13,7 @@ import { getLocalizedProperty } from "@/lib/property-shared";
 import { BCP47_BY_LOCALE, canonicalUrl } from "@/lib/seo";
 import { Faq } from "@/components/shared/Faq";
 import { buildPropertyItemListJsonLd } from "@/lib/property-jsonld";
+import { SCHOOL_RENTAL_HUB_FAQ } from "@/lib/rental-school-hub-faq";
 import { SCHOOL_RENTAL_COPY, SCHOOL_RENTAL_FAQ, SCHOOL_RENTAL_INDEX_PATH, schoolRentalLead, schoolRentalPath, schoolRentalTitle } from "@/lib/rental-school-district";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
@@ -50,7 +51,7 @@ export function SchoolRentalIndex({ properties, locale, summaries = [], market =
       <Link href={addLocalePrefix(SCHOOL_SALE_INDEX_PATH, locale)} className="mt-4 inline-block text-primary underline">{SCHOOL_SALE_COPY[locale].indexTitle}</Link>
       <DistrictSourceNote locale={locale} />
       <RentalComparison rows={summaries} locale={locale} market={market} listedTotal={listedRentalTotal(groups, summaries)} />
-      <SchoolRentalFaq locale={locale} />
+      <SchoolRentalFaq locale={locale} hub />
       <Link href={addLocalePrefix("/gakku", locale)} className="mt-6 inline-block text-sm text-primary underline">{c.guide}</Link>
     </article>
   </>;
@@ -114,7 +115,9 @@ export function schoolRentalListItems(listings: PublicProperty[], summaries: Pub
 }
 
 /** 学区別賃貸の FAQ（表示と FAQPage JSON-LD を同じ items から出す＝完全一致）。PR-3 */
-function SchoolRentalFaq({ locale }: { locale: LangCode }) {
+/** ハブ（/gakku/rentals）だけ、学区で借りるご家族向けのQAを足す。学校別20ページは基本の3問のみ（重複回避）。 */
+function SchoolRentalFaq({ locale, hub = false }: { locale: LangCode; hub?: boolean }) {
   const f = SCHOOL_RENTAL_FAQ[locale];
-  return <div className="mt-8"><Faq items={f.items} heading={f.heading} withJsonLd inLanguage={BCP47_BY_LOCALE[locale]} bare openFirst={false} ariaLabel={f.heading} /></div>;
+  const items = hub ? [...f.items, ...SCHOOL_RENTAL_HUB_FAQ[locale]] : f.items;
+  return <div id={hub ? "faq" : undefined} className="mt-8"><Faq items={items} heading={f.heading} withJsonLd inLanguage={BCP47_BY_LOCALE[locale]} bare openFirst={false} ariaLabel={f.heading} /></div>;
 }
