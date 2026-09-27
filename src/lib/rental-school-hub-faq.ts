@@ -20,6 +20,8 @@ export const SCHOOL_RENTAL_HUB_FAQ: Record<LangCode, QA[]> = {
     { q: "入居したい時期が決まっています。間に合いますか？", a: "物件によって審査にかかる期間が異なります。法人契約は提出書類が多く、個人契約より時間がかかることがあります。入居したい時期から逆算して、審査・契約・鍵の受け取りまでの段取りと、先にそろえておく書類をお伝えします。" },
     { q: "住む期間が決まっている場合、途中で解約するときの注意点は？", a: "解約の予告期間や、一定期間内に解約した場合の違約金は物件ごとに定められています。住む予定の期間をお知らせいただければ、契約の前に解約の条件を確認し、ご説明します。" },
     { q: "礼金などの条件を相談できますか？", a: "条件を決めるのは貸主です。ご希望は申込の際に貸主側へお伝えしますが、応じていただけるとは限りません。" },
+    { q: "希望に合う物件が出たら知らせてもらえますか？", a: "はい。LINEで学区・ご予算・広さ・入居時期をお知らせいただければ、条件に合う物件が出たときにご連絡します。" },
+    { q: "海外赴任中です。帰国に合わせて部屋を探せますか？", a: "はい。オンラインでの内見、書類の郵送、代理人によるご契約などで対応します。帰国の時期とご希望の条件をお知らせください。" },
   ],
   en: [
     { q: "What matters most when renting with a school district in mind?", a: "Decide first how many years you will live there. Once children settle into their school and friendships, changing districts midway is not easy. We recommend choosing a home as if you were choosing where your child will go to school for six years, or nine if you include junior high school. We then check before signing whether the lease type (ordinary or fixed-term), the renewal terms and the possibility of re-signing fit that period." },
@@ -30,6 +32,8 @@ export const SCHOOL_RENTAL_HUB_FAQ: Record<LangCode, QA[]> = {
     { q: "We need to move in by a certain time. Can we make it?", a: "The screening period differs by property. Corporate leases require more documents and can take longer than individual leases. Working back from your move-in date, we explain the schedule for screening, contract and key handover, and the documents to prepare in advance." },
     { q: "Our stay has a set length. What should we check about ending the lease early?", a: "The notice period for cancellation and any penalty for cancelling within a certain period are set for each property. Tell us how long you plan to live there, and we will check and explain the cancellation terms before you sign." },
     { q: "Can we ask about conditions such as key money?", a: "The landlord decides the conditions. We pass your requests on to the landlord's side when you apply, but they may not be accepted." },
+    { q: "Can you let us know when a home that matches our needs becomes available?", a: "Yes. Send us your school district, budget, size and move-in timing via LINE, and we will contact you when a matching home becomes available." },
+    { q: "We are posted overseas. Can you find a home in time for our return?", a: "Yes. We can arrange online viewings, send documents by post and handle the contract through a representative. Please tell us when you will return and what you are looking for." },
   ],
   "zh-tw": [
     { q: "考慮學區租屋時，最需要注意什麼？", a: "先決定要住幾年。孩子一旦熟悉學校和朋友，中途更換學區並不容易。我們建議以選擇小學6年、含國中則9年就學地點的心態來挑選物件，並在簽約前確認契約類型（普通租賃或定期租賃）、續約條件及能否再簽約，是否符合這段期間。" },
@@ -40,6 +44,8 @@ export const SCHOOL_RENTAL_HUB_FAQ: Record<LangCode, QA[]> = {
     { q: "已決定希望入住的時間，來得及嗎？", a: "審查所需時間依物件而異。法人契約需提交的文件較多，可能比個人契約花更久時間。我們會從希望入住的時間倒推，說明審查、簽約到領取鑰匙的流程，以及應事先準備的文件。" },
     { q: "居住期間已確定時，中途解約要注意什麼？", a: "解約的預告期間，以及在一定期間內解約的違約金，各物件規定不同。請告訴我們預計居住的期間，我們會在簽約前確認並說明解約條件。" },
     { q: "禮金等條件可以商量嗎？", a: "條件由房東決定。我們會在申請時將您的希望轉達給房東方，但不一定能獲得同意。" },
+    { q: "有符合條件的物件時，可以通知我們嗎？", a: "可以。請透過LINE告訴我們學區、預算、面積及入住時間，有符合條件的物件時我們會與您聯絡。" },
+    { q: "目前派駐海外，可以配合回國時間找房嗎？", a: "可以。我們可透過線上看房、郵寄文件、由代理人簽約等方式辦理。請告訴我們回國時間與希望條件。" },
   ],
   zh: [
     { q: "考虑学区租房时，最需要注意什么？", a: "先决定要住几年。孩子一旦熟悉学校和朋友，中途更换学区并不容易。我们建议以选择小学6年、含初中则9年就学地点的心态来挑选房源，并在签约前确认合同类型（普通租赁或定期租赁）、续约条件及能否再签约，是否符合这段期间。" },
@@ -50,6 +56,8 @@ export const SCHOOL_RENTAL_HUB_FAQ: Record<LangCode, QA[]> = {
     { q: "已确定希望入住的时间，来得及吗？", a: "审查所需时间因房源而异。法人合同需提交的文件较多，可能比个人合同花更长时间。我们会从希望入住的时间倒推，说明审查、签约到领取钥匙的流程，以及应事先准备的文件。" },
     { q: "居住期间已确定时，中途解约要注意什么？", a: "解约的预告期间，以及在一定期间内解约的违约金，各房源规定不同。请告诉我们预计居住的期间，我们会在签约前确认并说明解约条件。" },
     { q: "礼金等条件可以商量吗？", a: "条件由房东决定。我们会在申请时将您的希望转达给房东方，但不一定能获得同意。" },
+    { q: "有符合条件的房源时，可以通知我们吗？", a: "可以。请通过LINE告诉我们学区、预算、面积及入住时间，有符合条件的房源时我们会与您联系。" },
+    { q: "目前派驻海外，可以配合回国时间找房吗？", a: "可以。我们可通过线上看房、邮寄文件、由代理人签约等方式办理。请告诉我们回国时间与希望条件。" },
   ],
 };
 
