@@ -1856,6 +1856,46 @@ const ARTICLES: ArticleSpec[] = [
     localesWithTranslations: ["en", "zh-tw", "zh"],
     hubLinks: ["/souzoku"],
   },
+  {
+    file: "91-doubutsu-byoin-bukken-youken-kaisetsu-todokede.md",
+    slug: "doubutsu-byoin-bukken-youken-kaisetsu-todokede",
+    title: "動物病院を開くための物件はどう選ぶ？獣医療法の診療施設と構造の要件",
+    publishedAt: "2026-09-27",
+    category: "投資・事業用不動産",
+    excerpt:
+      "動物病院（獣医師が診療を行う診療施設）の物件で先に効くのは、①用途地域で「動物病院」を置けるか（建築基準法上は診療所ではなく店舗に準じて扱われることが多く、住居専用地域では制限を受ける）②獣医療法の構造設備の基準（消毒・逸走防止・伝染性疾患の隔離、手術を行うなら内壁と床の耐水性、調剤を行うなら冷暗貯蔵）を満たせる素地があるか③排水・防音・臭気で近隣とぶつからないか、の3点です。診療施設開設届（獣医療法第3条）は開設後10日以内の事後届出。東京都文京区の宅地建物取引士兼行政書士が、契約前に確認できることを条文から整理します。",
+    keywords: [
+      "動物病院 物件",
+      "獣医療法 診療施設 開設届",
+      "診療施設 構造設備 手術室 耐水",
+      "動物病院 用途地域 建築基準法",
+      "診療施設開設届 10日以内 都道府県知事",
+    ],
+    tags: ["事業用不動産", "許認可", "用途地域", "獣医療法"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/toushi", "/office"],
+  },
+  {
+    file: "92-souzoku-fudosan-nozei-shikin-baikyaku-schedule.md",
+    slug: "souzoku-fudosan-nozei-shikin-baikyaku-schedule",
+    title: "相続税の納税資金を不動産の売却でつくるには？10か月の期限から逆算する段取り",
+    publishedAt: "2026-09-27",
+    category: "相続",
+    excerpt:
+      "相続した不動産を売って相続税の納税資金をつくるなら、起点は申告・納付の期限＝相続の開始があったことを知った日の翌日から10か月（相続税法第27条・第33条）です。ここから逆算すると売却活動に使える期間は実質半年ほど。段取りは「相続登記→査定・売り出し→売買契約→決済・納税」で、登記は司法書士、税額と特例の判断は税理士、遺産分割の紛争は弁護士へ。相続開始から3年10か月以内の売却なら取得費加算（措置法第39条）で譲渡税を抑えられる余地があり、間に合わないときは延納・物納も。東京都文京区の宅地建物取引士兼行政書士が条文から整理します。",
+    keywords: [
+      "相続税 納税資金 不動産 売却",
+      "相続税 申告期限 10か月 相続税法27条",
+      "取得費加算 措置法39条 3年10か月",
+      "相続税 延納 物納 相続税法38条 41条",
+      "小規模宅地等の特例 売却 保有継続",
+    ],
+    tags: ["相続", "相続税", "売却", "税制特例"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/souzoku"],
+  },
 ];
 
 function toPlainText(md: string): string {
