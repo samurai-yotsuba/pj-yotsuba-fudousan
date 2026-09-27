@@ -1,3 +1,5 @@
+import { RentalCampaignCta } from "@/components/bukken/RentalCampaignCta";
+import { RENTAL_CAMPAIGN_COPY } from "@/lib/rental-campaign";
 // /ryokin（不動産・料金）＝タスクB-1（2026-07-19）／多言語化＝タスクC-6-3（2026-07-19）
 // 四葉不動産株式会社の料金ページ。既存 /legal/ryokin（四葉行政書士事務所の報酬額表）とは別ページ＝本文からリンクのみ（/legal/ryokin側は無変更）。
 // 方式＝COPY: Record<LangCode,…>＋getRequestLocale（手本=/access・/faq）。C-6-3 で en/zh-tw/zh を追加＝全4ロケール公開。
@@ -638,6 +640,9 @@ export default async function Page() {
             {c.answerBlock}
           </p>
         </header>
+        <section className="mt-6 rounded-xl border border-primary/25 bg-primary-tint p-5"><h2 className="text-xl font-semibold">{locale === "ja" ? "賃貸の仲介手数料" : RENTAL_CAMPAIGN_COPY[locale].fee}</h2><p className="mt-3 leading-7">{RENTAL_CAMPAIGN_COPY[locale].definition}</p>{locale === "ja" && <Link href="/bunkyo/chukai-033" className="mt-3 inline-block text-primary underline">{RENTAL_CAMPAIGN_COPY[locale].fee}</Link>}</section>
+        <RentalCampaignCta locale={locale} kind="fee033" sourcePage="/ryokin" />
+
 
         {c.sections.map((s) => (
           <section key={s.h2} className="mt-8">

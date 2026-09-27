@@ -65,8 +65,9 @@ describe("公開面の取得クエリが published を限定している", () =>
     expect(matches.length).toBeGreaterThanOrEqual(2);
   });
 
-  it("詳細も published のみ返す（closed・draft は取得せず notFound＝実404）", () => {
-    expect(PROPERTIES).not.toContain('"closed"');
+  it("広告用の詳細取得は published のみ返す", () => {
+    const publishedGetter = PROPERTIES.slice(PROPERTIES.indexOf("export const getPublicPropertyBySlug"), PROPERTIES.indexOf("export const getClosedRentalNavigation"));
+    expect(publishedGetter).not.toContain('status: "closed"');
     expect(PROPERTIES).toContain('where: { slug, status: "published" }');
   });
 
@@ -76,14 +77,17 @@ describe("公開面の取得クエリが published を限定している", () =>
 });
 
 describe("closed 詳細ページの挙動（おとり広告の構造的回避）", () => {
-  it("募集終了の200ページを持たない（2026-09-20：200＋noindex → 実404へ変更）", () => {
-    expect(DETAIL_PAGE).not.toContain("isClosed");
-    expect(DETAIL_PAGE).not.toContain("募集を終了しました");
-    expect(DETAIL_PAGE).not.toContain("noindex");
+  it("終了案内はnoindexで元物件の広告データを返さない", () => {
+    expect(DETAIL_PAGE).toContain("getClosedRentalNavigation");
+    expect(DETAIL_PAGE).toContain("noindex: true");
+    const closedGetter = PROPERTIES.slice(PROPERTIES.indexOf("export const getClosedRentalNavigation"));
+    expect(closedGetter).toContain("select: { slug: true, locales: true, locationText: true }");
+    expect(closedGetter).not.toContain("priceYen");
+    expect(closedGetter).not.toContain("images");
   });
   it("取得できない物件はメタデータ生成の段階でも notFound する", () => {
     const fn = DETAIL_PAGE.slice(DETAIL_PAGE.indexOf("export async function generateMetadata"), DETAIL_PAGE.indexOf("export default async function"));
-    expect(fn).toContain("if (!base) notFound();");
+    expect(fn).toContain("if (!closed || !closed.locales.includes(locale)) notFound();");
   });
   it("generateStaticParams は空（物件詳細はオンデマンド生成）", () => {
     const fn = DETAIL_PAGE.slice(

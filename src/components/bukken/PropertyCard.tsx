@@ -6,7 +6,7 @@ import { addLocalePrefix } from "@/lib/locale";
 import { formatAccessL, formatPropertyPriceL, localizedImageAlt, propertyUi } from "@/lib/property-i18n";
 import { SchoolDistrictTag } from "@/components/gakku/RentalSchoolDistrict";
 import { PropertyImage } from "@/components/bukken/PropertyImage";
-import { brokerFeeBadge } from "@/lib/broker-fee";
+import { brokerFeeBadge, brokerFeeAmountLabel, brokerFeeOf } from "@/lib/broker-fee";
 
 export function PropertyCard({ p, locale }: { p: PublicProperty; locale: LangCode }) {
   const original = p;
@@ -16,7 +16,9 @@ export function PropertyCard({ p, locale }: { p: PublicProperty; locale: LangCod
   return (
     <Link
       href={addLocalePrefix(`/bukken/${p.slug}`, locale)}
-      className="flex gap-4 rounded-xl border border-border bg-surface p-4 transition-colors hover:border-primary/40"
+      data-property-id={p.slug}
+      data-fee-type={brokerFeeOf(p) ?? "unknown"}
+      className="flex flex-col gap-4 sm:flex-row rounded-xl border border-border bg-surface p-4 transition-colors hover:border-primary/40"
     >
       {hero ? (
         // 2026-09-23：128px の枠に元写真（最大3.8MB）を読み込んでいた。next/image で縮小配信する
@@ -50,10 +52,17 @@ export function PropertyCard({ p, locale }: { p: PublicProperty; locale: LangCod
             <span className="ml-2 rounded-full bg-primary px-2 py-0.5 align-middle text-[10px] font-semibold text-white">{brokerFeeBadge(p, locale)}</span>
           )}
         </p>
-        <p className="mt-0.5 truncate text-xs text-text-muted">{p.locationText}</p>
+        {brokerFeeAmountLabel(p, locale) && <p className="mt-2 text-sm font-semibold text-primary">{brokerFeeAmountLabel(p, locale)}</p>}
+        {p.spec.dealType === "rental" && <p className="mt-2 text-xs leading-6 text-text-muted">
+          {ui.dealType.rental} · {p.spec.layout} · {p.spec.exclusiveAreaSqm}㎡<br />
+          {{ ja: "管理費・共益費", en: "Management fee", "zh-tw": "管理費", zh: "管理费" }[locale]}：{p.spec.managementFee}<br />
+          {p.spec.accessText}
+        </p>}
+        <p className="mt-0.5 break-words text-xs text-text-muted">{p.locationText}</p>
         {p.access[0] && (
           <p className="truncate text-xs text-text-muted">{formatAccessL(p.access[0], locale)}</p>
         )}
+        <span className="mt-3 inline-block text-xs font-semibold text-primary underline">{{ ja: "物件詳細を見る", en: "View details", "zh-tw": "查看詳情", zh: "查看详情" }[locale]} →</span>
       </div>
     </Link>
   );

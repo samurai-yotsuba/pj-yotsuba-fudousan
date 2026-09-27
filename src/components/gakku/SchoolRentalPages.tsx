@@ -1,3 +1,6 @@
+import { compileRentalDiscovery, type SchoolRentalCount } from "@/lib/rental-discovery";
+import { RentalDiscoveryStats, RentalFeeHubLink } from "./RentalDiscoveryStats";
+import { RentalCampaignCta, RentalPageAnalytics } from "@/components/bukken/RentalCampaignCta";
 import { SCHOOL_SALE_COPY, SCHOOL_SALE_INDEX_PATH, schoolSalePath } from "@/lib/sale-school-district";
 import Link from "next/link";
 import type { LangCode } from "@/config/languages";
@@ -10,7 +13,7 @@ import { getLocalizedProperty } from "@/lib/property-shared";
 import { BCP47_BY_LOCALE, canonicalUrl } from "@/lib/seo";
 import { Faq } from "@/components/shared/Faq";
 import { buildPropertyItemListJsonLd } from "@/lib/property-jsonld";
-import { groupSchoolRentals, SCHOOL_RENTAL_COPY, SCHOOL_RENTAL_FAQ, SCHOOL_RENTAL_INDEX_PATH, schoolRentalLead, schoolRentalPath, schoolRentalTitle } from "@/lib/rental-school-district";
+import { SCHOOL_RENTAL_COPY, SCHOOL_RENTAL_FAQ, SCHOOL_RENTAL_INDEX_PATH, schoolRentalLead, schoolRentalPath, schoolRentalTitle } from "@/lib/rental-school-district";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { PropertyCard } from "@/components/bukken/PropertyCard";
@@ -18,9 +21,12 @@ import { DistrictSourceNote } from "./RentalSchoolDistrict";
 import { RentalComparison } from "./RentalComparison";
 import type { PublicRentalSummary, RentalMarket } from "@/lib/school-rental-feed";
 
-export function SchoolRentalIndex({ properties, locale, summaries = [], market = null }: { properties: PublicProperty[]; locale: LangCode; summaries?: PublicRentalSummary[]; market?: RentalMarket | null }) {
+export function SchoolRentalIndex({ properties, locale, summaries = [], market = null, schoolCounts }: { properties: PublicProperty[]; locale: LangCode; summaries?: PublicRentalSummary[]; market?: RentalMarket | null; schoolCounts?: SchoolRentalCount[] }) {
   const c = SCHOOL_RENTAL_COPY[locale];
-  const groups = groupSchoolRentals(properties, locale);
+  const discovery = compileRentalDiscovery(properties, summaries, locale, market?.checkedAt);
+  if (schoolCounts) discovery.schools = schoolCounts;
+  const groups = discovery.groups;
+  summaries = discovery.summaries;
   const indexUrl = canonicalUrl("realestate", SCHOOL_RENTAL_INDEX_PATH, locale);
   // ハブは物件を直接並べず、20校の学区別ページを ItemList で示す（学区ページ強化 作業手順書 v1・PR-1）
   const schoolList = { ...buildPropertyItemListJsonLd(listSchools().map(school => ({ name: school.formalName, url: canonicalUrl("realestate", schoolRentalPath(school.slug), locale) })), indexUrl, locale), "@id": `${indexUrl}#schools`, name: c.indexTitle };
@@ -32,10 +38,11 @@ export function SchoolRentalIndex({ properties, locale, summaries = [], market =
         <h1 className="font-serif text-2xl font-semibold text-ink sm:text-3xl">{c.indexTitle}</h1>
         <p className="mt-4 leading-relaxed text-text">{c.lead}</p>
       </header>
+      <RentalFeeHubLink locale={locale} />
       <ul className="mt-6 grid gap-3 sm:grid-cols-2">
         {listSchools().map(school => <li key={school.slug}>
           <Link href={addLocalePrefix(schoolRentalPath(school.slug), locale)} className="flex h-full items-center justify-between gap-3 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-primary">
-            <span className="font-semibold text-ink">{school.formalName}</span>
+            <div><span className="font-semibold text-ink">{school.formalName}</span><RentalDiscoveryStats stats={discovery.schools.find(s => s.slug === school.slug)!} locale={locale} compact /></div>
             <span className="shrink-0 rounded-full bg-primary-tint px-3 py-1 text-sm font-semibold text-primary">{c.count.replace("{count}", String((groups.get(school.slug)?.length ?? 0) + summaries.filter(r => r.schoolSlug === school.slug).length))} →</span>
           </Link>
         </li>)}
@@ -49,9 +56,13 @@ export function SchoolRentalIndex({ properties, locale, summaries = [], market =
   </>;
 }
 
-export function SchoolRentalListings({ school, properties, locale, summaries = [], market = null }: { school: SchoolInfo; properties: PublicProperty[]; locale: LangCode; summaries?: PublicRentalSummary[]; market?: RentalMarket | null }) {
+export function SchoolRentalListings({ school, properties, locale, summaries = [], market = null, schoolCounts }: { school: SchoolInfo; properties: PublicProperty[]; locale: LangCode; summaries?: PublicRentalSummary[]; market?: RentalMarket | null; schoolCounts?: SchoolRentalCount[] }) {
   const c = SCHOOL_RENTAL_COPY[locale];
-  const allGroups = groupSchoolRentals(properties, locale);
+  const discovery = compileRentalDiscovery(properties, summaries, locale, market?.checkedAt);
+  if (schoolCounts) discovery.schools = schoolCounts;
+  const allGroups = discovery.groups;
+  summaries = discovery.summaries;
+  const stats = discovery.schools.find(s => s.slug === school.slug)!;
   const listings = allGroups.get(school.slug) ?? [];
   const title = schoolRentalTitle(school, locale);
   const schoolSummaries = summaries.filter(r => r.schoolSlug === school.slug);
@@ -65,12 +76,15 @@ export function SchoolRentalListings({ school, properties, locale, summaries = [
         <h1 className="mt-2 font-serif text-2xl font-semibold text-ink sm:text-3xl">{title}</h1>
         <p className="mt-3 leading-relaxed text-text">{schoolRentalLead(school, locale)}</p>
         <p className="mt-3 text-lg font-semibold text-primary">{c.count.replace("{count}", String(listings.length + schoolSummaries.length))}</p>
+        <RentalDiscoveryStats stats={stats} locale={locale} />
+        <RentalFeeHubLink locale={locale} empty={stats.fee033Listings === 0} />
         <DistrictSourceNote locale={locale} />
       </header>
       {listings.length ? <ul className="mt-6 space-y-3">{listings.map(p => <li key={p.slug}><PropertyCard p={p} locale={locale} /></li>)}</ul>
         : !schoolSummaries.length && <p className="mt-6 rounded-xl border border-border p-6 leading-relaxed text-text">{c.empty}</p>}
       <RentalComparison rows={schoolSummaries} locale={locale} market={market} listedTotal={listedRentalTotal(allGroups, summaries)} />
       <SchoolRentalFaq locale={locale} />
+      <RentalPageAnalytics kind="gakku" /><RentalCampaignCta locale={locale} sourcePage={path} kind="gakku" school={school.formalName} />
       <Link href={addLocalePrefix(`/contact?intent=gakku-${school.slug}-rental`, locale)} className="mt-6 inline-block rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white hover:opacity-90">{c.request}</Link>
       <Link href={addLocalePrefix(schoolSalePath(school.slug), locale)} className="mt-4 block text-primary underline">{SCHOOL_SALE_COPY[locale].view}</Link>
       <nav aria-label={c.back} className="mt-6 flex flex-wrap gap-5 text-sm text-primary underline">

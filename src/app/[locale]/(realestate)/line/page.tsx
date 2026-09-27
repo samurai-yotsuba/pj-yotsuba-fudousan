@@ -1,3 +1,8 @@
+export const dynamic = "force-dynamic";
+import { RentalLineMessage } from "@/components/bukken/RentalLineMessage";
+import { getPublicPropertyBySlug, isPropertyLocaleAllowed } from "@/lib/properties";
+import { findSchoolBySlug } from "@/lib/school-district";
+import { FEE033_PATH } from "@/lib/rental-campaign";
 // /line — LINE中継ページ（2026-09-01 新設・浦松指示）
 //
 // 背景：X等のアプリ内ブラウザ（WebView）がLINE起動用URL（line://／ユニバーサルリンク）の
@@ -146,9 +151,24 @@ export async function generateMetadata(): Promise<Metadata> {
   return { ...meta, robots: { index: false, follow: true } };
 }
 
-export default async function LineBridgePage() {
+export default async function LineBridgePage({ searchParams }: { searchParams?: Promise<Record<string, string | string[] | undefined>> }) {
   const locale = await getRequestLocale();
   const c = COPY[locale] ?? COPY.ja;
+  const query = await searchParams ?? {};
+  const campaign = typeof query.campaign === "string" && ["fee033", "gakku", "property", "external"].includes(query.campaign) ? query.campaign : null;
+  const slug = typeof query.property === "string" && /^[a-z0-9-]{1,180}$/.test(query.property) ? query.property : null;
+  const candidate = campaign && slug ? await getPublicPropertyBySlug(slug) : null;
+  const property = candidate && isPropertyLocaleAllowed(candidate, locale) ? candidate : null;
+  const school = typeof query.school === "string" ? findSchoolBySlug(query.school) : undefined;
+  const from = typeof query.from === "string" && (/^\/(?:gakku(?:\/[a-z-]+){0,2}|bukken|ryokin)$/.test(query.from) || query.from === FEE033_PATH || query.from === "/") ? query.from : FEE033_PATH;
+  const source = property ? `/bukken/${property.slug}` : from;
+  const message = campaign ? [
+    { ja: "賃貸物件について相談します。0.33ヶ月（税込）の対象になるか確認をお願いします。", en: "I would like to ask about a rental and whether it qualifies for the 0.33-month brokerage fee (tax included).", "zh-tw": "想諮詢租屋，請確認是否適用0.33個月（含稅）的仲介費。", zh: "想咨询租房，请确认是否适用0.33个月（含税）的中介费。" }[locale],
+    ...(property ? [`${property.title}`, `ID: ${property.slug}`] : []),
+    ...(school ? [school.formalName] : []),
+    `https://luck428.com${addLocalePrefix(source, locale)}`,
+    `Source: ${campaign}`,
+  ].join("\n") : null;
   return (
     <section className="px-4 pb-16 pt-24 sm:pt-28">
       <div className="mx-auto max-w-lg text-center">
@@ -156,6 +176,7 @@ export default async function LineBridgePage() {
         <p className="mt-4 text-sm leading-relaxed text-text-muted">{c.lead}</p>
         {/* 表示コンプライアンス（必須・省略不可）：3事業の一体提供と誤認させない別契約の明示 */}
         <p className="mt-3 text-xs leading-relaxed text-text-muted">{c.compliance}</p>
+        {message && <RentalLineMessage message={message} locale={locale} />}
         <LineBridgePanel
           lineUrl={LINE_URL}
           telHref={OFFICE.telHref}

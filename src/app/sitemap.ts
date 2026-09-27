@@ -116,6 +116,7 @@ function expandProperty(p: PublicProperty): MetadataRoute.Sitemap {
 }
 
 const STATIC_REALESTATE: StaticPage[] = [
+  { path: "/bunkyo/chukai-033", changeFrequency: "daily", priority: 0.8, locales: ["ja"] },
   { path: "/voices", changeFrequency: "monthly", priority: 0.7 },
   { path: "", changeFrequency: "weekly", priority: 1.0 },
   // 2026-09-01：物件紹介（/bukken）。2026-09-16に ja先行→4ロケール（ページ側 PAGE_LOCALES と一致・locales未指定＝全4）

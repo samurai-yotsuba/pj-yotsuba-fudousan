@@ -1,3 +1,4 @@
+import { brokerFeeAmountLabel, brokerFeeLine } from "@/lib/broker-fee";
 import type { LangCode } from "@/config/languages";
 import { walkMinutes, type PublicProperty } from "@/lib/property-shared";
 import { buildLocalizedDisplayRows, propertyUi } from "@/lib/property-i18n";
@@ -94,6 +95,7 @@ export function buildRealEstateListingJsonLd(p: PublicProperty, locale: LangCode
     "@type": "Offer",
     price: p.priceYen,
     priceCurrency: "JPY",
+    ...(brokerFeeAmountLabel(p, locale) ? { description: `${brokerFeeLine(p, locale)} / ${brokerFeeAmountLabel(p, locale)}` } : {}),
     businessFunction: `http://purl.org/goodrelations/v1#${isRental ? "LeaseOut" : "Sell"}`,
     offeredBy: { "@id": `${u.siteUrl}/#organization` },
     ...(isRental

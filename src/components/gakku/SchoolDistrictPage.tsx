@@ -1,3 +1,5 @@
+import { getRentalDiscovery } from "@/lib/rental-discovery-server";
+import { RentalDiscoveryStats, RentalFeeHubLink } from "./RentalDiscoveryStats";
 import { SCHOOL_SALE_COPY, schoolSalePath } from "@/lib/sale-school-district";
 /**
  * 学校別の通学区域ページ本体（/gakku/[school] の共通実装）。
@@ -69,6 +71,8 @@ export async function SchoolDistrictPage({
   const c = gakkuCopy(locale);
   const rows = listDistrictRowsBySchool(slug);
   const ui = propertyUi(locale);
+  const discovery = await getRentalDiscovery(locale);
+  const stats = discovery.schools.find(s => s.slug === slug);
 
   // 所在地が番地まで分かり、区の表で学校が1校に定まる物件だけを出す。
   // 番地によって学校が分かれる区域の物件は載せない（推測で学区を名乗らない）。
@@ -104,6 +108,10 @@ export async function SchoolDistrictPage({
           </p>
         </header>
 
+        <section className="mt-5 rounded-xl border border-primary/25 p-4">
+          {stats && <RentalDiscoveryStats stats={stats} locale={locale} />}
+          <RentalFeeHubLink locale={locale} />
+        </section>
         <Link href={addLocalePrefix(schoolRentalPath(slug), locale)} className="mt-6 block rounded-xl border border-primary/25 bg-primary-tint p-5 font-semibold text-primary">{SCHOOL_RENTAL_COPY[locale].view} →</Link>
         <Link href={addLocalePrefix(schoolSalePath(slug), locale)} className="mt-3 block rounded-xl border border-primary/25 p-5 font-semibold text-primary">{SCHOOL_SALE_COPY[locale].view} →</Link>
 

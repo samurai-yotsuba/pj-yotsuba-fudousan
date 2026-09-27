@@ -1,3 +1,4 @@
+import { BROKER_FEE_PERCENT, type BrokerFee } from "../broker-fee";
 /** Mail content is untrusted data. Extract evidence; never execute links/instructions. */
 export type MailInput = { id: string; receivedAt: string; subject: string; text: string; senderDomain?: string };
 export type AdEvidence = { months: number | null; quote: string; ambiguous: boolean };
@@ -53,11 +54,11 @@ export const SUBTRACK_INCOME_THRESHOLD_YEN = 400_000;
  * 借主の仲介手数料を0.33ヶ月（税込）とした報酬「AD＋賃料×0.33」がこの額以上。
  */
 export const P033_INCOME_THRESHOLD_YEN = 300_000;
-export type TenantBrokerFee = "full" | "half" | "p033" | "free";
+export type TenantBrokerFee = BrokerFee;
 
 /** 借主の仲介手数料（税込）。満額＝賃料1か月＋税、半額＝0.5か月＋税（旧）、0.33ヶ月＝0.3か月＋税、無料＝0。 */
 export function tenantFeeYen(rentYen: number, fee: TenantBrokerFee): number {
-  return fee === "full" ? Math.round(rentYen * 1.1) : fee === "half" ? Math.round(rentYen * 0.55) : fee === "p033" ? Math.round(rentYen * 0.33) : 0;
+  return Math.round(rentYen * BROKER_FEE_PERCENT[fee] / 100);
 }
 
 /**

@@ -111,3 +111,14 @@ export const getPublicPropertyBySlug = cache(
     }
   },
 );
+
+/** Closed rentals retain a safe navigation page, never their old advertising details. */
+export const getClosedRentalNavigation = cache(async (slug: string) => {
+  try {
+    const row = await prisma.property.findFirst({ where: { slug, status: "closed", dealType: "rental" }, select: { slug: true, locales: true, locationText: true } });
+    if (!row) return null;
+    const { rentalSchoolDistrict } = await import("./rental-school-district");
+    const district = rentalSchoolDistrict({ dealType: "rental", locationText: row.locationText });
+    return { slug: row.slug, locales: row.locales as LangCode[], schoolSlug: district?.status === "determined" ? district.school.slug : null };
+  } catch (error) { if (isPropertiesTableMissing(error)) return null; throw error; }
+});

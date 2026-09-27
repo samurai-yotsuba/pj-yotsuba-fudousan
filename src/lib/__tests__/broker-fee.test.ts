@@ -8,7 +8,7 @@ describe("仲介手数料 無料・半額の表示（ATBB→athome ルール v1.
   it("半額・無料だけバッジを出し、満額は値引き表示しない", () => {
     expect(brokerFeeBadge(rental("free"), "ja")).toBe("仲介手数料 無料");
     expect(brokerFeeBadge(rental("half"), "ja")).toBe("仲介手数料 半額");
-    expect(brokerFeeBadge(rental("p033"), "ja")).toBe("仲介手数料 0.33ヶ月");
+    expect(brokerFeeBadge(rental("p033"), "ja")).toBe("仲介手数料 0.33ヶ月（税込）");
     expect(brokerFeeBadge(rental("full"), "ja")).toBeNull();
     expect(brokerFeeBadge(rental(), "ja")).toBeNull();
   });
