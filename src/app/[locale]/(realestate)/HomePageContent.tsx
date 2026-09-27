@@ -1,3 +1,4 @@
+import { RentalEntry } from "@/components/bukken/RentalCampaignCta";
 import { CustomerVoicesPreview } from "@/components/shared/CustomerVoices";
 import Image from "next/image";
 // /（型F・二本柱トップ）本文＝原稿_不動産 #1（E-1差し戻し対応・2026-07-10）
@@ -444,6 +445,8 @@ export default async function HomePageContent() {
           </div>
         </div>
       </section>
+
+      <div className="px-4"><RentalEntry locale={locale} /></div>
 
       <main className="defer-page-sections mx-auto max-w-5xl px-4">
         {/* 二本柱カード（＋横断） */}

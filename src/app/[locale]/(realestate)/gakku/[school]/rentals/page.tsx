@@ -1,3 +1,4 @@
+import { getRentalDiscovery } from "@/lib/rental-discovery-server";
 export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -23,6 +24,6 @@ export default async function Page({ params }: Props) {
   const school = findSchoolBySlug((await params).school);
   if (!school) notFound();
   const locale = await getRequestLocale();
-  const [properties, summaries, market] = await Promise.all([getPublishedProperties(locale), getSchoolRentalSummaries(), getSchoolRentalMarket()]);
-  return <SchoolRentalListings school={school} properties={properties} summaries={summaries} market={market} locale={locale} />;
+  const [properties, summaries, market, discovery] = await Promise.all([getPublishedProperties(locale), getSchoolRentalSummaries(), getSchoolRentalMarket(), getRentalDiscovery(locale)]);
+  return <SchoolRentalListings school={school} properties={properties} summaries={summaries} market={market} schoolCounts={discovery.schools} locale={locale} />;
 }

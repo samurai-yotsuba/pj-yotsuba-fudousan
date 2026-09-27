@@ -3,6 +3,7 @@ import { addLocalePrefix, detectLocaleFromPath, localeSwitchBasePath, SUPPORTED_
 import { languages } from "@/config/languages";
 import type { BusinessKey } from "@/lib/column-shared";
 import { isLocaleAllowed } from "@/lib/column-shared";
+import { FEE033_PATH } from "@/lib/rental-campaign";
 import { PET_HOUSING_PATH } from "@/lib/pet-housing";
 
 /**
@@ -59,6 +60,7 @@ export function resolveColumnLink(href: string, index: ColumnLocaleIndex): Colum
  */
 const FIXED_PAGE_LOCALES: Record<string, readonly LangCode[]> = {
   [PET_HOUSING_PATH]: ["ja"],
+  [FEE033_PATH]: ["ja"],
 };
 
 /** 言語切替の対象となる詳細ページ（記事・物件）を表のキーに解決する。それ以外は undefined。 */

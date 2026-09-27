@@ -602,7 +602,7 @@ function TenantHeader({ businessKey, columnLocales }: { businessKey: string; col
           </div>
 
           <nav
-            className={`hidden items-center gap-1 ${businessKey === "labor" ? "xl:flex" : "md:flex"}`}
+            className={`hidden items-center gap-1 ${businessKey === "labor" ? "xl:flex" : businessKey === "realestate" ? "lg:flex" : "md:flex"}`}
             aria-label={t("common.navigation.mainNav")}
           >
             {navItems.map(({ href, label }) =>
@@ -644,7 +644,7 @@ function TenantHeader({ businessKey, columnLocales }: { businessKey: string; col
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
             aria-controls="mobile-site-menu"
-            className={`relative z-50 flex h-10 w-10 items-center justify-center rounded-lg text-text transition-colors hover:bg-surface-dim ${businessKey === "labor" ? "xl:hidden" : "md:hidden"}`}
+            className={`relative z-50 flex h-10 w-10 items-center justify-center rounded-lg text-text transition-colors hover:bg-surface-dim ${businessKey === "labor" ? "xl:hidden" : businessKey === "realestate" ? "lg:hidden" : "md:hidden"}`}
             aria-label={
               isOpen
                 ? t("common.navigation.closeMenu")
@@ -657,7 +657,7 @@ function TenantHeader({ businessKey, columnLocales }: { businessKey: string; col
       </header>
 
       <div
-        className={`fixed inset-0 z-40 bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${businessKey === "labor" ? "xl:hidden" : "md:hidden"} ${
+        className={`fixed inset-0 z-40 bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${businessKey === "labor" ? "xl:hidden" : businessKey === "realestate" ? "lg:hidden" : "md:hidden"} ${
           isOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={() => setIsOpen(false)}
@@ -667,7 +667,7 @@ function TenantHeader({ businessKey, columnLocales }: { businessKey: string; col
         id="mobile-site-menu"
         inert={!isOpen}
         aria-label={t("common.navigation.mobileMenu")}
-        className={`fixed right-0 top-0 z-40 flex h-full w-[min(18rem,85vw)] flex-col bg-surface pt-16 shadow-2xl transition-transform duration-300 ease-out sm:pt-20 ${businessKey === "labor" ? "xl:hidden" : "md:hidden"} ${
+        className={`fixed right-0 top-0 z-40 flex h-full w-[min(18rem,85vw)] flex-col bg-surface pt-16 shadow-2xl transition-transform duration-300 ease-out sm:pt-20 ${businessKey === "labor" ? "xl:hidden" : businessKey === "realestate" ? "lg:hidden" : "md:hidden"} ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -926,10 +926,10 @@ function TenantFooter({ businessKey }: { businessKey: string }) {
                     return <li key={`${href}-${i}`}>
                       <FooterLink
                         href={isLaborAnchor ? addLocalePrefix(href, locale) : href}
-                        className="group inline-flex items-center text-sm text-text-muted transition-colors duration-200"
+                        className="group inline-flex max-w-full items-center text-sm text-text-muted transition-colors duration-200"
                       >
                         <span className="gradient-line mr-2 inline-block h-px w-0 transition-all duration-200 group-hover:w-3" />
-                        <span className="footer-link-text">{label}</span>
+                        <span className="footer-link-text min-w-0 [overflow-wrap:anywhere]">{label}</span>
                       </FooterLink>
                     </li>;
                   })}

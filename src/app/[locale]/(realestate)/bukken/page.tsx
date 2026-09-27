@@ -1,3 +1,7 @@
+import { RentalCampaignCta } from "@/components/bukken/RentalCampaignCta";
+import { RENTAL_CAMPAIGN_COPY } from "@/lib/rental-campaign";
+import { filterProperties, rentalStations } from "@/lib/property-filters";
+import { listSchools } from "@/lib/school-district";
 // Availability expiry must be evaluated on each request, even if the worker is offline.
 export const dynamic = "force-dynamic";
 
@@ -93,10 +97,16 @@ export default async function BukkenListPage({ searchParams }: { searchParams?: 
   const c = COPY[locale] ?? COPY.ja;
   const ui = propertyUi(locale);
   const fee = brokerFeeCopy(locale);
-  const feeFilter = (await searchParams)?.fee === "discount";
+  const query = await searchParams ?? {};
+  const value = (key: string) => typeof query[key] === "string" ? query[key] as string : "";
+  const feeFilter = value("fee") === "discount";
+  const filters = { fee: value("fee"), school: value("school"), layout: value("layout"), station: value("station"), pets: value("pets") };
   const published = await getPublishedProperties(locale);
   const discountCount = published.filter(isDiscountedBrokerFee).length;
-  const visible = feeFilter ? published.filter(isDiscountedBrokerFee) : published;
+  const visible = filterProperties(published, filters);
+  const layouts = [...new Set(published.flatMap(p => p.spec.dealType === "rental" ? [p.spec.layout] : []))].sort();
+  const stations = [...new Set(published.flatMap(rentalStations))].sort();
+  const labels = { ja: ["物件を絞り込む", "指定なし", "仲介手数料", "小学校区", "間取り", "駅", "ペット", "相談可・飼育可", "複数飼育可・相談", "絞り込む"], en: ["Filter listings", "Any", "Brokerage fee", "School district", "Layout", "Station", "Pets", "Allowed / negotiable", "Multiple pets / negotiable", "Apply filters"], "zh-tw": ["篩選物件", "不限", "仲介費", "小學學區", "格局", "車站", "寵物", "可飼養／可商量", "多隻／可商量", "篩選"], zh: ["筛选房源", "不限", "中介费", "小学学区", "户型", "车站", "宠物", "可饲养／可商量", "多只／可商量", "筛选"] }[locale];
   // 画面の並び（カテゴリ順→取得順）をそのまま ItemList の position に使う＝可視リストと一致させる
   const properties = LISTING_GROUP_ORDER.flatMap((group) =>
     visible.filter((p) => listingGroup(p.dealType) === group),
@@ -121,6 +131,16 @@ export default async function BukkenListPage({ searchParams }: { searchParams?: 
         </header>
 
         <Link href={addLocalePrefix(SCHOOL_RENTAL_INDEX_PATH, locale)} className="mt-6 block rounded-xl border border-primary/25 bg-primary-tint p-4 font-semibold text-primary">{SCHOOL_RENTAL_COPY[locale].indexTitle} →</Link>
+
+        <form action={addLocalePrefix("/bukken", locale)} className="mt-5 rounded-xl border border-border p-4">
+          <fieldset><legend className="font-semibold">{labels[0]}</legend><div className="mt-3 grid gap-3 sm:grid-cols-2">
+            <label className="text-sm">{labels[2]}<select name="fee" defaultValue={filters.fee} className="mt-1 block w-full rounded border border-border p-2"><option value="">{labels[1]}</option><option value="p033">{RENTAL_CAMPAIGN_COPY[locale].fee}</option><option value="discount">{fee.filter}</option></select></label>
+            <label className="text-sm">{labels[3]}<select name="school" defaultValue={filters.school} className="mt-1 block w-full rounded border border-border p-2"><option value="">{labels[1]}</option>{listSchools().map(s => <option key={s.slug} value={s.slug}>{s.formalName}</option>)}</select></label>
+            <label className="text-sm">{labels[4]}<select name="layout" defaultValue={filters.layout} className="mt-1 block w-full rounded border border-border p-2"><option value="">{labels[1]}</option>{layouts.map(v => <option key={v}>{v}</option>)}</select></label>
+            <label className="text-sm">{labels[5]}<select name="station" defaultValue={filters.station} className="mt-1 block w-full rounded border border-border p-2"><option value="">{labels[1]}</option>{stations.map(v => <option key={v}>{v}</option>)}</select></label>
+            <label className="text-sm">{labels[6]}<select name="pets" defaultValue={filters.pets} className="mt-1 block w-full rounded border border-border p-2"><option value="">{labels[1]}</option><option value="allowed">{labels[7]}</option><option value="multiple">{labels[8]}</option></select></label>
+          </div><button type="submit" className="mt-4 min-h-11 rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-white">{labels[9]}</button></fieldset>
+        </form>
 
         {(discountCount > 0 || feeFilter) && (
           <nav aria-label={fee.filter} className="mt-4 flex flex-wrap gap-2 text-sm">
@@ -155,6 +175,7 @@ export default async function BukkenListPage({ searchParams }: { searchParams?: 
             ))}
           </div>
         )}
+        <RentalCampaignCta locale={locale} sourcePage="/bukken" kind="property" />
       </article>
 
       <div className="mx-auto max-w-3xl px-4">

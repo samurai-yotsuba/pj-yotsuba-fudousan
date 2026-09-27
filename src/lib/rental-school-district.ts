@@ -2,7 +2,6 @@ import type { LangCode } from "@/config/languages";
 import type { PublicProperty } from "./property-shared";
 import { isPubliclyVisible } from "./property-shared";
 import { DISTRICT_SOURCE, listSchools, lookupDistrictByAddress, type SchoolInfo } from "./school-district";
-import { SCHOOL_RENTAL_MIN_AREA_SQM, SCHOOL_RENTAL_MIN_RENT_YEN } from "./school-rental-feed";
 
 export type RentalSchoolDistrict =
   | { status: "determined"; school: SchoolInfo; source: typeof DISTRICT_SOURCE }
@@ -26,9 +25,7 @@ export function groupSchoolRentals(properties: readonly PublicProperty[], locale
   const groups = new Map(listSchools().map(s => [s.slug, [] as PublicProperty[]]));
   for (const p of properties) {
     if (!isPubliclyVisible(p, locale, now)) continue;
-    if (p.spec.dealType !== "rental"
-      || p.priceYen < SCHOOL_RENTAL_MIN_RENT_YEN
-      || p.spec.exclusiveAreaSqm < SCHOOL_RENTAL_MIN_AREA_SQM) continue;
+    if (p.spec.dealType !== "rental") continue;
     const district = rentalSchoolDistrict(p);
     if (district?.status === "determined") groups.get(district.school.slug)?.push(p);
   }
@@ -41,7 +38,7 @@ export const SCHOOL_RENTAL_COPY = {
     title: "{school}区の賃貸物件", view: "この学区の賃貸物件を見る", count: "募集中 {count}件",
     lead: "文京区の区立小学校の通学区域は町丁目の単位で、区域によっては番・号まで定められており、同じ町丁目でも番地によって通う学校が分かれる区域があります。四葉不動産株式会社（宅地建物取引業 東京都知事(1)第113304号）は、文京区が公表する通学区域と募集中の賃貸物件の所在地を照合し、学校別に掲載しています。学校を選ぶと、その学区の一覧が開きます。入学時点の指定校は文京区が決定します。",
     schoolLead: "{school}の通学区域は、文京区が町丁目の単位で、区域によっては番・号まで定めています。四葉不動産株式会社（宅地建物取引業 東京都知事(1)第113304号）が、区の公表区域と所在地を照合できた募集中の賃貸物件を、この学区の一覧として掲載しています。入学時点の指定校は文京区が決定します。",
-    empty: "現在、この学区でご紹介できる賃貸物件はありません。希望の入居時期・賃料・間取りをお知らせください。",
+    empty: "現在、この学区で公開中の賃貸物件はありません。希望の入居時期・賃料・間取りをお知らせください。",
     request: "この学区の物件を相談する", back: "すべての学区を見る", guide: "学区・通学区域の紹介を見る",
     source: "通学区域の出典：文京区", updated: "区の更新日", checked: "データ取得日",
     note: "区の公表区域と所在地の照合結果です。入学時点の指定校は文京区にご確認ください。",
@@ -63,7 +60,7 @@ export const SCHOOL_RENTAL_COPY = {
     title: "{school}學區的出租物件", view: "查看此學區的出租物件", count: "招租中 {count}件",
     lead: "文京區區立小學的通學區域以町丁目為單位劃定，部分區域更細分至番、號，因此同一町丁目內也可能分屬不同學校。四葉不動產株式會社（宅地建物取引業 東京都知事(1)第113304號）將招租中出租物件的地址與文京區公布的通學區域比對，依學校分別刊登。選擇學校即可查看列表。校名沿用官方日文名稱。入學時的指定學校由文京區決定。",
     schoolLead: "{school}的通學區域由文京區以町丁目為單位劃定，部分區域細分至番、號。四葉不動產株式會社（宅地建物取引業 東京都知事(1)第113304號）刊登地址經比對符合區公布區域的招租中出租物件。入學時的指定學校由文京區決定。",
-    empty: "目前此學區沒有可介紹的出租物件。歡迎告知希望入住時間、租金與格局。",
+    empty: "目前此學區沒有公開刊登的出租物件。歡迎告知希望入住時間、租金與格局。",
     request: "諮詢此學區的租屋", back: "查看所有學區", guide: "查看學區及通學區域介紹",
     source: "通學區域出處：文京區", updated: "區公布更新日", checked: "資料取得日",
     note: "本資訊依區公布的通學區域與地址比對。入學時的指定學校請向文京區確認。",
@@ -74,7 +71,7 @@ export const SCHOOL_RENTAL_COPY = {
     title: "{school}学区的出租房源", view: "查看此学区的出租房源", count: "招租中 {count}套",
     lead: "文京区区立小学的通学区域以町丁目为单位划定，部分区域更细分至番、号，因此同一町丁目内也可能分属不同学校。四叶不动产株式会社（宅地建物取引业 东京都知事(1)第113304号）将招租中出租房源的地址与文京区公布的通学区域进行匹配，按学校分别刊登。选择学校即可查看列表。校名沿用官方日文名称。入学时的指定学校由文京区决定。",
     schoolLead: "{school}的通学区域由文京区以町丁目为单位划定，部分区域细分至番、号。四叶不动产株式会社（宅地建物取引业 东京都知事(1)第113304号）刊登地址经匹配符合区公布区域的招租中出租房源。入学时的指定学校由文京区决定。",
-    empty: "目前此学区没有可介绍的出租房源。欢迎告知希望入住时间、租金与户型。",
+    empty: "目前此学区没有公开刊登的出租房源。欢迎告知希望入住时间、租金与户型。",
     request: "咨询此学区的租房", back: "查看所有学区", guide: "查看学区及通学区域介绍",
     source: "通学区域出处：文京区", updated: "区公布更新日", checked: "资料取得日",
     note: "本信息按区公布的通学区域与地址匹配。入学时的指定学校请向文京区确认。",

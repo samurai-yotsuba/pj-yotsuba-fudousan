@@ -1,3 +1,4 @@
+import { getRentalDiscovery } from "@/lib/rental-discovery-server";
 // Counts follow current availability; do not pre-render a school/locale matrix.
 export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
@@ -16,6 +17,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Page() {
   const locale = await getRequestLocale();
-  const [properties, summaries, market] = await Promise.all([getPublishedProperties(locale), getSchoolRentalSummaries(), getSchoolRentalMarket()]);
-  return <SchoolRentalIndex properties={properties} summaries={summaries} market={market} locale={locale} />;
+  const [properties, summaries, market, discovery] = await Promise.all([getPublishedProperties(locale), getSchoolRentalSummaries(), getSchoolRentalMarket(), getRentalDiscovery(locale)]);
+  return <SchoolRentalIndex properties={properties} summaries={summaries} market={market} schoolCounts={discovery.schools} locale={locale} />;
 }

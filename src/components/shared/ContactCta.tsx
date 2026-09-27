@@ -9,6 +9,7 @@ import { gaEvent } from "@/lib/gtag";
 import { OFFICE, type BusinessKey } from "@/lib/shared/office-public";
 import { CONTACT_CTA_COPY } from "@/lib/shared/contact-cta-copy";
 import {
+  contactBasePath,
   contactCtaHrefs,
   contactEventName,
   contactEventParams,
@@ -16,6 +17,7 @@ import {
   type ContactCtaAction,
   type ContactCtaPlacement,
 } from "@/lib/shared/contact-cta";
+import { RENTAL_CAMPAIGN_COPY, rentalLineHref, type RentalCampaignKind } from "@/lib/rental-campaign";
 import styles from "./ContactCta.module.css";
 
 function useContactActions(businessKey: BusinessKey, placement: ContactCtaPlacement) {
@@ -23,11 +25,15 @@ function useContactActions(businessKey: BusinessKey, placement: ContactCtaPlacem
   const pathname = usePathname();
   const copy = CONTACT_CTA_COPY[locale] ?? CONTACT_CTA_COPY.ja;
   const hrefs = contactCtaHrefs(businessKey);
+  const base = contactBasePath(pathname) ?? "/";
+  const rentalKind: RentalCampaignKind | null = businessKey !== "realestate" ? null : base.startsWith("/bunkyo/chukai-033") ? "fee033" : base.startsWith("/gakku") ? "gakku" : base.startsWith("/bukken") ? "property" : null;
+  if (rentalKind) hrefs.line = rentalLineHref({ sourcePage: base, kind: rentalKind, ...(base.startsWith("/bukken/") ? { propertyId: base.split("/")[2] } : {}), ...(base.startsWith("/gakku/") && !["rentals", "sales"].includes(base.split("/")[2]) ? { school: base.split("/")[2] } : {}) }, "ja");
   const track = (action: ContactCtaAction) => {
     // 1クリック1イベント。旧イベントを重ねて送信しない。
+    if (action === "line" && rentalKind) { gaEvent(`click_line_${rentalKind}`, { source_page: base, location: placement }); return; }
     gaEvent(contactEventName(placement, action), contactEventParams(businessKey, locale, pathname, placement));
   };
-  return { copy, hrefs, track, pathname };
+  return { copy: rentalKind ? { ...copy, line: RENTAL_CAMPAIGN_COPY[locale].consult } : copy, hrefs, track, pathname };
 }
 
 /** TenantLayoutShellの既存マウントを再利用し、3事業×4言語を共通実装。 */

@@ -1,3 +1,5 @@
+import { getRentalDiscovery } from "@/lib/rental-discovery-server";
+import { RentalDiscoveryStats, RentalFeeHubLink } from "@/components/gakku/RentalDiscoveryStats";
 import { SCHOOL_SALE_COPY, SCHOOL_SALE_INDEX_PATH, schoolSalePath } from "@/lib/sale-school-district";
 // /gakku＝文京区の小学校 通学区域のハブ。
 // 区の公表データ（町丁目・番・号）をそのまま持つ一次データ層の入口で、
@@ -71,6 +73,7 @@ export default async function GakkuHubPage() {
   const c = gakkuCopy(locale);
   const ui = propertyUi(locale);
   const featured = getFeaturedSchools();
+  const discovery = await getRentalDiscovery(locale);
 
   return (
     <>
@@ -125,6 +128,8 @@ export default async function GakkuHubPage() {
           </div>
         </section>
 
+        <RentalFeeHubLink locale={locale} />
+        <Link href={addLocalePrefix("/gakku/rentals", locale)} className="mt-4 block rounded-xl bg-primary p-5 text-center font-semibold text-white">{SCHOOL_RENTAL_COPY[locale].indexTitle} →</Link>
         <Link href={addLocalePrefix(SCHOOL_SALE_INDEX_PATH, locale)} className="mt-6 block rounded-xl bg-primary p-5 text-center font-semibold text-white hover:opacity-90">{SCHOOL_SALE_COPY[locale].indexTitle} →</Link>
 
         <p className="mt-10 rounded-xl border border-border bg-surface-dim p-4 text-sm leading-relaxed text-text">
@@ -147,6 +152,7 @@ export default async function GakkuHubPage() {
                   className="block h-full rounded-xl border border-border bg-surface p-4 transition-colors hover:border-primary/40"
                 >
                   <span className="block font-semibold text-ink">{school.formalName}</span>
+                  <RentalDiscoveryStats stats={discovery.schools.find(s => s.slug === school.slug)!} locale={locale} compact />
                   <span className="mt-1 block text-xs text-text-muted">
                     {SCHOOL_PROFILES[school.slug]?.address}
                   </span>
@@ -194,6 +200,7 @@ export default async function GakkuHubPage() {
                       ) : (
                         school.formalName
                       )}
+                      <RentalDiscoveryStats stats={discovery.schools.find(s => s.slug === school.slug)!} locale={locale} />
                       <Link href={addLocalePrefix(schoolRentalPath(school.slug), locale)} className="mt-2 block text-xs font-semibold text-primary underline">{SCHOOL_RENTAL_COPY[locale].view} →</Link>
                       <Link href={addLocalePrefix(schoolSalePath(school.slug), locale)} className="mt-2 block text-xs font-semibold text-primary underline">{SCHOOL_SALE_COPY[locale].view} →</Link>
                     </td>

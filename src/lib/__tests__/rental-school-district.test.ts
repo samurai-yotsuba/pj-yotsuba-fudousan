@@ -52,14 +52,14 @@ describe("住所を正本とする賃貸の学区",()=>{
     const list=[live,{...rental(),status:"closed" as const},{...rental(),status:"draft" as const},expired,{...rental(),locales:["ja" as const]},{...rental(),dealType:"land" as const}];
     expect(groupSchoolRentals(list,"en",NOW).get("kanatomi")).toEqual([live, expired]);
   });
-  it("賃料17万5,000円・48㎡の基準未満を登録済み物件からも除外する",()=>{
+  it("写真付き公開物件は募集比較フィードの賃料・面積条件で除外しない",()=>{
     const boundary=rental(); boundary.priceYen=175000;
     if(boundary.spec.dealType==="rental") boundary.spec.exclusiveAreaSqm=48;
     const underArea=rental();
     if(underArea.spec.dealType==="rental") underArea.spec.exclusiveAreaSqm=47.99;
     const underRent=rental(); underRent.priceYen=174999;
     const grouped=groupSchoolRentals([boundary,underArea,underRent],"ja",NOW).get("kanatomi");
-    expect(grouped).toEqual([boundary]);
+    expect(grouped).toEqual([boundary,underArea,underRent]);
   });
   it.each(["itandi","eslife"] as const)("%s の取込時に非公開の判定記録を残す",provider=>{
     const v=fixture();const address="東京都文京区根津2丁目13-4";
