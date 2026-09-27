@@ -31,6 +31,8 @@ describe("学区ハブのファーストビュー", () => {
   it.each(LOCALES)("%s: 物件検索バナーは賃貸・売買共通の1本だけ表示する", (locale) => {
     expect(SCHOOL_SALE_COPY[locale].indexTitle).not.toMatch(/売買物件を探す|for sale by school|出售物件|出售房源/);
     expect(PAGE).not.toContain("SCHOOL_RENTAL_INDEX_PATH");
+    expect(PAGE).not.toContain('addLocalePrefix("/gakku/rentals"');
+    expect(PAGE).not.toContain("SCHOOL_RENTAL_COPY[locale].indexTitle");
     expect(PAGE.match(/SCHOOL_SALE_INDEX_PATH/g)).toHaveLength(2);
   });
 });
