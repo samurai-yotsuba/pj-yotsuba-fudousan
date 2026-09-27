@@ -78,7 +78,8 @@ describe("料金の全出力が物件の正本に一致する", () => {
     expect(Object.values(result!.counts).reduce((a,b) => a+b, 0)).toBe(1);
     const html = renderToStaticMarkup(<RentalDiscoveryStats locale="ja" stats={{ slug: "nezu", publicListings: 0, fee033Listings: 0, advertisingAllowedListings: 0, privateAvailableListings: result!.counts.nezu, totalAvailableListings: result!.counts.nezu, updatedAt: result!.checkedAt }} />);
     for (const value of [secret, "909", "299999", summary.address, "secret-id"]) expect(html).not.toContain(value);
-    expect(html).toContain("広告掲載できない紹介可能物件");
+    expect(html).toContain("紹介可能物件（非公開）");
+    expect(html).not.toContain("広告掲載できない");
   });
 });
 

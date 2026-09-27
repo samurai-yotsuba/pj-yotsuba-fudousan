@@ -163,7 +163,7 @@ export default async function LineBridgePage({ searchParams }: { searchParams?: 
   const from = typeof query.from === "string" && (/^\/(?:gakku(?:\/[a-z-]+){0,2}|bukken|ryokin)$/.test(query.from) || query.from === FEE033_PATH || query.from === "/") ? query.from : FEE033_PATH;
   const source = property ? `/bukken/${property.slug}` : from;
   const message = campaign ? [
-    { ja: "賃貸物件について相談します。0.33ヶ月（税込）の対象になるか確認をお願いします。", en: "I would like to ask about a rental and whether it qualifies for the 0.33-month brokerage fee (tax included).", "zh-tw": "想諮詢租屋，請確認是否適用0.33個月（含稅）的仲介費。", zh: "想咨询租房，请确认是否适用0.33个月（含税）的中介费。" }[locale],
+    { ja: "賃貸物件について相談します。募集状況の確認をお願いします。", en: "I would like to ask about a rental. Please check its availability.", "zh-tw": "想諮詢租屋，請確認招租狀況。", zh: "想咨询租房，请确认招租状态。" }[locale],
     ...(property ? [`${property.title}`, `ID: ${property.slug}`] : []),
     ...(school ? [school.formalName] : []),
     `https://luck428.com${addLocalePrefix(source, locale)}`,
