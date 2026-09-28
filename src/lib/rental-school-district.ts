@@ -2,6 +2,7 @@ import type { LangCode } from "@/config/languages";
 import type { PublicProperty } from "./property-shared";
 import { isPubliclyVisible } from "./property-shared";
 import { DISTRICT_SOURCE, listSchools, lookupDistrictByAddress, type SchoolInfo } from "./school-district";
+import { isFeaturedSchoolSlug } from "./gakku";
 
 export type RentalSchoolDistrict =
   | { status: "determined"; school: SchoolInfo; source: typeof DISTRICT_SOURCE }
@@ -127,6 +128,20 @@ export function schoolRentalLead(school: SchoolInfo, locale: LangCode) {
   return SCHOOL_RENTAL_COPY[locale].schoolLead.replace("{school}", school.formalName.replace(/^文京区立/, ""));
 }
 
+/**
+ * 2026-09-28（浦松指示）：個別の通学区域ページを持たない16校は、学区賃貸ページを
+ * 「〇〇小学校 学区」の検索の受け皿にする（通学区域の表を載せ、タイトルも学区を正面に）。
+ * 4校（誠之・昭和・千駄木・窪町）は /gakku/<校> が通学区域の受け皿なので、賃貸ページの題は据え置き（食い合わせない）。
+ */
+export const SCHOOL_DISTRICT_RENTAL_TITLE: Record<LangCode, string> = {
+  ja: "{school}の学区（通学区域）と賃貸物件",
+  en: "{school}: school district (catchment area) and rentals",
+  "zh-tw": "{school}的學區（通學區域）與出租物件",
+  zh: "{school}的学区（通学区域）与出租房源",
+};
+export function schoolRentalShowsDistrict(slug: string) { return !isFeaturedSchoolSlug(slug); }
+
 export function schoolRentalTitle(school: SchoolInfo, locale: LangCode) {
+  if (schoolRentalShowsDistrict(school.slug)) return SCHOOL_DISTRICT_RENTAL_TITLE[locale].replace("{school}", school.formalName);
   return SCHOOL_RENTAL_COPY[locale].title.replace("{school}", school.formalName.replace(/^文京区立/, ""));
 }
