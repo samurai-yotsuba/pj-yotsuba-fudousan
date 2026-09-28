@@ -1,0 +1,108 @@
+# AI可視性 定点計測 v2（2026-09-28）
+# Gemini API＋Google検索グラウンディングで30問を測り、結果を tasks/ai-visibility-v2/ に追記して main へ直接 push する。
+# 旧方式（Macの測定用Chrome・launchd com.yotsuba.ai-visibility）の後継。ブラウザ・ログイン・Macの状態に依存しない。
+# 設計：四葉基幹CRM/設計_AI可視性計測v2_20260928.md ／ 手順：scripts/ai-visibility/README.md
+name: AI Visibility v2
+
+on:
+  schedule:
+    - cron: "30 13 * * *"   # 22:30 JST 毎日
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "試運転：先頭N問だけ測る（書き込みなし）"
+        required: false
+        default: ""
+      weekly:
+        description: "週次要約も作る（通常は月曜に自動）"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: ai-visibility-v2
+  cancel-in-progress: false
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 計測（Gemini＋Google検索グラウンディング）
+        id: measure
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          LIMIT: ${{ inputs.limit }}
+          WEEKLY: ${{ inputs.weekly }}
+        run: |
+          set -o pipefail
+          ARGS=(--out tasks/ai-visibility-v2)
+          if [ -n "$LIMIT" ]; then ARGS+=(--limit "$LIMIT"); fi
+          if [ "$WEEKLY" = "true" ]; then ARGS+=(--weekly); fi
+          node scripts/ai-visibility/measure.mjs "${ARGS[@]}" 2>&1 | tee /tmp/measure.log
+
+      - name: 結果を main にコミット
+        if: ${{ inputs.limit == '' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tasks/ai-visibility-v2
+          if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
+          git commit -m "chore(ai-visibility): ${{ steps.measure.outputs.date }} ${{ steps.measure.outputs.headline }} [skip ci]" \
+            -m "engine=gemini-grounding 実行ログ: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          # データだけの変更は vercel.json の ignoreCommand で本番ビルドをスキップする
+          for i in 1 2 3; do
+            git fetch origin main && git rebase origin/main && git push origin HEAD:main && break
+            echo "push 失敗 ($i)・再試行"; sleep 10
+          done
+
+      - name: 欠測・急落を Issue で通知
+        if: ${{ inputs.limit == '' && steps.measure.outputs.anomaly == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            cat tasks/ai-visibility-v2/anomaly.md
+            echo
+            echo "実行ログ: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo
+            echo '<details><summary>計測ログ</summary>'; echo; echo '```'; tail -60 /tmp/measure.log; echo '```'; echo '</details>'
+          } > /tmp/issue.md
+          gh issue create --repo "${{ github.repository }}" \
+            --title "【AI可視性v2】異常検知 ${{ steps.measure.outputs.date }}（${{ steps.measure.outputs.headline }}）" \
+            --body-file /tmp/issue.md
+
+      - name: 週次要約を Issue で共有（月曜）
+        if: ${{ inputs.limit == '' && steps.measure.outputs.weekly == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            cat tasks/ai-visibility-v2/weekly.md
+            echo
+            echo "当日の表: https://github.com/${{ github.repository }}/blob/main/tasks/ai-visibility-v2/latest.md"
+            echo
+            echo "次の一手は yotsuba-ai-visibility-improve（引用0が続く上位3問）へ。"
+          } > /tmp/weekly-issue.md
+          gh issue create --repo "${{ github.repository }}" \
+            --title "【AI可視性v2】週次要約 ${{ steps.measure.outputs.date }}" \
+            --body-file /tmp/weekly-issue.md
+
+      - name: 計測ログを保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-visibility-${{ steps.measure.outputs.date || github.run_id }}
+          path: |
+            /tmp/measure.log
+            tasks/ai-visibility-v2/latest.md
+          retention-days: 30

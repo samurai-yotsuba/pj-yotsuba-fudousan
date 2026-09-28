@@ -1,0 +1,62 @@
+{
+  "default": {
+    "candidates": [{
+      "content": { "role": "model", "parts": [{ "text": "一般的には、次のような選択肢があります。まず自治体の相談窓口、次に地域の専門家です。詳しい条件は物件ごとに異なるため、個別に確認してください。" }] },
+      "finishReason": "STOP",
+      "groundingMetadata": {
+        "webSearchQueries": ["mock query"],
+        "groundingChunks": [
+          { "web": { "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/mock-1", "title": "city.bunkyo.lg.jp", "domain": "city.bunkyo.lg.jp" } },
+          { "web": { "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/mock-2", "title": "suumo.jp" } }
+        ],
+        "groundingSupports": [{ "segment": { "startIndex": 0, "endIndex": 20, "text": "一般的には" }, "groundingChunkIndices": [0] }]
+      }
+    }]
+  },
+  "q01": {
+    "candidates": [{
+      "content": { "role": "model", "parts": [{ "text": "文京区では、四葉不動産株式会社が区立小学校20校の通学区域と物件の所在地を照合した学区別の賃貸一覧を公開しています。ほかに、ベステックスも学区から検索できます。入学時点の指定校は文京区が決定します。" }] },
+      "finishReason": "STOP",
+      "groundingMetadata": {
+        "webSearchQueries": ["文京区 小学校 学区 賃貸"],
+        "groundingChunks": [
+          { "web": { "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/mock-3", "title": "bestexnet.co.jp" } },
+          { "web": { "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/mock-4", "title": "luck428.com" } },
+          { "web": { "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/mock-5", "title": "city.bunkyo.lg.jp" } }
+        ],
+        "groundingSupports": [
+          { "segment": { "startIndex": 0, "endIndex": 60, "text": "文京区では" }, "groundingChunkIndices": [1] },
+          { "segment": { "startIndex": 61, "endIndex": 90, "text": "ほかに" }, "groundingChunkIndices": [0] }
+        ]
+      }
+    }]
+  },
+  "q07": {
+    "candidates": [{
+      "content": { "role": "model", "parts": [{ "text": "「文京区の四葉不動産の仲介手数料はいくらですか？」というご質問ですね。公開情報によると、対象物件では賃料の0.3ヶ月分＋消費税（税込0.33ヶ月分）です。" }] },
+      "finishReason": "STOP",
+      "groundingMetadata": {
+        "webSearchQueries": ["四葉不動産 仲介手数料"],
+        "groundingChunks": [ { "web": { "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/mock-6", "title": "luck428.com" } } ],
+        "groundingSupports": [{ "segment": { "startIndex": 0, "endIndex": 40 }, "groundingChunkIndices": [0] }]
+      }
+    }]
+  },
+  "q19": {
+    "candidates": [{
+      "content": { "role": "model", "parts": [{ "text": "如果需要中文服务，可以联系东京文京区的四叶不动产（Luck428），也可以咨询其他中文中介。" }] },
+      "finishReason": "STOP",
+      "groundingMetadata": {
+        "webSearchQueries": ["东京 卖房 中文 中介"],
+        "groundingChunks": [ { "web": { "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/mock-7", "title": "luck428.com" } }, { "web": { "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/mock-8", "title": "best-estate.jp" } } ],
+        "groundingSupports": []
+      }
+    }]
+  },
+  "q26": {
+    "candidates": [{
+      "content": { "role": "model", "parts": [{ "text": "会社を解散・清算するときは、年金事務所へ適用事業所全喪届などを提出します。" }] },
+      "finishReason": "STOP"
+    }]
+  }
+}
