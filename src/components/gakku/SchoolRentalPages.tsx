@@ -16,6 +16,7 @@ import { buildPropertyItemListJsonLd } from "@/lib/property-jsonld";
 import { SCHOOL_RENTAL_HUB_FAQ } from "@/lib/rental-school-hub-faq";
 import { DistrictTable } from "./DistrictSection";
 import { districtSummary } from "@/lib/school-district-summary";
+import { NeighborLinks } from "./NeighborLinks";
 import { gakkuCopy } from "@/lib/gakku";
 import { listDistrictRowsBySchool } from "@/lib/school-district";
 import { SCHOOL_RENTAL_COPY, SCHOOL_RENTAL_FAQ, SCHOOL_RENTAL_INDEX_PATH, schoolRentalLead, schoolRentalPath, schoolRentalShowsDistrict, schoolRentalTitle } from "@/lib/rental-school-district";
@@ -128,11 +129,12 @@ function SchoolDistrictSection({ school, locale }: { school: SchoolInfo; locale:
   if (!rows.length) return null;
   return <section id="district" className="mt-6">
     <h2 className="font-serif text-xl font-semibold text-ink">{gc.school.districtH2.replace("{school}", school.formalName)}</h2>
-    <p className="mt-3 rounded-xl border border-border bg-surface-dim p-4 text-sm leading-relaxed text-text">{districtSummary(locale, school.formalName, rows.length)}</p>
+    <p className="mt-3 rounded-xl border border-border bg-surface-dim p-4 text-sm leading-relaxed text-text">{districtSummary(locale, school, rows)}</p>
     <details open={rows.length <= 12} className="mt-3 rounded-xl border border-border p-4">
       <summary className="cursor-pointer text-sm font-semibold text-primary">{DISTRICT_TABLE_LABEL[locale].replace("{n}", String(rows.length))}</summary>
       <DistrictTable rows={rows} copy={gc} />
     </details>
+    <NeighborLinks slug={school.slug} locale={locale} />
   </section>;
 }
 

@@ -88,6 +88,8 @@ export interface GakkuCopy {
     /** {school} を学校名に置換 */
     titleTemplate: string;
     districtH2: string;
+    /** 同じ町丁目を分け合う学校（番・号で分かれる相手）の見出し */
+    neighborsLabel: string;
     mapH2: string;
     mapNote: string;
     schoolInfoH2: string;
@@ -124,9 +126,9 @@ export interface GakkuCopy {
 export const GAKKU_COPY: Record<LangCode, GakkuCopy> = {
   ja: {
     hub: {
-      title: "文京区の小学校 通学区域と住まい探し",
+      title: "文京区の小学校 学区（通学区域）一覧｜20校の町丁目・番地と地図",
       description:
-        "文京区立小学校20校の通学区域を、区の公表データ（2026年1月9日現在）の町丁目・番・号のまま一覧にしました。誠之・昭和・千駄木・窪町の4校は個別ページで通学区域の表と取扱物件をご案内します。文京区小日向の四葉不動産株式会社。",
+        "文京区立小学校20校の学区（通学区域）を、区の公表データ（2026年1月9日現在）の町丁目・番・号のまま一覧と地図にしました。同じ町名でも番地で学校が分かれる区域があります。学校ごとの学区ページで範囲の表と賃貸・売買物件をご案内します。文京区小日向の四葉不動産株式会社。",
       h1: "文京区の小学校 通学区域と、住まい探し",
       hook:
         "世間で「3S1K」と呼ばれる4校を含む、文京区立小学校20校の通学区域を1枚の地図に。この4校の学区では、当社の取扱いでも募集が出てから短期間で申込みが入ることが少なくありません。",
@@ -143,8 +145,9 @@ export const GAKKU_COPY: Record<LangCode, GakkuCopy> = {
         "学校名・所在地は区の「区立小学校一覧」、通学区域は区の「小学校 通学区域」によります。",
     },
     school: {
-      titleTemplate: "{school}の通学区域｜文京区の住まい探し",
-      districtH2: "{school}の通学区域はどこからどこまでですか？",
+      titleTemplate: "{school}の学区（通学区域）はどこからどこまで？｜町丁目・番地の表と地図",
+      districtH2: "{school}の学区（通学区域）はどこからどこまでですか？",
+      neighborsLabel: "同じ町丁目で学校が分かれる相手校（番・号や旧町名で分かれます）",
       mapH2: "町丁目ごとの範囲を図で見る",
       mapNote:
         "町丁目ごとの範囲を示した図です。地理的な位置・縮尺・境界線を表すものではありません。番地によって学校が分かれる町丁目は色を分けています。",
@@ -184,9 +187,9 @@ export const GAKKU_COPY: Record<LangCode, GakkuCopy> = {
   },
   en: {
     hub: {
-      title: "Elementary School Districts in Bunkyo-ku",
+      title: "Bunkyo-ku elementary school districts: all 20 schools by chome and block",
       description:
-        "School attendance districts for all 20 public elementary schools in Bunkyo-ku, Tokyo, reproduced from the ward's official table (as of 9 January 2026). Yotsuba Real Estate, Kohinata, Bunkyo-ku.",
+        "School districts (attendance areas) for all 20 public elementary schools in Bunkyo-ku, Tokyo, reproduced from the ward's official table (as of 9 January 2026) with a map. Within some chome the assigned school differs by block number. Each school page shows the area table and available rentals and sales. Yotsuba Real Estate, Kohinata, Bunkyo-ku.",
       h1: "Elementary school districts in Bunkyo-ku, and finding a home",
       hook:
         "All 20 public elementary school districts in Bunkyo on one map, including the four schools the public calls “3S1K”. In those four districts, rentals we handle often receive applications soon after they are listed.",
@@ -203,8 +206,9 @@ export const GAKKU_COPY: Record<LangCode, GakkuCopy> = {
         "School names and addresses come from the ward's school list; districts come from the ward's attendance district table.",
     },
     school: {
-      titleTemplate: "{school} attendance district | Finding a home in Bunkyo-ku",
-      districtH2: "Which addresses belong to {school}?",
+      titleTemplate: "{school} school district (attendance area): which addresses belong to it? Table and map",
+      districtH2: "Which addresses are in the {school} school district?",
+      neighborsLabel: "Schools that share a chome with this district (split by block, lot or former town name)",
       mapH2: "The area shown as a diagram",
       mapNote:
         "A diagram of the districts (chome) covered. It does not represent geographic position, scale or boundaries. Chome where the school differs by address are shown in a separate colour.",
@@ -246,9 +250,9 @@ export const GAKKU_COPY: Record<LangCode, GakkuCopy> = {
   },
   "zh-tw": {
     hub: {
-      title: "文京區小學通學區域與找房",
+      title: "文京區小學學區（通學區域）一覽｜20校的町丁目・番地與地圖",
       description:
-        "依文京區公布資料（2026年1月9日現在），完整刊載20所區立小學的通學區域（町丁目・番・號）。誠之・昭和・千駄木・窪町4校另設專頁。文京區小日向的四葉不動產株式會社。",
+        "依文京區公布資料（2026年1月9日現在），完整刊載20所區立小學的學區（通學區域：町丁目・番・號）與地圖。同一町名也可能因番地而分屬不同學校。各校的學區頁面提供範圍表與出租・出售物件。文京區小日向的四葉不動產株式會社。",
       h1: "文京區的小學通學區域與找房",
       hook:
         "把文京區20所區立小學的通學區域放進一張地圖，其中包括社會上通稱「3S1K」的4校。在這4校的學區，本公司經手的物件也常在招租後短時間內就有人申請。",
@@ -264,8 +268,9 @@ export const GAKKU_COPY: Record<LangCode, GakkuCopy> = {
       allSchoolsLead: "校名與地址依區的「區立小學一覽」，通學區域依區的「小學通學區域」。",
     },
     school: {
-      titleTemplate: "{school}的通學區域｜文京區找房",
-      districtH2: "{school}的通學區域範圍到哪裡？",
+      titleTemplate: "{school}的學區（通學區域）範圍到哪裡？｜町丁目・番地的表與地圖",
+      districtH2: "{school}的學區（通學區域）範圍到哪裡？",
+      neighborsLabel: "與本學區共用町丁目的學校（依番・號或舊町名劃分）",
       mapH2: "以圖示看町丁目的範圍",
       mapNote:
         "此圖顯示所涵蓋的町丁目，並非表示地理位置、比例尺或界線。因地號而分屬不同學校的町丁目，以不同顏色標示。",
@@ -305,9 +310,9 @@ export const GAKKU_COPY: Record<LangCode, GakkuCopy> = {
   },
   zh: {
     hub: {
-      title: "文京区小学通学区域与找房",
+      title: "文京区小学学区（通学区域）一览｜20校的町丁目・番地与地图",
       description:
-        "依据文京区公布资料（2026年1月9日现在），完整刊载20所区立小学的通学区域（町丁目・番・号）。诚之・昭和・千駄木・洼町4校另设专页。文京区小日向的四叶不动产株式会社。",
+        "依据文京区公布资料（2026年1月9日现在），完整刊载20所区立小学的学区（通学区域：町丁目・番・号）与地图。同一町名也可能因番地而分属不同学校。各校的学区页面提供范围表与出租・出售房源。文京区小日向的四叶不动产株式会社。",
       h1: "文京区的小学通学区域与找房",
       hook:
         "把文京区20所区立小学的通学区域放进一张地图，其中包括社会上通称「3S1K」的4校。在这4校的学区，本公司经手的房源也常在招租后短时间内就有人申请。",
@@ -323,8 +328,9 @@ export const GAKKU_COPY: Record<LangCode, GakkuCopy> = {
       allSchoolsLead: "校名与地址依区的「区立小学一览」，通学区域依区的「小学通学区域」。",
     },
     school: {
-      titleTemplate: "{school}的通学区域｜文京区找房",
-      districtH2: "{school}的通学区域范围到哪里？",
+      titleTemplate: "{school}的学区（通学区域）范围到哪里？｜町丁目・番地的表与地图",
+      districtH2: "{school}的学区（通学区域）范围到哪里？",
+      neighborsLabel: "与本学区共用町丁目的学校（依番・号或旧町名划分）",
       mapH2: "以图示看町丁目的范围",
       mapNote:
         "此图显示所涵盖的町丁目，并非表示地理位置、比例尺或界线。因地号而分属不同学校的町丁目，以不同颜色标示。",

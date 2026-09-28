@@ -25,7 +25,8 @@ import {
   lookupDistrictByAddress,
 } from "@/lib/school-district";
 import { gakkuCopy, SCHOOL_LIST_SOURCE, SCHOOL_PROFILES } from "@/lib/gakku";
-import { districtSummary } from "@/lib/school-district-summary";
+import { districtLead, districtSummary } from "@/lib/school-district-summary";
+import { NeighborLinks } from "@/components/gakku/NeighborLinks";
 import { DistrictBlocks, DistrictTable } from "@/components/gakku/DistrictSection";
 import { getPublishedProperties, getLocalizedProperty } from "@/lib/properties";
 import { SCHOOL_RENTAL_COPY, schoolRentalPath } from "@/lib/rental-school-district";
@@ -84,7 +85,7 @@ export async function SchoolDistrictPage({
     }).map((p) => getLocalizedProperty(p, locale));
 
   const faqItems: FaqItem[] = [
-    { q: c.school.districtH2.replace("{school}", school.formalName), a: districtSummary(locale, school.formalName, rows.length) },
+    { q: c.school.districtH2.replace("{school}", school.formalName), a: districtSummary(locale, school, rows) },
     { q: c.school.noticeH2, a: c.school.notice },
     { q: c.school.procedureH2, a: c.school.procedure },
   ];
@@ -105,7 +106,9 @@ export async function SchoolDistrictPage({
             {school.formalName}
           </h1>
           <p className="mt-4 rounded-xl border border-border bg-surface-dim p-4 text-sm leading-relaxed text-text">
-            {districtSummary(locale, school.formalName, rows.length)}
+            {districtLead(locale, school, rows)}
+            {locale === "en" ? ". " : "。"}
+            {c.disclaimer}
           </p>
         </header>
 
@@ -117,8 +120,10 @@ export async function SchoolDistrictPage({
         <Link href={addLocalePrefix(schoolSalePath(slug), locale)} className="mt-3 block rounded-xl border border-primary/25 p-5 font-semibold text-primary">{SCHOOL_SALE_COPY[locale].view} →</Link>
 
         <H2 id="district">{c.school.districtH2.replace("{school}", school.formalName)}</H2>
+        <p className="mt-4 leading-relaxed text-text">{districtSummary(locale, school, rows)}</p>
         <DistrictTable rows={rows} copy={c} />
         <SourceNote locale={locale} />
+        <NeighborLinks slug={slug} locale={locale} />
 
         <H2 id="map">{c.school.mapH2}</H2>
         <DistrictBlocks rows={rows} copy={c} schoolName={school.formalName} />

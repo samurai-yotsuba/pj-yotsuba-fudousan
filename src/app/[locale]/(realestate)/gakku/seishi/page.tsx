@@ -8,6 +8,7 @@ import { getRequestLocale } from "@/lib/getRequestLocale";
 import { SchoolDistrictPage } from "@/components/gakku/SchoolDistrictPage";
 import { findSchoolBySlug } from "@/lib/school-district";
 import { gakkuCopy } from "@/lib/gakku";
+import { districtSummaryBySlug } from "@/lib/school-district-summary";
 
 const SLUG = "seishi";
 /** 本ページを公開するロケール（hreflang・sitemap と一致させる） */
@@ -21,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
     businessKey: "realestate",
     title: c.school.titleTemplate.replace("{school}", name),
-    description: c.school.districtH2.replace("{school}", name) + " " + c.disclaimer,
+    description: districtSummaryBySlug(locale, SLUG),
     path: `/gakku/${SLUG}`,
     locale,
     availableLocales: PAGE_LOCALES,

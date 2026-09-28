@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 import { getRequestLocale } from "@/lib/getRequestLocale";
 import { getPublishedProperties } from "@/lib/properties";
 import { getSchoolRentalMarket, getSchoolRentalSummaries } from "@/lib/school-rental-feed-store";
-import { findSchoolBySlug, listDistrictRowsBySchool } from "@/lib/school-district";
+import { findSchoolBySlug } from "@/lib/school-district";
 import { schoolRentalLead, schoolRentalPath, schoolRentalShowsDistrict, schoolRentalTitle } from "@/lib/rental-school-district";
-import { districtSummary } from "@/lib/school-district-summary";
+import { districtSummaryBySlug } from "@/lib/school-district-summary";
 import { buildPageMetadata } from "@/lib/seo";
 import { SchoolRentalListings } from "@/components/gakku/SchoolRentalPages";
 
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const school = findSchoolBySlug((await params).school);
   if (!school) notFound();
   const locale = await getRequestLocale();
-  return buildPageMetadata({ businessKey: "realestate", title: schoolRentalTitle(school, locale), description: schoolRentalShowsDistrict(school.slug) ? districtSummary(locale, school.formalName, listDistrictRowsBySchool(school.slug).length) : schoolRentalLead(school, locale), path: schoolRentalPath(school.slug), locale, availableLocales: ["ja", "en", "zh-tw", "zh"] });
+  return buildPageMetadata({ businessKey: "realestate", title: schoolRentalTitle(school, locale), description: schoolRentalShowsDistrict(school.slug) ? districtSummaryBySlug(locale, school.slug) : schoolRentalLead(school, locale), path: schoolRentalPath(school.slug), locale, availableLocales: ["ja", "en", "zh-tw", "zh"] });
 }
 
 export default async function Page({ params }: Props) {
