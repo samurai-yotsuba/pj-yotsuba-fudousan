@@ -14,7 +14,11 @@ import { BCP47_BY_LOCALE, canonicalUrl } from "@/lib/seo";
 import { Faq } from "@/components/shared/Faq";
 import { buildPropertyItemListJsonLd } from "@/lib/property-jsonld";
 import { SCHOOL_RENTAL_HUB_FAQ } from "@/lib/rental-school-hub-faq";
-import { SCHOOL_RENTAL_COPY, SCHOOL_RENTAL_FAQ, SCHOOL_RENTAL_INDEX_PATH, schoolRentalLead, schoolRentalPath, schoolRentalTitle } from "@/lib/rental-school-district";
+import { DistrictTable } from "./DistrictSection";
+import { districtSummary } from "@/lib/school-district-summary";
+import { gakkuCopy } from "@/lib/gakku";
+import { listDistrictRowsBySchool } from "@/lib/school-district";
+import { SCHOOL_RENTAL_COPY, SCHOOL_RENTAL_FAQ, SCHOOL_RENTAL_INDEX_PATH, schoolRentalLead, schoolRentalPath, schoolRentalShowsDistrict, schoolRentalTitle } from "@/lib/rental-school-district";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { PropertyCard } from "@/components/bukken/PropertyCard";
@@ -81,6 +85,7 @@ export function SchoolRentalListings({ school, properties, locale, summaries = [
         <RentalFeeHubLink locale={locale} empty={stats.fee033Listings === 0} />
         <DistrictSourceNote locale={locale} />
       </header>
+      {schoolRentalShowsDistrict(school.slug) && <SchoolDistrictSection school={school} locale={locale} />}
       {listings.length ? <ul className="mt-6 space-y-3">{listings.map(p => <li key={p.slug}><PropertyCard p={p} locale={locale} /></li>)}</ul>
         : !schoolSummaries.length && <p className="mt-6 rounded-xl border border-border p-6 leading-relaxed text-text">{c.empty}</p>}
       <RentalComparison rows={schoolSummaries} locale={locale} market={market} listedTotal={listedRentalTotal(allGroups, summaries)} />
@@ -115,6 +120,22 @@ export function schoolRentalListItems(listings: PublicProperty[], summaries: Pub
 }
 
 /** 学区別賃貸の FAQ（表示と FAQPage JSON-LD を同じ items から出す＝完全一致）。PR-3 */
+const DISTRICT_TABLE_LABEL: Record<LangCode, string> = { ja: "通学区域の表（{n}行）", en: "District table ({n} rows)", "zh-tw": "通學區域表（{n}列）", zh: "通学区域表（{n}行）" };
+/** 16校の学区賃貸ページ上部：「〇〇小学校の通学区域はどこまで？」への直答と、区の公表表（2026-09-28）。行が多い学校は閉じておく（本文はHTMLに含まれる）。 */
+function SchoolDistrictSection({ school, locale }: { school: SchoolInfo; locale: LangCode }) {
+  const gc = gakkuCopy(locale);
+  const rows = listDistrictRowsBySchool(school.slug);
+  if (!rows.length) return null;
+  return <section id="district" className="mt-6">
+    <h2 className="font-serif text-xl font-semibold text-ink">{gc.school.districtH2.replace("{school}", school.formalName)}</h2>
+    <p className="mt-3 rounded-xl border border-border bg-surface-dim p-4 text-sm leading-relaxed text-text">{districtSummary(locale, school.formalName, rows.length)}</p>
+    <details open={rows.length <= 12} className="mt-3 rounded-xl border border-border p-4">
+      <summary className="cursor-pointer text-sm font-semibold text-primary">{DISTRICT_TABLE_LABEL[locale].replace("{n}", String(rows.length))}</summary>
+      <DistrictTable rows={rows} copy={gc} />
+    </details>
+  </section>;
+}
+
 /** ハブ（/gakku/rentals）だけ、学区で借りるご家族向けのQAを足す。学校別20ページは基本の3問のみ（重複回避）。 */
 function SchoolRentalFaq({ locale, hub = false }: { locale: LangCode; hub?: boolean }) {
   const f = SCHOOL_RENTAL_FAQ[locale];
