@@ -6,8 +6,13 @@ type Props = {
   alt: string;
   width: number;
   height: number;
-  /** 表示幅の目安。これを基に画面幅に合った縮小版が選ばれる */
-  sizes: string;
+  /**
+   * 表示幅の目安。これを基に画面幅に合った縮小版が選ばれる。
+   * 固定幅の小さなサムネイルでは省略する（srcset が 1x/2x の2本だけになる）。
+   * 2026-09-28：一覧の125件すべてに sizes="128px" を付けると srcset が17本ずつになり、
+   * /bukken の HTML が1.3MB（うち img タグ56万字）まで膨らんで描画が約4秒遅れていた。
+   */
+  sizes?: string;
   className?: string;
   loading?: "eager" | "lazy";
   fetchPriority?: "high" | "low" | "auto";

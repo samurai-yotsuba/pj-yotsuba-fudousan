@@ -22,12 +22,12 @@ export function PropertyCard({ p, locale }: { p: PublicProperty; locale: LangCod
     >
       {hero ? (
         // 2026-09-23：128px の枠に元写真（最大3.8MB）を読み込んでいた。next/image で縮小配信する
+        // 2026-09-28：固定幅なので sizes を付けない＝srcset は 1x/2x の2本（一覧のHTML肥大の是正）
         <PropertyImage
           src={hero.url}
           alt={localizedImageAlt(hero, p.title, locale)}
-          width={160}
-          height={120}
-          sizes="128px"
+          width={128}
+          height={96}
           className="h-24 w-32 flex-shrink-0 rounded-lg object-cover"
         />
       ) : (

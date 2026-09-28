@@ -49,7 +49,11 @@ export function ColumnArticleHero({ date, category, title, illustration }: Props
               src={illustration.src}
               alt={illustration.alt}
               fill
-              fetchPriority="high"
+              // 2026-09-28：この画像はコラムのLCP。next/image の fill は既定で遅延読み込み（lazy）になり、
+              // fetchPriority="high" と矛盾して読み込み開始が約1.5秒遅れていた（Lighthouse実測）。
+              // サービスページのヒーロー（#417）と同じく preload＋quality 60 に揃える。
+              preload
+              quality={60}
               sizes="(max-width: 1023px) calc(100vw - 2rem), 42vw"
               className="object-cover"
             />
@@ -61,6 +65,7 @@ export function ColumnArticleHero({ date, category, title, illustration }: Props
               alt={illustration.alt}
               width={1600}
               height={900}
+              loading="eager"
               fetchPriority="high"
               className="h-full w-full object-cover"
             />
