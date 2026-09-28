@@ -6,11 +6,14 @@ import { spawnSync } from "node:child_process";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
+  DEFAULT_MAX_TOKENS,
+  DEFAULT_MODEL,
   NAMED_TERMS_DEFAULT,
   RESULTS_HEADER,
   SUMMARY_HEADER,
   buildRequest,
   csvLine,
+  describeHttpError,
   detectAnomaly,
   isOwnHost,
   isOwnUrl,
@@ -19,6 +22,7 @@ import {
   parseCsv,
   parseResponse,
   renderWeeklyMd,
+  retryableStatus,
   stripEcho,
   summarize,
 } from "../../../scripts/ai-visibility/lib.mjs";
@@ -34,7 +38,7 @@ const fixtures = JSON.parse(readFileSync(join(DIR, "fixtures", "mock-gemini.json
 const q = (id: string) => qset.questions.find((x) => x.id === id)!;
 
 type Chunk = { index: number; uri: string; title: string; host: string; resolvedUrl: string; supported: boolean };
-type Parsed = { text: string; chunks: Chunk[]; searchQueries: string[]; finishReason: string };
+type Parsed = { text: string; chunks: Chunk[]; searchQueries: string[]; finishReason: string; usage: { tokensIn: number; tokensOut: number; tokensThought: number } };
 
 /** fixture → parseResponse → （mock と同じく）title からホストを補う */
 function parsed(id: string): Parsed {
@@ -177,11 +181,36 @@ describe("stripEcho・ホスト判定", () => {
 });
 
 describe("リクエスト・CSV・集計・異常検知", () => {
-  it("buildRequest は Google 検索グラウンディングを付け、設問をそのまま渡す", () => {
+  it("buildRequest は Google 検索グラウンディングを付け、設問をそのまま渡す（上限3072・思考low が既定、env で上書き可）", () => {
     const r = buildRequest("誠之小学校の学区で賃貸マンションを探しています。");
     expect(r.tools).toEqual([{ google_search: {} }]);
     expect(r.contents[0].parts[0].text).toBe("誠之小学校の学区で賃貸マンションを探しています。");
     expect(r.generationConfig.temperature).toBeLessThanOrEqual(0.3);
+    expect(r.generationConfig.maxOutputTokens).toBe(DEFAULT_MAX_TOKENS);
+    expect(DEFAULT_MAX_TOKENS).toBeGreaterThan(2048); // 初回計測で 2048 だと 24/30 が途中で切れた
+    expect(r.generationConfig.thinkingConfig).toEqual({ thinkingLevel: "low" });
+    const r2 = buildRequest("q", { maxOutputTokens: 4096, thinkingLevel: "none" });
+    expect(r2.generationConfig.maxOutputTokens).toBe(4096);
+    expect(r2.generationConfig).not.toHaveProperty("thinkingConfig");
+    expect(DEFAULT_MODEL).toBe("gemini-3.8-flash");
+  });
+  it("parseResponse は usageMetadata からトークン数を取り、出力には思考トークンを含める", () => {
+    const p = parsed("q01");
+    expect(p.usage).toEqual({ tokensIn: 800, tokensOut: 2200, tokensThought: 400 });
+    expect(parseResponse({}).usage).toEqual({ tokensIn: 0, tokensOut: 0, tokensThought: 0 });
+  });
+  it("再試行は混雑・一時障害だけ。課金切れ(402)・鍵の誤り(401/403)・入力の誤り(400/404)は即時に諦め、原因を一文で示す", () => {
+    for (const s of [429, 500, 502, 503, 504]) expect(retryableStatus(s)).toBe(true);
+    for (const s of [400, 401, 402, 403, 404]) expect(retryableStatus(s)).toBe(false);
+    const body402 = JSON.stringify({ error: { code: 402, message: "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing.", status: "RESOURCE_EXHAUSTED" } });
+    const d = describeHttpError(402, body402);
+    expect(d).toContain("HTTP 402");
+    expect(d).toContain("前払い残高が0");
+    expect(d).toContain("aistudio.google.com/billing");
+    expect(d).toContain("prepayment credits are depleted");
+    expect(describeHttpError(401, "not json")).toContain("鍵が無効");
+    expect(describeHttpError(418, "")).toBe("HTTP 418");
+    expect(describeHttpError(429, "{}").length).toBeLessThan(200);
   });
   it("CSV はカンマ・引用符・改行を往復できる", () => {
     const header = ["a", "b", "c"];
@@ -196,9 +225,9 @@ describe("リクエスト・CSV・集計・異常検知", () => {
   });
   it("summarize は欠測を数え、分類別に引用・名指しを出す", () => {
     const questions = [{ id: "q01", cat: "A" }, { id: "q02", cat: "A" }, { id: "q03", cat: "B" }];
-    const records = [{ qid: "q01", measured: 1, cite: 1, named: 1 }, { qid: "q02", measured: 0 }];
+    const records = [{ qid: "q01", measured: 1, cite: 1, named: 1, finish: "MAX_TOKENS", tokensIn: 700, tokensOut: 2000 }, { qid: "q02", measured: 0, tokensIn: 10, tokensOut: 0 }];
     const s = summarize(records, questions, { date: "2026-09-28", engine: "mock", model: "m", durationS: 3 });
-    expect(s).toMatchObject({ n: 3, measured: 1, cite_total: 1, named_total: 1, cite_by_cat: "A:1/2 B:0/1", named_by_cat: "A:1/2 B:0/1", cite_qids: "q01", missing_qids: "q02 q03" });
+    expect(s).toMatchObject({ n: 3, measured: 1, cite_total: 1, named_total: 1, cite_by_cat: "A:1/2 B:0/1", named_by_cat: "A:1/2 B:0/1", cite_qids: "q01", missing_qids: "q02 q03", tokens_in: 710, tokens_out: 2000, truncated: 1 });
   });
   it("detectAnomaly：欠測2割超、または直近中央値から引用5以上減で異常", () => {
     const hist = (cites: number[]) => cites.map((c, i) => ({ date: `2026-09-${String(10 + i).padStart(2, "0")}`, n: "30", measured: "30", cite_total: String(c) }));
@@ -257,8 +286,12 @@ describe("measure.mjs（モック通し実行）", () => {
       expect(results.find((r) => r.qid === "q01")?.cite_rank).toBe("2");
       const summary = parseCsv(readFileSync(join(out, "summary.csv"), "utf8"));
       expect(summary).toHaveLength(1);
-      expect(summary[0]).toMatchObject({ engine: "mock", n: "30", measured: "30", cite_total: "3", named_total: "2" });
-      expect(readFileSync(join(out, "latest.md"), "utf8")).toContain("測定 30/30・引用 3・名指し 2");
+      expect(summary[0]).toMatchObject({ engine: "mock", n: "30", measured: "30", cite_total: "3", named_total: "2", truncated: "0" });
+      expect(Number(summary[0].tokens_out)).toBeGreaterThan(0);
+      expect(results.find((r) => r.qid === "q01")).toMatchObject({ tokens_in: "800", tokens_out: "2200" });
+      const latest = readFileSync(join(out, "latest.md"), "utf8");
+      expect(latest).toContain("測定 30/30・引用 3・名指し 2");
+      expect(latest).toContain("トークン 入力");
       expect(readFileSync(join(out, "weekly.md"), "utf8")).toContain("## 引用が0のまま");
       expect(existsSync(join(out, "anomaly.md"))).toBe(false);
       const detail = readFileSync(join(out, "detail", `${summary[0].date}.jsonl`), "utf8").trim().split("\n");
@@ -272,8 +305,9 @@ describe("measure.mjs（モック通し実行）", () => {
 
 describe("ワークフローと配線", () => {
   const wf = readFileSync(join(ROOT, ".github", "workflows", "ai-visibility.yml"), "utf8");
-  it("毎日 22:30 JST に動き、鍵は Secrets から渡し、結果を tasks/ai-visibility-v2 にコミットする", () => {
-    expect(wf).toContain('cron: "30 13 * * *"');
+  it("手動実行のみ（自動スケジュールなし＝費用を前払い残高の範囲に抑える）。鍵は Secrets から渡し、結果を tasks/ai-visibility-v2 にコミットする", () => {
+    expect(wf).not.toMatch(/^\s*schedule:/m);
+    expect(wf).not.toContain("cron:");
     expect(wf).toContain("secrets.GEMINI_API_KEY");
     expect(wf).toContain("tasks/ai-visibility-v2");
     expect(wf).toContain("workflow_dispatch");

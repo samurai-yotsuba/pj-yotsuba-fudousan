@@ -1,20 +1,19 @@
 # AI可視性 定点計測 v2（2026-09-28）
 # Gemini API＋Google検索グラウンディングで30問を測り、結果を tasks/ai-visibility-v2/ に追記して main へ直接 push する。
 # 旧方式（Macの測定用Chrome・launchd com.yotsuba.ai-visibility）の後継。ブラウザ・ログイン・Macの状態に依存しない。
+# 運用：月1回の手動実行（浦松判断 2026-09-29・費用を前払い残高の範囲に抑えるため）。自動スケジュールは持たない。
 # 設計：四葉基幹CRM/設計_AI可視性計測v2_20260928.md ／ 手順：scripts/ai-visibility/README.md
 name: AI Visibility v2
 
 on:
-  schedule:
-    - cron: "30 13 * * *"   # 22:30 JST 毎日
-  workflow_dispatch:
+  workflow_dispatch:   # 手動のみ（Actions → AI Visibility v2 → Run workflow）。1回あたり約$0.2〜0.5
     inputs:
       limit:
         description: "試運転：先頭N問だけ測る（書き込みなし）"
         required: false
         default: ""
       weekly:
-        description: "週次要約も作る（通常は月曜に自動）"
+        description: "直近7回ぶんの要約（weekly.md）も作って Issue にする"
         type: boolean
         default: false
 
@@ -81,7 +80,7 @@ jobs:
             --title "【AI可視性v2】異常検知 ${{ steps.measure.outputs.date }}（${{ steps.measure.outputs.headline }}）" \
             --body-file /tmp/issue.md
 
-      - name: 週次要約を Issue で共有（月曜）
+      - name: 要約を Issue で共有（weekly 指定時）
         if: ${{ inputs.limit == '' && steps.measure.outputs.weekly == 'true' }}
         env:
           GH_TOKEN: ${{ github.token }}
