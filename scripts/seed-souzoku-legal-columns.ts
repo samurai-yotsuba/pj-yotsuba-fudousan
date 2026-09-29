@@ -793,6 +793,19 @@ const REQUIRED_HUB_LINKS: Record<string, string[]> = {
     "/legal/column/houtei-souzoku-jouhou-ichiran-zu",
     "/legal/column/isan-bunkatsu-kyougisho",
   ],
+  "drone-hikou-kyoka-shonin-koukuho-jitsumu": [
+    "/legal/services",
+    "/legal/nagare",
+    "/legal/ryokin",
+  ],
+  "kika-shinsei-yoken-kokusekiho-chuka-taiwan": [
+    "/legal/services",
+    "/legal/nagare",
+    "/legal/ryokin",
+    "/legal/column/keieikanri-zairyu-chuka-kigyousha-kaisha-setsuritsu",
+    "/legal/column/souzoku-kaigai-gaikokuseki",
+    "/legal/column/gaikoku-kankei-shomen-ninsho-apostille-koushou-tsukaiwake",
+  ],
 };
 
 /** 表示コンプライアンス上の禁止語 */
@@ -2589,6 +2602,31 @@ const REQUIRED_PHRASES: Record<string, string[]> = {
     "独立した事業体",
     "紹介料を受け取りません",
   ],
+  "drone-hikou-kyoka-shonin-koukuho-jitsumu": [
+    "無人航空機",
+    "航空法第132条の85",
+    "航空法第132条の86",
+    "機体認証",
+    "技能証明",
+    "包括申請",
+    "電波法",
+    "別事業体",
+    "独立した事業体",
+    "紹介料を受け取りません",
+  ],
+  "kika-shinsei-yoken-kokusekiho-chuka-taiwan": [
+    "国籍法第5条",
+    "国籍法第6条",
+    "重国籍防止",
+    "素行",
+    "生計",
+    "法務局",
+    "官報",
+    "本人が出頭",
+    "別事業体",
+    "独立した事業体",
+    "紹介料を受け取りません",
+  ],
 };
 
 /** 記事ごとに含めてはならない表現 */
@@ -2719,6 +2757,8 @@ const FORBIDDEN_PHRASES: Record<string, string[]> = {
   "souzoku-hoki-go-kanri-gimu-940jo-2023": [],
   "houkago-jido-club-kaisetsu-todokede-setsubi-kijun": [],
   "gaikokuseki-hisouzokunin-junkyoho-tsusokuho-36jo": [],
+  "drone-hikou-kyoka-shonin-koukuho-jitsumu": [],
+  "kika-shinsei-yoken-kokusekiho-chuka-taiwan": [],
 };
 
 /** 本セット外へ張る既存legalコラムslug（リポジトリの他シードで実在確認済み） */
@@ -4887,6 +4927,58 @@ const ARTICLES: Array<{
       "通則法",
       "反致",
       "本国法",
+      "行政書士",
+    ],
+  },
+  {
+    file: "90-drone-hikou-kyoka-shonin-koukuho-jitsumu.md",
+    slug: "drone-hikou-kyoka-shonin-koukuho-jitsumu",
+    date: "2026-09-29",
+    title: "ドローンを仕事で飛ばすには何の許可・承認が要る？航空法の飛行許可・承認と機体登録",
+    category: "許認可の手続き（行政書士の実務から）",
+    excerpt:
+      "仕事でドローン（無人航空機）を飛ばすには、機体の登録（100グラム以上は2022年6月20日から義務）と、決められた空域・方法で飛ばすときの飛行の許可・承認（航空法第132条の85・第132条の86）が、別々の制度として必要です。禁止空域と飛行の方法、包括申請と個別申請、飛行マニュアル・技能証明・機体認証、DIPS2.0、そして無線（電波法・総務省）・保険・事故対応を誰に振るかを、行政書士の実務から整理しました。",
+    keywords: [
+      "ドローン 飛行 許可 承認 航空法",
+      "無人航空機 機体登録 100g",
+      "航空法132条の85 132条の86",
+      "ドローン 包括申請 個別申請",
+      "ドローン 業務 許可 行政書士",
+      "ドローン 電波法 技適 無線局免許",
+    ],
+    tags: [
+      "ドローン",
+      "無人航空機",
+      "航空法",
+      "飛行許可",
+      "機体登録",
+      "許認可",
+      "行政書士",
+    ],
+  },
+  {
+    file: "91-kika-shinsei-yoken-kokusekiho-chuka-taiwan.md",
+    slug: "kika-shinsei-yoken-kokusekiho-chuka-taiwan",
+    date: "2026-09-29",
+    title: "帰化して日本国籍を取るには何が要る？国籍法の要件と手続（中国・台湾の方向け）",
+    category: "許認可の手続き（行政書士の実務から）",
+    excerpt:
+      "帰化は外国籍の人が申請して日本国籍を取得する制度で、法務大臣の許可が必要です（国籍法第4条）。普通帰化の6要件（住所・能力・素行・生計・重国籍防止・憲法遵守／国籍法第5条）、簡易帰化（第6条〜第8条）、中国大陸（公証書）と台湾（戸籍関係書類）で用意する本国書類の違い、本人が法務局に出頭する手続の流れ、在留資格・相続・登記の振り分けを行政書士の実務から整理しました。",
+    keywords: [
+      "帰化 要件 国籍法 中国 台湾",
+      "帰化 永住 違い",
+      "国籍法第5条 帰化 条件",
+      "帰化 必要書類 中国 台湾",
+      "帰化 法務局 本人出頭 行政書士",
+      "重国籍防止 帰化 中国国籍法",
+    ],
+    tags: [
+      "帰化",
+      "国籍法",
+      "日本国籍",
+      "中国",
+      "台湾",
+      "在留資格",
       "行政書士",
     ],
   },
