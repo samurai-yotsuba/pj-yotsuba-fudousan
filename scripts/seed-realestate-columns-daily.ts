@@ -1976,6 +1976,46 @@ const ARTICLES: ArticleSpec[] = [
     localesWithTranslations: ["en", "zh-tw", "zh"],
     hubLinks: ["/toushi"],
   },
+  {
+    file: "97-jidosha-shitei-seibi-minkan-shaken-bukken-setsubi.md",
+    slug: "jidosha-shitei-seibi-minkan-shaken-bukken-setsubi",
+    title: "民間車検場（指定自動車整備事業）にできる物件は？認証工場との違いと設備・敷地要件",
+    publishedAt: "2026-09-30",
+    category: "投資・事業用不動産",
+    excerpt:
+      "民間車検場（指定自動車整備事業、道路運送車両法第94条の2）にできる物件は、①まず認証工場の要件を満たすこと②完成検査場（検査ラインが取れる長さ・天井高）が取れる敷地か③ブレーキテスタ等の検査用機械器具を据えられる床・電源か、の3点で決まります。指定は地方運輸局長が行い、自動車検査員の選任も要ります。認証工場より一段重い要件を、東京都文京区の宅地建物取引士兼行政書士が道路運送車両法・指定自動車整備事業規則・建築基準法の条文から契約前に確認できる形で整理します。",
+    keywords: [
+      "民間車検場 物件",
+      "指定自動車整備事業 第94条の2 指定",
+      "指定工場 認証工場 違い",
+      "完成検査場 検査ライン 面積 天井高",
+      "自動車検査員 保安基準適合証",
+    ],
+    tags: ["事業用不動産", "許認可", "用途地域", "自動車整備"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/toushi", "/office"],
+  },
+  {
+    file: "98-souzoku-kubun-shoyu-office-tenant-baikyaku.md",
+    slug: "souzoku-kubun-shoyu-office-tenant-baikyaku",
+    title: "相続した「区分所有オフィス（テナント1室）」を売るには？賃貸借の承継と管理組合の実務",
+    publishedAt: "2026-09-30",
+    category: "相続",
+    excerpt:
+      "相続した賃貸中の区分所有オフィス（テナント1室）は、賃貸人たる地位も含めて相続人が当然に承継します（民法第896条）。売るときは買主に賃貸人たる地位が移り、テナントに対抗するには所有権移転登記が要ります（民法第605条の2）。売る前に確認するのは、管理規約で事業用に使えるか・管理費と修繕積立金の滞納がないか・テナント契約の中身の3点。住宅マンションより買主が限られ価格は賃料（利回り）で決まりやすい点まで、東京都文京区の宅地建物取引士兼行政書士が区分所有法・民法・不動産登記法の条文から整理します。",
+    keywords: [
+      "区分所有 オフィス 相続 売却",
+      "賃貸中 テナント 相続 承継",
+      "賃貸人たる地位の移転 民法605条の2",
+      "区分所有法 管理費 修繕積立金 滞納 承継",
+      "相続登記 義務化 2024 オーナーチェンジ",
+    ],
+    tags: ["相続", "区分所有", "事業用不動産", "売却"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/souzoku"],
+  },
 ];
 
 function toPlainText(md: string): string {

@@ -23812,5 +23812,363 @@ export const LABOR_COLUMNS_SEED: LaborSeedColumn[] = [
         ]
       }
     }
+  },
+  {
+    "business": "labor",
+    "slug": "jikantan-nenkyu-dounyu-roushi-kyotei-shugyokisoku",
+    "title": "時間単位の年次有給休暇を導入するには？労使協定と就業規則、5日取得義務との関係",
+    "date": "2026-09-30",
+    "category": "手続と期限",
+    "excerpt": "時間単位の年次有給休暇は、労使協定を結べば年5日分を限度に時間を単位として取得させられる制度です（労働基準法第39条第4項）。労使協定で対象者の範囲・日数（5日以内）・1日分の時間数などを定め（同項各号・労働基準法施行規則第24条の4）、分単位や1日の所定労働時間を超える設定はできません。注意点は、年5日の取得義務（同条第7項）に時間単位で取った分は充当できないこと。半日単位年休との違い、労使協定の中身、就業規則への書き方、導入時のつまずきを、社会保険労務士の観点で整理します。",
+    "content": "**結論（先に要点）**：時間単位の年次有給休暇は、**労使協定を結べば、年5日分を限度に、時間を単位として**取得させられる制度です（労働基準法第39条第4項）。労使協定で「対象者の範囲」「日数（5日以内）」「1日分の時間数」などを定める必要があり（同項各号・労働基準法施行規則第24条の4）、**分単位や、1日の所定労働時間を超える設定はできません**。注意したいのは、**年5日の取得義務（同条第7項）には、時間単位で取った分を含められない**点です。この記事では、半日単位との違い、労使協定に定める中身、5日取得義務との関係、就業規則への書き方、導入時のつまずきを整理します。\n\n「通院や子どもの学校行事で、1日休むほどではないが数時間だけ抜けたい」——そうした事情に応えるのが時間単位年休です。このページは、中小企業の総務担当・経営者の方に向けて、制度の輪郭と、導入の手順、運用でつまずきやすい点を整理します。個別の制度設計の最終判断はこの記事の範囲外です。\n\n## 時間単位年休とは？半日単位年休とどう違う？\n\n時間単位年休は、年次有給休暇を**1時間単位など時間を単位として**取得できるようにする制度です。労働者の請求により、**年5日分を限度**として与えられます（労働基準法第39条第4項）。通院・役所の手続き・家庭の用事など、1日単位では使いにくい場面に対応できます。\n\nよく混同されるのが「半日単位年休」です。両者は根拠も手続きも違います。\n\n| | 時間単位年休 | 半日単位年休 |\n|---|---|---|\n| 法的根拠 | 労働基準法第39条第4項（明文の制度） | 法律に明文なし（行政解釈・運用で許容） |\n| 労使協定 | **必要** | 不要（就業規則等で導入できる） |\n| 上限 | **年5日分まで** | 明文の上限なし |\n| 取得単位 | 1時間単位など（分単位は不可） | 半日（午前・午後など） |\n| 年5日の取得義務への充当 | **できない** | 0.5日として充当できる |\n\nつまり、時間単位年休は「細かく使える代わりに、労使協定と5日の上限がある」制度、半日単位年休は「協定なしで導入しやすいが、単位が半日どまり」の運用、と整理できます。\n\n## 導入に必要な労使協定には何を定める？\n\n時間単位年休を導入するには、事業場の過半数労働組合（なければ過半数代表者）との**書面による労使協定**が必要です（労働基準法第39条第4項）。協定で定める事項は、法律と施行規則に分かれています。\n\n| 定める事項 | 根拠 | 中身 |\n|---|---|---|\n| 対象労働者の範囲 | 法第39条第4項第1号 | 誰に時間単位年休を認めるか |\n| 時間単位で与える日数 | 法第39条第4項第2号 | **5日以内**に限る |\n| 1日分に相当する時間数 | 施行規則第24条の4第1号 | 1日の所定労働時間数を基準に定める（時間に満たない端数は1時間に切り上げる） |\n| 1時間以外を単位とする場合の時間数 | 施行規則第24条の4第2号 | 2時間単位などとする場合の設定（1日の所定労働時間数を超えないこと） |\n\n労使協定は所轄の労働基準監督署へ届け出る必要はありませんが、就業規則には別途、時間単位年休に関する定めを置くことになります（後述）。**分単位（30分単位など）での付与は認められません**。最小単位は1時間で、それ以上は整数の時間で定めます。\n\n## 年5日の取得義務に時間単位年休は含められる？\n\nこれが最もつまずきやすい点です。年10日以上の年次有給休暇が付与される労働者には、使用者が**年5日を時季指定して取得させる義務**があります（労働基準法第39条第7項、2019年4月施行）。この5日に、**時間単位で取得した年休は充当できません**。半日単位年休は0.5日として数えられますが、時間単位年休は、たとえ合計で数日分を時間単位で消化していても、5日の取得義務の計算には入れない取り扱いです。\n\nしたがって、時間単位年休を手厚く使っている労働者でも、**「1日単位（または半日単位）で年5日」は別に確保させる**必要があります。制度を導入するときは、この二本立てを前提に取得状況を管理してください。年5日取得義務の詳細は、別記事の[年5日の取得義務と2年時効](/labor/column/nenji-yukyu-5nichi-torikirenai)で整理しています。\n\n## 就業規則にはどう書けばよい？\n\n時間単位年休は、労働条件に関する事項として**就業規則への記載が必要**です。労使協定で骨格（対象者・日数・1日分の時間数など）を定めたうえで、就業規則には少なくとも次を落とし込みます。\n\n- 時間単位年休を付与する旨と、その対象者\n- 取得できる日数の上限（年5日分の範囲内であること）\n- 1日分に相当する時間数、取得の単位（1時間単位など）\n- 請求の手続き（いつまでに、どのように申し出るか）\n\n就業規則の作成・変更（常時10人以上の事業場は届出義務）と、労使協定の締結は、社会保険労務士の業務です。既存の年次有給休暇規程との整合（半日単位年休を併用している場合の関係など）もあわせて点検するのが安全です。\n\n## 導入時によくあるトラブルは？\n\n制度はシンプルでも、運用では次のような点でつまずきがちです。\n\n| つまずき | 整理 |\n|---|---|\n| 計画的付与に組み込もうとする | 時間単位年休は**計画的付与（計画年休）の対象にできない**とされています。計画年休は日単位が前提です |\n| 5日の取得義務に充当してしまう | 前述のとおり、時間単位年休は年5日の取得義務に**含められません** |\n| 分単位で運用する | 最小単位は1時間。30分単位などは認められません |\n| 時季変更権で単位を変える | 使用者の時季変更権はありますが、労働者が請求した「時間単位」を「1日単位」に変えるような、単位そのものの変更はできないと解されています |\n| 残時間の管理が煩雑になる | 「日」と「時間」が混在するため、残日数・残時間の管理台帳や勤怠システムの整備が要ります |\n\n導入の目的（柔軟な休みやすさ）を活かすには、制度を作るだけでなく、**残時間を正しく管理できる仕組み**までをセットで整えることが大切です。\n\n## 四葉社会保険労務士事務所は、何ができますか？\n\n文京区小日向の四葉社会保険労務士事務所は、**時間単位年休の労使協定の作成、就業規則・年次有給休暇規程への反映、既存の半日単位年休との整合の点検、残日数・残時間の管理の仕組みづくり**をお受けします。**ご相談は無料です。** 費用は[報酬額表](/labor/ryokin)をご覧ください。\n\nなお、未取得や取得妨害をめぐって紛争になっている場合は、弁護士へ直接ご依頼いただく形をご案内します。当事務所は紹介料を受け取りません。\n\n## よくある質問\n\n**Q. 時間単位年休は、必ず導入しなければなりませんか？**\nA. いいえ。時間単位年休の導入は義務ではありません。導入する場合に労使協定と就業規則の定めが必要になる、という制度です。自社の働き方に合うかを検討したうえで、導入の可否を決めてください。\n\n**Q. 1日の所定労働時間が7時間30分の場合、1日分は何時間になりますか？**\nA. 時間に満たない端数は1時間に切り上げます（労働基準法施行規則第24条の4第1号）。したがって7時間30分の場合、時間単位年休の「1日分」は8時間として扱います。労使協定でこの時間数を定めます。\n\n**Q. 時間単位年休を年5日の取得義務に使うことはできますか？**\nA. できません。年5日の取得義務（労働基準法第39条第7項）に充当できるのは1日単位・半日単位の取得で、時間単位で取得した分は含められない取り扱いです。時間単位年休とは別に、年5日を確保させる必要があります。\n\n**Q. パートタイム労働者も時間単位年休の対象にできますか？**\nA. 対象者の範囲は労使協定で定めます。年次有給休暇が付与されている労働者であれば、雇用形態にかかわらず対象に含めることができます。付与日数が少ない場合でも、その範囲内で年5日分を上限に設定します。\n\n## この記事の根拠\n\n- 労働基準法（昭和22年法律第49号）第39条第4項（時間単位年休。労使協定により年5日を限度に時間を単位として付与できる旨と、第1号・第2号の協定事項）、第39条第7項（年5日の時季指定義務）\n- 労働基準法施行規則（昭和22年厚生省令第23号）第24条の4（法第39条第4項第3号の厚生労働省令で定める事項＝1日分の時間数・1時間以外を単位とする場合の時間数）\n- 時間単位年休の制度は、改正労働基準法（平成20年法律第89号）により2010年（平成22年）4月1日から施行。年5日の時季指定義務は2019年4月1日施行\n- 時間単位年休が年5日の取得義務に充当できないこと、計画的付与の対象にできないこと、半日単位年休が0.5日として充当できることは、厚生労働省・都道府県労働局の公表資料（「働き方・休み方改善ポータルサイト」時間単位の年次有給休暇制度、年次有給休暇の時季指定義務リーフレット等）により確認しています（2026年9月参照）\n- 条文番号・単位・上限日数は、e-Gov法令検索および厚生労働省の公表資料により確認しています\n\n本記事は一般的な情報提供です。個別のご事情に応じた判断は、面談のうえ資格者が行います。執筆は[浦松丈二](/about/uramatsu)（社会保険労務士・行政書士・宅地建物取引士）です。",
+    "status": "published",
+    "author": {
+      "name": "浦松 丈二",
+      "title": "社会保険労務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+    },
+    "keywords": [
+      "時間単位年休 導入",
+      "時間単位 年次有給休暇 労使協定",
+      "労働基準法 39条4項 時間単位",
+      "時間単位年休 5日 取得義務 含める",
+      "半日単位年休 違い",
+      "時間単位年休 就業規則"
+    ],
+    "tags": [
+      "年次有給休暇",
+      "時間単位年休",
+      "労働基準法",
+      "労務管理",
+      "労使協定"
+    ],
+    "locales": [],
+    "faq": [
+      {
+        "question": "時間単位年休は、必ず導入しなければなりませんか？",
+        "answer": "いいえ。時間単位年休の導入は義務ではありません。導入する場合に労使協定と就業規則の定めが必要になる、という制度です。自社の働き方に合うかを検討したうえで、導入の可否を決めてください。"
+      },
+      {
+        "question": "1日の所定労働時間が7時間30分の場合、1日分は何時間になりますか？",
+        "answer": "時間に満たない端数は1時間に切り上げます（労働基準法施行規則第24条の4第1号）。したがって7時間30分の場合、時間単位年休の「1日分」は8時間として扱います。労使協定でこの時間数を定めます。"
+      },
+      {
+        "question": "時間単位年休を年5日の取得義務に使うことはできますか？",
+        "answer": "できません。年5日の取得義務（労働基準法第39条第7項）に充当できるのは1日単位・半日単位の取得で、時間単位で取得した分は含められない取り扱いです。時間単位年休とは別に、年5日を確保させる必要があります。"
+      },
+      {
+        "question": "パートタイム労働者も時間単位年休の対象にできますか？",
+        "answer": "対象者の範囲は労使協定で定めます。年次有給休暇が付与されている労働者であれば、雇用形態にかかわらず対象に含めることができます。付与日数が少ない場合でも、その範囲内で年5日分を上限に設定します。"
+      }
+    ],
+    "translations": {
+      "en": {
+        "title": "How do you introduce paid leave taken in hourly units? The labour-management agreement, the work rules, and the link to the five-days obligation",
+        "excerpt": "Hourly-unit annual paid leave lets workers take leave in units of hours, up to five days' worth a year, once a labour-management agreement is concluded (Labor Standards Act, Article 39, paragraph 4). The agreement must set the scope of covered workers, the number of days (up to five), and the hours that make up one day (Article 39, paragraph 4, and Enforcement Regulations, Article 24-4); leave in units of minutes, or exceeding the daily scheduled hours, is not allowed. Note that leave taken in hourly units cannot be counted toward the annual five-days obligation (Article 39, paragraph 7).",
+        "content": "**In short:** Hourly-unit annual paid leave is a system that, once a **labour-management agreement** is concluded, lets workers take leave **in units of hours, up to five days' worth a year** (Labor Standards Act, Article 39, paragraph 4). The agreement must set the \"scope of covered workers,\" the \"number of days (up to five),\" the \"hours that make up one day,\" and so on (that paragraph and Enforcement Regulations of the Labor Standards Act, Article 24-4); **leave in units of minutes, or a setting that exceeds the daily scheduled hours, is not allowed**. What to watch is that **leave taken in hourly units cannot be counted toward the annual five-days obligation** (Article 39, paragraph 7). This article sets out the difference from half-day leave, what the agreement must contain, the link to the five-days obligation, how to write it into the work rules, and the pitfalls at introduction.\n\n\"I don't need a whole day off, but I'd like to step out for a few hours for a hospital visit or a child's school event\" — hourly-unit paid leave answers such needs. This page is for the general-affairs staff and owners of small and medium-sized companies, and sets out the outline of the system, the steps to introduce it, and the points that are easy to trip over in operation. The final judgment on designing a particular scheme is outside the scope of this article.\n\n## What is hourly-unit paid leave, and how does it differ from half-day leave?\n\nHourly-unit paid leave is a system that lets workers take annual paid leave **in units of hours, such as one hour at a time**. On the worker's request, it may be given **up to five days' worth a year** (Labor Standards Act, Article 39, paragraph 4). It fits situations that are hard to use in whole-day units, such as hospital visits, dealings with government offices, or family matters.\n\nIt is often confused with \"half-day leave.\" The two differ in both their basis and their procedure.\n\n| | Hourly-unit leave | Half-day leave |\n|---|---|---|\n| Legal basis | Labor Standards Act, Article 39, paragraph 4 (an express system) | No express provision in law (allowed by administrative interpretation and practice) |\n| Labour-management agreement | **Required** | Not required (can be introduced through the work rules) |\n| Cap | **Up to five days' worth a year** | No express cap |\n| Unit taken | One hour at a time, etc. (units of minutes not allowed) | Half a day (morning / afternoon, etc.) |\n| Counting toward the five-days obligation | **Cannot** | Can be counted as 0.5 day |\n\nIn short, hourly-unit leave is \"usable in small amounts, but comes with an agreement and a five-day cap,\" while half-day leave is \"easy to introduce without an agreement, but the unit stops at half a day.\"\n\n## What must the labour-management agreement set?\n\nTo introduce hourly-unit leave, a **written labour-management agreement** is needed with the labour union representing a majority at the workplace (or, if there is none, a person representing a majority of the workers) (Labor Standards Act, Article 39, paragraph 4). The items to set in the agreement are split between the Act and the Enforcement Regulations.\n\n| Item to set | Basis | Content |\n|---|---|---|\n| Scope of covered workers | Act, Article 39, paragraph 4, item 1 | To whom hourly-unit leave is allowed |\n| Number of days given in hourly units | Act, Article 39, paragraph 4, item 2 | Limited to **five days or fewer** |\n| Hours making up one day | Enforcement Regulations, Article 24-4, item 1 | Set on the basis of the daily scheduled hours (a fraction of less than an hour is rounded up to one hour) |\n| Hours when a unit other than one hour is used | Enforcement Regulations, Article 24-4, item 2 | The setting when using, say, two-hour units (must not exceed the daily scheduled hours) |\n\nThe labour-management agreement does not need to be filed with the Labour Standards Inspection Office with jurisdiction, but a separate provision on hourly-unit leave must be placed in the work rules (see below). **Granting leave in units of minutes (such as 30-minute units) is not allowed.** The minimum unit is one hour, and anything above that is set in whole hours.\n\n## Can hourly-unit leave be counted toward the five-days obligation?\n\nThis is the point most easily tripped over. For workers granted 10 or more days of annual paid leave, the employer is obliged to **have them take five days a year by designating the timing** (Labor Standards Act, Article 39, paragraph 7; in force since April 2019). Toward these five days, **leave taken in hourly units cannot be counted**. Half-day leave counts as 0.5 day, but hourly-unit leave — even if several days' worth has been used up in hourly units — is treated as not entering the calculation of the five-days obligation.\n\nSo even a worker who makes generous use of hourly-unit leave must **separately be made to take \"five days a year in whole-day (or half-day) units.\"** When you introduce the system, manage the take-up on the assumption of this two-track structure. The details of the five-days obligation are set out in our separate article, [The five-days obligation and the two-year prescription](/en/labor/column/nenji-yukyu-5nichi-torikirenai).\n\n## How should it be written into the work rules?\n\nAs a matter concerning working conditions, hourly-unit leave **must be stated in the work rules**. After setting the framework (covered workers, number of days, hours making up one day, etc.) in the labour-management agreement, at least the following are put into the work rules.\n\n- That hourly-unit leave is granted, and to whom\n- The cap on the number of days that can be taken (that it is within five days' worth a year)\n- The hours making up one day, and the unit of taking (one hour at a time, etc.)\n- The request procedure (by when and how to apply)\n\nDrawing up and amending the work rules (a workplace that regularly employs 10 or more has a filing obligation) and concluding the labour-management agreement are the work of a Shakai Hoken Roumushi. It is safer to also check the consistency with existing annual-paid-leave rules (such as the relationship where half-day leave is used together).\n\n## What are the common troubles at introduction?\n\nEven though the system is simple, operation tends to trip over the following.\n\n| Trip-up | The point |\n|---|---|\n| Trying to fold it into planned grant | Hourly-unit leave **cannot be made the subject of planned grant (planned annual leave)**. Planned leave presupposes whole-day units |\n| Counting it toward the five-days obligation | As above, hourly-unit leave **cannot be counted** toward the annual five-days obligation |\n| Operating in units of minutes | The minimum unit is one hour. 30-minute units and the like are not allowed |\n| Changing the unit via the right to change the timing | The employer has a right to change the timing, but it is understood that the unit itself — from the \"hourly unit\" the worker requested to a \"whole-day unit\" — cannot be changed |\n| Management of remaining hours becomes complex | Because \"days\" and \"hours\" are mixed, a management ledger of remaining days and hours, and an attendance system, need to be put in place |\n\nTo make the most of the purpose of introduction (flexible ease of taking leave), it is important to prepare not only the system but also, as a set, **a structure that manages remaining hours correctly**.\n\n## What can 四葉社会保険労務士事務所 do for you?\n\n四葉社会保険労務士事務所 in Kohinata, Bunkyo Ward, handles **drawing up the labour-management agreement for hourly-unit leave, reflecting it in the work rules and annual-paid-leave rules, checking consistency with existing half-day leave, and building the structure for managing remaining days and hours**. **The initial consultation is free.** Fees are set out in the [fee schedule](/en/labor/ryokin).\n\nPlease note that where a dispute has arisen over non-take-up or obstruction of take-up, we will guide you to engage an attorney directly. This office does not accept referral fees.\n\n## Frequently asked questions\n\n**Q. Is it mandatory to introduce hourly-unit leave?**\nA. No. Introducing hourly-unit leave is not an obligation. It is a system under which, if you do introduce it, a labour-management agreement and a provision in the work rules become necessary. Decide whether to introduce it after considering whether it suits how your company works.\n\n**Q. If the daily scheduled hours are 7 hours 30 minutes, how many hours make up one day?**\nA. A fraction of less than an hour is rounded up to one hour (Enforcement Regulations of the Labor Standards Act, Article 24-4, item 1). So for 7 hours 30 minutes, \"one day\" of hourly-unit leave is treated as 8 hours. You set this number of hours in the labour-management agreement.\n\n**Q. Can hourly-unit leave be used toward the five-days obligation?**\nA. No. What can be counted toward the five-days obligation (Labor Standards Act, Article 39, paragraph 7) is leave taken in whole-day or half-day units; leave taken in hourly units is treated as not counting. You need to have five days secured separately from hourly-unit leave.\n\n**Q. Can part-time workers be made subject to hourly-unit leave?**\nA. The scope of covered workers is set in the labour-management agreement. Any worker to whom annual paid leave is granted can be included, regardless of employment type. Even where the granted days are few, you set it within that range, up to five days' worth a year.\n\n## Sources for this article\n\n- Labor Standards Act (労働基準法, Act No. 49 of 1947), Article 39, paragraph 4 (hourly-unit leave: that, by a labour-management agreement, leave may be given in units of hours up to five days a year, and the agreement items in items 1 and 2), and Article 39, paragraph 7 (the obligation to have five days taken by designating the timing)\n- Enforcement Regulations of the Labor Standards Act (労働基準法施行規則, Ordinance of the Ministry of Health and Welfare No. 23 of 1947), Article 24-4 (the matters prescribed by ordinance under Article 39, paragraph 4, item 3 — the hours making up one day, and the hours when a unit other than one hour is used)\n- The hourly-unit leave system came into force on April 1, 2010, under the amended Labor Standards Act (Act No. 89 of 2008); the obligation to have five days taken came into force on April 1, 2019\n- That hourly-unit leave cannot be counted toward the five-days obligation, cannot be made the subject of planned grant, and that half-day leave can be counted as 0.5 day, are confirmed from materials published by the Ministry of Health, Labour and Welfare and prefectural labour bureaus (the \"Work Style / Rest Style Improvement Portal\" hourly annual paid leave system, and the leaflet on the obligation to designate the timing of annual paid leave; referenced September 2026)\n- The article numbers, the units, and the cap on days have been checked against e-Gov Law Search and materials published by the Ministry of Health, Labour and Welfare\n\nThis article is general information. Judgments that fit your particular circumstances are made by a qualified professional after a meeting. Written by [Joji Uramatsu](/en/about/uramatsu) (Shakai Hoken Roumushi (Certified Social Insurance and Labor Consultant), Gyoseishoshi (Certified Administrative Procedures Legal Specialist), Registered Real Estate Transaction Specialist).",
+        "category": "Procedures and deadlines",
+        "keywords": [
+          "hourly-unit annual paid leave",
+          "time-unit paid leave labour-management agreement",
+          "five days paid leave obligation hourly units",
+          "half-day paid leave difference",
+          "Labor Standards Act Article 39 paragraph 4",
+          "work rules paid leave hourly"
+        ],
+        "tags": [
+          "annual paid leave",
+          "hourly-unit leave",
+          "Labor Standards Act",
+          "labour management",
+          "Shakai Hoken Roumushi"
+        ],
+        "author": {
+          "name": "Joji Uramatsu",
+          "title": "Shakai Hoken Roumushi (Certified Social Insurance and Labor Consultant), Gyoseishoshi (Certified Administrative Procedures Legal Specialist), Registered Real Estate Transaction Specialist — 四葉社会保険労務士事務所／四葉行政書士事務所"
+        },
+        "faq": [
+          {
+            "question": "Is it mandatory to introduce hourly-unit leave?",
+            "answer": "No. Introducing hourly-unit leave is not an obligation. It is a system under which, if you do introduce it, a labour-management agreement and a provision in the work rules become necessary. Decide whether to introduce it after considering whether it suits how your company works."
+          },
+          {
+            "question": "If the daily scheduled hours are 7 hours 30 minutes, how many hours make up one day?",
+            "answer": "A fraction of less than an hour is rounded up to one hour (Enforcement Regulations of the Labor Standards Act, Article 24-4, item 1). So for 7 hours 30 minutes, \"one day\" of hourly-unit leave is treated as 8 hours. You set this number of hours in the labour-management agreement."
+          },
+          {
+            "question": "Can hourly-unit leave be used toward the five-days obligation?",
+            "answer": "No. What can be counted toward the five-days obligation (Labor Standards Act, Article 39, paragraph 7) is leave taken in whole-day or half-day units; leave taken in hourly units is treated as not counting. You need to have five days secured separately from hourly-unit leave."
+          },
+          {
+            "question": "Can part-time workers be made subject to hourly-unit leave?",
+            "answer": "The scope of covered workers is set in the labour-management agreement. Any worker to whom annual paid leave is granted can be included, regardless of employment type. Even where the granted days are few, you set it within that range, up to five days' worth a year."
+          }
+        ]
+      },
+      "zh-tw": {
+        "title": "如何導入以小時為單位的年次有給休假？勞使協定、就業規則與年5天義務的關係",
+        "excerpt": "以小時為單位的年次有給休假，只要締結勞使協定，就能以小時為單位、每年在5天份的範圍內取得（勞動基準法第39條第4項）。協定須訂定對象勞工範圍、日數（5天以內）、1天份的時數等（同項及施行規則第24條之4），不得以分鐘為單位或超過1天所定勞動時間。須注意的是，以小時為單位取得的部分，不能計入每年5天的取得義務（同條第7項）。",
+        "content": "**結論（先講重點）**：以小時為單位的年次有給休假，只要締結**勞使協定**，就能**以小時為單位、每年在5天份的範圍內**取得（勞動基準法第39條第4項）。協定須訂定「對象勞工的範圍」「日數（5天以內）」「1天份的時數」等（同項及勞動基準法施行規則第24條之4），**不得以分鐘為單位，也不得超過1天所定勞動時間**。須注意的是，**以小時為單位取得的部分，不能計入每年5天的取得義務**（同條第7項）。本文整理與半天單位的差異、協定應訂的內容、與5天義務的關係、就業規則的寫法，以及導入時的陷阱。\n\n「不到需要請整天假，但想抽出幾小時去看病或參加孩子的學校活動」——小時單位年休正是回應這類需求。本頁面是為中小企業的總務人員與經營者而寫，整理制度的輪廓、導入的步驟，以及運用上容易出錯的地方。個別制度設計的最終判斷不在本文範圍內。\n\n## 小時單位年休是什麼？與半天單位年休有何不同？\n\n小時單位年休是讓年次有給休假能**以1小時等小時為單位**取得的制度。依勞工的申請，可在**每年5天份的範圍內**給予（勞動基準法第39條第4項）。適合看病、辦理政府手續、家庭事務等難以用整天為單位使用的情境。\n\n常被混淆的是「半天單位年休」。兩者在根據與手續上都不同。\n\n| | 小時單位年休 | 半天單位年休 |\n|---|---|---|\n| 法律根據 | 勞動基準法第39條第4項（明文制度） | 法律無明文（依行政解釋與運用容許） |\n| 勞使協定 | **必要** | 不需要（可透過就業規則導入） |\n| 上限 | **每年5天份** | 無明文上限 |\n| 取得單位 | 1小時等（不可以分鐘為單位） | 半天（上午・下午等） |\n| 計入年5天取得義務 | **不可** | 可計為0.5天 |\n\n也就是說，小時單位年休是「可小額使用，但有協定與5天上限」的制度，半天單位年休則是「無協定也易導入，但單位止於半天」的運用。\n\n## 導入所需的勞使協定要訂定什麼？\n\n導入小時單位年休，須與事業場過半數勞工組織的工會（若無則過半數代表者）締結**書面勞使協定**（勞動基準法第39條第4項）。協定應訂的事項分列於法律與施行規則。\n\n| 應訂事項 | 根據 | 內容 |\n|---|---|---|\n| 對象勞工範圍 | 法第39條第4項第1號 | 對誰認可小時單位年休 |\n| 以小時為單位給予的日數 | 法第39條第4項第2號 | 限於**5天以內** |\n| 1天份相當的時數 | 施行規則第24條之4第1號 | 以1天所定勞動時間為基準訂定（未滿1小時的零數進位為1小時） |\n| 以1小時以外為單位時的時數 | 施行規則第24條之4第2號 | 如採2小時單位時的設定（不得超過1天所定勞動時間） |\n\n勞使協定不需向所轄勞動基準監督署提出，但須另於就業規則中訂定小時單位年休的規定（後述）。**不容許以分鐘（如30分鐘）為單位給予**。最小單位為1小時，以上以整數小時訂定。\n\n## 年5天的取得義務可以計入小時單位年休嗎？\n\n這是最容易出錯之處。對被賦予10天以上年次有給休假的勞工，使用者有義務**每年以指定時季的方式讓其取得5天**（勞動基準法第39條第7項，2019年4月施行）。對這5天，**以小時為單位取得的年休不能計入**。半天單位年休可計為0.5天，但小時單位年休——即使合計已以小時消化數天份——仍以不計入5天取得義務的計算來處理。\n\n因此，即使大量使用小時單位年休的勞工，仍須**另外確保「每年以整天（或半天）為單位取得5天」**。導入制度時，請以這種雙軌結構為前提管理取得狀況。年5天取得義務的細節，整理於另一篇[年5天取得義務與2年時效](/zh-tw/labor/column/nenji-yukyu-5nichi-torikirenai)。\n\n## 就業規則要怎麼寫？\n\n小時單位年休作為勞動條件事項，**須記載於就業規則**。在勞使協定訂定骨架（對象者・日數・1天份時數等）後，就業規則至少落實下列：\n\n- 給予小時單位年休的意旨及其對象\n- 可取得日數的上限（在每年5天份範圍內）\n- 1天份相當的時數、取得單位（1小時等）\n- 申請手續（何時之前、如何提出）\n\n就業規則的製作・變更（經常僱用10人以上的事業場有提出義務）與勞使協定的締結，是社會保險勞務士的業務。與既有年次有給休假規程的整合（併用半天單位年休時的關係等）也一併檢視較為安全。\n\n## 導入時常見的問題？\n\n制度雖簡單，運用上常在下列各點出錯。\n\n| 出錯處 | 重點 |\n|---|---|\n| 想併入計劃性給予 | 小時單位年休**不能作為計劃性給予（計劃年休）的對象**。計劃年休以整天為前提 |\n| 計入5天取得義務 | 如前所述，小時單位年休**不能計入**每年5天的取得義務 |\n| 以分鐘為單位運用 | 最小單位為1小時。不容許30分鐘等單位 |\n| 以時季變更權變更單位 | 使用者有時季變更權，但一般認為不能將勞工申請的「小時單位」變更為「整天單位」這種單位本身的變更 |\n| 剩餘時數管理繁雜 | 因「天」與「小時」混在，需整備剩餘天數・時數的管理台帳與出勤系統 |\n\n要活用導入目的（靈活地容易請假），重要的是不只建立制度，還要把**能正確管理剩餘時數的機制**一併整備。\n\n## 四葉社会保険労務士事務所能做什麼？\n\n位於文京區小日向的四葉社会保険労務士事務所，承接**小時單位年休的勞使協定製作、反映於就業規則・年次有給休假規程、與既有半天單位年休的整合檢視、剩餘天數・時數的管理機制建立**。**諮詢免費。** 費用請參閱[報酬額表](/zh-tw/labor/ryokin)。\n\n此外，若就未取得或妨礙取得而發生紛爭，會為您介紹直接委任律師。本事務所不收取介紹費。\n\n## 常見問題\n\n**Q. 一定要導入小時單位年休嗎？**\nA. 不。導入小時單位年休並非義務。這是一種「若要導入，就需要勞使協定與就業規則規定」的制度。請在評估是否合乎自家工作方式後，決定是否導入。\n\n**Q. 若1天所定勞動時間為7小時30分，1天份是幾小時？**\nA. 未滿1小時的零數進位為1小時（勞動基準法施行規則第24條之4第1號）。因此7小時30分時，小時單位年休的「1天份」以8小時處理。這個時數在勞使協定中訂定。\n\n**Q. 可以把小時單位年休用於年5天的取得義務嗎？**\nA. 不行。能計入年5天取得義務（勞動基準法第39條第7項）的是以整天・半天為單位的取得，以小時為單位取得的部分以不計入來處理。須在小時單位年休之外，另行確保5天。\n\n**Q. 兼職（part-time）勞工也能列為小時單位年休的對象嗎？**\nA. 對象者範圍在勞使協定中訂定。只要是被賦予年次有給休假的勞工，不論僱用型態都可列入對象。即使賦予日數較少，也在其範圍內、以每年5天份為上限設定。\n\n## 本文依據\n\n- 日本《勞動基準法》（労働基準法，昭和22年法律第49號）第39條第4項（小時單位年休。以勞使協定每年在5天份範圍內以小時為單位給予之意旨，及第1號・第2號的協定事項）、第39條第7項（每年5天的指定時季義務）\n- 日本《勞動基準法施行規則》（労働基準法施行規則，昭和22年厚生省令第23號）第24條之4（法第39條第4項第3號所定厚生勞動省令事項＝1天份的時數・以1小時以外為單位時的時數）\n- 小時單位年休制度，依修正勞動基準法（平成20年法律第89號）自2010年（平成22年）4月1日施行；每年5天的指定時季義務自2019年4月1日施行\n- 小時單位年休不能計入5天取得義務、不能作為計劃性給予對象，以及半天單位年休可計為0.5天，依厚生勞動省・都道府縣勞動局公表資料（「工作方式・休假方式改善入口網站」小時單位年次有給休假制度、年次有給休假指定時季義務傳單等）確認（2026年9月參照）\n- 條文編號・單位・上限日數，依e-Gov法令檢索及厚生勞動省公表資料確認\n\n本文為一般性的資訊提供。因應個別情事的判斷，由具備資格者在面談後進行。撰文者為[浦松丈二](/zh-tw/about/uramatsu)（社會保險勞務士・行政書士・宅地建物取引士）。",
+        "category": "手續與期限",
+        "keywords": [
+          "小時單位 年次有給休假",
+          "時間單位年休 勞使協定",
+          "年5天取得義務 小時單位",
+          "半天單位 差異",
+          "勞動基準法 第39條第4項",
+          "就業規則 小時年休"
+        ],
+        "tags": [
+          "年次有給休假",
+          "小時單位年休",
+          "勞動基準法",
+          "勞務管理",
+          "社會保險勞務士"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社會保險勞務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "一定要導入小時單位年休嗎？",
+            "answer": "不。導入小時單位年休並非義務。這是一種「若要導入，就需要勞使協定與就業規則規定」的制度。請在評估是否合乎自家工作方式後，決定是否導入。"
+          },
+          {
+            "question": "若1天所定勞動時間為7小時30分，1天份是幾小時？",
+            "answer": "未滿1小時的零數進位為1小時（勞動基準法施行規則第24條之4第1號）。因此7小時30分時，小時單位年休的「1天份」以8小時處理。這個時數在勞使協定中訂定。"
+          },
+          {
+            "question": "可以把小時單位年休用於年5天的取得義務嗎？",
+            "answer": "不行。能計入年5天取得義務（勞動基準法第39條第7項）的是以整天・半天為單位的取得，以小時為單位取得的部分以不計入來處理。須在小時單位年休之外，另行確保5天。"
+          },
+          {
+            "question": "兼職（part-time）勞工也能列為小時單位年休的對象嗎？",
+            "answer": "對象者範圍在勞使協定中訂定。只要是被賦予年次有給休假的勞工，不論僱用型態都可列入對象。即使賦予日數較少，也在其範圍內、以每年5天份為上限設定。"
+          }
+        ]
+      },
+      "zh": {
+        "title": "如何导入以小时为单位的年次有给休假？劳使协定、就业规则与年5天义务的关系",
+        "excerpt": "以小时为单位的年次有给休假，只要缔结劳使协定，就能以小时为单位、每年在5天份的范围内取得（劳动基准法第39条第4项）。协定须订定对象劳工范围、日数（5天以内）、1天份的时数等（同项及施行规则第24条之4），不得以分钟为单位或超过1天所定劳动时间。须注意的是，以小时为单位取得的部分，不能计入每年5天的取得义务（同条第7项）。",
+        "content": "**结论（先讲重点）**：以小时为单位的年次有给休假，只要缔结**劳使协定**，就能**以小时为单位、每年在5天份的范围内**取得（劳动基准法第39条第4项）。协定须订定「对象劳工的范围」「日数（5天以内）」「1天份的时数」等（同项及劳动基准法施行规则第24条之4），**不得以分钟为单位，也不得超过1天所定劳动时间**。须注意的是，**以小时为单位取得的部分，不能计入每年5天的取得义务**（同条第7项）。本文整理与半天单位的差异、协定应订的内容、与5天义务的关系、就业规则的写法，以及导入时的陷阱。\n\n「不到需要请整天假，但想抽出几小时去看病或参加孩子的学校活动」——小时单位年休正是回应这类需求。本页面是为中小企业的总务人员与经营者而写，整理制度的轮廓、导入的步骤，以及运用上容易出错的地方。个别制度设计的最终判断不在本文范围内。\n\n## 小时单位年休是什么？与半天单位年休有何不同？\n\n小时单位年休是让年次有给休假能**以1小时等小时为单位**取得的制度。依劳工的申请，可在**每年5天份的范围内**给予（劳动基准法第39条第4项）。适合看病、办理政府手续、家庭事务等难以用整天为单位使用的情境。\n\n常被混淆的是「半天单位年休」。两者在根据与手续上都不同。\n\n| | 小时单位年休 | 半天单位年休 |\n|---|---|---|\n| 法律根据 | 劳动基准法第39条第4项（明文制度） | 法律无明文（依行政解释与运用容许） |\n| 劳使协定 | **必要** | 不需要（可透过就业规则导入） |\n| 上限 | **每年5天份** | 无明文上限 |\n| 取得单位 | 1小时等（不可以分钟为单位） | 半天（上午・下午等） |\n| 计入年5天取得义务 | **不可** | 可计为0.5天 |\n\n也就是说，小时单位年休是「可小额使用，但有协定与5天上限」的制度，半天单位年休则是「无协定也易导入，但单位止于半天」的运用。\n\n## 导入所需的劳使协定要订定什么？\n\n导入小时单位年休，须与事业场过半数劳工组织的工会（若无则过半数代表者）缔结**书面劳使协定**（劳动基准法第39条第4项）。协定应订的事项分列于法律与施行规则。\n\n| 应订事项 | 根据 | 内容 |\n|---|---|---|\n| 对象劳工范围 | 法第39条第4项第1号 | 对谁认可小时单位年休 |\n| 以小时为单位给予的日数 | 法第39条第4项第2号 | 限于**5天以内** |\n| 1天份相当的时数 | 施行规则第24条之4第1号 | 以1天所定劳动时间为基准订定（未满1小时的零数进位为1小时） |\n| 以1小时以外为单位时的时数 | 施行规则第24条之4第2号 | 如采2小时单位时的设定（不得超过1天所定劳动时间） |\n\n劳使协定不需向所辖劳动基准监督署提出，但须另于就业规则中订定小时单位年休的规定（后述）。**不容许以分钟（如30分钟）为单位给予**。最小单位为1小时，以上以整数小时订定。\n\n## 年5天的取得义务可以计入小时单位年休吗？\n\n这是最容易出错之处。对被赋予10天以上年次有给休假的劳工，使用者有义务**每年以指定时季的方式让其取得5天**（劳动基准法第39条第7项，2019年4月施行）。对这5天，**以小时为单位取得的年休不能计入**。半天单位年休可计为0.5天，但小时单位年休——即使合计已以小时消化数天份——仍以不计入5天取得义务的计算来处理。\n\n因此，即使大量使用小时单位年休的劳工，仍须**另外确保「每年以整天（或半天）为单位取得5天」**。导入制度时，请以这种双轨结构为前提管理取得状况。年5天取得义务的细节，整理于另一篇[年5天取得义务与2年时效](/zh/labor/column/nenji-yukyu-5nichi-torikirenai)。\n\n## 就业规则要怎么写？\n\n小时单位年休作为劳动条件事项，**须记载于就业规则**。在劳使协定订定骨架（对象者・日数・1天份时数等）后，就业规则至少落实下列：\n\n- 给予小时单位年休的意旨及其对象\n- 可取得日数的上限（在每年5天份范围内）\n- 1天份相当的时数、取得单位（1小时等）\n- 申请手续（何时之前、如何提出）\n\n就业规则的制作・变更（经常雇用10人以上的事业场有提出义务）与劳使协定的缔结，是社会保险劳务士的业务。与既有年次有给休假规程的整合（并用半天单位年休时的关系等）也一并检视较为安全。\n\n## 导入时常见的问题？\n\n制度虽简单，运用上常在下列各点出错。\n\n| 出错处 | 重点 |\n|---|---|\n| 想并入计划性给予 | 小时单位年休**不能作为计划性给予（计划年休）的对象**。计划年休以整天为前提 |\n| 计入5天取得义务 | 如前所述，小时单位年休**不能计入**每年5天的取得义务 |\n| 以分钟为单位运用 | 最小单位为1小时。不容许30分钟等单位 |\n| 以时季变更权变更单位 | 使用者有时季变更权，但一般认为不能将劳工申请的「小时单位」变更为「整天单位」这种单位本身的变更 |\n| 剩余时数管理繁杂 | 因「天」与「小时」混在，需整备剩余天数・时数的管理台帐与出勤系统 |\n\n要活用导入目的（灵活地容易请假），重要的是不只建立制度，还要把**能正确管理剩余时数的机制**一并整备。\n\n## 四葉社会保険労務士事務所能做什么？\n\n位于文京区小日向的四葉社会保険労務士事務所，承接**小时单位年休的劳使协定制作、反映于就业规则・年次有给休假规程、与既有半天单位年休的整合检视、剩余天数・时数的管理机制建立**。**咨询免费。** 费用请参阅[报酬额表](/zh/labor/ryokin)。\n\n此外，若就未取得或妨碍取得而发生纷争，会为您介绍直接委任律师。本事务所不收取介绍费。\n\n## 常见问题\n\n**Q. 一定要导入小时单位年休吗？**\nA. 不。导入小时单位年休并非义务。这是一种「若要导入，就需要劳使协定与就业规则规定」的制度。请在评估是否合乎自家工作方式后，决定是否导入。\n\n**Q. 若1天所定劳动时间为7小时30分，1天份是几小时？**\nA. 未满1小时的零数进位为1小时（劳动基准法施行规则第24条之4第1号）。因此7小时30分时，小时单位年休的「1天份」以8小时处理。这个时数在劳使协定中订定。\n\n**Q. 可以把小时单位年休用于年5天的取得义务吗？**\nA. 不行。能计入年5天取得义务（劳动基准法第39条第7项）的是以整天・半天为单位的取得，以小时为单位取得的部分以不计入来处理。须在小时单位年休之外，另行确保5天。\n\n**Q. 兼职（part-time）劳工也能列为小时单位年休的对象吗？**\nA. 对象者范围在劳使协定中订定。只要是被赋予年次有给休假的劳工，不论雇用型态都可列入对象。即使赋予日数较少，也在其范围内、以每年5天份为上限设定。\n\n## 本文依据\n\n- 日本《劳动基准法》（労働基準法，昭和22年法律第49号）第39条第4项（小时单位年休。以劳使协定每年在5天份范围内以小时为单位给予之意旨，及第1号・第2号的协定事项）、第39条第7项（每年5天的指定时季义务）\n- 日本《劳动基准法施行规则》（労働基準法施行規則，昭和22年厚生省令第23号）第24条之4（法第39条第4项第3号所定厚生劳动省令事项＝1天份的时数・以1小时以外为单位时的时数）\n- 小时单位年休制度，依修正劳动基准法（平成20年法律第89号）自2010年（平成22年）4月1日施行；每年5天的指定时季义务自2019年4月1日施行\n- 小时单位年休不能计入5天取得义务、不能作为计划性给予对象，以及半天单位年休可计为0.5天，依厚生劳动省・都道府县劳动局公表资料（「工作方式・休假方式改善入口网站」小时单位年次有给休假制度、年次有给休假指定时季义务传单等）确认（2026年9月参照）\n- 条文编号・单位・上限日数，依e-Gov法令检索及厚生劳动省公表资料确认\n\n本文为一般性的信息提供。因应个别情事的判断，由具备资格者在面谈后进行。撰文者为[浦松丈二](/zh/about/uramatsu)（社会保险劳务士・行政书士・宅地建物取引士）。",
+        "category": "手续与期限",
+        "keywords": [
+          "小时单位 年次有给休假",
+          "时间单位年休 劳使协定",
+          "年5天取得义务 小时单位",
+          "半天单位 差异",
+          "劳动基准法 第39条第4项",
+          "就业规则 小时年休"
+        ],
+        "tags": [
+          "年次有给休假",
+          "小时单位年休",
+          "劳动基准法",
+          "劳务管理",
+          "社会保险劳务士"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社会保险劳务士・行政书士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "一定要导入小时单位年休吗？",
+            "answer": "不。导入小时单位年休并非义务。这是一种「若要导入，就需要劳使协定与就业规则规定」的制度。请在评估是否合乎自家工作方式后，决定是否导入。"
+          },
+          {
+            "question": "若1天所定劳动时间为7小时30分，1天份是几小时？",
+            "answer": "未满1小时的零数进位为1小时（劳动基准法施行规则第24条之4第1号）。因此7小时30分时，小时单位年休的「1天份」以8小时处理。这个时数在劳使协定中订定。"
+          },
+          {
+            "question": "可以把小时单位年休用于年5天的取得义务吗？",
+            "answer": "不行。能计入年5天取得义务（劳动基准法第39条第7项）的是以整天・半天为单位的取得，以小时为单位取得的部分以不计入来处理。须在小时单位年休之外，另行确保5天。"
+          },
+          {
+            "question": "兼职（part-time）劳工也能列为小时单位年休的对象吗？",
+            "answer": "对象者范围在劳使协定中订定。只要是被赋予年次有给休假的劳工，不论雇用型态都可列入对象。即使赋予日数较少，也在其范围内、以每年5天份为上限设定。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "business": "labor",
+    "slug": "fukusu-jigyo-roudosha-rosai-kyufu-fukugyo",
+    "title": "副業・兼業中にケガをしたら労災は？複数事業労働者の給付と賃金合算",
+    "date": "2026-09-30",
+    "category": "労働保険",
+    "excerpt": "副業・兼業で2つ以上の会社に雇われている人が働いている間にケガや病気をした場合、2020年（令和2年）9月1日施行の改正で、労災の給付基礎日額はすべての勤務先の賃金を合算して計算されます（労働者災害補償保険法第8条第3項）。また、1社だけでは労災と認められない過重負荷でも、複数の会社の業務を合わせて評価する「複数業務要因災害」の枠組みができました（同法第7条第1項第2号）。対象となる複数事業労働者とは誰か、賃金の合算、複数業務要因災害、請求の窓口、会社が整えることを、社会保険労務士の観点で整理します。",
+    "content": "**結論（先に要点）**：副業・兼業で**2つ以上の会社に雇われている人**が働いている間にケガや病気をした場合、2020年（令和2年）9月1日施行の改正で、労災の給付額のもとになる給付基礎日額は**すべての勤務先の賃金を合算**して計算されます（労働者災害補償保険法第8条第3項）。また、1社だけでは労災と認められない過重負荷でも、**複数の会社の業務を合わせて評価する「複数業務要因災害」**という枠組みができました（同法第7条第1項第2号）。この記事では、対象となる「複数事業労働者」とは誰か、賃金の合算、複数業務要因災害、請求の窓口、会社が整えておくことを整理します。\n\n「うちの従業員が副業先でケガをした」「自社は副業を認めているが、労災はどうなるのか」——そうしたご相談が増えています。このページは、副業・兼業者を雇う、または自社の従業員が副業している中小企業の労務担当の方に向けて、複数事業労働者の労災給付の考え方を整理します。個別の給付の可否は労働基準監督署が認定するもので、この記事の範囲外です。\n\n## 複数事業労働者とは？どんな人が対象？\n\n「複数事業労働者」とは、傷病等が生じた時点で、**事業主が同一でない複数の事業に同時に雇われている労働者**をいいます。たとえば、平日はA社の正社員、週末はB社でアルバイト、といった働き方が典型です。\n\n注意したい線引きがあります。\n\n| 対象になる | 対象にならない（原則） |\n|---|---|\n| 複数の会社に同時に「雇われている」人 | 副業が雇用でない人（個人事業・フリーランスとしての兼業） |\n| 事業主が別々の複数事業に同時使用されている人 | すでに前職を辞め、1社だけで働いている人 |\n| 特別加入を含め、複数の立場で就業する人（一定の場合） | — |\n\nポイントは「**複数の事業に、労働者として同時に使用されている**」ことです。フリーランスとして別の仕事を請けているだけでは、原則として複数事業労働者にはあたりません（労働者性の考え方は別記事の[業務委託と雇用の境目](/labor/column/gaichu-koyo-sakaime-roudoushasei)で整理しています）。\n\n## 副業先でのケガは両方の賃金で計算される？\n\nはい。ここが2020年9月改正の中心です。労災の休業（補償）給付などは「給付基礎日額」をもとに計算されますが、**改正前は、災害が発生した事業場の賃金だけ**で算定していました。副業先での賃金が抜け落ち、実際の収入より低い給付になっていたのです。\n\n改正後は、**複数事業労働者については、すべての勤務先の賃金額を合算した額を基礎**として給付基礎日額を算定します（労働者災害補償保険法第8条第3項）。\n\n| | 改正前（2020年8月まで） | 改正後（2020年9月1日〜） |\n|---|---|---|\n| 給付基礎日額の算定 | 災害が発生した1社の賃金のみ | **全勤務先の賃金を合算** |\n| 例：A社20万円＋B社10万円の人がB社で被災 | B社の10万円分だけで算定 | 合算した30万円分を基礎に算定 |\n\nこれにより、休業給付・障害給付・遺族給付などが、実際の収入水準に近づきます。\n\n## 複数業務要因災害（脳・心臓疾患等）とは？\n\nもう一つの柱が「複数業務要因災害」です。これは、**複数事業労働者の2つ以上の事業の業務を要因とする傷病等**をいいます（労働者災害補償保険法第7条第1項第2号）。対象となるのは、主に**脳・心臓疾患や精神障害など**、長時間労働やストレスが積み重なって起きる類型です。\n\n従来は、1つの事業場だけの業務負荷で労災かどうかを判断していました。そのため、A社もB社も単独では認定基準に届かないと、どちらでも労災にならないことがありました。改正後は、**A社とB社の労働時間やストレス等を合わせて総合的に評価**し、複数業務要因災害として認定し得る仕組みになっています。\n\n労災は、次の3類型で整理されます。\n\n| 類型 | 中身 |\n|---|---|\n| 業務災害 | 1つの事業場の業務が原因の負傷・疾病等 |\n| 複数業務要因災害 | 複数事業労働者の2以上の事業の業務を合わせて評価する負傷・疾病等（脳・心臓疾患、精神障害など） |\n| 通勤災害 | 通勤による負傷・疾病等 |\n\nなお、複数業務要因災害として認められない場合でも、いずれか1社の業務だけで業務災害と認められることはあります。まず業務災害として評価し、それで認められないときに複数業務要因災害として評価する、という順序で判断されます。\n\n## 労災の請求はどの会社を通して行う？\n\n労災の給付は、被災した労働者（死亡の場合は遺族）が**労働基準監督署に請求**して受けます。複数事業労働者の場合は、請求書に**すべての勤務先を記載**し、それぞれの事業場から賃金額などの証明を受ける必要があります。\n\n- 提出先は、**災害が発生した事業場を管轄する労働基準監督署**（複数業務要因災害では主たる就業先の管轄署）\n- 請求様式には「**その他就業先の有無**」を記載する欄があり、非災害発生事業場の賃金額も申告する\n- 各事業場の事業主が、労働時間・賃金・災害の状況などについて証明する\n\n会社側の対応は、**求められた事項に正しく証明すること**が中心です。給付の可否そのものを認定するのは労働基準監督署であり、会社や社会保険労務士が決めるものではありません。請求手続そのものの流れは、別記事の[労災の手続き](/labor/column/rousai-tetsuzuki-shishobyo-houkoku)でも整理しています。\n\n## 会社が確認・整えておくことは？\n\n副業・兼業を認める、あるいは自社の従業員が副業しているなら、労災に備えて次を整えておくと、いざという時に慌てません。\n\n| やること | 中身 |\n|---|---|\n| 副業・兼業の把握 | 従業員が他社でも雇われて働いているかを、届出などで把握する |\n| 就業規則の整備 | 副業・兼業の取扱い、届出のルールを就業規則に定める |\n| 賃金・労働時間の記録 | 自社分の賃金・労働時間を正確に記録し、証明に備える |\n| 相談窓口の確認 | 労災が起きたときの請求の流れと、相談先を社内で共有する |\n\n副業・兼業がある場合の労働時間の通算（時間外労働の管理）は労災とは別の論点ですが、あわせて整理しておくと安全です。詳しくは別記事の[副業・兼業の労務管理](/labor/column/fukugyo-kengyo-roumu-kanri)をご覧ください。\n\n## 四葉社会保険労務士事務所は、何ができますか？\n\n文京区小日向の四葉社会保険労務士事務所は、**労災（複数事業労働者の給付を含む）の請求手続の支援、副業・兼業に対応した就業規則の整備、労働時間・賃金の記録体制づくり**をお受けします。**ご相談は無料です。** 費用は[報酬額表](/labor/ryokin)をご覧ください。\n\n給付の可否を認定するのは労働基準監督署です。当事務所は、請求が適切に行えるようお手伝いする立場であり、認定の結果を保証するものではありません。\n\n## よくある質問\n\n**Q. 副業がアルバイト（雇用）ではなく、個人事業の場合も合算されますか？**\nA. 原則として合算の対象になりません。給付基礎日額の合算や複数業務要因災害は、「複数の事業に労働者として使用されている」複数事業労働者が対象です。個人事業・フリーランスとしての兼業は、労働者としての雇用ではないため、原則として対象外です（特別加入をしている場合など、例外的な取扱いは個別に確認が必要です）。\n\n**Q. 給付基礎日額の合算は、いつの災害から適用されますか？**\nA. 2020年（令和2年）9月1日以後に生じた傷病等について適用されます。それより前の災害は、従来どおり災害が発生した事業場の賃金のみで算定されます。\n\n**Q. A社・B社のどちらも単独では労災の基準に届きません。給付は受けられませんか？**\nA. 複数業務要因災害として、両社の業務を合わせて評価される可能性があります。脳・心臓疾患や精神障害などで、1社の負荷だけでは基準に届かない場合でも、複数事業労働者であれば合算して評価されます。最終的な認定は労働基準監督署が行います。\n\n**Q. 請求はどちらの会社が手続きするのですか？**\nA. 労災の請求は労働者本人（または遺族）が行うもので、会社が代わりに請求する義務があるわけではありません。ただし会社は、賃金・労働時間・災害の状況などについて証明する立場にあります。複数事業労働者の場合は、すべての勤務先の証明が必要になります。\n\n## この記事の根拠\n\n- 労働者災害補償保険法（昭和22年法律第50号）第7条第1項第2号（複数業務要因災害）、第8条第3項（複数事業労働者の給付基礎日額＝各事業ごとに算定した額を合算）、第20条の2以下（複数事業労働者に係る保険給付）\n- 複数事業労働者・複数業務要因災害の制度は、雇用保険法等の一部を改正する法律により、2020年（令和2年）9月1日から施行\n- 複数事業労働者の定義（傷病等が生じた時点で事業主が同一でない複数の事業に同時に使用されている労働者であること、個人事業としての兼業は原則対象外であること）、複数業務要因災害の対象（脳・心臓疾患、精神障害など）、賃金の合算、請求様式の「その他就業先の有無」欄、請求先の考え方は、厚生労働省「複数事業労働者への労災保険給付 わかりやすい解説（2020年9月施行）」および都道府県労働局の公表資料により確認しています（2026年9月参照）\n- 条文番号・施行日は、e-Gov法令検索および厚生労働省の公表資料により確認しています\n\n本記事は一般的な情報提供です。個別のご事情に応じた判断は、面談のうえ資格者が行います。執筆は[浦松丈二](/about/uramatsu)（社会保険労務士・行政書士・宅地建物取引士）です。",
+    "status": "published",
+    "author": {
+      "name": "浦松 丈二",
+      "title": "社会保険労務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+    },
+    "keywords": [
+      "複数事業労働者 労災",
+      "給付基礎日額 合算 副業",
+      "複数業務要因災害",
+      "副業 ケガ 労災",
+      "労災保険法 第7条 複数事業労働者",
+      "2020年9月 労災 改正"
+    ],
+    "tags": [
+      "労災",
+      "複数事業労働者",
+      "副業",
+      "労災保険法",
+      "労務管理"
+    ],
+    "locales": [],
+    "faq": [
+      {
+        "question": "副業がアルバイト（雇用）ではなく、個人事業の場合も合算されますか？",
+        "answer": "原則として合算の対象になりません。給付基礎日額の合算や複数業務要因災害は、「複数の事業に労働者として使用されている」複数事業労働者が対象です。個人事業・フリーランスとしての兼業は、労働者としての雇用ではないため、原則として対象外です（特別加入をしている場合など、例外的な取扱いは個別に確認が必要です）。"
+      },
+      {
+        "question": "給付基礎日額の合算は、いつの災害から適用されますか？",
+        "answer": "2020年（令和2年）9月1日以後に生じた傷病等について適用されます。それより前の災害は、従来どおり災害が発生した事業場の賃金のみで算定されます。"
+      },
+      {
+        "question": "A社・B社のどちらも単独では労災の基準に届きません。給付は受けられませんか？",
+        "answer": "複数業務要因災害として、両社の業務を合わせて評価される可能性があります。脳・心臓疾患や精神障害などで、1社の負荷だけでは基準に届かない場合でも、複数事業労働者であれば合算して評価されます。最終的な認定は労働基準監督署が行います。"
+      },
+      {
+        "question": "請求はどちらの会社が手続きするのですか？",
+        "answer": "労災の請求は労働者本人（または遺族）が行うもので、会社が代わりに請求する義務があるわけではありません。ただし会社は、賃金・労働時間・災害の状況などについて証明する立場にあります。複数事業労働者の場合は、すべての勤務先の証明が必要になります。"
+      }
+    ],
+    "translations": {
+      "en": {
+        "title": "What about workers' compensation when you are injured during a side job? Benefits for multiple-employment workers and the aggregation of wages",
+        "excerpt": "For someone employed by two or more companies who is injured or falls ill while working, an amendment in force since September 1, 2020 means the daily benefit base amount underlying workers' compensation is calculated by aggregating the wages of all workplaces (Industrial Accident Compensation Insurance Act, Article 8, paragraph 3). Also, a framework called a \"multiple-work-factor disaster,\" which evaluates the work of several companies together, was created (Article 7, paragraph 1, item 2), so overload that no single company alone would recognize as work-related can be assessed across companies.",
+        "content": "**In short:** For someone **employed by two or more companies** who is injured or falls ill while working, an amendment in force since **September 1, 2020 (Reiwa 2)** means the daily benefit base amount — the basis for workers' compensation — is calculated by **aggregating the wages of all workplaces** (Industrial Accident Compensation Insurance Act, Article 8, paragraph 3). Also, a framework called a **\"multiple-work-factor disaster,\" which evaluates the work of several companies together**, was created (Article 7, paragraph 1, item 2), so overload that no single company alone would recognize as work-related can be assessed across companies. This article sets out who the \"multiple-employment worker\" is, the aggregation of wages, the multiple-work-factor disaster, the window for claims, and what the company should have in place.\n\n\"One of our employees was injured at their side job,\" \"We allow side jobs, but what happens with workers' compensation?\" — such consultations are increasing. This page is for the labour staff of small and medium-sized companies that employ side-job workers, or whose own employees have side jobs, and sets out how workers' compensation benefits for multiple-employment workers are approached. Whether a particular benefit is payable is decided by the Labour Standards Inspection Office and is outside the scope of this article.\n\n## What is a multiple-employment worker, and who is covered?\n\nA \"multiple-employment worker\" is a **worker who, at the time the injury or illness arises, is simultaneously employed by two or more businesses with different employers**. A typical example is someone who is a full-time employee of Company A on weekdays and works part-time at Company B on weekends.\n\nThere is a line to watch.\n\n| Covered | Not covered (in principle) |\n|---|---|\n| A person simultaneously \"employed\" by two or more companies | A person whose side job is not employment (a side job as a sole proprietor / freelancer) |\n| A person simultaneously used by two or more businesses with different employers | A person who has already left a previous job and works for only one company |\n| A person working in more than one capacity, including special enrollment (in certain cases) | — |\n\nThe key is being \"**used as a worker, simultaneously, by two or more businesses**.\" Merely taking on other work as a freelancer does not, in principle, make one a multiple-employment worker (the approach to worker status is set out in our separate article, [The line between subcontracting and employment](/en/labor/column/gaichu-koyo-sakaime-roudoushasei)).\n\n## Are injuries at the side job calculated using both companies' wages?\n\nYes. This is the heart of the September 2020 amendment. Workers' compensation benefits such as the absence (compensation) benefit are calculated on the basis of the \"daily benefit base amount,\" but **before the amendment, only the wages of the workplace where the disaster occurred** were used. The wages at the side job dropped out, and the benefit was lower than the actual income.\n\nAfter the amendment, **for a multiple-employment worker, the amount obtained by aggregating the wages of all workplaces** is the basis for calculating the daily benefit base amount (Industrial Accident Compensation Insurance Act, Article 8, paragraph 3).\n\n| | Before amendment (until August 2020) | After amendment (from September 1, 2020) |\n|---|---|---|\n| Calculating the daily benefit base amount | Only the wages of the one company where the disaster occurred | **Aggregate of the wages of all workplaces** |\n| Example: a person earning 200,000 yen at A + 100,000 yen at B is injured at B | Calculated using only B's 100,000 yen | Calculated using the aggregated 300,000 yen as the basis |\n\nAs a result, the absence benefit, disability benefit, survivor benefit, and so on come closer to the actual income level.\n\n## What is a multiple-work-factor disaster (brain / heart disease, etc.)?\n\nAnother pillar is the \"multiple-work-factor disaster.\" This is an **injury or illness caused by the work of two or more businesses of a multiple-employment worker** (Industrial Accident Compensation Insurance Act, Article 7, paragraph 1, item 2). What it covers is mainly types such as **brain and heart disease, and mental disorders**, that arise from accumulated long hours and stress.\n\nPreviously, whether something was work-related was judged on the work overload of a single workplace alone. So if neither Company A nor Company B reached the recognition standard on its own, it could fail to be recognized as work-related at either. After the amendment, the system **evaluates the working hours and stress of Company A and Company B together on an overall basis**, and it can be recognized as a multiple-work-factor disaster.\n\nWorkers' compensation is organized into the following three types.\n\n| Type | Content |\n|---|---|\n| Work disaster | Injury or illness caused by the work of a single workplace |\n| Multiple-work-factor disaster | Injury or illness (brain / heart disease, mental disorders, etc.) evaluated by combining the work of two or more businesses of a multiple-employment worker |\n| Commuting disaster | Injury or illness caused by commuting |\n\nNote that even where it is not recognized as a multiple-work-factor disaster, it may still be recognized as a work disaster on the work of one company alone. It is judged in this order: first evaluate it as a work disaster, and where it is not recognized that way, evaluate it as a multiple-work-factor disaster.\n\n## Through which company is the workers' compensation claim made?\n\nWorkers' compensation benefits are received by the injured worker (or, in the case of death, the surviving family) making a **claim to the Labour Standards Inspection Office**. For a multiple-employment worker, the claim form must **list all workplaces**, and the wage amounts and so on must be certified by each workplace.\n\n- The place of submission is the **Labour Standards Inspection Office with jurisdiction over the workplace where the disaster occurred** (for a multiple-work-factor disaster, the office with jurisdiction over the main workplace)\n- The claim form has a field to state \"**whether there are other places of employment**,\" and the wage amount of the non-disaster workplace is also declared\n- The employer of each workplace certifies the working hours, wages, circumstances of the disaster, and so on\n\nThe company's role centers on **certifying the required matters correctly**. Whether the benefit is payable is decided by the Labour Standards Inspection Office; it is not something the company or a Shakai Hoken Roumushi decides. The flow of the claim procedure itself is also set out in our separate article, [The workers' compensation procedure](/en/labor/column/rousai-tetsuzuki-shishobyo-houkoku).\n\n## What should the company check and put in place?\n\nIf you allow side jobs, or if your own employees have side jobs, having the following in place for workers' compensation means you will not be caught off guard when the time comes.\n\n| What to do | Content |\n|---|---|\n| Grasp side jobs | Grasp, through notification and the like, whether an employee is also employed and working at another company |\n| Put the work rules in order | Set the treatment of side jobs and the notification rules in the work rules |\n| Keep records of wages and hours | Keep accurate records of your own wages and working hours, ready for certification |\n| Confirm the point of contact | Share within the company the flow of the claim and whom to consult when a workers' compensation event occurs |\n\nThe aggregation of working hours where there is a side job (managing overtime) is a separate issue from workers' compensation, but it is safer to organize it together. For details, see our separate article, [Labour management of side jobs](/en/labor/column/fukugyo-kengyo-roumu-kanri).\n\n## What can 四葉社会保険労務士事務所 do for you?\n\n四葉社会保険労務士事務所 in Kohinata, Bunkyo Ward, handles **support for workers' compensation claims (including benefits for multiple-employment workers), putting work rules that accommodate side jobs in order, and building a system for recording working hours and wages**. **The initial consultation is free.** Fees are set out in the [fee schedule](/en/labor/ryokin).\n\nWhether a benefit is payable is decided by the Labour Standards Inspection Office. This office is in the position of helping so that the claim can be made properly, and does not guarantee the outcome of the recognition.\n\n## Frequently asked questions\n\n**Q. If the side job is not part-time employment but a sole proprietorship, is it still aggregated?**\nA. In principle it is not subject to aggregation. The aggregation of the daily benefit base amount and the multiple-work-factor disaster apply to a multiple-employment worker who is \"used as a worker in two or more businesses.\" A side job as a sole proprietor or freelancer, not being employment as a worker, is in principle not covered (exceptional treatment, such as where special enrollment applies, needs to be checked individually).\n\n**Q. From when does the aggregation of the daily benefit base amount apply?**\nA. It applies to injuries and illnesses that arise on or after September 1, 2020 (Reiwa 2). Disasters before that are calculated, as before, using only the wages of the workplace where the disaster occurred.\n\n**Q. Neither Company A nor Company B reaches the workers' compensation standard on its own. Can no benefit be received?**\nA. There is a possibility of being evaluated as a multiple-work-factor disaster, combining the work of both companies. For brain / heart disease, mental disorders, and the like, even where the overload of one company alone does not reach the standard, it is evaluated in aggregate if the person is a multiple-employment worker. The final recognition is made by the Labour Standards Inspection Office.\n\n**Q. Which company handles the claim procedure?**\nA. A workers' compensation claim is made by the worker (or surviving family), and the company does not have an obligation to make the claim on their behalf. However, the company is in the position of certifying the wages, working hours, circumstances of the disaster, and so on. For a multiple-employment worker, certification from all workplaces becomes necessary.\n\n## Sources for this article\n\n- Industrial Accident Compensation Insurance Act (労働者災害補償保険法, Act No. 50 of 1947), Article 7, paragraph 1, item 2 (multiple-work-factor disaster), Article 8, paragraph 3 (the daily benefit base amount of a multiple-employment worker = aggregate of the amounts calculated for each business), and Article 20-2 onward (insurance benefits relating to multiple-employment workers)\n- The multiple-employment-worker and multiple-work-factor-disaster systems came into force on September 1, 2020 (Reiwa 2) under the Act partially amending the Employment Insurance Act and others\n- The definition of a multiple-employment worker (that, at the time the injury or illness arises, the person is simultaneously used by two or more businesses with different employers, and that a side job as a sole proprietor is in principle not covered), what a multiple-work-factor disaster covers (brain / heart disease, mental disorders, etc.), the aggregation of wages, the \"whether there are other places of employment\" field on the claim form, and the approach to where to submit the claim, are confirmed from the Ministry of Health, Labour and Welfare's \"Workers' Compensation Benefits for Multiple-Employment Workers — An Easy-to-Understand Explanation (in force September 2020)\" and materials published by prefectural labour bureaus (referenced September 2026)\n- The article numbers and the date of entry into force have been checked against e-Gov Law Search and materials published by the Ministry of Health, Labour and Welfare\n\nThis article is general information. Judgments that fit your particular circumstances are made by a qualified professional after a meeting. Written by [Joji Uramatsu](/en/about/uramatsu) (Shakai Hoken Roumushi (Certified Social Insurance and Labor Consultant), Gyoseishoshi (Certified Administrative Procedures Legal Specialist), Registered Real Estate Transaction Specialist).",
+        "category": "Labour insurance",
+        "keywords": [
+          "multiple-employment worker workers compensation",
+          "daily benefit base amount aggregation side job",
+          "multiple-work-factor disaster",
+          "side job injury workers compensation",
+          "Industrial Accident Compensation Insurance Act Article 7",
+          "September 2020 amendment workers compensation"
+        ],
+        "tags": [
+          "workers compensation",
+          "multiple-employment worker",
+          "side job",
+          "Industrial Accident Compensation Insurance Act",
+          "labour management"
+        ],
+        "author": {
+          "name": "Joji Uramatsu",
+          "title": "Shakai Hoken Roumushi (Certified Social Insurance and Labor Consultant), Gyoseishoshi (Certified Administrative Procedures Legal Specialist), Registered Real Estate Transaction Specialist — 四葉社会保険労務士事務所／四葉行政書士事務所"
+        },
+        "faq": [
+          {
+            "question": "If the side job is not part-time employment but a sole proprietorship, is it still aggregated?",
+            "answer": "In principle it is not subject to aggregation. The aggregation of the daily benefit base amount and the multiple-work-factor disaster apply to a multiple-employment worker who is \"used as a worker in two or more businesses.\" A side job as a sole proprietor or freelancer, not being employment as a worker, is in principle not covered (exceptional treatment, such as where special enrollment applies, needs to be checked individually)."
+          },
+          {
+            "question": "From when does the aggregation of the daily benefit base amount apply?",
+            "answer": "It applies to injuries and illnesses that arise on or after September 1, 2020 (Reiwa 2). Disasters before that are calculated, as before, using only the wages of the workplace where the disaster occurred."
+          },
+          {
+            "question": "Neither Company A nor Company B reaches the workers' compensation standard on its own. Can no benefit be received?",
+            "answer": "There is a possibility of being evaluated as a multiple-work-factor disaster, combining the work of both companies. For brain / heart disease, mental disorders, and the like, even where the overload of one company alone does not reach the standard, it is evaluated in aggregate if the person is a multiple-employment worker. The final recognition is made by the Labour Standards Inspection Office."
+          },
+          {
+            "question": "Which company handles the claim procedure?",
+            "answer": "A workers' compensation claim is made by the worker (or surviving family), and the company does not have an obligation to make the claim on their behalf. However, the company is in the position of certifying the wages, working hours, circumstances of the disaster, and so on. For a multiple-employment worker, certification from all workplaces becomes necessary."
+          }
+        ]
+      },
+      "zh-tw": {
+        "title": "副業・兼業中受傷時的勞災？複數事業勞工的給付與工資合算",
+        "excerpt": "受僱於2家以上公司的人在工作中受傷或生病時，依2020年（令和2年）9月1日施行的修正，勞災給付所依據的給付基礎日額，以所有工作單位的工資合算計算（勞災保險法第8條第3項）。此外，即使單獨1家不被認定為勞災的過重負荷，也新設了把多家公司的業務合併評估的「複數業務要因災害」（同法第7條第1項第2號）。",
+        "content": "**結論（先講重點）**：以副業・兼業**受僱於2家以上公司**的人，在工作中受傷或生病時，依2020年（令和2年）9月1日施行的修正，勞災給付所依據的給付基礎日額，以**所有工作單位的工資合算**計算（勞災保險法第8條第3項）。此外，即使單獨1家不被認定為勞災的過重負荷，也新設了把**多家公司的業務合併評估的「複數業務要因災害」**（同法第7條第1項第2號）。本文整理何謂對象的「複數事業勞工」、工資的合算、複數業務要因災害、請求窗口，以及公司應整備之事。\n\n「我們的員工在副業處受傷了」「本公司認可副業，但勞災會如何？」——這類諮詢正在增加。本頁面是為僱用副業・兼業者、或自家員工有副業的中小企業勞務人員而寫，整理複數事業勞工勞災給付的思路。個別給付的可否由勞動基準監督署認定，不在本文範圍內。\n\n## 複數事業勞工是什麼？哪些人是對象？\n\n「複數事業勞工」是指，在傷病等發生的時點，**同時受僱於雇主不同的多個事業的勞工**。例如平日是A公司的正職、週末在B公司打工，即為典型。\n\n有須留意的界線。\n\n| 屬於對象 | 不屬於對象（原則） |\n|---|---|\n| 同時「受僱」於2家以上公司的人 | 副業非屬僱用者（作為個人事業・自由工作者的兼業） |\n| 同時被雇主不同的多個事業使用的人 | 已辭去前職、僅在1家工作的人 |\n| 以多種身分就業（含特別加入，一定情形）的人 | — |\n\n重點在於「**作為勞工，同時被2個以上的事業使用**」。僅以自由工作者身分承接別的工作，原則上不算複數事業勞工（勞工性的思路整理於另一篇[業務委託與僱用的界線](/zh-tw/labor/column/gaichu-koyo-sakaime-roudoushasei)）。\n\n## 副業處的受傷會以兩家的工資計算嗎？\n\n是。這正是2020年9月修正的核心。勞災的休業（補償）給付等以「給付基礎日額」為基礎計算，但**修正前只以災害發生事業場的工資**計算。副業處的工資被漏掉，給付低於實際收入。\n\n修正後，**複數事業勞工以所有工作單位的工資合算額為基礎**計算給付基礎日額（勞災保險法第8條第3項）。\n\n| | 修正前（至2020年8月） | 修正後（2020年9月1日起） |\n|---|---|---|\n| 給付基礎日額的計算 | 僅災害發生1家的工資 | **所有工作單位的工資合算** |\n| 例：A公司20萬円＋B公司10萬円者於B公司受災 | 僅以B公司10萬円計算 | 以合算後30萬円為基礎計算 |\n\n如此，休業給付・障害給付・遺族給付等會更貼近實際收入水準。\n\n## 複數業務要因災害（腦・心臟疾病等）是什麼？\n\n另一支柱是「複數業務要因災害」。這是指**複數事業勞工的2個以上事業的業務所要因的傷病等**（勞災保險法第7條第1項第2號）。對象主要是**腦・心臟疾病或精神障害等**，因長時間勞動與壓力累積而發生的類型。\n\n過去以單一事業場的業務負荷判斷是否為勞災。因此若A公司與B公司單獨都未達認定基準，可能在任一家都不成立勞災。修正後，**把A公司與B公司的勞動時間與壓力等合併綜合評估**，可認定為複數業務要因災害。\n\n勞災整理為以下3類型。\n\n| 類型 | 內容 |\n|---|---|\n| 業務災害 | 單一事業場的業務所致的傷病等 |\n| 複數業務要因災害 | 合併評估複數事業勞工2個以上事業業務的傷病等（腦・心臟疾病、精神障害等） |\n| 通勤災害 | 通勤所致的傷病等 |\n\n此外，即使未被認定為複數業務要因災害，也可能僅以其中1家的業務被認定為業務災害。判斷順序為：先以業務災害評估，若不成立，再以複數業務要因災害評估。\n\n## 勞災的請求要透過哪家公司進行？\n\n勞災給付由受災勞工（死亡時為遺族）向**勞動基準監督署請求**而受領。複數事業勞工的情形，須在請求書**記載所有工作單位**，並由各事業場證明工資額等。\n\n- 提出處為**災害發生事業場所轄的勞動基準監督署**（複數業務要因災害時為主要工作單位所轄署）\n- 請求樣式設有記載「**是否有其他就業處**」的欄位，亦須申報非災害發生事業場的工資額\n- 各事業場的雇主就勞動時間・工資・災害狀況等予以證明\n\n公司方的對應以**正確證明所要求的事項**為中心。給付可否本身由勞動基準監督署認定，並非公司或社會保險勞務士所能決定。請求手續本身的流程，也整理於另一篇[勞災的手續](/zh-tw/labor/column/rousai-tetsuzuki-shishobyo-houkoku)。\n\n## 公司應確認・整備之事？\n\n若認可副業・兼業，或自家員工有副業，為勞災預作準備整備下列，事到臨頭才不慌張。\n\n| 要做的事 | 內容 |\n|---|---|\n| 掌握副業・兼業 | 以申報等方式掌握員工是否也受僱於他社工作 |\n| 整備就業規則 | 於就業規則訂定副業・兼業的處理與申報規則 |\n| 工資・勞動時間的紀錄 | 正確記錄自家工資・勞動時間，以備證明 |\n| 確認諮詢窗口 | 於公司內共享勞災發生時的請求流程與諮詢對象 |\n\n有副業・兼業時的勞動時間通算（時間外勞動的管理）是與勞災不同的論點，但一併整理較為安全。詳見另一篇[副業・兼業的勞務管理](/zh-tw/labor/column/fukugyo-kengyo-roumu-kanri)。\n\n## 四葉社会保険労務士事務所能做什麼？\n\n位於文京區小日向的四葉社会保険労務士事務所，承接**勞災（含複數事業勞工給付）的請求手續支援、對應副業・兼業的就業規則整備、勞動時間・工資的紀錄體制建立**。**諮詢免費。** 費用請參閱[報酬額表](/zh-tw/labor/ryokin)。\n\n給付可否由勞動基準監督署認定。本事務所立於協助使請求能適切進行的立場，並不保證認定結果。\n\n## 常見問題\n\n**Q. 副業非打工（僱用）而是個人事業時，也會合算嗎？**\nA. 原則上不屬合算對象。給付基礎日額的合算與複數業務要因災害，對象是「作為勞工被使用於2個以上事業」的複數事業勞工。作為個人事業・自由工作者的兼業，因非屬勞工的僱用，原則上不屬對象（如有特別加入等例外處理，須個別確認）。\n\n**Q. 給付基礎日額的合算從何時的災害開始適用？**\nA. 適用於2020年（令和2年）9月1日以後發生的傷病等。在此之前的災害，仍依從前僅以災害發生事業場的工資計算。\n\n**Q. A公司・B公司單獨都未達勞災基準。就無法受領給付嗎？**\nA. 有可能作為複數業務要因災害，合併評估兩家的業務。腦・心臟疾病或精神障害等，即使單獨1家的負荷未達基準，若為複數事業勞工，仍會合算評估。最終認定由勞動基準監督署進行。\n\n**Q. 請求由哪家公司辦理手續？**\nA. 勞災請求由勞工本人（或遺族）進行，公司並無代為請求的義務。但公司立於就工資・勞動時間・災害狀況等予以證明的立場。複數事業勞工的情形，須有所有工作單位的證明。\n\n## 本文依據\n\n- 日本《勞災保險法》（労働者災害補償保険法，昭和22年法律第50號）第7條第1項第2號（複數業務要因災害）、第8條第3項（複數事業勞工的給付基礎日額＝各事業所算定額的合算）、第20條之2以下（複數事業勞工相關的保險給付）\n- 複數事業勞工・複數業務要因災害制度，依修正僱用保險法等一部之法律，自2020年（令和2年）9月1日施行\n- 複數事業勞工的定義（於傷病等發生時點同時被雇主不同的多個事業使用，作為個人事業的兼業原則不屬對象）、複數業務要因災害的對象（腦・心臟疾病、精神障害等）、工資的合算、請求樣式的「是否有其他就業處」欄、請求處的思路，依厚生勞動省「複數事業勞工的勞災保險給付 淺顯解說（2020年9月施行）」及都道府縣勞動局公表資料確認（2026年9月參照）\n- 條文編號・施行日，依e-Gov法令檢索及厚生勞動省公表資料確認\n\n本文為一般性的資訊提供。因應個別情事的判斷，由具備資格者在面談後進行。撰文者為[浦松丈二](/zh-tw/about/uramatsu)（社會保險勞務士・行政書士・宅地建物取引士）。",
+        "category": "勞動保險",
+        "keywords": [
+          "複數事業勞工 勞災",
+          "給付基礎日額 合算 副業",
+          "複數業務要因災害",
+          "副業 受傷 勞災",
+          "勞災保險法 第7條",
+          "2020年9月 修正 勞災"
+        ],
+        "tags": [
+          "勞災",
+          "複數事業勞工",
+          "副業",
+          "勞災保險法",
+          "勞務管理"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社會保險勞務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "副業非打工（僱用）而是個人事業時，也會合算嗎？",
+            "answer": "原則上不屬合算對象。給付基礎日額的合算與複數業務要因災害，對象是「作為勞工被使用於2個以上事業」的複數事業勞工。作為個人事業・自由工作者的兼業，因非屬勞工的僱用，原則上不屬對象（如有特別加入等例外處理，須個別確認）。"
+          },
+          {
+            "question": "給付基礎日額的合算從何時的災害開始適用？",
+            "answer": "適用於2020年（令和2年）9月1日以後發生的傷病等。在此之前的災害，仍依從前僅以災害發生事業場的工資計算。"
+          },
+          {
+            "question": "A公司・B公司單獨都未達勞災基準。就無法受領給付嗎？",
+            "answer": "有可能作為複數業務要因災害，合併評估兩家的業務。腦・心臟疾病或精神障害等，即使單獨1家的負荷未達基準，若為複數事業勞工，仍會合算評估。最終認定由勞動基準監督署進行。"
+          },
+          {
+            "question": "請求由哪家公司辦理手續？",
+            "answer": "勞災請求由勞工本人（或遺族）進行，公司並無代為請求的義務。但公司立於就工資・勞動時間・災害狀況等予以證明的立場。複數事業勞工的情形，須有所有工作單位的證明。"
+          }
+        ]
+      },
+      "zh": {
+        "title": "副业・兼业中受伤时的劳灾？复数事业劳工的给付与工资合算",
+        "excerpt": "受雇于2家以上公司的人在工作中受伤或生病时，依2020年（令和2年）9月1日施行的修正，劳灾给付所依据的给付基础日额，以所有工作单位的工资合算计算（劳灾保险法第8条第3项）。此外，即使单独1家不被认定为劳灾的过重负荷，也新设了把多家公司的业务合并评估的「复数业务要因灾害」（同法第7条第1项第2号）。",
+        "content": "**结论（先讲重点）**：以副业・兼业**受雇于2家以上公司**的人，在工作中受伤或生病时，依2020年（令和2年）9月1日施行的修正，劳灾给付所依据的给付基础日额，以**所有工作单位的工资合算**计算（劳灾保险法第8条第3项）。此外，即使单独1家不被认定为劳灾的过重负荷，也新设了把**多家公司的业务合并评估的「复数业务要因灾害」**（同法第7条第1项第2号）。本文整理何谓对象的「复数事业劳工」、工资的合算、复数业务要因灾害、请求窗口，以及公司应整备之事。\n\n「我们的员工在副业处受伤了」「本公司认可副业，但劳灾会如何？」——这类咨询正在增加。本页面是为雇用副业・兼业者、或自家员工有副业的中小企业劳务人员而写，整理复数事业劳工劳灾给付的思路。个别给付的可否由劳动基准监督署认定，不在本文范围内。\n\n## 复数事业劳工是什么？哪些人是对象？\n\n「复数事业劳工」是指，在伤病等发生的时点，**同时受雇于雇主不同的多个事业的劳工**。例如平日是A公司的正职、周末在B公司打工，即为典型。\n\n有须留意的界线。\n\n| 属于对象 | 不属于对象（原则） |\n|---|---|\n| 同时「受雇」于2家以上公司的人 | 副业非属雇用者（作为个人事业・自由工作者的兼业） |\n| 同时被雇主不同的多个事业使用的人 | 已辞去前职、仅在1家工作的人 |\n| 以多种身分就业（含特别加入，一定情形）的人 | — |\n\n重点在于「**作为劳工，同时被2个以上的事业使用**」。仅以自由工作者身分承接别的工作，原则上不算复数事业劳工（劳工性的思路整理于另一篇[业务委托与雇用的界线](/zh/labor/column/gaichu-koyo-sakaime-roudoushasei)）。\n\n## 副业处的受伤会以两家的工资计算吗？\n\n是。这正是2020年9月修正的核心。劳灾的休业（补偿）给付等以「给付基础日额」为基础计算，但**修正前只以灾害发生事业场的工资**计算。副业处的工资被漏掉，给付低于实际收入。\n\n修正后，**复数事业劳工以所有工作单位的工资合算额为基础**计算给付基础日额（劳灾保险法第8条第3项）。\n\n| | 修正前（至2020年8月） | 修正后（2020年9月1日起） |\n|---|---|---|\n| 给付基础日额的计算 | 仅灾害发生1家的工资 | **所有工作单位的工资合算** |\n| 例：A公司20万円＋B公司10万円者于B公司受灾 | 仅以B公司10万円计算 | 以合算后30万円为基础计算 |\n\n如此，休业给付・障害给付・遗族给付等会更贴近实际收入水准。\n\n## 复数业务要因灾害（脑・心脏疾病等）是什么？\n\n另一支柱是「复数业务要因灾害」。这是指**复数事业劳工的2个以上事业的业务所要因的伤病等**（劳灾保险法第7条第1项第2号）。对象主要是**脑・心脏疾病或精神障害等**，因长时间劳动与压力累积而发生的类型。\n\n过去以单一事业场的业务负荷判断是否为劳灾。因此若A公司与B公司单独都未达认定基准，可能在任一家都不成立劳灾。修正后，**把A公司与B公司的劳动时间与压力等合并综合评估**，可认定为复数业务要因灾害。\n\n劳灾整理为以下3类型。\n\n| 类型 | 内容 |\n|---|---|\n| 业务灾害 | 单一事业场的业务所致的伤病等 |\n| 复数业务要因灾害 | 合并评估复数事业劳工2个以上事业业务的伤病等（脑・心脏疾病、精神障害等） |\n| 通勤灾害 | 通勤所致的伤病等 |\n\n此外，即使未被认定为复数业务要因灾害，也可能仅以其中1家的业务被认定为业务灾害。判断顺序为：先以业务灾害评估，若不成立，再以复数业务要因灾害评估。\n\n## 劳灾的请求要透过哪家公司进行？\n\n劳灾给付由受灾劳工（死亡时为遗族）向**劳动基准监督署请求**而受领。复数事业劳工的情形，须在请求书**记载所有工作单位**，并由各事业场证明工资额等。\n\n- 提出处为**灾害发生事业场所辖的劳动基准监督署**（复数业务要因灾害时为主要工作单位所辖署）\n- 请求样式设有记载「**是否有其他就业处**」的栏位，亦须申报非灾害发生事业场的工资额\n- 各事业场的雇主就劳动时间・工资・灾害状况等予以证明\n\n公司方的对应以**正确证明所要求的事项**为中心。给付可否本身由劳动基准监督署认定，并非公司或社会保险劳务士所能决定。请求手续本身的流程，也整理于另一篇[劳灾的手续](/zh/labor/column/rousai-tetsuzuki-shishobyo-houkoku)。\n\n## 公司应确认・整备之事？\n\n若认可副业・兼业，或自家员工有副业，为劳灾预作准备整备下列，事到临头才不慌张。\n\n| 要做的事 | 内容 |\n|---|---|\n| 掌握副业・兼业 | 以申报等方式掌握员工是否也受雇于他社工作 |\n| 整备就业规则 | 于就业规则订定副业・兼业的处理与申报规则 |\n| 工资・劳动时间的纪录 | 正确记录自家工资・劳动时间，以备证明 |\n| 确认咨询窗口 | 于公司内共享劳灾发生时的请求流程与咨询对象 |\n\n有副业・兼业时的劳动时间通算（时间外劳动的管理）是与劳灾不同的论点，但一并整理较为安全。详见另一篇[副业・兼业的劳务管理](/zh/labor/column/fukugyo-kengyo-roumu-kanri)。\n\n## 四葉社会保険労務士事務所能做什么？\n\n位于文京区小日向的四葉社会保険労務士事務所，承接**劳灾（含复数事业劳工给付）的请求手续支援、对应副业・兼业的就业规则整备、劳动时间・工资的纪录体制建立**。**咨询免费。** 费用请参阅[报酬额表](/zh/labor/ryokin)。\n\n给付可否由劳动基准监督署认定。本事务所立于协助使请求能适切进行的立场，并不保证认定结果。\n\n## 常见问题\n\n**Q. 副业非打工（雇用）而是个人事业时，也会合算吗？**\nA. 原则上不属合算对象。给付基础日额的合算与复数业务要因灾害，对象是「作为劳工被使用于2个以上事业」的复数事业劳工。作为个人事业・自由工作者的兼业，因非属劳工的雇用，原则上不属对象（如有特别加入等例外处理，须个别确认）。\n\n**Q. 给付基础日额的合算从何时的灾害开始适用？**\nA. 适用于2020年（令和2年）9月1日以后发生的伤病等。在此之前的灾害，仍依从前仅以灾害发生事业场的工资计算。\n\n**Q. A公司・B公司单独都未达劳灾基准。就无法受领给付吗？**\nA. 有可能作为复数业务要因灾害，合并评估两家的业务。脑・心脏疾病或精神障害等，即使单独1家的负荷未达基准，若为复数事业劳工，仍会合算评估。最终认定由劳动基准监督署进行。\n\n**Q. 请求由哪家公司办理手续？**\nA. 劳灾请求由劳工本人（或遗族）进行，公司并无代为请求的义务。但公司立于就工资・劳动时间・灾害状况等予以证明的立场。复数事业劳工的情形，须有所有工作单位的证明。\n\n## 本文依据\n\n- 日本《劳灾保险法》（労働者災害補償保険法，昭和22年法律第50号）第7条第1项第2号（复数业务要因灾害）、第8条第3项（复数事业劳工的给付基础日额＝各事业所算定额的合算）、第20条之2以下（复数事业劳工相关的保险给付）\n- 复数事业劳工・复数业务要因灾害制度，依修正雇用保险法等一部之法律，自2020年（令和2年）9月1日施行\n- 复数事业劳工的定义（于伤病等发生时点同时被雇主不同的多个事业使用，作为个人事业的兼业原则不属对象）、复数业务要因灾害的对象（脑・心脏疾病、精神障害等）、工资的合算、请求样式的「是否有其他就业处」栏、请求处的思路，依厚生劳动省「复数事业劳工的劳灾保险给付 浅显解说（2020年9月施行）」及都道府县劳动局公表资料确认（2026年9月参照）\n- 条文编号・施行日，依e-Gov法令检索及厚生劳动省公表资料确认\n\n本文为一般性的信息提供。因应个别情事的判断，由具备资格者在面谈后进行。撰文者为[浦松丈二](/zh/about/uramatsu)（社会保险劳务士・行政书士・宅地建物取引士）。",
+        "category": "劳动保险",
+        "keywords": [
+          "复数事业劳工 劳灾",
+          "给付基础日额 合算 副业",
+          "复数业务要因灾害",
+          "副业 受伤 劳灾",
+          "劳灾保险法 第7条",
+          "2020年9月 修正 劳灾"
+        ],
+        "tags": [
+          "劳灾",
+          "复数事业劳工",
+          "副业",
+          "劳灾保险法",
+          "劳务管理"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社会保险劳务士・行政书士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "副业非打工（雇用）而是个人事业时，也会合算吗？",
+            "answer": "原则上不属合算对象。给付基础日额的合算与复数业务要因灾害，对象是「作为劳工被使用于2个以上事业」的复数事业劳工。作为个人事业・自由工作者的兼业，因非属劳工的雇用，原则上不属对象（如有特别加入等例外处理，须个别确认）。"
+          },
+          {
+            "question": "给付基础日额的合算从何时的灾害开始适用？",
+            "answer": "适用于2020年（令和2年）9月1日以后发生的伤病等。在此之前的灾害，仍依从前仅以灾害发生事业场的工资计算。"
+          },
+          {
+            "question": "A公司・B公司单独都未达劳灾基准。就无法受领给付吗？",
+            "answer": "有可能作为复数业务要因灾害，合并评估两家的业务。脑・心脏疾病或精神障害等，即使单独1家的负荷未达基准，若为复数事业劳工，仍会合算评估。最终认定由劳动基准监督署进行。"
+          },
+          {
+            "question": "请求由哪家公司办理手续？",
+            "answer": "劳灾请求由劳工本人（或遗族）进行，公司并无代为请求的义务。但公司立于就工资・劳动时间・灾害状况等予以证明的立场。复数事业劳工的情形，须有所有工作单位的证明。"
+          }
+        ]
+      }
+    }
   }
 ];
