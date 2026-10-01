@@ -825,6 +825,20 @@ const REQUIRED_HUB_LINKS: Record<string, string[]> = {
     "/legal/column/koseki-koiki-kofu-2024-souzoku-tetsuzuki",
     "/legal/column/souzoku-touki-nagare",
   ],
+  "shitei-jidosha-kyoshujo-shitei-youken-koan": [
+    "/legal/services",
+    "/legal/nagare",
+    "/legal/ryokin",
+  ],
+  "isan-bunkatsu-kyogi-yarinaoshi-goui-kaijo": [
+    "/legal/services/inheritance",
+    "/legal/nagare",
+    "/legal/ryokin",
+    "/souzoku",
+    "/legal/column/isan-bunkatsu-kyougisho",
+    "/legal/column/souzoku-isanbunkatsu-chotei-shinpan",
+    "/legal/column/souzoku-zei-shinkoku-hitsuyo",
+  ],
 };
 
 /** 表示コンプライアンス上の禁止語 */
@@ -2684,6 +2698,39 @@ const REQUIRED_PHRASES: Record<string, string[]> = {
     "独立した事業体",
     "紹介料を受け取りません",
   ],
+  "shitei-jidosha-kyoshujo-shitei-youken-koan": [
+    "指定自動車教習所",
+    "道路交通法第99条",
+    "第97条の2第2項",
+    "第99条の2第4項",
+    "第99条の3第4項",
+    "技能検定員資格者証",
+    "教習指導員資格者証",
+    "都道府県公安委員会",
+    "卒業証明書",
+    "別表第三",
+    "道路交通法第98条",
+    "別事業体",
+    "独立した事業体",
+    "紹介料を受け取りません",
+  ],
+  "isan-bunkatsu-kyogi-yarinaoshi-goui-kaijo": [
+    "民法第907条",
+    "合意解除",
+    "平成2年9月27日",
+    "平成元年2月9日",
+    "民法第541条",
+    "民法第95条",
+    "民法第96条",
+    "民法第909条",
+    "錯誤",
+    "贈与税",
+    "譲渡所得",
+    "相続税法基本通達",
+    "別事業体",
+    "独立した事業体",
+    "紹介料を受け取りません",
+  ],
 };
 
 /** 記事ごとに含めてはならない表現 */
@@ -2818,6 +2865,8 @@ const FORBIDDEN_PHRASES: Record<string, string[]> = {
   "kika-shinsei-yoken-kokusekiho-chuka-taiwan": [],
   "npo-hojin-setsuritsu-ninsho-nagare-shokatsucho": [],
   "daishu-saidaishu-souzokunin-hani-koseki-kakutei": [],
+  "shitei-jidosha-kyoshujo-shitei-youken-koan": [],
+  "isan-bunkatsu-kyogi-yarinaoshi-goui-kaijo": [],
 };
 
 /** 本セット外へ張る既存legalコラムslug（リポジトリの他シードで実在確認済み） */
@@ -5088,6 +5137,58 @@ const ARTICLES: Array<{
       "相続人調査",
       "戸籍",
       "相続関係説明図",
+      "行政書士",
+    ],
+  },
+  {
+    file: "94-shitei-jidosha-kyoshujo-shitei-youken-koan.md",
+    slug: "shitei-jidosha-kyoshujo-shitei-youken-koan",
+    date: "2026-10-01",
+    title: "指定自動車教習所の指定を受けるには？道路交通法99条の指定基準と公安委員会への手続",
+    category: "許認可・開業の手続き（行政書士の実務から）",
+    excerpt:
+      "指定自動車教習所の「指定」は、卒業者が運転免許試験場での技能試験を免除される（道路交通法第97条の2第2項）教習所になるための、都道府県公安委員会の処分です。道路交通法第99条第1項が定める要件——政令で定める管理者（第1号）、技能検定員資格者証（第99条の2第4項）の交付を受けた技能検定員（第2号）、教習指導員資格者証（第99条の3第4項）の交付を受けた教習指導員（第3号）、政令で定める基準に適合する設備（第4号）・運営（第5号）——と、施設・コース・教室の基準（施行規則別表第三・各公安委員会の指定基準）、所轄警察署を経由する指定申請の流れ、物件・設計・労務・登記・税務を誰に分けて頼むか（分離受任）を、行政書士の実務から整理しました。",
+    keywords: [
+      "指定自動車教習所 指定 要件",
+      "道路交通法 99条 指定 公安委員会 申請",
+      "技能検定員 教習指導員 資格者証 指定",
+      "指定自動車教習所 卒業証明書 技能試験免除",
+      "教習所 コース 教室 基準 別表第三",
+      "指定自動車教習所 指定申請 行政書士",
+    ],
+    tags: [
+      "指定自動車教習所",
+      "指定",
+      "公安委員会",
+      "道路交通法",
+      "技能検定員",
+      "教習指導員",
+      "行政書士",
+    ],
+  },
+  {
+    file: "95-isan-bunkatsu-kyogi-yarinaoshi-goui-kaijo.md",
+    slug: "isan-bunkatsu-kyogi-yarinaoshi-goui-kaijo",
+    date: "2026-10-01",
+    title: "いちど成立した遺産分割協議はやり直せる？合意解除・無効・取消しの整理",
+    category: "相続の手続き（行政書士の実務から）",
+    excerpt:
+      "いちど成立した遺産分割協議は、相続人全員が合意すればやり直せます（合意解除。最高裁判所平成2年9月27日判決）。一方、相続人の債務不履行を理由とする民法第541条の法定解除はできません（最高裁判所平成元年2月9日判決）。全員の合意がなくても、錯誤（民法第95条）や詐欺・強迫（民法第96条）があれば取消しの余地があります。注意点は税務で、当初の分割が有効なら再配分は原則として贈与又は交換とみなされ贈与税・譲渡所得税の対象になり得ます（相続税法基本通達19の2-8の「分割」に当たらない）が、無効・取消しなら遺産分割の範疇として扱われます。遡及効と第三者保護（民法第909条）まで整理し、協議書作成は行政書士・争いは弁護士・登記は司法書士・課税は税理士へ分ける分離受任を示しました。",
+    keywords: [
+      "遺産分割協議 やり直し できる",
+      "遺産分割 合意解除 最高裁 平成2年",
+      "遺産分割 やり直し 贈与税 譲渡所得税",
+      "遺産分割協議 無効 取消し 錯誤",
+      "遺産分割 やり直し 民法541条 法定解除",
+      "遺産分割 やり直し 行政書士",
+    ],
+    tags: [
+      "相続",
+      "遺産分割協議",
+      "合意解除",
+      "やり直し",
+      "民法907条",
+      "贈与税",
       "行政書士",
     ],
   },

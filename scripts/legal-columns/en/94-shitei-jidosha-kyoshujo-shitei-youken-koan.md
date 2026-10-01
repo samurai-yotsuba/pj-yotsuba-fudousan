@@ -1,0 +1,84 @@
+---
+title: "Getting your driving school designated: the Road Traffic Act Article 99 criteria and the public safety commission procedure"
+excerpt: "A 'designated' (shitei) driving school is one whose graduates are exempt from the practical driving test at the licence centre (Road Traffic Act, Article 97-2(2)). Designation is a disposition of the prefectural public safety commission, and to obtain it you must meet every requirement in Article 99(1)—a qualified manager, examiners holding a skill-examiner certificate (Article 99-2(4)), instructors holding an instructor certificate (Article 99-3(4)), facilities meeting the standard, and compliant operation—then apply via the competent police station. This article organises the criteria, the flow and who to hand each part to."
+category: "Permits and Licensing (From the Practice of an Administrative Scrivener)"
+---
+**In short:** the "designation" (shitei) of a driving school is a disposition of the prefectural public safety commission that makes it a school whose graduates are exempt from the practical driving test at the licence centre (Road Traffic Act, Article 97-2(2)). To obtain it you must meet every requirement in Article 99(1)—a manager meeting the requirements set by Cabinet Order (item 1); a staff member to be appointed as a skill examiner who holds a skill-examiner certificate (Article 99-2(4)) (item 2); a staff member to be appointed as an instructor who holds an instructor certificate (Article 99-3(4)) (item 3); facilities for teaching and skill examination that meet the standard set by Cabinet Order (item 4); and operation that meets the standard set by Cabinet Order (item 5)—and then apply to the public safety commission via the competent police station. The concrete standards for the facilities, course and classrooms are set in Appended Table 3 of the Road Traffic Act Enforcement Regulations and in each prefectural public safety commission's designation criteria. This article is general information; individual eligibility, how the criteria apply and the review time rest with the competent police (public safety commission) and a qualified professional. Preparing the designation application is handled by Yotsuba Administrative Scrivener Office (administrative scrivener); confirming the property and zoning by Yotsuba Real Estate Co., Ltd. (a real estate broker); the course and building design and building confirmation by an architect; the labour of instructors, examiners and clerical staff by a certified social insurance labour consultant; incorporation registration by a judicial scrivener; and tax by a tax accountant, each as an independent business under a separate contract. Yotsuba Administrative Scrivener Office and Yotsuba Real Estate Co., Ltd. are separate businesses, and our office receives no referral fee.
+
+## What does a driving school's "designation" let it do?
+
+A designated driving school is one that has received the designation of the prefectural public safety commission (Road Traffic Act, Article 99). A graduate of a designated school is exempt from the practical driving test at the licence centre. Specifically, a person who passes the skill examination conducted inside the school (the completion test and graduation test) is issued a completion certificate or graduation certificate, and submitting it at the licence centre exempts them from the practical test (Road Traffic Act, Article 97-2(2)). A graduation certificate is valid for one year from the day of the skill examination; after that it no longer exempts.
+
+In short, "designation" is the mechanism by which a school conducts its own skill examination and substitutes the result for the practical test at the centre. A learner can then obtain a licence by taking only the written test and the aptitude test at the centre, and the school becomes easier to choose as an "authorised (designated) school." The flip side is that a designated school is subject to human and physical standards that secure the fairness of the examination and the quality of teaching.
+
+| Category | Designated driving school | Notified / non-designated school |
+|---|---|---|
+| Basis | Road Traffic Act, Article 99 | Notification under Article 98, etc. |
+| Skill examination | Conducted in-house (completion / graduation test) | Not conducted |
+| Practical test at the centre | Exempted by the graduation certificate, etc. | In principle not exempted |
+| Main standards | Manager, examiner, instructor, facilities, operation | Not subject to the human and physical standards of designation |
+
+Separately, whether the property conforms to zoning restrictions, and whether enough land for the course and floor area for the classrooms can be secured, are property-side questions. The property view is organised in the real estate article [What property can be a designated driving school?](https://luck428.com/column/kyoshujo-shitei-bukken-course-kyoshitsu-youken) (published on the real estate route).
+
+## What are the human standards (manager, skill examiner, instructor) for designation?
+
+Article 99(1) sets the following human standards for designation:
+
+- **Manager**: place a person who manages the driving school and meets the requirements set by Cabinet Order (Enforcement Order, Article 35) (item 1). A certain knowledge and experience, such as managerial or supervisory experience in road-traffic work, is required.
+- **Skill examiner**: place a staff member to be appointed as a skill examiner who holds a skill-examiner certificate (Article 99-2(4)) (item 2). The certificate is issued to a person who passes the skill-examiner review conducted by the public safety commission.
+- **Instructor**: place a staff member to be appointed as an instructor who holds an instructor certificate (Article 99-3(4)) (item 3). This too presupposes the public safety commission's instructor review.
+
+Skill examiners and instructors must be placed in the numbers needed for each vehicle category. Because it takes time for a hired staff member to pass the review and be issued a certificate, the designation schedule is, in practice, built around securing these certified people first. Whether a certificate exists is confirmed by the public safety commission from its issuance records; but the staffing plan—who, how many, in which category—connects with post-opening shifts, overtime and social insurance. Working hours and social-insurance procedures after hiring are handled by a certified social insurance labour consultant as an independent business under a separate contract.
+
+## What physical standards does the facility, course and equipment need?
+
+Article 99(1), item 4 requires that the facilities for teaching and skill examination meet the standard set by Cabinet Order. The concrete facility and equipment standards are set in Appended Table 3, etc. of the Road Traffic Act Enforcement Regulations, and each prefectural public safety commission further publishes designation criteria (review criteria). Roughly, the following elements are covered:
+
+- **A course (track) for practical teaching and examination**: a course of a certain shape, width and area, including straights, curves, slopes and intersections
+- **Classrooms for written teaching**: classrooms with floor area and equipment matching capacity
+- **Vehicles used for practical teaching and examination**: vehicles matching the type of licence to be obtained
+- **Waiting and rest facilities for learners**
+
+Concrete figures such as the course's area and shape or the classroom floor area differ by prefecture and by the type of licence to be obtained (ordinary, semi-medium, motorcycle, etc.), and are set in each public safety commission's designation criteria. This article does not state uniform figures. At the planning stage, decide the type of licence first, then confirm the designation criteria of the competent police station (public safety commission) directly. The course and building design and the building-confirmation application are handled by an architect, and confirming whether the property conforms to zoning and whether enough land and floor area can be secured by Yotsuba Real Estate Co., Ltd., a real estate broker, each as an independent business under a separate contract.
+
+## What is the flow and the documents for the designation application to the public safety commission?
+
+The application is generally made to the prefectural public safety commission having jurisdiction over the location of the principal office (the school), via the competent police station. The rough flow is as follows, with roles divided by stage:
+
+1. Organise a business plan including the type of licence, course, classrooms, vehicles and staffing (securing skill examiners and instructors)
+2. Confirm the property's zoning and the right to use it → **Yotsuba Real Estate Co., Ltd. (real estate broker)**
+3. Carry out the course and building design and the building-confirmation application → **an architect**
+4. Have the skill examiners and instructors pass the review and receive their certificates (Article 99-2(4), Article 99-3(4))
+5. Prepare the designation application and attachments (facility and equipment drawings, documents proving staff qualifications, documents on operation) and submit them to the public safety commission via the competent police station → **Yotsuba Administrative Scrivener Office (administrative scrivener)**
+6. Receive the designation disposition after the review (including an on-site inspection)
+
+A characteristic feature is that, as a preliminary step, one often first makes a notification under Article 98, accumulates a teaching record, and then proceeds to the designation application. When starting by setting up a company, incorporation registration is by a judicial scrivener, tax by a tax accountant, and post-hiring labour by a certified social insurance labour consultant, each as an independent business under a separate contract. Yotsuba Administrative Scrivener Office and Yotsuba Real Estate Co., Ltd. are separate businesses. Each field is on the premise that you contract separately with each qualified professional or operator as an independent business, and our office receives no referral fee. For the flow of engagement, see [Engagement Flow](https://luck428.com/legal/nagare); for fees, [Fee Schedule](https://luck428.com/legal/ryokin); and for the whole picture of our services, [Permits and Applications Services](https://luck428.com/legal/services). The final judgement on individual eligibility and required documents is made by a qualified professional and the competent police (public safety commission) in light of the circumstances.
+
+## How does it differ from a notified school or a non-designated driving school?
+
+Besides a designated driving school, there are schools that have made a notification to the public safety commission (a notified driving school; Road Traffic Act, Article 98) and driving schools that give lessons without a designation or notification (facilities giving so-called refresher lessons for returning drivers). The big difference is whether the result of the in-house skill examination leads to exemption from the practical test at the centre. A graduate of a designated school is exempt by the graduation certificate (Article 97-2(2)), but taking lessons at a non-designated facility does not, in principle, exempt from the practical test at the centre.
+
+So if you open "a school equipped with a test-exemption mechanism for people seeking a new licence," designation is needed; whereas "refresher lessons or corporate training for people who already hold a licence" may be run without necessarily requiring designation. The procedures and standards required change with the scope of business you conduct. Which category to open under, and which standard your staff and facilities meet, is judged by matching the business plan with the competent police station's (public safety commission's) designation criteria. The concrete judgement on eligibility is made by the public safety commission, and our office handles general information and support in preparing the application documents.
+
+## FAQ
+
+**Q. How does a driving school's "designation" differ from a permit or an approval?**
+A. Designation is a disposition made by the prefectural public safety commission under Road Traffic Act Article 99, with the effect of positioning the school as one that can exempt graduates from the practical test (Article 97-2(2)). Whatever the name—permit or approval—it is common that you apply by meeting the human, physical and operational standards set by law and receive it after review. Individual eligibility is judged by the public safety commission.
+
+**Q. Are both a skill examiner and an instructor needed from the start?**
+A. Both are human standards for designation. You need a structure able to appoint a skill examiner holding a skill-examiner certificate (Article 99-2(4)) and an instructor holding an instructor certificate (Article 99-3(4)) for each vehicle category of licence to be obtained (Article 99(1), items 2 and 3). Because issuing the certificates takes time, the application timing is built around securing the staff.
+
+**Q. Are the course and classroom sizes uniform nationwide?**
+A. They are not uniform. The facility and equipment standards are framed in Appended Table 3, etc. of the Enforcement Regulations, and concrete figures and shapes are set by the type of licence and by prefecture in each public safety commission's designation criteria. This article does not state uniform figures. Before planning, confirm the designation criteria of the competent police station (public safety commission).
+
+**Q. Who should I consult about the property and the building?**
+A. Conformity with zoning restrictions and confirming the right to use are by a real estate broker (Yotsuba Real Estate Co., Ltd.); the course and building design and building confirmation are by an architect; and preparing and acting for the designation application are by an administrative scrivener (Yotsuba Administrative Scrivener Office)—the roles divide. Please contract separately with each as an independent business; our office receives no referral fee. For the property-side requirements, see [What property can be a designated driving school?](https://luck428.com/column/kyoshujo-shitei-bukken-course-kyoshitsu-youken).
+
+## Sources (Primary Information)
+
+- e-Gov Law Search, "Road Traffic Act" (Act No. 105 of 1960), Article 97-2 (exemption from the test; exemption from the practical test by a graduation certificate, etc.), Article 98 (notification of a driving school, etc.), Article 99 (designation of a driving school; the requirements in each item of paragraph 1), Article 99-2 (skill examination; skill-examiner certificate), Article 99-3 (instructor certificate) (accessed 2026-10-01)
+- e-Gov Law Search, "Road Traffic Act Enforcement Order," Article 35 (requirements for the manager) (accessed 2026-10-01)
+- e-Gov Law Search, "Road Traffic Act Enforcement Regulations," Appended Table 3 and others (standards for facilities and equipment for teaching and skill examination) (accessed 2026-10-01)
+- Metropolitan Police Department, "Review criteria (Road Traffic Act Article 99(1); designation of a driving school)" (keishicho.metro.tokyo.lg.jp; basis of designation, human standards, physical standards) (accessed 2026-10-01)
+
+This article is general information and does not guarantee the designation eligibility, required documents, review time, or concrete criteria figures for the course and classrooms of a particular school. The numerical facility standards, the required number of certified staff and the operation standard may differ by the type of licence and by prefecture, and by legal amendment or revision of each public safety commission's designation criteria, so confirm with the latest guidance of the competent police station (public safety commission) before applying. Preparing and acting for the designation application is by Yotsuba Administrative Scrivener Office (administrative scrivener); confirming the property and zoning and the lease or sale by Yotsuba Real Estate Co., Ltd. (a real estate broker); the course and building design and building confirmation by an architect; the labour of instructors, examiners and clerical staff by a certified social insurance labour consultant; incorporation registration by a judicial scrivener; and tax by a tax accountant, each as an independent business under a separate contract. Yotsuba Administrative Scrivener Office and Yotsuba Real Estate Co., Ltd. are separate businesses. Our office receives no referral fee. Individual judgements are made by a qualified professional after a meeting. Written by [Joji Uramatsu](https://luck428.com/about/uramatsu), administrative scrivener and licensed real estate broker.
