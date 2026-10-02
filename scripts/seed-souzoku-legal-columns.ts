@@ -839,6 +839,24 @@ const REQUIRED_HUB_LINKS: Record<string, string[]> = {
     "/legal/column/souzoku-isanbunkatsu-chotei-shinpan",
     "/legal/column/souzoku-zei-shinkoku-hitsuyo",
   ],
+  "chuka-tairiku-apostille-ikou-souzoku-kaisha-shorui": [
+    "/legal/services",
+    "/legal/nagare",
+    "/legal/ryokin",
+    "/souzoku",
+    "/legal/column/gaikoku-kankei-shomen-ninsho-apostille-koushou-tsukaiwake",
+    "/legal/column/chugoku-tairiku-souzokunin-shinzoku-koshosho-ryoji-ninsho",
+    "/legal/column/souzoku-kaigai-gaikokuseki",
+    "/legal/column/keieikanri-zairyu-chuka-kigyousha-kaisha-setsuritsu",
+  ],
+  "bochi-noukotsudo-keiei-kyoka-youken-nagare": [
+    "/legal/services",
+    "/legal/nagare",
+    "/legal/ryokin",
+    "/souzoku",
+    "/legal/column/kaisou-kyoka-hakajimai-tetsuzuki",
+    "/legal/column/saishi-shokei-haka-butsudan-isanbunkatsu",
+  ],
 };
 
 /** 表示コンプライアンス上の禁止語 */
@@ -2731,6 +2749,27 @@ const REQUIRED_PHRASES: Record<string, string[]> = {
     "独立した事業体",
     "紹介料を受け取りません",
   ],
+  "chuka-tairiku-apostille-ikou-souzoku-kaisha-shorui": [
+    "2023年11月7日",
+    "2023年3月8日",
+    "1970年7月27日",
+    "アポスティーユ",
+    "公証処",
+    "領事認証",
+    "別事業体",
+    "独立した事業体",
+    "紹介料を受け取りません",
+  ],
+  "bochi-noukotsudo-keiei-kyoka-youken-nagare": [
+    "第10条第1項",
+    "第10条第2項",
+    "都道府県知事",
+    "生衛発第1764号",
+    "宗教法人又は公益法人",
+    "別事業体",
+    "独立した事業体",
+    "紹介料を受け取りません",
+  ],
 };
 
 /** 記事ごとに含めてはならない表現 */
@@ -2867,6 +2906,8 @@ const FORBIDDEN_PHRASES: Record<string, string[]> = {
   "daishu-saidaishu-souzokunin-hani-koseki-kakutei": [],
   "shitei-jidosha-kyoshujo-shitei-youken-koan": [],
   "isan-bunkatsu-kyogi-yarinaoshi-goui-kaijo": [],
+  "chuka-tairiku-apostille-ikou-souzoku-kaisha-shorui": [],
+  "bochi-noukotsudo-keiei-kyoka-youken-nagare": [],
 };
 
 /** 本セット外へ張る既存legalコラムslug（リポジトリの他シードで実在確認済み） */
@@ -5189,6 +5230,60 @@ const ARTICLES: Array<{
       "やり直し",
       "民法907条",
       "贈与税",
+      "行政書士",
+    ],
+  },
+  {
+    file: "96-chuka-tairiku-apostille-ikou-souzoku-kaisha-shorui.md",
+    slug: "chuka-tairiku-apostille-ikou-souzoku-kaisha-shorui",
+    date: "2026-10-02",
+    title:
+      "中国本土がアポスティーユに加盟した。相続・会社設立の必要書類はどう変わったのか",
+    category: "外国人関連の手続き（行政書士の実務から）",
+    excerpt:
+      "中国本土（大陸）で作られた公文書は、2023年11月7日から、従来の二重の領事認証に代えてアポスティーユで日本に提出できるようになりました。中国が「外国公文書の認証を不要とする条約」（ハーグ・アポスティーユ条約。1961年）へ2023年3月8日に加入し、同年11月7日に発効したためです（日本は1970年7月27日に発効済み）。発効日以降、中国の権限ある当局（外交部及び委託を受けた地方外事弁公室）がアポスティーユを付した公文書は、在中国日本総領事館等の領事認証を経ずに使えます。相続の親族関係公証書や会社設立で使う出資者書類が主な対象で、契約書・委任状などの私文書はまず公証処で公証して公文書化します。香港・マカオは以前から条約の適用対象、台湾は対象外です。認証済み書類を使う相続登記は司法書士、相続税・国外財産は税理士、紛争は弁護士に振り分ける前提で、四葉グループの行政書士が独立した事業体として書類認証・会社設立を支援する枠組みを整理しました。",
+    keywords: [
+      "中国 アポスティーユ 2023年11月7日",
+      "中国本土 公証処 領事認証 廃止 アポスティーユ",
+      "中国 相続 親族関係公証書 アポスティーユ",
+      "中国 会社設立 出資者 署名証明 アポスティーユ",
+      "香港 マカオ 台湾 アポスティーユ 対象",
+      "外国公文書 認証不要条約 中国 行政書士",
+    ],
+    tags: [
+      "アポスティーユ",
+      "中国本土",
+      "領事認証",
+      "公証処",
+      "渉外相続",
+      "会社設立",
+      "行政書士",
+    ],
+  },
+  {
+    file: "97-bochi-noukotsudo-keiei-kyoka-youken-nagare.md",
+    slug: "bochi-noukotsudo-keiei-kyoka-youken-nagare",
+    date: "2026-10-02",
+    title:
+      "墓地や納骨堂を経営するには、どんな許可がいるのか",
+    category: "許認可・開業の手続き（行政書士の実務から）",
+    excerpt:
+      "墓地・納骨堂・火葬場を経営しようとする者は、都道府県知事（市又は特別区にあっては市長又は区長）の許可を受けなければなりません（墓地、埋葬等に関する法律第10条第1項）。国の許可ではなく地方自治体の許可です。誰が経営できるかは条文に細かく書かれていませんが、厚生省（現・厚生労働省）の通知「墓地経営・管理の指針等について」（平成12年12月6日 生衛発第1764号）が、永続性・非営利性の観点から経営主体は市町村等の地方公共団体が原則、これによりがたい事情があっても宗教法人又は公益法人等に限るとしています。多くの自治体はこれに沿って条例・規則で経営主体や立地・構造の基準を定めるため、個人・営利会社の新規経営は原則として難しい運用です。許可申請の支援は行政書士、土地の取得・造成は不動産・土地家屋調査士、登記は司法書士、税務は税理士へ振り分ける前提で、四葉グループの行政書士が独立した事業体として受任する枠組みを整理しました。",
+    keywords: [
+      "墓地 経営 許可 要件",
+      "納骨堂 経営許可 都道府県知事 市長",
+      "墓地埋葬法 10条 経営許可",
+      "墓地 経営主体 宗教法人 公益法人 地方公共団体",
+      "墓地経営・管理の指針 生衛発第1764号",
+      "墓地 納骨堂 経営許可 行政書士",
+    ],
+    tags: [
+      "墓地",
+      "納骨堂",
+      "経営許可",
+      "墓地埋葬法",
+      "宗教法人",
+      "許認可",
       "行政書士",
     ],
   },

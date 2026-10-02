@@ -2056,6 +2056,46 @@ const ARTICLES: ArticleSpec[] = [
     localesWithTranslations: ["en", "zh-tw", "zh"],
     hubLinks: ["/souzoku"],
   },
+  {
+    file: "101-chuka-shihon-kisei-soukin-nihon-fudosan-kessai.md",
+    slug: "chuka-shihon-kisei-soukin-nihon-fudosan-kessai",
+    title: "中国本土の資本規制（年5万ドル枠）があるのに、日本の不動産をどう決済するのか",
+    publishedAt: "2026-10-02",
+    category: "投資・事業用不動産",
+    excerpt:
+      "中国本土の個人が国外へ送れる外貨は、便利化額度（結售・結購とも1人あたり年間で等値5万米ドル）という狭い枠に収まり、しかもこの枠内の購汇は『境外での不動産購入』という資本項目には使えません。だから日本の不動産決済は、手付・残代金をいつ・どの原資で送れるかを契約前に見極めることが出発点になります。東京都文京区の宅地建物取引士兼行政書士が、中国側の資本規制と日本側の決済スケジュールの両面から、送金可否の見極めと日本側の外為法報告を条文と公的資料から整理します。",
+    keywords: [
+      "中国 個人 外貨 5万ドル 便利化額度",
+      "購汇 境外买房 資本項目 使えない",
+      "日本 不動産 決済 手付 残代金 送金",
+      "非居住者 不動産取得 外為法 55条の3 20日",
+      "台湾 香港 結匯 匯出 額度 違い",
+    ],
+    tags: ["投資・事業用不動産", "非居住者", "外為法", "中国語圏"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/toushi"],
+  },
+  {
+    file: "102-einou-taiyoko-nochi-ichiji-tenyo-bukken.md",
+    slug: "einou-taiyoko-nochi-ichiji-tenyo-bukken",
+    title: "営農型太陽光（ソーラーシェアリング）を置ける農地の条件とは",
+    publishedAt: "2026-10-02",
+    category: "投資・事業用不動産",
+    excerpt:
+      "営農型太陽光（ソーラーシェアリング）は、農地を宅地などへ全面転用するのではなく、支柱の基礎部分だけを農地法の一時転用許可で使い、下部では営農を続ける仕組みです。だから第一種農地など通常は転用が難しい農地でも、一定の要件を満たせば設置できる余地があります。鍵は、下部農地の収量がおおむね2割以上減らないこと。東京都文京区の宅地建物取引士兼行政書士が、農林水産省のガイドラインと農地法の条文から、一時転用許可の期間（原則3年・最長10年）と営農継続の要件を整理します。",
+    keywords: [
+      "営農型太陽光 農地 条件",
+      "ソーラーシェアリング 一時転用許可 農地法4条 5条",
+      "営農型 単収 2割 減少しない 8割",
+      "一時転用 3年 10年 更新 認定農業者",
+      "第一種農地 農用地区域 営農型 設置",
+    ],
+    tags: ["投資・事業用不動産", "許認可", "農地", "農地法"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/souzoku", "/toushi"],
+  },
 ];
 
 function toPlainText(md: string): string {
