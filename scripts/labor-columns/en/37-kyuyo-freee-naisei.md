@@ -52,7 +52,7 @@ When comparing the cost of in-house processing, include the operator's time, the
 
 Fees are **from 33,000 yen per month for 1–3 people on the payroll, including tax / initial setup and workflow design from 88,000 yen, including tax**. The initial fee includes freee configuration, LINE time clock setup, pay structure and allowance/deduction settings, employee registration, social insurance information, the first payroll test and workflow design.
 
-Monthly fees are 44,000 yen for 4–5 people and 55,000 yen for 6–10. For 11–30 people, the fee is 55,000 yen plus 2,200 yen for each person above 10; for 31 or more, an individual quotation applies. All figures include tax, with headcount bands reflecting payroll, filings, usage capacity and inquiries.
+Monthly fees are 44,000 yen for 4–5 people and 55,000 yen for 6–10. For 11 or more people, the fee is 55,000 yen plus 3,300 yen for each person above 10. All figures include tax, with headcount bands reflecting payroll, filings, usage capacity and inquiries.
 
 The monthly fee includes payroll, updates such as social insurance rates, everyday labor advice and routine filings. Routine filings cover enrollment and withdrawal, dependent changes, monthly remuneration change reports, bonus payment reports, annual remuneration reports and annual labor insurance renewal. freee会計, initial insurance registration, residence status applications, year-end tax adjustment, full recruitment process outsourcing (RPO), specialist translation and extended interpreting are outside the scope. See the [fee schedule](/en/labor/ryokin) for details.
 

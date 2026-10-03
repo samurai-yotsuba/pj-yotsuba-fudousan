@@ -45,10 +45,9 @@ Fees are **from 33,000 yen per month for 1–3 people on the payroll, including 
 | 1–3 | 33,000 yen |
 | 4–5 | 44,000 yen |
 | 6–10 | 55,000 yen |
-| 11–30 | 55,000 yen + 2,200 yen for each person above 10 |
-| 31 or more | Individual quotation |
+| 11 or more | 55,000 yen + 3,300 yen for each person above 10 |
 
-The fixed fee varies by headcount band because payroll, filings, freee usage capacity and inquiry handling increase with the number of people. For example, the monthly fee is 66,000 yen for 15 people, 77,000 yen for 20 and 99,000 yen for 30. All figures include tax; the initial fee is additional.
+The fixed fee varies by headcount band because payroll, filings, freee usage capacity and inquiry handling increase with the number of people. For example, the monthly fee is 71,500 yen for 15 people, 88,000 yen for 20 and 121,000 yen for 30. All figures include tax; the initial fee is additional.
 
 | Work you can entrust to us | Work the company performs | Separately priced work |
 |---|---|---|

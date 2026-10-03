@@ -21,6 +21,8 @@ describe("V10 plan presentation", () => {
     expect(html).toContain(LABOR_SETUP_COPY[code].migrationCondition);
     expect(html).toContain(LABOR_SETUP_COPY[code].quoteNote);
     expect(html).toContain("11+");
+    expect(html).toContain(formatLaborYen(3300, code));
+    expect(html).not.toContain("2,200");
     expect(html).not.toContain("31+");
     for (const item of [...LABOR_SETUP_COPY[code].standardItems, ...LABOR_SETUP_COPY[code].migrationItems]) expect(html).toContain(item);
     for (const heading of c.scopeHeadings) expect(html).toContain(heading);

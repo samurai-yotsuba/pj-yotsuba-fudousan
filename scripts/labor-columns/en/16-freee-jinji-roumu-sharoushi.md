@@ -45,7 +45,7 @@ Fees are **from 33,000 yen per month for 1–3 people on the payroll, including 
 
 The first run establishes the cutoff date, the deadline for reporting changes, the person responsible for checking and the final approval process, as well as the calculation results. Initial implementation is not offered as a free configuration service included in the monthly fee.
 
-Monthly fees are 44,000 yen for 4–5 people, 55,000 yen for 6–10, and 55,000 yen plus 2,200 yen for each person above 10 for 11–30 people. For 31 or more, an individual quotation applies. All prices include tax. Headcount bands reflect the volume of payroll, filings, usage capacity and inquiries. The [fee schedule](/en/labor/ryokin) shows the monthly and initial fees together.
+Monthly fees are 44,000 yen for 4–5 people, 55,000 yen for 6–10, and 55,000 yen plus 3,300 yen for each person above 10 for 11 or more people. All prices include tax. Headcount bands reflect the volume of payroll, filings, usage capacity and inquiries. The [fee schedule](/en/labor/ryokin) shows the monthly and initial fees together.
 
 ## Are year-end tax adjustment and residence status applications included in the same contract?
 

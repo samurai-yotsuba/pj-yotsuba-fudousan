@@ -57,7 +57,7 @@ export const LABOR_SERVICE_COPY: Record<LangCode, Copy> = {
       { name: "会社側の最終承認・報告", text: "給与計算結果を会社側が最終承認し、確認結果を共有します。人事変更情報は会社側からご提供いただきます。" },
     ],
     questions: ["人事部丸投げプランには何が含まれますか？", "料金は人数によってどう変わりますか？", "初期費用は何にかかりますか？", "勤怠確認や給与の承認も任せられますか？", "freee会計も含まれますか？", "採用はどこまで含まれますか？", "中国語・その他の外国語に対応していますか？", "在留資格申請や年末調整も月額内ですか？", "グループホーム・障害福祉事業者も依頼できますか？"],
-    quote: "新規適用、年末調整、本格RPO、賞与3回目以降などの料金・範囲は個別にご案内します。", units: "人数は給与計算対象人数です。1〜10名は人数帯、11名以上は10名を超える1名につき月額2,200円（税込）を加算します。", disclaimer: "本ページは一般的な情報提供です。個別の事案については、資格者による確認を経てご案内します。",
+    quote: "新規適用、年末調整、本格RPO、賞与3回目以降などの料金・範囲は個別にご案内します。", units: `人数は給与計算対象人数です。1〜10名は人数帯の料金です。10名を超える1名につき月額${formatLaborYen(LABOR_PRICING.additionalRecipientFee, "ja")}（税込）を加算します。`, disclaimer: "本ページは一般的な情報提供です。個別の事案については、資格者による確認を経てご案内します。",
   },
   en: {
     pricingHeading: "Fees and service charges",
@@ -88,7 +88,7 @@ export const LABOR_SERVICE_COPY: Record<LangCode, Copy> = {
       {name:"Company approval and reporting",text:"Your company gives final approval of payroll results. We share the review results, and your company provides personnel changes."},
     ],
     questions:["What does the HR plan include?","How does the fee change with headcount?","What is the initial setup fee for?","Can you approve attendance and payroll for us?","Is freee Accounting included?","How much recruitment work is included?","Do you support Chinese and other languages?","Are residence applications and year-end tax adjustment included?","Can group homes and disability-welfare providers use the service?"],
-    quote: "Fees and scope for initial insurance registration, year-end tax adjustment, full RPO and third or subsequent bonuses are discussed individually.",units: "Headcount means payroll recipients. Bands apply to 1–10 recipients; for 11 or more, add ¥2,200 per month (tax included) for each recipient above 10.",disclaimer:"This page provides general information. Individual matters are reviewed by a qualified professional.",
+    quote: "Fees and scope for initial insurance registration, year-end tax adjustment, full RPO and third or subsequent bonuses are discussed individually.",units: `Headcount means payroll recipients. Bands apply to 1–10 recipients; for 11 or more, add ${formatLaborYen(LABOR_PRICING.additionalRecipientFee, "en")} per month (tax included) for each recipient above 10.`,disclaimer:"This page provides general information. Individual matters are reviewed by a qualified professional.",
   },
   "zh-tw": {
     pricingHeading: "費用・報酬表",
@@ -110,7 +110,7 @@ export const LABOR_SERVICE_COPY: Record<LangCode, Copy> = {
     aiTitle:"運用freee、LINE與AI",ai:"運用freee人事勞務與AI提高例行確認及資訊整理的效率，最終的專業確認與判斷由社會保險勞務士負責。",setupDetail: "初期導入分為標準導入與流程設計・資料移轉兩種。開始作業前先確認內容並提供書面報價。社會保險等新規適用申請不包含於系統設定。",
     steps:[{name:"諮詢",text:"了解薪資計算人數、出勤運作、薪資制度、外國人雇用與業種。"},{name:"範圍與報價",text:"同時以書面說明月費、初期費用與另計業務，確認公司負責的工作。"},{name:"簽約",text:"明定包含及不包含的工作與公司責任。在留資格申請等依資格業務另行簽約。"},{name:"初期導入與流程設計",text:"標準導入包含freee、員工、一般津貼與通勤費、LINE打卡設定，以及首次薪資計算與基本操作說明。資料移轉與複雜設定依事前書面約定的範圍辦理。"},{name:"每月薪資與一般手續",text:"員工以LINE打卡，公司確認、修正並確定出勤，四葉確認freee的薪資計算內容。"},{name:"公司核准與報告",text:"由公司最終核准薪資結果，分享確認結果，人事異動資訊由公司提供。"}],
     questions:["人事部全包方案包含什麼？","費用如何依人數計算？","初期費用用於哪些工作？","可以代為確定出勤與核准薪資嗎？","freee會計也包含嗎？","招聘支援包含到哪裡？","支援中文及其他外語嗎？","在留資格申請與年末調整也在月費內嗎？","團體家屋與障害福祉業者也能委託嗎？"],
-    quote: "新規適用、年末調整、完整RPO、第3次起的獎金等，其費用與範圍個別說明。",units: "人數指薪資計算對象。1至10人按人數區間計費；11人以上，每超過10人的1人，月費加收2,200日圓（含稅）。",disclaimer:"本頁提供一般資訊。個別案件須由具資格的專業人士確認。",
+    quote: "新規適用、年末調整、完整RPO、第3次起的獎金等，其費用與範圍個別說明。",units: `人數指薪資計算對象。1至10人按人數區間計費；11人以上，每超過10人的1人，月費加收${formatLaborYen(LABOR_PRICING.additionalRecipientFee, "zh-tw")}（含稅）。`,disclaimer:"本頁提供一般資訊。個別案件須由具資格的專業人士確認。",
   },
   zh: {
     pricingHeading: "费用・报酬表",
@@ -132,7 +132,7 @@ export const LABOR_SERVICE_COPY: Record<LangCode, Copy> = {
     aiTitle:"运用freee、LINE与AI",ai:"运用freee人事劳务与AI提高例行确认及信息整理的效率，最终的专业确认与判断由社会保险劳务士负责。",setupDetail: "初期导入分为标准导入与流程设计・数据迁移两种。开始工作前先确认内容并提供书面报价。社会保险等新规适用申请不包含于系统设置。",
     steps:[{name:"咨询",text:"了解工资计算人数、出勤运作、工资制度、外国人雇用与行业。"},{name:"范围与报价",text:"同时以书面说明月费、初期费用与另计业务，确认公司负责的工作。"},{name:"签约",text:"明确包含及不包含的工作与公司责任。在留资格申请等按资格业务另行签约。"},{name:"初期导入与流程设计",text:"标准导入包含freee、员工、一般津贴与通勤费、LINE打卡设置，以及首次工资计算与基本操作说明。数据迁移与复杂设置按事前书面约定的范围办理。"},{name:"每月工资与一般手续",text:"员工以LINE打卡，公司确认、修正并确定出勤，四叶确认freee的工资计算内容。"},{name:"公司批准与报告",text:"由公司最终批准工资结果，分享确认结果，人事变动信息由公司提供。"}],
     questions:["人事部全包方案包含什么？","费用如何按人数计算？","初期费用用于哪些工作？","可以代为确定出勤与批准工资吗？","freee会计也包含吗？","招聘支持包含到哪里？","支持中文及其他外语吗？","在留资格申请与年末调整也在月费内吗？","团体家屋与障害福祉业者也能委托吗？"],
-    quote: "新规适用、年末调整、完整RPO、第3次起的奖金等，其费用与范围个别说明。",units: "人数指工资计算对象。1至10人按人数区间计费；11人以上，每超过10人的1人，月费加收2,200日元（含税）。",disclaimer:"本页提供一般信息。个别案件须由具资格的专业人士确认。",
+    quote: "新规适用、年末调整、完整RPO、第3次起的奖金等，其费用与范围个别说明。",units: `人数指工资计算对象。1至10人按人数区间计费；11人以上，每超过10人的1人，月费加收${formatLaborYen(LABOR_PRICING.additionalRecipientFee, "zh")}（含税）。`,disclaimer:"本页提供一般信息。个别案件须由具资格的专业人士确认。",
   },
 };
 

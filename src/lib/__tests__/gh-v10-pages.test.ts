@@ -62,7 +62,8 @@ for (const locale of ["ja", "en", "zh-tw", "zh"] as const) {
       expect(html).toContain("33,000");
       expect(html).toContain("88,000");
       expect(html).toContain("11+");
-      expect(html).toContain("2,200");
+      expect(html).toContain("3,300");
+      expect(html).not.toContain("2,200");
       expect(html).not.toContain("31+");
       for (const text of [p.tax, p.setup, p.system, p.separate, g.routine, g.excluded, g.recruitment, g.setupDetail, g.judgment, c.specialistScope]) expect(html).toContain(text);
       for (const text of [...LABOR_SETUP_COPY[locale].standardItems, ...LABOR_SETUP_COPY[locale].migrationItems, ...p.scopeHeadings, c.employmentTitle, c.nightTitle, c.openingTitle, c.beforeOpeningTitle]) expect(html).toContain(text);

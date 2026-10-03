@@ -37,6 +37,14 @@ for (const slug of slugs) {
         expect(article.content).not.toMatch(/^# /m);
         expect(article.content).not.toContain("1,100");
         expect(article.content).not.toContain("23,100");
+        if (slug !== "hitori-de-60sha-roumu-de-nariatsu-ka") {
+          expect(article.content).toContain("3,300");
+          expect(article.content).not.toContain("2,200");
+          expect(article.content).not.toMatch(/11[〜～–]30|31名|31人|31 or more/);
+        }
+        if (slug === "sharoushi-komonryo-nan-no-taika") {
+          for (const amount of ["71,500", "88,000", "121,000", "22,000"]) expect(article.content).toContain(amount);
+        }
         const lead = article.content.trim().split("\n\n")[0];
         for (const amount of ["33,000", "88,000"]) {
           expect(article.content).toContain(amount);

@@ -72,6 +72,8 @@ for (const locale of ["ja", "en", "zh-tw", "zh"] as const) {
       expect(html.indexOf(c.foreignHighlightTitle)).toBeLessThan(html.indexOf(c.ghTitle));
       expect(html).toContain("33,000");
       expect(html).toContain("55,000");
+      expect(html).toContain("3,300");
+      expect(html).not.toContain("2,200");
       expect(html).toContain("88,000");
       const setup = LABOR_SETUP_COPY[locale];
       expect(html).toContain(setup.freeeSupport);
@@ -94,6 +96,8 @@ for (const locale of ["ja", "en", "zh-tw", "zh"] as const) {
       const html = renderToStaticMarkup(await Page());
       expect(html).toContain("33,000");
       expect(html).toContain("55,000");
+      expect(html).toContain("3,300");
+      expect(html).not.toContain("2,200");
       expect(html).toContain("88,000");
       expect(html).toContain("freee");
       expect(html).toContain("LINE");
@@ -119,8 +123,8 @@ for (const locale of ["ja", "en", "zh-tw", "zh"] as const) {
 
     it("has fixed offers from the canonical calculation and no invented setup price", () => {
       const offers = getLaborPriceStructuredData(locale).offers;
-      expect(offers[10].priceSpecification.price).toBe(57200);
-      expect(offers[29].priceSpecification.price).toBe(99000);
+      expect(offers[10].priceSpecification.price).toBe(58300);
+      expect(offers[29].priceSpecification.price).toBe(121000);
       expect(offers.filter(x => x.name.startsWith(LABOR_PLAN_COPY[locale].name))).toHaveLength(30);
       expect(offers.some(x => x.name.includes(LABOR_PLAN_COPY[locale].setup))).toBe(false);
     });

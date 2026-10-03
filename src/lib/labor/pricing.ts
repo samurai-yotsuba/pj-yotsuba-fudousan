@@ -9,7 +9,7 @@ export const LABOR_PRICING = {
     { min: 4, max: 5, monthly: 44000 },
     { min: 6, max: 10, monthly: 55000 },
   ],
-  additionalRecipientFee: 2200,
+  additionalRecipientFee: 3300,
   initialSetupStandard: 55000,
   initialSetupWithMigrationFrom: 88000,
   recruitmentSupportFrom: 22000,
