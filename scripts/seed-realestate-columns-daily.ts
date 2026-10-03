@@ -2096,6 +2096,46 @@ const ARTICLES: ArticleSpec[] = [
     localesWithTranslations: ["en", "zh-tw", "zh"],
     hubLinks: ["/souzoku", "/toushi"],
   },
+  {
+    file: "103-nihongo-gakko-nintei-kikan-kousha-bukken-youken.md",
+    slug: "nihongo-gakko-nintei-kikan-kousha-bukken-youken",
+    title: "認定日本語教育機関の校舎物件はどう選ぶ？校地・校舎の面積要件と用途地域",
+    publishedAt: "2026-10-03",
+    category: "投資・事業用不動産",
+    excerpt:
+      "2024年4月施行の認定日本語教育機関制度では、校舎は認定基準（令和5年文部科学省令第40号）で面積115㎡以上かつ同時に授業を受ける生徒1人あたり2.3㎡以上が求められ、校地・校舎は原則として設置者が自ら所有し抵当権等の負担がないことが前提です（やむを得ない事情があれば例外あり）。用途地域の制限は建築基準法第48条・別表第二で決まり、各種学校に当たる場合は低層住居専用地域等では建てられません。東京都文京区の宅地建物取引士兼行政書士が、契約前に確認できることを認定基準と建築基準法の条文から整理します。",
+    keywords: [
+      "日本語学校 校舎 物件",
+      "認定日本語教育機関 認定基準 校舎 115平方メートル",
+      "日本語学校 用途地域 各種学校 建築基準法48条",
+      "校地 校舎 自己所有 賃貸借 認定",
+      "日本語教育機関認定法 令和5年法律第41号 施行",
+    ],
+    tags: ["事業用不動産", "許認可", "用途地域", "日本語学校"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/toushi", "/office"],
+  },
+  {
+    file: "104-souzoku-tower-mansion-reiwa6-hyoka-baikyaku.md",
+    slug: "souzoku-tower-mansion-reiwa6-hyoka-baikyaku",
+    title: "相続したタワーマンションを売るなら？令和6年の居住用区分所有財産の新評価と売却の段取り",
+    publishedAt: "2026-10-03",
+    category: "相続",
+    excerpt:
+      "令和6年（2024年）1月1日以後に相続・遺贈・贈与で取得した居住用のタワーマンション等は、国税庁の通達「居住用の区分所有財産の評価について」（令和5年9月28日付）により相続税評価の計算が変わりました。市場価格と評価額の開きが大きい住戸は、評価額が市場価格のおおむね6割水準まで引き上げられます。ただしこれは相続税評価の枠組みの話で、実際に売れる価格とは別物です。東京都文京区の宅地建物取引士兼行政書士が、評価通達の要点と、管理費・修繕積立金の精算を含む売却の段取りを整理します。",
+    keywords: [
+      "タワーマンション 相続 売却",
+      "居住用の区分所有財産の評価 通達 令和6年",
+      "評価乖離率 評価水準 区分所有補正率",
+      "マンション 管理費 修繕積立金 滞納 承継 区分所有法8条",
+      "相続登記 義務化 2024 タワマン 売却",
+    ],
+    tags: ["相続", "タワーマンション", "相続税評価", "売却"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/souzoku"],
+  },
 ];
 
 function toPlainText(md: string): string {

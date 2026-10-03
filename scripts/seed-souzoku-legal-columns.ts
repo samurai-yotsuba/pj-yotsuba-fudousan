@@ -857,6 +857,21 @@ const REQUIRED_HUB_LINKS: Record<string, string[]> = {
     "/legal/column/kaisou-kyoka-hakajimai-tetsuzuki",
     "/legal/column/saishi-shokei-haka-butsudan-isanbunkatsu",
   ],
+  "kougyoujou-live-house-kozo-setsubi-kyoka": [
+    "/legal/services",
+    "/legal/nagare",
+    "/legal/ryokin",
+    "/legal/column/inshokuten-eigyo-kyoka-hokenjo-setsubi-kijun-shokuhin-eisei",
+    "/legal/column/shinya-shurui-teikyo-todokede-yoken",
+  ],
+  "souzoku-jigyo-shokei-kyoninka-shoukei-saishutoku": [
+    "/legal/services",
+    "/legal/nagare",
+    "/legal/ryokin",
+    "/souzoku",
+    "/legal/column/souzoku-zaisan-mokuroku",
+    "/legal/column/souzoku-touki-nagare",
+  ],
 };
 
 /** 表示コンプライアンス上の禁止語 */
@@ -2770,6 +2785,31 @@ const REQUIRED_PHRASES: Record<string, string[]> = {
     "独立した事業体",
     "紹介料を受け取りません",
   ],
+  "kougyoujou-live-house-kozo-setsubi-kyoka": [
+    "興行場法（昭和23年法律第137号）",
+    "興行場営業許可",
+    "都道府県知事",
+    "条例",
+    "建築基準法",
+    "特殊建築物",
+    "消防法",
+    "深夜における酒類提供飲食店営業",
+    "風俗営業等の規制及び業務の適正化等に関する法律",
+    "別事業体",
+    "独立した事業体",
+    "紹介料を受け取りません",
+  ],
+  "souzoku-jigyo-shokei-kyoninka-shoukei-saishutoku": [
+    "建設業法第17条の3",
+    "食品衛生法第56条",
+    "古物営業法",
+    "廃棄物処理法",
+    "2020年（令和2年）10月1日",
+    "30日以内",
+    "別事業体",
+    "独立した事業体",
+    "紹介料を受け取りません",
+  ],
 };
 
 /** 記事ごとに含めてはならない表現 */
@@ -2908,6 +2948,8 @@ const FORBIDDEN_PHRASES: Record<string, string[]> = {
   "isan-bunkatsu-kyogi-yarinaoshi-goui-kaijo": [],
   "chuka-tairiku-apostille-ikou-souzoku-kaisha-shorui": [],
   "bochi-noukotsudo-keiei-kyoka-youken-nagare": [],
+  "kougyoujou-live-house-kozo-setsubi-kyoka": [],
+  "souzoku-jigyo-shokei-kyoninka-shoukei-saishutoku": [],
 };
 
 /** 本セット外へ張る既存legalコラムslug（リポジトリの他シードで実在確認済み） */
@@ -5284,6 +5326,60 @@ const ARTICLES: Array<{
       "墓地埋葬法",
       "宗教法人",
       "許認可",
+      "行政書士",
+    ],
+  },
+  {
+    file: "98-kougyoujou-live-house-kozo-setsubi-kyoka.md",
+    slug: "kougyoujou-live-house-kozo-setsubi-kyoka",
+    date: "2026-10-03",
+    title:
+      "ライブハウス・小劇場を開くには？興行場営業許可の構造設備基準と届出の流れ",
+    category: "許認可・開業の手続き（行政書士の実務から）",
+    excerpt:
+      "ライブハウスや小劇場を業として常設で経営し、公衆に音楽や演劇を見せ・聞かせる施設は、興行場法（昭和23年法律第137号）上の「興行場」に当たり得て、経営しようとする者は都道府県知事（保健所を設置する市又は特別区にあっては市長又は区長）の興行場営業許可を受けなければなりません（同法第2条第1項）。換気・照明・防湿・清潔その他の衛生措置の基準や、設置場所・構造設備の公衆衛生上の基準は、法律本体ではなく都道府県の条例で定められます。建築基準法上の用途・特殊建築物・用途変更の判断は建築士と特定行政庁、消防設備は消防署、深夜に酒類を提供する場合の届出や接待を伴う場合の許可は行政書士、物件の選定・賃貸借は別事業体の不動産業者へ振り分ける前提で、四葉グループの行政書士が独立した事業体として許可・届出の申請支援を受任する枠組みを整理しました。",
+    keywords: [
+      "ライブハウス 興行場営業許可 要件",
+      "小劇場 興行場法 構造設備基準 条例",
+      "ライブハウス 用途地域 特殊建築物 建築基準法",
+      "ライブハウス 深夜 酒類提供 届出 風営法",
+      "興行場 許可 都道府県知事 保健所",
+      "ライブハウス 開業 物件 許可 行政書士",
+    ],
+    tags: [
+      "興行場法",
+      "ライブハウス",
+      "小劇場",
+      "興行場営業許可",
+      "構造設備基準",
+      "許認可",
+      "行政書士",
+    ],
+  },
+  {
+    file: "99-souzoku-jigyo-shokei-kyoninka-shoukei-saishutoku.md",
+    slug: "souzoku-jigyo-shokei-kyoninka-shoukei-saishutoku",
+    date: "2026-10-03",
+    title:
+      "個人事業を相続して続けるとき、許認可は引き継げる？承継できるものと取り直しが要るもの",
+    category: "相続の手続き（行政書士の実務から）",
+    excerpt:
+      "個人事業主が持っていた許認可は、本人に与えられたものなので、亡くなっても当然に相続人へ引き継がれるわけではありません。引き継げるかは許認可ごとに法律が違います。建設業許可は令和2年改正で相続の認可制度ができ、死亡後30日以内に申請して認可を受ければ地位を承継できます（建設業法第17条の3）。飲食店営業などは相続・合併・分割による地位の承継の届出ができます（食品衛生法第56条）。一方、古物商許可や産業廃棄物処理業の許可には承継の仕組みがなく、原則として取り直しが必要です。許認可の承継・再取得は行政書士、相続登記は司法書士、相続税・事業承継税制は税理士、争いのある遺産分割は弁護士へ振り分け、相続した不動産の売却・活用は別事業体の四葉不動産株式会社が担う前提で、四葉グループの行政書士が独立した事業体として受任する枠組みを整理しました。",
+    keywords: [
+      "個人事業 相続 許認可 引き継ぎ",
+      "建設業許可 相続 認可 建設業法17条の3",
+      "飲食店営業許可 地位の承継 食品衛生法",
+      "古物商 許可 相続 取り直し 返納",
+      "産業廃棄物処理業 許可 相続 新規許可",
+      "事業承継 許認可 承継 行政書士",
+    ],
+    tags: [
+      "事業承継",
+      "許認可の承継",
+      "建設業許可",
+      "食品衛生法",
+      "古物営業法",
+      "相続",
       "行政書士",
     ],
   },
