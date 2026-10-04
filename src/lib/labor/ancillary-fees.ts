@@ -246,7 +246,7 @@ export const LABOR_ANCILLARY_FEES = {
     "notLeadStrong": "ご紹介にあたって紹介料の授受は一切行いません。",
     "notRows": [
       {
-        "name": "年末調整、扶養控除・賃貸料相当額・非課税限度額などの税務判断",
+        "name": "年末調整に伴う扶養控除・賃貸料相当額・非課税限度額などの税務判断・税務相談",
         "to": "税理士"
       },
       {
@@ -525,7 +525,7 @@ export const LABOR_ANCILLARY_FEES = {
     "notLeadStrong": " No referral fees are paid or received.",
     "notRows": [
       {
-        "name": "Year-end tax adjustment and tax judgments (dependent deductions, deemed rent, non-taxable limits)",
+        "name": "Tax judgments and tax advice in the year-end adjustment (dependent deductions, deemed rent, non-taxable limits)",
         "to": "a licensed tax accountant"
       },
       {
@@ -804,7 +804,7 @@ export const LABOR_ANCILLARY_FEES = {
     "notLeadStrong": "轉介不收取、也不支付任何介紹費。",
     "notRows": [
       {
-        "name": "年終調整、扶養扣除・相當租金額・非課稅限度額等稅務判斷",
+        "name": "年終調整中的扶養扣除・相當租金額・非課稅限度額等稅務判斷與稅務諮詢",
         "to": "稅理士"
       },
       {
@@ -1083,7 +1083,7 @@ export const LABOR_ANCILLARY_FEES = {
     "notLeadStrong": "介绍不收取、也不支付任何介绍费。",
     "notRows": [
       {
-        "name": "年终调整、抚养扣除・相当租金额・非课税限度额等税务判断",
+        "name": "年终调整中的抚养扣除・相当租金额・非课税限度额等税务判断与税务咨询",
         "to": "税理士"
       },
       {

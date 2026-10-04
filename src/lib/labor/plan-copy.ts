@@ -41,7 +41,7 @@ export const LABOR_PLAN_COPY: Record<LangCode, LaborPlanCopy> = {
       ["freee設定・毎月の運用支援（初期導入は別料金）", "—", "—"],
     ],
     system: "月額料金にはfreee人事労務スタンダードの利用料とLINE打刻機能を含みます。freee会計その他のfreee製品は含まれません。",
-    separate: "社会保険情報の設定に新規適用申請は含まれません。在留資格申請は行政書士業務として別契約、年末調整は税理士へ別途ご案内します。",
+    separate: "社会保険情報の設定に新規適用申請は含まれません。在留資格申請は行政書士業務として別契約です。年末調整は別料金でお受けし、扶養控除などの税務判断・税務相談は税理士へおつなぎします。",
   },
   en: {
     lineClockBenefit: "Make daily attendance recording easier with included LINE clock-in.",
@@ -64,7 +64,7 @@ export const LABOR_PLAN_COPY: Record<LangCode, LaborPlanCopy> = {
       ["freee setup and ongoing operation support (initial setup is separately charged)", "—", "—"],
     ],
     system: "The monthly fee includes freee HR Standard and LINE clock-in. freee Accounting and other freee products are excluded.",
-    separate: "Social insurance information setup does not include initial registration applications. Residence status applications require a separate administrative scrivener contract; year-end tax adjustment is referred separately to a tax accountant.",
+    separate: "Social insurance information setup does not include initial registration applications. Residence status applications require a separate administrative scrivener contract. Year-end tax adjustment is available for a separate fee; tax judgments and tax advice, such as on dependent deductions, are referred to a tax accountant.",
   },
   "zh-tw": {
     lineClockBenefit: "包含LINE打卡，讓每日出勤紀錄更方便。",
@@ -87,7 +87,7 @@ export const LABOR_PLAN_COPY: Record<LangCode, LaborPlanCopy> = {
       ["freee設定與每月操作支援（初期導入另行收費）", "—", "—"],
     ],
     system: "月費包含freee人事勞務Standard使用費及LINE打卡功能，不含freee會計或其他freee產品。",
-    separate: "社會保險資料設定不包含新規適用申請。在留資格申請以行政書士業務另行簽約；年末調整另行轉介稅理士。",
+    separate: "社會保險資料設定不包含新規適用申請。在留資格申請以行政書士業務另行簽約；年末調整可另行收費承辦，扶養扣除等稅務判斷與稅務諮詢則為您轉介稅理士。",
   },
   zh: {
     lineClockBenefit: "包含LINE打卡，让每日出勤记录更方便。",
@@ -110,6 +110,6 @@ export const LABOR_PLAN_COPY: Record<LangCode, LaborPlanCopy> = {
       ["freee设置与每月操作支持（初期导入另行收费）", "—", "—"],
     ],
     system: "月费包含freee人事劳务Standard使用费及LINE打卡功能，不含freee会计或其他freee产品。",
-    separate: "社会保险资料设置不包含新规适用申请。在留资格申请以行政书士业务另行签约；年末调整另行转介税理士。",
+    separate: "社会保险资料设置不包含新规适用申请。在留资格申请以行政书士业务另行签约；年末调整可另行收费承办，抚养扣除等税务判断与税务咨询则为您介绍税理士。",
   },
 };

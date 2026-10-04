@@ -58,7 +58,7 @@ const JA: Copy = {
   notLead1: "下記は社会保険労務士の業務ではありません。その資格をお持ちの方におつなぎします。",
   notLeadStrong: "紹介料の授受は一切行いません。",
   notRows: [
-    { w: "年末調整、扶養控除・非課税限度額などの税務判断", t: "税理士" },
+    { w: "年末調整に伴う扶養控除・非課税限度額などの税務判断・税務相談", t: "税理士" },
     { w: "法人登記の変更", t: "司法書士" },
     { w: "離職理由をめぐる争いなど、紛争性が生じた事案", t: "弁護士" },
     { w: "在留資格の申請書類の作成・申請取次／補助金の申請", t: "四葉行政書士事務所（別事業体・別々にご契約いただきます）" },
@@ -101,7 +101,7 @@ const EN: Copy = {
     "The following is not the work of a Certified Social Insurance and Labor Consultant. We will refer you to a qualified professional.",
   notLeadStrong: "No referral fees are paid or received.",
   notRows: [
-    { w: "Year-end tax adjustment and tax judgments such as dependent deductions and non-taxable limits", t: "a licensed tax accountant" },
+    { w: "Tax judgments and tax advice in the year-end adjustment, such as dependent deductions and non-taxable limits", t: "a licensed tax accountant" },
     { w: "Changes to corporate registration", t: "a judicial scrivener" },
     { w: "Disputes, such as contested reasons for leaving employment", t: "an attorney" },
     { w: "Preparing residence-status application documents / subsidy (hojokin) applications", t: "四葉行政書士事務所 (a separate business entity; contracted separately)" },
@@ -140,7 +140,7 @@ const ZH_TW: Copy = {
   notLead1: "下列並非社會保險勞務士的業務。我們會為您轉介具備該資格的專業人士。",
   notLeadStrong: "不收取、也不支付任何介紹費。",
   notRows: [
-    { w: "年終調整、扶養扣除・非課稅限度額等稅務判斷", t: "稅理士" },
+    { w: "年終調整中的扶養扣除・非課稅限度額等稅務判斷與稅務諮詢", t: "稅理士" },
     { w: "法人登記的變更", t: "司法書士" },
     { w: "離職理由的爭議等具紛爭性的案件", t: "律師" },
     { w: "在留資格申請文件的製作・申請取次／補助金申請", t: "四葉行政書士事務所（另一獨立事業體・另行簽約）" },
@@ -179,7 +179,7 @@ const ZH: Copy = {
   notLead1: "下列并非社会保险劳务士的业务。我们会为您介绍具备该资格的专业人士。",
   notLeadStrong: "不收取、也不支付任何介绍费。",
   notRows: [
-    { w: "年终调整、抚养扣除・非课税限度额等税务判断", t: "税理士" },
+    { w: "年终调整中的抚养扣除・非课税限度额等税务判断与税务咨询", t: "税理士" },
     { w: "法人登记的变更", t: "司法书士" },
     { w: "离职理由的争议等具纠纷性的案件", t: "律师" },
     { w: "在留资格申请文件的制作・申请取次／补助金申请", t: "四葉行政書士事務所（另一独立事业体・分别签约）" },
