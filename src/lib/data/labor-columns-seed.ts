@@ -25268,5 +25268,554 @@ export const LABOR_COLUMNS_SEED: LaborSeedColumn[] = [
         ]
       }
     }
+  },
+  {
+    "business": "labor",
+    "slug": "gasoline-stand-ss-kikenbutsu-haichi-roumu-shinya",
+    "title": "ガソリンスタンドを開業・運営するとき、労務と危険物の配置で何に注意する？",
+    "date": "2026-10-04",
+    "category": "業種別の労務",
+    "excerpt": "ガソリンスタンド（SS）の労務は、深夜割増（労働基準法第37条）と変形労働時間制（第32条の2・第32条の4）を軸に組み、危険物取扱者の配置とセルフの監視体制を人員計画へ織り込むのが要点です。深夜業に常時従事する従業員は特定業務従事者として6か月以内ごとに1回（年2回）の健康診断が必要で（労働安全衛生規則第45条）、通常の年1回（同規則第44条）より多くなります。セルフ（顧客に自ら給油等をさせる給油取扱所・危険物の規制に関する政令第17条第5項）でも危険物取扱者が監視し給油を許可する体制が前提で、危険物保安監督者の選任義務（消防法第13条）も重なります。危険物施設の設置・変更の許可申請は行政書士や消防署、危険物取扱者の資格取得は従業員本人、譲渡所得や設備投資の税務は税理士、登記は司法書士の領域で、労働時間・シフト・社会保険・労災の労務は社会保険労務士が、それぞれ独立した事業体として別々にご契約いただきます。",
+    "content": "**結論（先に要点）**：ガソリンスタンドの労務は、深夜割増（労働基準法第37条）と変形労働時間制（第32条の2・第32条の4）を軸に組み、危険物取扱者の配置とセルフの監視体制を人員計画へ織り込むのが要点です。資格と施設の許可は消防署・行政書士、労務は社会保険労務士の領域です。\n\nガソリンスタンド（サービスステーション、SS）の労務が他業種と違うのは、営業時間が長く深夜・早朝に及ぶこと、そして危険物取扱者という資格者を置かなければ営業できないことの2点が、シフトと人員配置を同時に縛るからです。労働時間制度の設計と危険物の人員配置を別々に考えると、片方が崩れます。この記事では、開業・事業承継の前に経営者が知っておく順序を整理します。\n\n## ガソリンスタンドの労務は、他業種と何が違う？\n\n給油所の労務は、長時間営業に対応する勤務シフトと、消防法上の人員配置という2本の制約が重なる点が特徴です。フルサービスでもセルフサービスでも、ガソリン（第4類危険物）を扱う以上、危険物保安監督者を選任し、営業時間中は危険物取扱者が立ち会うか監視する体制が要ります。つまり「人を減らせば回る」単純な話にならず、資格者の勤務を軸に労働時間を組むことになります。\n\n一方で、労働時間・休憩・休日・割増賃金・健康診断といった労働基準法・労働安全衛生法のルールは、他業種と同じように適用されます。危険物の体制が特殊だからといって、労働法のルールが緩むわけではありません。ここを取り違えると、割増賃金の未払いや健康診断の未実施という形でリスクが残ります。\n\n## 24時間・深夜営業のシフトは、変形労働時間制と深夜割増でどう組む？\n\n深夜営業や長時間営業では、まず午後10時から午前5時までの深夜割増（労働基準法第37条第4項・2割5分以上）を正しく計算することが土台です。そのうえで、曜日や時間帯で来客の波がある給油所では、変形労働時間制を使って所定労働時間をならすのが一般的です。\n\n| 制度 | 根拠条文 | 使いどころ |\n|---|---|---|\n| 深夜割増 | 労働基準法第37条第4項 | 午後10時〜午前5時の労働に2割5分以上。時間外・休日の割増と重なれば加算する |\n| 1か月単位の変形労働時間制 | 労働基準法第32条の2 | 月内で繁閑があるとき。週平均40時間以内で日・週の所定を設定する |\n| 1年単位の変形労働時間制 | 労働基準法第32条の4 | 季節で繁閑があるとき。労使協定と届出が必要で、1日・1週の上限がある |\n| 時間外・休日労働 | 労働基準法第36条 | 法定時間を超えて働かせるには36協定の締結・届出が前提 |\n\n変形労働時間制を採っても、深夜割増は別に計算します。変形で所定労働時間をならすことと、深夜の時間帯に働いたことへの割増は、別のルールだからです。固定残業代を組むなら、何時間分の時間外・深夜を含むのかを賃金規程で明示します。変形労働時間制の選び方は[変形労働時間制とフレックスタイム制の選び方](/labor/column/henkei-roudoujikan-flextime-erabikata)でも整理しています。\n\n## 危険物取扱者やセルフの監視は、人員配置にどう影響する？\n\n給油取扱所では、危険物保安監督者を選任する義務があります（消防法第13条第1項、危険物の規制に関する政令第31条の2）。保安監督者になれるのは、甲種または乙種（第4類を含む）の危険物取扱者で、6か月以上の実務経験がある人です。危険物取扱者には甲種・乙種・丙種の区分があり（消防法第13条の2）、ガソリンや軽油など第4類を扱うには乙種第4類または丙種の免状が必要です。\n\n| 項目 | 根拠 | 人員配置への影響 |\n|---|---|---|\n| 危険物保安監督者 | 消防法第13条第1項・政令第31条の2 | 甲種または乙種（6か月以上の実務経験）を選任。常時その体制が要る |\n| 危険物取扱者の立会い | 消防法第13条・第13条の3 | 無資格者が取り扱うときは危険物取扱者の立会いが必要 |\n| セルフ（顧客に自ら給油等をさせる給油取扱所） | 危険物の規制に関する政令第17条第5項 | 顧客の給油を危険物取扱者が監視し、制御卓で給油を許可する体制が要る |\n\nセルフスタンドは、顧客自身が給油する代わりに、従業者（危険物取扱者）が制御卓から監視し、給油の可否を判断して許可する仕組みが前提です（危険物の規制に関する政令第17条第5項と、これを受けた規則・消防庁の運用通知）。この監視は無資格者に任せられないため、営業時間を通じて危険物取扱者を1人以上確保できるかが、シフトと採用計画を決めます。資格の取得そのものは従業員本人が受験し、施設の設置・変更の許可申請は行政書士や消防署の領域です。労務として設計するのは、資格者の勤務を軸にした労働時間とシフトです。\n\n## 深夜業の従業員の健康診断（年2回）はどう運用する？\n\n深夜業を含む業務に常時従事する従業員は、特定業務従事者として、配置替えの際と6か月以内ごとに1回（＝年2回）の健康診断を受けさせる義務があります（労働安全衛生規則第45条）。通常の定期健康診断が1年に1回（同規則第44条）であるのに対し、深夜業は年2回になるのが給油所で見落としやすい点です。\n\n胸部エックス線検査など一部の項目は1年以内ごとに1回で足りますが、血圧・血液・心電図などの項目は年2回行います。常時50人以上の労働者を使用する事業場では、健康診断を行ったときに定期健康診断結果報告書を所轄労働基準監督署長へ提出します（同規則第52条）。健康診断の実施と費用・時間の扱いは[定期健康診断の実施義務と費用・時間](/labor/column/teiki-kenko-shindan-jisshi-gimu-hiyo-jikan)で詳しく整理しています。\n\n## 開業・承継時に出す社会保険・労働保険の届出と期限は？\n\n法人であれば代表者1人でも健康保険・厚生年金保険が強制適用になり、従業員を雇えば労働保険（労災保険・雇用保険）の加入手続が必要です。給油所を事業承継（譲渡や法人成り）する場合は、適用事業所の新規適用・廃止や、従業員の資格取得・喪失の手続が伴います。\n\n| 届出 | 提出先 | 目安の期限 |\n|---|---|---|\n| 健康保険・厚生年金保険 新規適用届 | 年金事務所 | 事実発生から5日以内 |\n| 労働保険 保険関係成立届 | 労働基準監督署 | 保険関係成立の翌日から10日以内 |\n| 雇用保険 適用事業所設置届 | 公共職業安定所（ハローワーク） | 設置の翌日から10日以内 |\n| 被保険者資格取得届 | 年金事務所・ハローワーク | 採用の都度（社会保険は5日以内） |\n\n承継の形（個人事業の譲渡か、法人の株式譲渡か）で手続が変わるため、どの届出が要るかは早めに確認します。本記事では個別の結論は出しません。\n\n## 許認可・資格・労務・税務は、誰が担う？\n\n給油所の開業・運営には複数の専門分野が重なります。危険物施設の設置・変更の許可申請や消防関係の手続は行政書士と消防署、危険物取扱者の資格取得は従業員本人、労働時間・シフト・社会保険・労災などの労務は社会保険労務士、譲渡所得や設備投資の税務は税理士、登記は司法書士の領域です。それぞれ独立した事業体として別々にご契約いただきます。当事務所は紹介料を受け取りません。\n\n四葉社会保険労務士事務所がお引き受けするのは、危険物取扱者の勤務を軸にしたシフトと変形労働時間制の設計、深夜割増・固定残業代の設計、36協定の締結・届出、特定業務従事者の健康診断を含む労働安全衛生の運用、社会保険・労働保険の届出です。\n\nご相談は無料です。費用は[報酬額表](/labor/ryokin)に、[サービス内容](/labor/services)と[ご相談の流れ](/labor/nagare)もあわせてご覧ください。\n\n## よくある質問\n\n**Q. セルフスタンドなら無資格の学生アルバイトだけで深夜を回せますか？**\nA. いいえ。セルフ（顧客に自ら給油等をさせる給油取扱所）でも、顧客の給油を監視し給油を許可するのは危険物取扱者の役割で、無資格者だけでは営業できません（危険物の規制に関する政令第17条第5項と関係規則）。営業時間を通じて危険物取扱者を確保できるシフトが前提になります。資格の有無による配置は消防法のルールで、労務ではその体制を前提に労働時間を組みます。\n\n**Q. 深夜のシフトに入る従業員の健康診断は、年1回で足りますか？**\nA. いいえ。深夜業を含む業務に常時従事する人は、特定業務従事者として配置替えの際と6か月以内ごとに1回（年2回）の健康診断が必要です（労働安全衛生規則第45条）。通常の定期健康診断（年1回・同規則第44条）より回数が多くなります。どの従業員が対象かは、深夜業に常時従事しているかで判断します。\n\n**Q. 1年単位の変形労働時間制にすれば残業代は払わなくてよいですか？**\nA. いいえ。変形労働時間制は所定労働時間を期間で平均してならす仕組みで、割増賃金が不要になるわけではありません。あらかじめ定めた所定を超えて働かせれば時間外割増が、午後10時〜午前5時に働かせれば深夜割増が必要です（労働基準法第37条）。1年単位は労使協定の締結と労働基準監督署への届出が前提です（第32条の4）。\n\n**Q. 危険物取扱者の資格は社会保険労務士に取ってもらえますか？**\nA. いいえ。危険物取扱者の免状は本人が試験（一般財団法人消防試験研究センター）を受けて取得するもので、代行はできません。施設の設置・変更の許可申請は行政書士や消防署の領域です。社会保険労務士がお引き受けするのは、資格者の勤務を前提にしたシフト・労働時間・社会保険・労災といった労務です。\n\n## この記事の根拠\n\n- 労働基準法（昭和22年法律第49号）第32条の2（1か月単位の変形労働時間制）・第32条の4（1年単位の変形労働時間制。労使協定の締結と所轄労働基準監督署長への届出が必要）・第36条（時間外及び休日の労働。36協定）・第37条（割増賃金。第1項＝時間外2割5分以上・休日3割5分以上、第4項＝深夜〈午後10時から午前5時まで〉2割5分以上）\n- 労働安全衛生規則（昭和47年労働省令第32号）第44条（定期健康診断・1年以内ごとに1回）・第45条（特定業務従事者の健康診断。労働安全衛生規則第13条第1項第3号の業務〈深夜業を含む〉に常時従事する労働者に対し、配置替えの際及び6月以内ごとに1回。胸部エックス線等の一部項目は1年以内ごとに1回で足りる）・第52条（常時50人以上の労働者を使用する事業者は定期健康診断結果報告書を所轄労働基準監督署長に提出）\n- 消防法（昭和23年法律第186号）第13条（危険物保安監督者の選任、危険物取扱者による取扱い・立会い）・第13条の2（危険物取扱者の免状＝甲種・乙種・丙種）\n- 危険物の規制に関する政令（昭和34年政令第306号）第17条第5項（顧客に自ら給油等をさせる給油取扱所＝セルフの位置・構造・設備の技術上の基準の特例）・第31条の2（危険物保安監督者を定めなければならない製造所等。給油取扱所を含む）\n- 総務省消防庁「顧客に自ら給油等をさせる給油取扱所に係る運用について」（平成10年3月13日消防危第25号ほか）── 顧客の給油作業等を危険物取扱者が監視し、給油を許可する体制等の運用（2026年10月1日参照）\n- 事業承継の形（個人事業の譲渡か法人の株式譲渡か）による届出の要否、個別の従業員が特定業務従事者に当たるかの当てはめは、事案ごとに分かれます。本記事では個別の結論を出していません（**未検証**）\n\n本記事は一般的な情報提供です。個別のご事情に応じた判断は、面談のうえ有資格者が行います。四葉社会保険労務士事務所では、危険物取扱者の勤務を軸にしたシフトと変形労働時間制の設計、深夜割増・固定残業代の設計、36協定の締結・届出、特定業務従事者の健康診断を含む労働安全衛生の運用、社会保険・労働保険の届出についてご相談いただけます。危険物施設の設置・変更の許可申請は行政書士や消防署、危険物取扱者の資格取得は従業員本人、譲渡所得や設備投資の税務は税理士、登記は司法書士が担います。それぞれ独立した事業体として別々にご契約いただき、当事務所は紹介料を受け取りません。よくいただくご質問は[よくあるご質問](/labor/faq)にまとめています。執筆は[浦松丈二](/about/uramatsu)（社会保険労務士・行政書士・宅地建物取引士）です。",
+    "status": "published",
+    "author": {
+      "name": "浦松 丈二",
+      "title": "社会保険労務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+    },
+    "keywords": [
+      "ガソリンスタンド 労務",
+      "セルフ 給油取扱所 監視 危険物取扱者",
+      "危険物保安監督者 配置",
+      "ガソリンスタンド 深夜 割増 変形労働時間制",
+      "深夜業 健康診断 年2回",
+      "SS 開業 社会保険 労働保険 届出"
+    ],
+    "tags": [
+      "ガソリンスタンド",
+      "危険物",
+      "深夜割増",
+      "変形労働時間制",
+      "健康診断",
+      "開業"
+    ],
+    "locales": [],
+    "faq": [
+      {
+        "question": "セルフスタンドなら無資格の学生アルバイトだけで深夜を回せますか？",
+        "answer": "いいえ。セルフ（顧客に自ら給油等をさせる給油取扱所）でも、顧客の給油を監視し給油を許可するのは危険物取扱者の役割で、無資格者だけでは営業できません（危険物の規制に関する政令第17条第5項と関係規則）。営業時間を通じて危険物取扱者を確保できるシフトが前提になります。資格の有無による配置は消防法のルールで、労務ではその体制を前提に労働時間を組みます。"
+      },
+      {
+        "question": "深夜のシフトに入る従業員の健康診断は、年1回で足りますか？",
+        "answer": "いいえ。深夜業を含む業務に常時従事する人は、特定業務従事者として配置替えの際と6か月以内ごとに1回（年2回）の健康診断が必要です（労働安全衛生規則第45条）。通常の定期健康診断（年1回・同規則第44条）より回数が多くなります。どの従業員が対象かは、深夜業に常時従事しているかで判断します。"
+      },
+      {
+        "question": "1年単位の変形労働時間制にすれば残業代は払わなくてよいですか？",
+        "answer": "いいえ。変形労働時間制は所定労働時間を期間で平均してならす仕組みで、割増賃金が不要になるわけではありません。あらかじめ定めた所定を超えて働かせれば時間外割増が、午後10時〜午前5時に働かせれば深夜割増が必要です（労働基準法第37条）。1年単位は労使協定の締結と労働基準監督署への届出が前提です（第32条の4）。"
+      },
+      {
+        "question": "危険物取扱者の資格は社会保険労務士に取ってもらえますか？",
+        "answer": "いいえ。危険物取扱者の免状は本人が試験（一般財団法人消防試験研究センター）を受けて取得するもので、代行はできません。施設の設置・変更の許可申請は行政書士や消防署の領域です。社会保険労務士がお引き受けするのは、資格者の勤務を前提にしたシフト・労働時間・社会保険・労災といった労務です。"
+      }
+    ],
+    "translations": {
+      "en": {
+        "title": "Opening or running a petrol station: what to watch in labour and hazardous-materials staffing",
+        "excerpt": "A petrol station's labour centres on late-night premiums (Labour Standards Act Article 37) and variable working-hours systems (Articles 32-2 and 32-4), with the placement of a licensed hazardous-materials handler and the self-service monitoring regime built into the staffing plan. Qualifications and facility permits belong to the fire department and a Gyoseishoshi; the labour side is a Shakai Hoken Roumushi's area, contracted separately as independent entities.",
+        "content": "**Bottom line first**: A petrol station's labour is built around late-night premiums (Labour Standards Act Article 37) and variable working-hours systems (Articles 32-2 and 32-4), with the placement of a licensed hazardous-materials handler and the self-service monitoring regime woven into the staffing plan. Qualifications and facility permits are the area of the fire department and a Gyoseishoshi; the labour side is a Shakai Hoken Roumushi's area.\n\nA service station (SS) differs from other businesses in two ways that bind the shift roster and staffing at the same time: long hours that run into the night and early morning, and the fact that you cannot operate without a licensed hazardous-materials handler. Design the working-hours system and the hazardous-materials staffing separately and one of them breaks. This article sets out the order an owner should grasp before opening or succeeding to the business.\n\n## How is a petrol station's labour different from other industries?\n\nBecause petrol (a Class 4 hazardous material) is handled, you must appoint a hazardous-materials safety supervisor and keep a licensed handler present or monitoring during opening hours — in both full-service and self-service formats. So you cannot simply \"cut people to run leaner\": working hours are built around the qualified staff's shifts.\n\nAt the same time, the rules of the Labour Standards Act and the Industrial Safety and Health Act — working hours, breaks, holidays, premium wages, health checks — apply just as in any other industry. The special hazardous-materials regime does not loosen labour law.\n\n## How do you build 24-hour and late-night shifts with variable working hours and late-night premiums?\n\nFirst, calculate the late-night premium correctly: at least 25% for work between 10 p.m. and 5 a.m. (Labour Standards Act Article 37(4)). On top of that, where demand rises and falls by day or time, a variable working-hours system is used to level out contracted hours.\n\n| System | Basis | When to use |\n|---|---|---|\n| Late-night premium | Labour Standards Act Article 37(4) | 10 p.m.–5 a.m.: at least 25%, added on top of overtime/holiday premiums |\n| 1-month variable working hours | Labour Standards Act Article 32-2 | Monthly peaks; average 40 hours a week |\n| 1-year variable working hours | Labour Standards Act Article 32-4 | Seasonal peaks; needs a labour-management agreement and filing |\n| Overtime / holiday work | Labour Standards Act Article 36 | A filed Article 36 agreement is required first |\n\nEven under a variable system, the late-night premium is calculated separately. See [choosing between variable working hours and flexitime](/en/labor/column/henkei-roudoujikan-flextime-erabikata).\n\n## How do hazardous-materials handlers and self-service monitoring affect staffing?\n\nA filling station must appoint a hazardous-materials safety supervisor (Fire Service Act Article 13(1); Cabinet Order on Hazardous Materials Article 31-2) — a Class A, or Class B (including Category 4), handler with at least six months' experience. Handler licences come in Class A, B and C (Fire Service Act Article 13-2); Category 4, such as petrol and diesel, needs a Class B (Category 4) or Class C licence.\n\n| Item | Basis | Effect on staffing |\n|---|---|---|\n| Safety supervisor | Fire Service Act Art. 13(1); Order Art. 31-2 | Appoint Class A or B with 6 months' experience; needed at all times |\n| Handler attendance | Fire Service Act Art. 13 | An unlicensed person handling fuel needs a licensed handler present |\n| Self-service station | Order on Hazardous Materials Art. 17(5) | A licensed handler monitors customers and authorises fuelling from the console |\n\nA self-service station still requires a staff member (a licensed handler) to monitor and authorise fuelling from the console (Cabinet Order Article 17(5) and the related rules and Fire Agency guidance). Whether you can secure at least one licensed handler throughout opening hours decides your roster and hiring plan. Obtaining the licence itself is done by the employee; the permit to install or alter the facility is the area of a Gyoseishoshi and the fire department.\n\n## How do you run the twice-a-year health check for night-shift staff?\n\nEmployees who regularly do work that includes night work are \"specified-task workers\" and must have a health check on reassignment and once every six months — twice a year (Industrial Safety and Health Regulations Article 45), versus once a year for the ordinary periodic check (Article 44). Some items, such as chest X-rays, need only be done once a year. Where 50 or more workers are regularly employed, a results report goes to the head of the Labour Standards Inspection Office (Article 52). See [the duty to provide periodic health checks and who pays for the time](/en/labor/column/teiki-kenko-shindan-jisshi-gimu-hiyo-jikan).\n\n## What social-insurance and labour-insurance filings and deadlines arise on opening or succession?\n\nA company is covered by health and pension insurance even with a single director, and hiring staff triggers labour insurance. On succession, new-application or closure filings and acquisition/loss of insured status follow.\n\n| Filing | Where | Deadline guide |\n|---|---|---|\n| Health/pension new-application | Pension Office | Within 5 days of the event |\n| Labour-insurance establishment | Labour Standards Inspection Office | Within 10 days |\n| Employment-insurance office set-up | Hello Work | Within 10 days |\n| Acquisition of insured status | Pension Office / Hello Work | On each hire (social insurance within 5 days) |\n\nWhich filings apply depends on the form of succession (sole-proprietor transfer or share transfer). This article does not give an individual conclusion.\n\n## Who handles permits, qualifications, labour and tax?\n\nPermits to install or alter hazardous-materials facilities and fire-related procedures belong to a Gyoseishoshi and the fire department; the handler licence is obtained by the employee; working hours, shifts, social insurance and workers' compensation belong to a Shakai Hoken Roumushi; capital-gains and equipment-investment tax to a tax accountant; registration to a judicial scrivener. Each is engaged as a separate, independent entity under separate contracts, and this office takes no referral fee.\n\nYour first consultation is free. Please see the [fee schedule](/en/labor/ryokin), the [services](/en/labor/services) and [how we work](/en/labor/nagare).\n\n## Frequently asked questions\n\n**Q. Can a self-service station run the night shift with unlicensed student part-timers alone?**\nA. No. Even at a self-service station, monitoring customers and authorising fuelling is the role of a licensed hazardous-materials handler, and you cannot operate with unlicensed staff alone (Cabinet Order on Hazardous Materials Article 17(5) and related rules). A roster that secures a licensed handler throughout opening hours is the premise.\n\n**Q. Is a once-a-year health check enough for night-shift staff?**\nA. No. Workers who regularly do work including night work are specified-task workers and need a check on reassignment and once every six months — twice a year (Industrial Safety and Health Regulations Article 45), more often than the once-a-year periodic check (Article 44).\n\n**Q. If we adopt a one-year variable working-hours system, can we stop paying overtime?**\nA. No. A variable system levels out contracted hours over a period; it does not remove premium pay. Work beyond the pre-set hours needs an overtime premium, and work between 10 p.m. and 5 a.m. needs the late-night premium (Article 37). The one-year system requires a labour-management agreement and a filing (Article 32-4).\n\n**Q. Can a Shakai Hoken Roumushi obtain the hazardous-materials handler licence for us?**\nA. No. The licence is taken by the individual through an examination and cannot be done on their behalf. Facility install/alter permits belong to a Gyoseishoshi and the fire department. A Shakai Hoken Roumushi handles the labour side — shifts, working hours, social insurance and workers' compensation built around the qualified staff.\n\n## This article's basis\n\n- Labour Standards Act (Act No. 49 of 1947) Article 32-2 (1-month variable working hours), Article 32-4 (1-year variable working hours; needs a labour-management agreement and a filing with the head of the Labour Standards Inspection Office), Article 36 (overtime and holiday work; the Article 36 agreement), Article 37 (premium wages; para. 1 overtime at least 25% / holiday at least 35%, para. 4 late-night work from 10 p.m. to 5 a.m. at least 25%)\n- Industrial Safety and Health Regulations (Ministry of Labour Order No. 32 of 1972) Article 44 (periodic health check once a year), Article 45 (specified-task workers, including night work, on reassignment and once every six months; some items once a year suffice), Article 52 (employers of 50 or more regular workers submit the periodic health-check results report)\n- Fire Service Act (Act No. 186 of 1948) Article 13 (appointment of a hazardous-materials safety supervisor; handling and attendance by licensed handlers), Article 13-2 (handler licences: Class A, B, C)\n- Cabinet Order on the Regulation of Hazardous Materials (Order No. 306 of 1959) Article 17(5) (technical standards for stations where customers fuel themselves, i.e. self-service), Article 31-2 (facilities that must appoint a safety supervisor, including filling stations)\n- Fire and Disaster Management Agency notice on the operation of self-service stations (13 March 1998, Shobo-ki No. 25 and others): monitoring of customer fuelling by a licensed handler and authorisation of fuelling (accessed 1 October 2026)\n- Whether a particular filing is needed on succession, and whether an individual employee is a specified-task worker, vary case by case. This article does not give an individual conclusion (**unverified**).\n\nThis article is general information. An individual judgment on your circumstances is made by a qualified professional after a meeting. At the Yotsuba Shakai Hoken Roumushi Office we can advise on shifts and variable working hours built around licensed handlers, late-night and fixed-overtime pay design, the Article 36 agreement, industrial safety and health including specified-task-worker checks, and social- and labour-insurance filings. Facility permits belong to a Gyoseishoshi and the fire department, the handler licence to the employee, tax to a tax accountant, and registration to a judicial scrivener — each a separate, independent entity engaged under separate contracts, with no referral fee. Common questions are gathered in the [FAQ](/en/labor/faq). Written by [Joji Uramatsu](/en/about/uramatsu) (Shakai Hoken Roumushi, Gyoseishoshi, Licensed Real Estate Transaction Agent).",
+        "category": "Working practices",
+        "keywords": [
+          "petrol station labour",
+          "self-service station monitoring",
+          "hazardous-materials handler placement",
+          "late-night premium service station",
+          "variable working hours petrol stand",
+          "night work health check twice a year"
+        ],
+        "tags": [
+          "Petrol station",
+          "Hazardous materials",
+          "Shift work",
+          "Late-night premium",
+          "Variable working hours",
+          "Health check"
+        ],
+        "author": {
+          "name": "Joji Uramatsu",
+          "title": "Shakai Hoken Roumushi (Certified Social Insurance and Labor Consultant), Gyoseishoshi (Certified Administrative Procedures Legal Specialist), Registered Real Estate Transaction Specialist — 四葉社会保険労務士事務所／四葉行政書士事務所"
+        },
+        "faq": [
+          {
+            "question": "Can a self-service station run the night shift with unlicensed student part-timers alone?",
+            "answer": "No. Even at a self-service station, monitoring customers and authorising fuelling is the role of a licensed hazardous-materials handler, and you cannot operate with unlicensed staff alone (Cabinet Order on Hazardous Materials Article 17(5) and related rules). A roster that secures a licensed handler throughout opening hours is the premise."
+          },
+          {
+            "question": "Is a once-a-year health check enough for night-shift staff?",
+            "answer": "No. Workers who regularly do work including night work are specified-task workers and need a check on reassignment and once every six months — twice a year (Industrial Safety and Health Regulations Article 45), more often than the once-a-year periodic check (Article 44)."
+          },
+          {
+            "question": "If we adopt a one-year variable working-hours system, can we stop paying overtime?",
+            "answer": "No. A variable system levels out contracted hours over a period; it does not remove premium pay. Work beyond the pre-set hours needs an overtime premium, and work between 10 p.m. and 5 a.m. needs the late-night premium (Article 37). The one-year system requires a labour-management agreement and a filing (Article 32-4)."
+          },
+          {
+            "question": "Can a Shakai Hoken Roumushi obtain the hazardous-materials handler licence for us?",
+            "answer": "No. The licence is taken by the individual through an examination and cannot be done on their behalf. Facility install/alter permits belong to a Gyoseishoshi and the fire department. A Shakai Hoken Roumushi handles the labour side — shifts, working hours, social insurance and workers' compensation built around the qualified staff."
+          }
+        ]
+      },
+      "zh-tw": {
+        "title": "開設・經營加油站時，勞務與危險物配置該注意什麼？",
+        "excerpt": "加油站的勞務以深夜加給（勞動基準法第37條）與變形勞動時間制（第32條之2・第32條之4）為軸，並將危險物取扱者的配置與自助式的監視體制納入人員計畫。資格與設施許可屬消防署・行政書士，勞務屬社會保險勞務士，各自作為獨立的事業體另行簽約。",
+        "content": "**結論（先講重點）**：加油站的勞務以深夜加給（勞動基準法第37條）與變形勞動時間制（第32條之2・第32條之4）為軸來組合，並將危險物取扱者的配置與自助式的監視體制織入人員計畫。資格與設施許可屬消防署・行政書士，勞務屬社會保險勞務士的領域。\n\n加油站（服務站、SS）的勞務與其他行業不同之處有兩點，且同時牽制輪班與人員配置：營業時間長且及於深夜・清晨，以及不配置危險物取扱者這類資格者就無法營業。若把勞動時間制度與危險物的人員配置分開思考，其中一邊就會崩解。本文整理經營者在開業・事業承繼前應掌握的順序。\n\n## 加油站的勞務，與其他行業有何不同？\n\n由於處理汽油（第4類危險物），無論全服務或自助式，都必須選任危險物保安監督者，並在營業時間內由危險物取扱者在場或監視。因此並非「減少人手就能運轉」，而是以資格者的勤務為軸來組合勞動時間。\n\n另一方面，勞動時間・休息・休假・加給・健康診斷等勞動基準法・勞動安全衛生法的規則，與其他行業一樣適用。危險物的體制特殊，並不代表勞動法的規則放寬。\n\n## 24小時・深夜營業的輪班，如何以變形勞動時間制與深夜加給組合？\n\n首先要正確計算午後10時至午前5時的深夜加給（勞動基準法第37條第4項・2成5分以上）。在此之上，對於依星期或時段有來客波動的加油站，常以變形勞動時間制將所定勞動時間平均化。\n\n| 制度 | 依據條文 | 使用時機 |\n|---|---|---|\n| 深夜加給 | 勞動基準法第37條第4項 | 午後10時〜午前5時加2成5分以上，與加班・休假加給重疊時另加 |\n| 1個月單位變形勞動時間制 | 勞動基準法第32條之2 | 月內有繁閒時，週平均40小時以內 |\n| 1年單位變形勞動時間制 | 勞動基準法第32條之4 | 季節有繁閒時，須勞資協定與申報 |\n| 加班・休假勞動 | 勞動基準法第36條 | 須先締結・申報36協定 |\n\n即使採變形勞動時間制，深夜加給仍另行計算。變形勞動時間制的選擇可參閱[變形勞動時間制與彈性工時的選擇](/zh-tw/labor/column/henkei-roudoujikan-flextime-erabikata)。\n\n## 危險物取扱者與自助式的監視，如何影響人員配置？\n\n加油取扱所有選任危險物保安監督者的義務（消防法第13條第1項、危險物規制相關政令第31條之2）。可擔任者為甲種或乙種（含第4類）、具6個月以上實務經驗的危險物取扱者。危險物取扱者分甲種・乙種・丙種（消防法第13條之2），處理汽油・輕油等第4類須乙種第4類或丙種執照。\n\n| 項目 | 依據 | 對人員配置的影響 |\n|---|---|---|\n| 危險物保安監督者 | 消防法第13條第1項・政令第31條之2 | 選任甲種或乙種（6個月以上實務經驗），須恆常維持 |\n| 危險物取扱者在場 | 消防法第13條 | 無資格者處理時須危險物取扱者在場 |\n| 自助式（由顧客自行加油等的加油取扱所） | 危險物規制相關政令第17條第5項 | 須由危險物取扱者監視顧客加油並於控制台許可 |\n\n自助式仍以由從業者（危險物取扱者）從控制台監視、判斷並許可加油為前提（危險物規制相關政令第17條第5項及據此的規則・消防廳運用通知）。能否在營業時間內確保至少1名危險物取扱者，決定了輪班與招募計畫。取得資格本身由從業者本人應試，設施設置・變更許可申請屬行政書士與消防署的領域。\n\n## 深夜業從業者的健康診斷（年2次）如何運用？\n\n恆常從事含深夜業之業務的從業者，作為特定業務從業者，須於配置替換時及每6個月以內1次（即年2次）實施健康診斷（勞動安全衛生規則第45條）。相對於一般定期健康診斷每年1次（同規則第44條），次數加倍。胸部X光等部分項目每年1次即足。恆常使用50人以上勞工的事業場，實施時須向所轄勞動基準監督署長提交結果報告書（同規則第52條）。健康診斷的實施與費用・時間可參閱[定期健康診斷的實施義務與費用・時間](/zh-tw/labor/column/teiki-kenko-shindan-jisshi-gimu-hiyo-jikan)。\n\n## 開業・承繼時應提出的社會保險・勞動保險申報與期限為何？\n\n法人即使僅代表者1人也強制適用健康保險・厚生年金，雇用員工則須辦理勞動保險。承繼（讓與或法人化）時，伴隨適用事業所的新規適用・廢止，以及員工的資格取得・喪失手續。\n\n| 申報 | 提交處 | 期限概估 |\n|---|---|---|\n| 健康保險・厚生年金 新規適用 | 年金事務所 | 事實發生起5日內 |\n| 勞動保險 保險關係成立 | 勞動基準監督署 | 10日內 |\n| 雇用保險 適用事業所設置 | Hello Work | 10日內 |\n| 被保險者資格取得 | 年金事務所・Hello Work | 每次雇用時（社會保險5日內） |\n\n承繼的形式（個人事業讓與或法人股權讓與）會改變手續。本文不作個別結論。\n\n## 許認可・資格・勞務・稅務由誰負責？\n\n危險物設施的設置・變更許可申請與消防相關手續屬行政書士與消防署、危險物取扱者資格由從業者本人、勞動時間・輪班・社會保險・勞災等勞務屬社會保險勞務士、讓渡所得與設備投資稅務屬稅理士、登記屬司法書士的領域。各自作為獨立的事業體另行簽約，本所不收取介紹費。\n\n初次諮詢免費。費用請見[報酬額表](/zh-tw/labor/ryokin)，並參閱[服務內容](/zh-tw/labor/services)與[諮詢流程](/zh-tw/labor/nagare)。\n\n## 常見問題\n\n**Q. 自助式加油站可否僅以無資格的工讀生運轉深夜？**\nA. 不可。自助式（由顧客自行加油等的加油取扱所）中，監視顧客加油並許可加油仍是危險物取扱者的角色，僅靠無資格者無法營業（危險物規制相關政令第17條第5項及相關規則）。以營業時間內確保危險物取扱者的輪班為前提。\n\n**Q. 排深夜班的員工健康診斷每年1次夠嗎？**\nA. 不夠。恆常從事含深夜業之業務者，作為特定業務從業者，須於配置替換時及每6個月以內1次（年2次）實施健康診斷（勞動安全衛生規則第45條），較一般定期健康診斷（每年1次・同規則第44條）次數多。\n\n**Q. 採1年單位變形勞動時間制就不必付加班費嗎？**\nA. 不是。變形勞動時間制是將所定勞動時間於期間內平均化，並非免除加給。超過預定所定須加班加給，午後10時〜午前5時工作須深夜加給（第37條）。1年單位須締結勞資協定並向勞動基準監督署申報（第32條之4）。\n\n**Q. 危險物取扱者資格可否請社會保險勞務士代為取得？**\nA. 不可。危險物取扱者執照由本人應試取得，無法代辦。設施設置・變更許可申請屬行政書士與消防署的領域。社會保險勞務士負責以資格者勤務為前提的輪班・勞動時間・社會保險・勞災等勞務。\n\n## 本文根據\n\n- 勞動基準法（昭和22年法律第49號）第32條之2（1個月單位變形勞動時間制）・第32條之4（1年單位變形勞動時間制，須勞資協定與向所轄勞動基準監督署長申報）・第36條（加班及休假勞動的36協定）・第37條（加給。第1項＝加班2成5分以上・休假3成5分以上，第4項＝深夜〈午後10時至午前5時〉2成5分以上）\n- 勞動安全衛生規則（昭和47年勞動省令第32號）第44條（定期健康診斷・每年1次）・第45條（特定業務從業者的健康診斷・配置替換時及每6個月以內1次，胸部X光等部分項目每年1次即足）・第52條（恆常使用50人以上勞工的事業者須向所轄勞動基準監督署長提交定期健康診斷結果報告書）\n- 消防法（昭和23年法律第186號）第13條（危險物保安監督者的選任、危險物取扱者的處理・在場）・第13條之2（危險物取扱者執照＝甲種・乙種・丙種）\n- 危險物規制相關政令（昭和34年政令第306號）第17條第5項（由顧客自行加油等的加油取扱所＝自助式的位置・構造・設備技術上基準的特例）・第31條之2（須選任危險物保安監督者的製造所等，含加油取扱所）\n- 總務省消防廳「關於由顧客自行加油等之加油取扱所的運用」（平成10年3月13日消防危第25號等）── 由危險物取扱者監視顧客加油作業並許可加油等的運用（2026年10月1日參照）\n- 承繼形式造成的申報要否、個別員工是否屬特定業務從業者的認定，將因個案而異。本文不作個別結論（**未驗證**）\n\n本文為一般性資訊提供。依個別情事的判斷，由有資格者於面談後進行。四葉社会保険労務士事務所可就以危險物取扱者勤務為軸的輪班與變形勞動時間制設計、深夜加給・固定加班費設計、36協定締結・申報、含特定業務從業者健康診斷的勞動安全衛生運用、社會保險・勞動保險申報提供諮詢。危險物設施許可屬行政書士與消防署、資格由從業者本人、稅務屬稅理士、登記屬司法書士。各自作為獨立的事業體另行簽約，本所不收取介紹費。常見問題整理於[常見問題](/zh-tw/labor/faq)。撰文為[浦松丈二](/zh-tw/about/uramatsu)（社會保險勞務士・行政書士・宅地建物取引士）。",
+        "category": "勞務實務",
+        "keywords": [
+          "加油站 勞務",
+          "自助加油站 監視",
+          "危險物取扱者 配置",
+          "深夜加給 加油站",
+          "變形勞動時間制 加油站",
+          "深夜業 健康診斷 年2次"
+        ],
+        "tags": [
+          "加油站",
+          "危險物",
+          "輪班",
+          "深夜加給",
+          "變形勞動時間制",
+          "健康診斷"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社會保險勞務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "自助式加油站可否僅以無資格的工讀生運轉深夜？",
+            "answer": "不可。自助式（由顧客自行加油等的加油取扱所）中，監視顧客加油並許可加油仍是危險物取扱者的角色，僅靠無資格者無法營業（危險物規制相關政令第17條第5項及相關規則）。以營業時間內確保危險物取扱者的輪班為前提。"
+          },
+          {
+            "question": "排深夜班的員工健康診斷每年1次夠嗎？",
+            "answer": "不夠。恆常從事含深夜業之業務者，作為特定業務從業者，須於配置替換時及每6個月以內1次（年2次）實施健康診斷（勞動安全衛生規則第45條），較一般定期健康診斷（每年1次・同規則第44條）次數多。"
+          },
+          {
+            "question": "採1年單位變形勞動時間制就不必付加班費嗎？",
+            "answer": "不是。變形勞動時間制是將所定勞動時間於期間內平均化，並非免除加給。超過預定所定須加班加給，午後10時〜午前5時工作須深夜加給（第37條）。1年單位須締結勞資協定並向勞動基準監督署申報（第32條之4）。"
+          },
+          {
+            "question": "危險物取扱者資格可否請社會保險勞務士代為取得？",
+            "answer": "不可。危險物取扱者執照由本人應試取得，無法代辦。設施設置・變更許可申請屬行政書士與消防署的領域。社會保險勞務士負責以資格者勤務為前提的輪班・勞動時間・社會保險・勞災等勞務。"
+          }
+        ]
+      },
+      "zh": {
+        "title": "开设・经营加油站时，劳务与危险物配置该注意什么？",
+        "excerpt": "加油站的劳务以深夜加给（劳动基准法第37条）与变形劳动时间制（第32条之2・第32条之4）为轴，并将危险物取扱者的配置与自助式的监视体制纳入人员计划。资格与设施许可属消防署・行政书士，劳务属社会保险劳务士，各自作为独立的事业体另行签约。",
+        "content": "**结论（先讲重点）**：加油站的劳务以深夜加给（劳动基准法第37条）与变形劳动时间制（第32条之2・第32条之4）为轴来组合，并将危险物取扱者的配置与自助式的监视体制织入人员计划。资格与设施许可属消防署・行政书士，劳务属社会保险劳务士的领域。\n\n加油站（服务站、SS）的劳务与其他行业不同之处有两点，且同时牵制轮班与人员配置：营业时间长且及于深夜・清晨，以及不配置危险物取扱者这类资格者就无法营业。若把劳动时间制度与危险物的人员配置分开思考，其中一边就会崩解。本文整理经营者在开业・事业承继前应掌握的顺序。\n\n## 加油站的劳务，与其他行业有何不同？\n\n由于处理汽油（第4类危险物），无论全服务或自助式，都必须选任危险物保安监督者，并在营业时间内由危险物取扱者在场或监视。因此并非「减少人手就能运转」，而是以资格者的勤务为轴来组合劳动时间。\n\n另一方面，劳动时间・休息・休假・加给・健康诊断等劳动基准法・劳动安全卫生法的规则，与其他行业一样适用。危险物的体制特殊，并不代表劳动法的规则放宽。\n\n## 24小时・深夜营业的轮班，如何以变形劳动时间制与深夜加给组合？\n\n首先要正确计算午后10时至午前5时的深夜加给（劳动基准法第37条第4项・2成5分以上）。在此之上，对于依星期或时段有来客波动的加油站，常以变形劳动时间制将所定劳动时间平均化。\n\n| 制度 | 依据条文 | 使用时机 |\n|---|---|---|\n| 深夜加给 | 劳动基准法第37条第4项 | 午后10时〜午前5时加2成5分以上，与加班・休假加给重叠时另加 |\n| 1个月单位变形劳动时间制 | 劳动基准法第32条之2 | 月内有繁闲时，周平均40小时以内 |\n| 1年单位变形劳动时间制 | 劳动基准法第32条之4 | 季节有繁闲时，须劳资协定与申报 |\n| 加班・休假劳动 | 劳动基准法第36条 | 须先缔结・申报36协定 |\n\n即使采变形劳动时间制，深夜加给仍另行计算。变形劳动时间制的选择可参阅[变形劳动时间制与弹性工时的选择](/zh/labor/column/henkei-roudoujikan-flextime-erabikata)。\n\n## 危险物取扱者与自助式的监视，如何影响人员配置？\n\n加油取扱所有选任危险物保安监督者的义务（消防法第13条第1项、危险物规制相关政令第31条之2）。可担任者为甲种或乙种（含第4类）、具6个月以上实务经验的危险物取扱者。危险物取扱者分甲种・乙种・丙种（消防法第13条之2），处理汽油・轻油等第4类须乙种第4类或丙种执照。\n\n| 项目 | 依据 | 对人员配置的影响 |\n|---|---|---|\n| 危险物保安监督者 | 消防法第13条第1项・政令第31条之2 | 选任甲种或乙种（6个月以上实务经验），须恒常维持 |\n| 危险物取扱者在场 | 消防法第13条 | 无资格者处理时须危险物取扱者在场 |\n| 自助式（由顾客自行加油等的加油取扱所） | 危险物规制相关政令第17条第5项 | 须由危险物取扱者监视顾客加油并于控制台许可 |\n\n自助式仍以由从业者（危险物取扱者）从控制台监视、判断并许可加油为前提（危险物规制相关政令第17条第5项及据此的规则・消防厅运用通知）。能否在营业时间内确保至少1名危险物取扱者，决定了轮班与招募计划。取得资格本身由从业者本人应试，设施设置・变更许可申请属行政书士与消防署的领域。\n\n## 深夜业从业者的健康诊断（年2次）如何运用？\n\n恒常从事含深夜业之业务的从业者，作为特定业务从业者，须于配置替换时及每6个月以内1次（即年2次）实施健康诊断（劳动安全卫生规则第45条）。相对于一般定期健康诊断每年1次（同规则第44条），次数加倍。胸部X光等部分项目每年1次即足。恒常使用50人以上劳工的事业场，实施时须向所辖劳动基准监督署长提交结果报告书（同规则第52条）。健康诊断的实施与费用・时间可参阅[定期健康诊断的实施义务与费用・时间](/zh/labor/column/teiki-kenko-shindan-jisshi-gimu-hiyo-jikan)。\n\n## 开业・承继时应提出的社会保险・劳动保险申报与期限为何？\n\n法人即使仅代表者1人也强制适用健康保险・厚生年金，雇用员工则须办理劳动保险。承继（让与或法人化）时，伴随适用事业所的新规适用・废止，以及员工的资格取得・丧失手续。\n\n| 申报 | 提交处 | 期限概估 |\n|---|---|---|\n| 健康保险・厚生年金 新规适用 | 年金事务所 | 事实发生起5日内 |\n| 劳动保险 保险关系成立 | 劳动基准监督署 | 10日内 |\n| 雇用保险 适用事业所设置 | Hello Work | 10日内 |\n| 被保险者资格取得 | 年金事务所・Hello Work | 每次雇用时（社会保险5日内） |\n\n承继的形式（个人事业让与或法人股权让与）会改变手续。本文不作个别结论。\n\n## 许认可・资格・劳务・税务由谁负责？\n\n危险物设施的设置・变更许可申请与消防相关手续属行政书士与消防署、危险物取扱者资格由从业者本人、劳动时间・轮班・社会保险・劳灾等劳务属社会保险劳务士、让渡所得与设备投资税务属税理士、登记属司法书士的领域。各自作为独立的事业体另行签约，本所不收取介绍费。\n\n初次咨询免费。费用请见[报酬额表](/zh/labor/ryokin)，并参阅[服务内容](/zh/labor/services)与[咨询流程](/zh/labor/nagare)。\n\n## 常见问题\n\n**Q. 自助式加油站可否仅以无资格的工读生运转深夜？**\nA. 不可。自助式（由顾客自行加油等的加油取扱所）中，监视顾客加油并许可加油仍是危险物取扱者的角色，仅靠无资格者无法营业（危险物规制相关政令第17条第5项及相关规则）。以营业时间内确保危险物取扱者的轮班为前提。\n\n**Q. 排深夜班的员工健康诊断每年1次够吗？**\nA. 不够。恒常从事含深夜业之业务者，作为特定业务从业者，须于配置替换时及每6个月以内1次（年2次）实施健康诊断（劳动安全卫生规则第45条），较一般定期健康诊断（每年1次・同规则第44条）次数多。\n\n**Q. 采1年单位变形劳动时间制就不必付加班费吗？**\nA. 不是。变形劳动时间制是将所定劳动时间于期间内平均化，并非免除加给。超过预定所定须加班加给，午后10时〜午前5时工作须深夜加给（第37条）。1年单位须缔结劳资协定并向劳动基准监督署申报（第32条之4）。\n\n**Q. 危险物取扱者资格可否请社会保险劳务士代为取得？**\nA. 不可。危险物取扱者执照由本人应试取得，无法代办。设施设置・变更许可申请属行政书士与消防署的领域。社会保险劳务士负责以资格者勤务为前提的轮班・劳动时间・社会保险・劳灾等劳务。\n\n## 本文根据\n\n- 劳动基准法（昭和22年法律第49号）第32条之2（1个月单位变形劳动时间制）・第32条之4（1年单位变形劳动时间制，须劳资协定与向所辖劳动基准监督署长申报）・第36条（加班及休假劳动的36协定）・第37条（加给。第1项＝加班2成5分以上・休假3成5分以上，第4项＝深夜〈午后10时至午前5时〉2成5分以上）\n- 劳动安全卫生规则（昭和47年劳动省令第32号）第44条（定期健康诊断・每年1次）・第45条（特定业务从业者的健康诊断・配置替换时及每6个月以内1次，胸部X光等部分项目每年1次即足）・第52条（恒常使用50人以上劳工的事业者须向所辖劳动基准监督署长提交定期健康诊断结果报告书）\n- 消防法（昭和23年法律第186号）第13条（危险物保安监督者的选任、危险物取扱者的处理・在场）・第13条之2（危险物取扱者执照＝甲种・乙种・丙种）\n- 危险物规制相关政令（昭和34年政令第306号）第17条第5项（由顾客自行加油等的加油取扱所＝自助式的位置・构造・设备技术上基准的特例）・第31条之2（须选任危险物保安监督者的制造所等，含加油取扱所）\n- 总务省消防厅「关于由顾客自行加油等之加油取扱所的运用」（平成10年3月13日消防危第25号等）── 由危险物取扱者监视顾客加油作业并许可加油等的运用（2026年10月1日参照）\n- 承继形式造成的申报要否、个别员工是否属特定业务从业者的认定，将因个案而异。本文不作个别结论（**未验证**）\n\n本文为一般性资讯提供。依个别情事的判断，由有资格者于面谈后进行。四葉社会保険労務士事務所可就以危险物取扱者勤务为轴的轮班与变形劳动时间制设计、深夜加给・固定加班费设计、36协定缔结・申报、含特定业务从业者健康诊断的劳动安全卫生运用、社会保险・劳动保险申报提供咨询。危险物设施许可属行政书士与消防署、资格由从业者本人、税务属税理士、登记属司法书士。各自作为独立的事业体另行签约，本所不收取介绍费。常见问题整理于[常见问题](/zh/labor/faq)。撰文为[浦松丈二](/zh/about/uramatsu)（社会保险劳务士・行政书士・宅地建物取引士）。",
+        "category": "劳务实务",
+        "keywords": [
+          "加油站 劳务",
+          "自助加油站 监视",
+          "危险物取扱者 配置",
+          "深夜加给 加油站",
+          "变形劳动时间制 加油站",
+          "深夜业 健康诊断 年2次"
+        ],
+        "tags": [
+          "加油站",
+          "危险物",
+          "轮班",
+          "深夜加给",
+          "变形劳动时间制",
+          "健康诊断"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社会保险劳务士・行政书士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "自助式加油站可否仅以无资格的工读生运转深夜？",
+            "answer": "不可。自助式（由顾客自行加油等的加油取扱所）中，监视顾客加油并许可加油仍是危险物取扱者的角色，仅靠无资格者无法营业（危险物规制相关政令第17条第5项及相关规则）。以营业时间内确保危险物取扱者的轮班为前提。"
+          },
+          {
+            "question": "排深夜班的员工健康诊断每年1次够吗？",
+            "answer": "不够。恒常从事含深夜业之业务者，作为特定业务从业者，须于配置替换时及每6个月以内1次（年2次）实施健康诊断（劳动安全卫生规则第45条），较一般定期健康诊断（每年1次・同规则第44条）次数多。"
+          },
+          {
+            "question": "采1年单位变形劳动时间制就不必付加班费吗？",
+            "answer": "不是。变形劳动时间制是将所定劳动时间于期间内平均化，并非免除加给。超过预定所定须加班加给，午后10时〜午前5时工作须深夜加给（第37条）。1年单位须缔结劳资协定并向劳动基准监督署申报（第32条之4）。"
+          },
+          {
+            "question": "危险物取扱者资格可否请社会保险劳务士代为取得？",
+            "answer": "不可。危险物取扱者执照由本人应试取得，无法代办。设施设置・变更许可申请属行政书士与消防署的领域。社会保险劳务士负责以资格者勤务为前提的轮班・劳动时间・社会保险・劳灾等劳务。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "business": "labor",
+    "slug": "nogyo-roudoujikan-jogai-41jo-tokutei-ginou-roumu",
+    "title": "農業で特定技能の外国人を雇うとき、労働時間の扱いと労務はどうなる？",
+    "date": "2026-10-04",
+    "category": "外国人雇用",
+    "excerpt": "農業は労働基準法第41条第1号で労働時間・休憩・休日の規定が適用除外ですが、深夜割増（第37条）・年次有給休暇（第39条）・最低賃金は適用されます。適用除外になるのは別表第一第六号（林業を除く）・第七号の農業・畜産・養蚕・水産で、林業はこの除外から外れています。特定技能・育成就労の外国人を農業で雇うときも労務のルールは日本人と同じで、労働条件通知（母語対応・2024年4月改正）、社会保険・雇用保険、労災が適用され、特定技能の報酬は日本人と同等額以上が必要です。適用除外でも安全配慮義務（労働契約法第5条）は残ります。在留資格「特定技能」の申請・支援計画は行政書士（申請取次）または弁護士、源泉徴収や租税条約は税理士の領域で、労働条件・就業規則・社会保険・労災の労務は社会保険労務士が、それぞれ独立した事業体として別々にご契約いただきます。",
+    "content": "**結論（先に要点）**：農業は労働基準法第41条第1号で労働時間・休憩・休日の規定が適用除外ですが、深夜割増（第37条）・年次有給休暇（第39条）・最低賃金は適用されます。外国人を雇う場合も労務ルールは同じで、在留資格の手続は行政書士の領域です。\n\n農業・畜産で特定技能や育成就労の外国人を雇うとき、「農業は労働時間のルールが適用されないから自由に働かせてよい」という誤解が、最も事故につながります。適用除外になる範囲とされない範囲の線引きを、外国人雇用の文脈で整理します。\n\n## 農業は、労働時間・休日のルールが他業種と違うのは本当か？\n\n本当です。農業・畜産・養蚕・水産の事業に従事する人については、労働基準法のうち労働時間・休憩・休日に関する規定が適用されません（労働基準法第41条第1号）。天候や季節、生き物の世話に左右され、1日8時間・週40時間という一律の枠になじまない事業だからです。\n\nただし「適用されない」のは労働時間・休憩・休日の規定に限られます。深夜割増・年次有給休暇・最低賃金・安全衛生・労災といった他のルールは農業にも適用されます。ここを「すべて自由」と広げて理解すると、割増賃金の未払いや年休の未付与という違反になります。\n\n## 労基法41条で適用除外になるのは何で、適用されるのは何（深夜・年休・最賃）？\n\n適用除外になるのは、1日・1週の法定労働時間（第32条）、休憩（第34条）、休日（第35条）、そして時間外・休日労働の割増賃金（第36条・第37条のうち時間外と休日の部分）です。逆に、適用されるものは次のとおりです。\n\n| 項目 | 根拠条文 | 農業での扱い |\n|---|---|---|\n| 労働時間・休憩・休日 | 労働基準法第32条・第34条・第35条 | **適用除外**（第41条第1号）。1日8時間を超えても時間外割増は発生しない |\n| 深夜割増 | 労働基準法第37条第4項 | **適用あり**。午後10時〜午前5時の労働には2割5分以上の割増が必要 |\n| 年次有給休暇 | 労働基準法第39条 | **適用あり**。要件を満たせば付与義務・年5日の時季指定義務も生じる |\n| 最低賃金 | 最低賃金法 | **適用あり**。地域別最低賃金以上を支払う |\n| 安全衛生・健康診断 | 労働安全衛生法 | **適用あり**。雇入時・定期の健康診断等が必要 |\n| 労災保険 | 労働者災害補償保険法 | 国籍・在留資格を問わず適用される |\n\n第41条第1号が指すのは、労働基準法別表第一の第六号（林業を除く土地の耕作・植物の栽植等）と第七号（動物の飼育・水産動植物の採捕等）の事業です。林業はこの適用除外から外れており、労働時間のルールが適用される点に注意します。\n\n## 特定技能・育成就労の外国人を農業で雇うときの、在留と労務の接点は？\n\n在留資格「特定技能」の農業分野や、技能実習に代わる育成就労で外国人を受け入れるときも、労務のルールは日本人と同じです。労働条件の明示（労働基準法第15条）、社会保険・雇用保険の加入（要件を満たせば国籍を問わず）、最低賃金、安全衛生、労災はすべて適用されます。特定技能の報酬は日本人が従事する場合と同等額以上でなければなりません。\n\n接点で問題になりやすいのは、「農業は労働時間が適用除外だから」と、外国人に過度な長時間労働をさせてしまうことです。適用除外でも深夜割増・年休・最賃・安全配慮義務は残るため、労働時間の記録自体はきちんと行います。外国人雇用の全体像は[外国人雇用の窓口はどこで分ける？](/labor/services/gaikokujin-koyo)、同等以上の報酬と労働条件通知は[外国人の同等賃金と労働条件通知](/labor/column/gaikokujin-doto-chingin-rissho-roudou-joken-tsuchi)で整理しています。\n\n## 繁忙期の長時間労働は、どこまで許される？（適用除外の限界と安全配慮）\n\n収穫期などの繁忙期に長く働いてもらうこと自体は、労働時間の規定が適用除外である農業では、時間外割増を伴わずに可能です。しかし「無制限」ではありません。使用者には労働者の生命・身体の安全を確保する安全配慮義務（労働契約法第5条）があり、過重労働による健康障害を防ぐ責任は残ります。\n\nまた、深夜に及べば深夜割増が必要で、年次有給休暇の付与義務もあります。母語での意思疎通が十分でない外国人ほど、休憩や休日、体調不良の申し出がしにくくなりがちなので、適用除外に甘えず、休息と安全の仕組みを就業規則・労働条件通知に落とし込むのが安全です。\n\n## 社会保険・労災・労働条件通知（母語対応）は、どう整える？\n\n農業でも、法人なら社会保険は強制適用です（個人経営は業種・人数で扱いが変わるため個別に確認します）。労災保険は国籍・在留資格を問わず適用され、雇用保険も被保険者要件を満たせば加入します。労働条件の明示は2024年（令和6年）4月1日から明示事項が追加され（就業場所・業務の変更の範囲など）、外国人には本人が理解できる方法での明示が求められます。\n\n| 整えるもの | 根拠 | ポイント |\n|---|---|---|\n| 労働条件通知書（母語併記） | 労働基準法第15条第1項・外国人指針 | 2024年4月1日からの追加明示事項を反映。理解できる方法で示す |\n| 社会保険・雇用保険の加入 | 健康保険法・厚生年金保険法・雇用保険法 | 法人は強制適用。要件を満たせば国籍を問わず加入 |\n| 労災保険 | 労働者災害補償保険法 | 国籍・在留資格を問わず適用 |\n| 就業規則 | 労働基準法第89条 | 常時10人以上なら作成・届出。深夜・年休・安全の扱いを明記 |\n\n## 在留手続・労務・税務は、誰が担う？\n\n在留資格「特定技能」の申請・支援計画の作成・届出や、育成就労に伴う入管手続は行政書士（申請取次）の領域で、社会保険労務士は在留申請の取次ができません。給与の源泉徴収や租税条約の適用は税理士の領域です。労働条件・就業規則・社会保険・労災といった労務は社会保険労務士が担います。それぞれ独立した事業体として別々にご契約いただき、当事務所は紹介料を受け取りません。\n\nご相談は無料です。費用は[報酬額表](/labor/ryokin)に、[サービス内容](/labor/services)と[ご相談の流れ](/labor/nagare)もあわせてご覧ください。\n\n## よくある質問\n\n**Q. 農業は残業代を払わなくてよいというのは本当ですか？**\nA. 時間外・休日労働の割増賃金については本当です。農業は労働時間・休憩・休日の規定が適用除外のため（労働基準法第41条第1号）、1日8時間・週40時間を超えても時間外割増は発生しません。ただし深夜（午後10時〜午前5時）に働かせた場合の深夜割増（第37条第4項）は支払う必要があり、年次有給休暇や最低賃金も適用されます。\n\n**Q. 特定技能の外国人なら、日本人より低い賃金で雇えますか？**\nA. いいえ。特定技能の報酬は、日本人が同じ業務に従事する場合と同等額以上でなければなりません。最低賃金法も国籍を問わず適用され、地域別最低賃金を下回る賃金は認められません。賃金の立証資料や労働条件通知書の整備は社会保険労務士がお引き受けします。\n\n**Q. 林業も農業と同じで労働時間が適用除外ですか？**\nA. いいえ。労働基準法第41条第1号は別表第一第六号のうち林業を除いています。したがって林業には労働時間・休憩・休日の規定が適用され、時間外・休日労働には割増賃金が必要です。農業・畜産・養蚕・水産とは扱いが異なります。\n\n**Q. 在留資格の申請も社会保険労務士に頼めますか？**\nA. いいえ。在留資格「特定技能」の申請・変更や支援計画の届出は行政書士（申請取次）または弁護士の領域で、社会保険労務士は在留申請の取次ができません。社会保険労務士がお引き受けするのは、労働条件・就業規則・社会保険・労災といった労務です。行政書士・税理士とはそれぞれ独立した事業体として、お客様から直接ご契約いただきます。\n\n## この記事の根拠\n\n- 労働基準法（昭和22年法律第49号）第41条第1号（別表第一第六号〈林業を除く。〉又は第七号に掲げる事業に従事する者については、労働時間・休憩・休日に関する規定〈第4章・第6章・第6章の2のうち該当部分〉を適用しない）・第37条第4項（深夜〈午後10時から午前5時まで〉の割増賃金は2割5分以上。農業にも適用）・第39条（年次有給休暇。農業にも適用）・第15条第1項（労働条件の明示）・第89条（就業規則の作成・届出）\n- 労働基準法別表第一 第六号（土地の耕作若しくは開墾又は植物の栽植、栽培、採取若しくは伐採の事業その他農林の事業）・第七号（動物の飼育又は水産動植物の採捕若しくは養殖の事業その他の畜産、養蚕又は水産の事業）\n- 最低賃金法（昭和34年法律第137号）── 地域別最低賃金は国籍・在留資格を問わず適用される\n- 労働契約法（平成19年法律第128号）第5条（使用者の安全配慮義務）\n- 出入国在留管理庁「特定技能」農業分野の運用要領・分野別運用方針、育成就労（技能実習に代わる制度）の関係法令（2026年10月1日参照）\n- 厚生労働省「外国人労働者に対する労働条件の明示」2024年（令和6年）4月1日施行の労働条件明示事項の追加（就業場所・業務の変更の範囲等。労働基準法施行規則第5条改正）の案内（2026年10月1日参照）\n- 個人経営の農業における社会保険の適用の有無、特定技能・育成就労の個別の運用要件の当てはめは、事案ごとに分かれます。本記事では個別の結論を出していません（**未検証**）\n\n本記事は一般的な情報提供です。個別のご事情に応じた判断は、面談のうえ有資格者が行います。四葉社会保険労務士事務所では、農業の労働時間・深夜割増・年次有給休暇の整理、外国人の労働条件通知（母語併記）・就業規則・社会保険・労災の整備についてご相談いただけます。在留資格「特定技能」の申請・支援計画は行政書士（申請取次）または弁護士、源泉徴収や租税条約は税理士が担います。それぞれ独立した事業体として別々にご契約いただき、当事務所は紹介料を受け取りません。よくいただくご質問は[よくあるご質問](/labor/faq)にまとめています。執筆は[浦松丈二](/about/uramatsu)（社会保険労務士・行政書士・宅地建物取引士）です。",
+    "status": "published",
+    "author": {
+      "name": "浦松 丈二",
+      "title": "社会保険労務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+    },
+    "keywords": [
+      "農業 労働時間 適用除外 労基法41条",
+      "農業 特定技能 外国人 労務",
+      "農業 深夜割増 年次有給休暇 最低賃金",
+      "林業 労働時間 適用除外ではない",
+      "農業 育成就労 在留資格",
+      "外国人 労働条件通知 母語"
+    ],
+    "tags": [
+      "農業",
+      "特定技能",
+      "労働時間適用除外",
+      "外国人雇用",
+      "深夜割増",
+      "年次有給休暇"
+    ],
+    "locales": [],
+    "faq": [
+      {
+        "question": "農業は残業代を払わなくてよいというのは本当ですか？",
+        "answer": "時間外・休日労働の割増賃金については本当です。農業は労働時間・休憩・休日の規定が適用除外のため（労働基準法第41条第1号）、1日8時間・週40時間を超えても時間外割増は発生しません。ただし深夜（午後10時〜午前5時）に働かせた場合の深夜割増（第37条第4項）は支払う必要があり、年次有給休暇や最低賃金も適用されます。"
+      },
+      {
+        "question": "特定技能の外国人なら、日本人より低い賃金で雇えますか？",
+        "answer": "いいえ。特定技能の報酬は、日本人が同じ業務に従事する場合と同等額以上でなければなりません。最低賃金法も国籍を問わず適用され、地域別最低賃金を下回る賃金は認められません。賃金の立証資料や労働条件通知書の整備は社会保険労務士がお引き受けします。"
+      },
+      {
+        "question": "林業も農業と同じで労働時間が適用除外ですか？",
+        "answer": "いいえ。労働基準法第41条第1号は別表第一第六号のうち林業を除いています。したがって林業には労働時間・休憩・休日の規定が適用され、時間外・休日労働には割増賃金が必要です。農業・畜産・養蚕・水産とは扱いが異なります。"
+      },
+      {
+        "question": "在留資格の申請も社会保険労務士に頼めますか？",
+        "answer": "いいえ。在留資格「特定技能」の申請・変更や支援計画の届出は行政書士（申請取次）または弁護士の領域で、社会保険労務士は在留申請の取次ができません。社会保険労務士がお引き受けするのは、労働条件・就業規則・社会保険・労災といった労務です。行政書士・税理士とはそれぞれ独立した事業体として、お客様から直接ご契約いただきます。"
+      }
+    ],
+    "translations": {
+      "en": {
+        "title": "Hiring Specified Skilled Worker foreign staff in agriculture: how are working hours and labour handled?",
+        "excerpt": "Agriculture is exempt from the working-hours, break and holiday rules under Labour Standards Act Article 41(i), but the late-night premium (Article 37), annual paid leave (Article 39) and the minimum wage still apply. The labour rules are the same when you hire foreign staff; the residence-status procedure is a Gyoseishoshi's area, engaged separately as an independent entity.",
+        "content": "**Bottom line first**: Agriculture is exempt from the working-hours, break and holiday rules under Labour Standards Act Article 41(i), but the late-night premium (Article 37), annual paid leave (Article 39) and the minimum wage do apply. The labour rules are the same when you hire foreign staff, and the residence-status procedure is a Gyoseishoshi's area.\n\nWhen hiring Specified Skilled Worker or Employment-for-Skill-Development foreign staff in farming or livestock, the single biggest source of trouble is the misreading that \"agriculture is exempt from working-hours rules, so you can work them as you like.\" This article sets out where the exemption applies and where it does not, in the context of foreign employment.\n\n## Is it true that agriculture's working-hours and holiday rules differ from other industries?\n\nYes. For people engaged in agriculture, livestock, sericulture and fisheries, the working-hours, break and holiday provisions of the Labour Standards Act do not apply (Article 41(i)). These businesses depend on weather, season and the care of living things and do not fit a uniform cap of 8 hours a day / 40 a week.\n\nBut the non-application is limited to working hours, breaks and holidays. The late-night premium, annual paid leave, the minimum wage, safety and health, and workers' compensation all apply to agriculture. Reading this as \"everything is free\" turns into violations such as unpaid premiums or unprovided leave.\n\n## What is exempt under Article 41, and what still applies (night, leave, minimum wage)?\n\nExempt are the statutory daily/weekly hours (Article 32), breaks (Article 34), holidays (Article 35) and the overtime/holiday portions of premium pay (Articles 36 and the overtime/holiday parts of 37). What still applies:\n\n| Item | Basis | Treatment in agriculture |\n|---|---|---|\n| Working hours, breaks, holidays | Arts. 32, 34, 35 | **Exempt** (Art. 41(i)); no overtime premium even beyond 8 hours a day |\n| Late-night premium | Art. 37(4) | **Applies**; at least 25% for 10 p.m.–5 a.m. |\n| Annual paid leave | Art. 39 | **Applies**; the duty to grant and the 5-days-a-year designation arise |\n| Minimum wage | Minimum Wage Act | **Applies**; pay at or above the regional minimum |\n| Safety and health / checks | Industrial Safety and Health Act | **Applies**; hiring and periodic checks needed |\n| Workers' compensation | Workers' Accident Compensation Insurance Act | Applies regardless of nationality or residence status |\n\nArticle 41(i) refers to the businesses in Appended Table 1 items 6 (cultivation of land and planting, etc., excluding forestry) and 7 (raising animals, capture of aquatic life, etc.). Forestry is outside this exemption, so the working-hours rules apply to it.\n\n## Where do residence status and labour meet when hiring foreign staff in agriculture?\n\nWhen receiving foreign staff under the Specified Skilled Worker agriculture field or Employment-for-Skill-Development (replacing the Technical Intern system), the labour rules are the same as for Japanese staff. Working-condition notice (Art. 15), social and employment insurance (where requirements are met, regardless of nationality), the minimum wage, safety and health, and workers' compensation all apply. Specified Skilled Worker pay must be at least equal to what a Japanese worker would receive.\n\nThe common pitfall is overworking foreign staff on the basis that \"agriculture is exempt from working hours.\" Since the late-night premium, leave, minimum wage and duty of care remain even under the exemption, keep proper records of working time. See [where to divide the foreign-employment windows](/en/labor/services/gaikokujin-koyo) and [equal pay and the working-condition notice for foreign staff](/en/labor/column/gaikokujin-doto-chingin-rissho-roudou-joken-tsuchi).\n\n## How far is long work allowed in the busy season? (the limits of the exemption and the duty of care)\n\nHaving staff work long hours in a peak such as harvest is possible in agriculture without an overtime premium, because the working-hours rules are exempt. But it is not unlimited. The employer owes a duty to secure the life and safety of workers (Labour Contract Act Article 5), and remains responsible for preventing health harm from overwork. Night work still needs the late-night premium, and paid leave must be granted. Foreign staff with limited command of the language find it harder to ask for breaks, days off or to report feeling unwell, so build rest and safety into the work rules and the working-condition notice rather than leaning on the exemption.\n\n## How do you set up social insurance, workers' compensation and the working-condition notice (native-language version)?\n\nIn agriculture too, a company is covered by social insurance (sole proprietors vary by business type and headcount, so confirm individually). Workers' compensation applies regardless of nationality or residence status, and employment insurance applies where the insured requirements are met. From 1 April 2024 the items to be stated in the working-condition notice increased (scope of change of workplace and duties, etc.), and foreign staff must be given the notice in a way they can understand.\n\n| To set up | Basis | Point |\n|---|---|---|\n| Working-condition notice (with native language) | Labour Standards Act Art. 15(1); foreign-worker guideline | Reflect the 2024 additions; present it so it is understood |\n| Social / employment insurance | Health, Pension, Employment Insurance Acts | Companies covered; nationality irrelevant where requirements met |\n| Workers' compensation | Workers' Accident Compensation Insurance Act | Applies regardless of nationality / status |\n| Work rules | Labour Standards Act Art. 89 | Required at 10+ regular staff; state night, leave and safety |\n\n## Who handles residence procedures, labour and tax?\n\nApplications for the Specified Skilled Worker status, the support plan and filings, and the immigration procedures for Employment-for-Skill-Development, are the area of a Gyoseishoshi (as an immigration-filing agent); a Shakai Hoken Roumushi cannot act as an agent for residence applications. Withholding and tax-treaty matters are a tax accountant's area. Working conditions, work rules, social insurance and workers' compensation are a Shakai Hoken Roumushi's. Each is engaged as a separate, independent entity under separate contracts, and this office takes no referral fee.\n\nYour first consultation is free. Please see the [fee schedule](/en/labor/ryokin), the [services](/en/labor/services) and [how we work](/en/labor/nagare).\n\n## Frequently asked questions\n\n**Q. Is it true that agriculture need not pay overtime?**\nA. For overtime and holiday premiums, yes. Agriculture is exempt from the working-hours, break and holiday rules (Article 41(i)), so no overtime premium arises beyond 8 hours a day / 40 a week. But the late-night premium for work between 10 p.m. and 5 a.m. (Article 37(4)) must be paid, and annual paid leave and the minimum wage still apply.\n\n**Q. Can we pay a Specified Skilled Worker less than a Japanese worker?**\nA. No. Specified Skilled Worker pay must be at least equal to what a Japanese worker doing the same duties would receive. The Minimum Wage Act also applies regardless of nationality, and pay below the regional minimum is not allowed. A Shakai Hoken Roumushi handles the supporting evidence and the working-condition notice.\n\n**Q. Is forestry exempt from working hours like agriculture?**\nA. No. Article 41(i) excludes forestry from item 6. So the working-hours, break and holiday rules apply to forestry, and overtime/holiday work needs premium pay. The treatment differs from agriculture, livestock, sericulture and fisheries.\n\n**Q. Can a Shakai Hoken Roumushi also do the residence-status application?**\nA. No. Applications and changes for the Specified Skilled Worker status and support-plan filings are the area of a Gyoseishoshi (immigration-filing agent) or a lawyer; a Shakai Hoken Roumushi cannot act as an agent for residence applications. A Shakai Hoken Roumushi handles labour — working conditions, work rules, social insurance and workers' compensation. The Gyoseishoshi and tax accountant are engaged separately as independent entities, contracted directly by you.\n\n## This article's basis\n\n- Labour Standards Act (Act No. 49 of 1947) Article 41(i) (persons engaged in the businesses of Appended Table 1 item 6 — excluding forestry — or item 7 are outside the working-hours, break and holiday provisions), Article 37(4) (late-night premium, 10 p.m.–5 a.m., at least 25%; applies to agriculture), Article 39 (annual paid leave; applies to agriculture), Article 15(1) (notice of working conditions), Article 89 (drawing up and filing work rules)\n- Labour Standards Act Appended Table 1 item 6 (cultivation of land, clearing, and the planting, cultivation, gathering or felling of plants, and other agriculture/forestry businesses) and item 7 (raising of animals, capture or culture of aquatic animals and plants, and other livestock, sericulture or fisheries businesses)\n- Minimum Wage Act (Act No. 137 of 1959): the regional minimum wage applies regardless of nationality or residence status\n- Labour Contract Act (Act No. 128 of 2007) Article 5 (the employer's duty of care for safety)\n- Immigration Services Agency operational guidelines and field-specific policy for the Specified Skilled Worker agriculture field, and the laws on Employment-for-Skill-Development (replacing the Technical Intern system) (accessed 1 October 2026)\n- Ministry of Health, Labour and Welfare guidance on the clarification of working conditions for foreign workers, and the additions to the items stated in the working-condition notice effective 1 April 2024 (scope of change of workplace and duties, etc.; amendment to Article 5 of the Enforcement Regulations) (accessed 1 October 2026)\n- Whether social insurance applies to a sole-proprietor farm, and the application of the individual operational requirements of the Specified Skilled Worker / Employment-for-Skill-Development systems, vary case by case. This article does not give an individual conclusion (**unverified**).\n\nThis article is general information. An individual judgment on your circumstances is made by a qualified professional after a meeting. At the Yotsuba Shakai Hoken Roumushi Office we can advise on agriculture's working hours, late-night premium and annual leave, and on the working-condition notice (with native language), work rules, social insurance and workers' compensation for foreign staff. Applications and support plans for the Specified Skilled Worker status belong to a Gyoseishoshi (immigration-filing agent) or a lawyer, and withholding and tax treaties to a tax accountant — each a separate, independent entity engaged under separate contracts, with no referral fee. Common questions are gathered in the [FAQ](/en/labor/faq). Written by [Joji Uramatsu](/en/about/uramatsu) (Shakai Hoken Roumushi, Gyoseishoshi, Licensed Real Estate Transaction Agent).",
+        "category": "Working practices",
+        "keywords": [
+          "agriculture working hours exemption",
+          "Labour Standards Act Article 41 agriculture",
+          "Specified Skilled Worker agriculture labour",
+          "foreign farm worker minimum wage",
+          "night premium agriculture",
+          "working-condition notice foreign worker"
+        ],
+        "tags": [
+          "Agriculture",
+          "Specified Skilled Worker",
+          "Working hours exemption",
+          "Foreign employment",
+          "Night premium",
+          "Paid leave"
+        ],
+        "author": {
+          "name": "Joji Uramatsu",
+          "title": "Shakai Hoken Roumushi (Certified Social Insurance and Labor Consultant), Gyoseishoshi (Certified Administrative Procedures Legal Specialist), Registered Real Estate Transaction Specialist — 四葉社会保険労務士事務所／四葉行政書士事務所"
+        },
+        "faq": [
+          {
+            "question": "Is it true that agriculture need not pay overtime?",
+            "answer": "For overtime and holiday premiums, yes. Agriculture is exempt from the working-hours, break and holiday rules (Article 41(i)), so no overtime premium arises beyond 8 hours a day / 40 a week. But the late-night premium for work between 10 p.m. and 5 a.m. (Article 37(4)) must be paid, and annual paid leave and the minimum wage still apply."
+          },
+          {
+            "question": "Can we pay a Specified Skilled Worker less than a Japanese worker?",
+            "answer": "No. Specified Skilled Worker pay must be at least equal to what a Japanese worker doing the same duties would receive. The Minimum Wage Act also applies regardless of nationality, and pay below the regional minimum is not allowed. A Shakai Hoken Roumushi handles the supporting evidence and the working-condition notice."
+          },
+          {
+            "question": "Is forestry exempt from working hours like agriculture?",
+            "answer": "No. Article 41(i) excludes forestry from item 6. So the working-hours, break and holiday rules apply to forestry, and overtime/holiday work needs premium pay. The treatment differs from agriculture, livestock, sericulture and fisheries."
+          },
+          {
+            "question": "Can a Shakai Hoken Roumushi also do the residence-status application?",
+            "answer": "No. Applications and changes for the Specified Skilled Worker status and support-plan filings are the area of a Gyoseishoshi (immigration-filing agent) or a lawyer; a Shakai Hoken Roumushi cannot act as an agent for residence applications. A Shakai Hoken Roumushi handles labour — working conditions, work rules, social insurance and workers' compensation. The Gyoseishoshi and tax accountant are engaged separately as independent entities, contracted directly by you."
+          }
+        ]
+      },
+      "zh-tw": {
+        "title": "農業雇用特定技能外國人時，勞動時間的處理與勞務如何進行？",
+        "excerpt": "農業依勞動基準法第41條第1號，勞動時間・休息・休假的規定適用除外，但深夜加給（第37條）・年度有薪假（第39條）・最低工資仍適用。雇用外國人時勞務規則相同，在留資格手續屬行政書士的領域，各自作為獨立的事業體另行簽約。",
+        "content": "**結論（先講重點）**：農業依勞動基準法第41條第1號，勞動時間・休息・休假的規定適用除外，但深夜加給（第37條）・年度有薪假（第39條）・最低工資仍適用。雇用外國人時勞務規則相同，在留資格手續屬行政書士的領域。\n\n在農業・畜產雇用特定技能或育成勞動的外國人時，最容易造成事故的，是「農業不適用勞動時間規定，故可自由使其工作」的誤解。本文在外國人雇用的脈絡下，整理適用除外的範圍與仍適用的範圍。\n\n## 農業的勞動時間・休假規則與其他行業不同，是真的嗎？\n\n是真的。從事農業・畜產・養蠶・水產事業者，勞動基準法中勞動時間・休息・休假的規定不適用（第41條第1號）。因其受天候、季節與生物照料左右，不適合1日8小時・週40小時的一律框架。\n\n但「不適用」僅限勞動時間・休息・休假的規定。深夜加給・年度有薪假・最低工資・安全衛生・勞災等其他規則對農業仍適用。若理解為「一切自由」，便會形成加給未付或未給假等違規。\n\n## 第41條適用除外的是什麼，仍適用的又是什麼（深夜・年假・最低工資）？\n\n適用除外者為1日・1週的法定勞動時間（第32條）、休息（第34條）、休假（第35條），以及加班・休假加給（第36條與第37條中加班・休假部分）。反之，仍適用者如下。\n\n| 項目 | 依據條文 | 農業的處理 |\n|---|---|---|\n| 勞動時間・休息・休假 | 第32條・第34條・第35條 | **適用除外**（第41條第1號）。即使超過1日8小時也不生加班加給 |\n| 深夜加給 | 第37條第4項 | **適用**。午後10時〜午前5時須2成5分以上加給 |\n| 年度有薪假 | 第39條 | **適用**。符合要件即生給予義務與年5日的時季指定義務 |\n| 最低工資 | 最低工資法 | **適用**。須支付地區別最低工資以上 |\n| 安全衛生・健康診斷 | 勞動安全衛生法 | **適用**。須雇入時・定期健康診斷等 |\n| 勞災保險 | 勞動者災害補償保險法 | 不問國籍・在留資格一律適用 |\n\n第41條第1號所指，為勞動基準法附表第一第六號（不含林業的土地耕作・植物栽植等）與第七號（動物飼育・水產動植物採捕等）的事業。林業被排除於此適用除外之外，故適用勞動時間規定。\n\n## 農業雇用特定技能・育成勞動外國人時，在留與勞務的接點為何？\n\n以在留資格「特定技能」農業領域，或取代技能實習的育成勞動接收外國人時，勞務規則與日本人相同。勞動條件明示（第15條）、社會保險・雇用保險（符合要件即不問國籍）、最低工資、安全衛生、勞災皆適用。特定技能的報酬須為日本人從事同等業務時的同等額以上。\n\n接點上容易出問題的，是以「農業勞動時間適用除外」為由使外國人過度長時間工作。即使適用除外，深夜加給・年假・最低工資・安全照顧義務仍在，故勞動時間本身仍須確實記錄。外國人雇用的全貌請見[外國人雇用的窗口如何劃分](/zh-tw/labor/services/gaikokujin-koyo)，同等以上報酬與勞動條件通知請見[外國人的同等工資與勞動條件通知](/zh-tw/labor/column/gaikokujin-doto-chingin-rissho-roudou-joken-tsuchi)。\n\n## 繁忙期的長時間勞動可到何種程度？（適用除外的界限與安全照顧）\n\n於收穫期等繁忙期請其長時間工作，在勞動時間規定適用除外的農業，本身可不伴隨加班加給而為之。但並非「無限制」。雇主負有確保勞工生命・身體安全的安全照顧義務（勞動契約法第5條），防止過重勞動造成健康障害的責任仍在。且及於深夜須深夜加給，亦有年度有薪假的給予義務。母語溝通不充分的外國人越難以提出休息、休假或身體不適，故不應仗恃適用除外，而應將休息與安全的機制落實於就業規則・勞動條件通知。\n\n## 社會保險・勞災・勞動條件通知（母語對應）如何整備？\n\n農業中，法人亦強制適用社會保險（個人經營依行業・人數而異，須個別確認）。勞災保險不問國籍・在留資格一律適用，雇用保險符合被保險者要件者亦加入。勞動條件明示自2024年（令和6年）4月1日起增加明示事項（就業場所・業務變更範圍等），對外國人須以本人可理解的方式明示。\n\n| 整備項目 | 依據 | 重點 |\n|---|---|---|\n| 勞動條件通知書（母語併記） | 勞動基準法第15條第1項・外國人指針 | 反映2024年4月的追加事項，以可理解方式明示 |\n| 社會保險・雇用保險加入 | 健康保險法・厚生年金法・雇用保險法 | 法人強制適用，符合要件即不問國籍 |\n| 勞災保險 | 勞動者災害補償保險法 | 不問國籍・在留資格一律適用 |\n| 就業規則 | 勞動基準法第89條 | 恆常10人以上須製作・申報，明記深夜・年假・安全 |\n\n## 在留手續・勞務・稅務由誰負責？\n\n在留資格「特定技能」的申請・支援計畫製作・申報，以及育成勞動相關入管手續，屬行政書士（申請取次）的領域，社會保險勞務士不能代辦在留申請取次。薪資源泉徵收與租稅協定適用屬稅理士的領域。勞動條件・就業規則・社會保險・勞災等勞務由社會保險勞務士負責。各自作為獨立的事業體另行簽約，本所不收取介紹費。\n\n初次諮詢免費。費用請見[報酬額表](/zh-tw/labor/ryokin)，並參閱[服務內容](/zh-tw/labor/services)與[諮詢流程](/zh-tw/labor/nagare)。\n\n## 常見問題\n\n**Q. 農業不必付加班費是真的嗎？**\nA. 就加班・休假加給而言是真的。農業勞動時間・休息・休假規定適用除外（第41條第1號），即使超過1日8小時・週40小時也不生加班加給。但使其於午後10時〜午前5時工作的深夜加給（第37條第4項）須支付，年度有薪假與最低工資亦適用。\n\n**Q. 特定技能外國人可否以低於日本人的工資雇用？**\nA. 不可。特定技能報酬須為日本人從事同業務時的同等額以上。最低工資法亦不問國籍一律適用，不得低於地區別最低工資。工資的佐證資料與勞動條件通知書的整備由社會保險勞務士負責。\n\n**Q. 林業也與農業相同，勞動時間適用除外嗎？**\nA. 不是。勞動基準法第41條第1號將林業排除於附表第一第六號之外。故林業適用勞動時間・休息・休假規定，加班・休假勞動須加給。與農業・畜產・養蠶・水產的處理不同。\n\n**Q. 在留資格申請也可委託社會保險勞務士嗎？**\nA. 不可。在留資格「特定技能」的申請・變更與支援計畫申報屬行政書士（申請取次）或律師的領域，社會保險勞務士不能代辦在留申請取次。社會保險勞務士負責勞動條件・就業規則・社會保險・勞災等勞務。行政書士・稅理士各自作為獨立的事業體，由您直接簽約。\n\n## 本文根據\n\n- 勞動基準法（昭和22年法律第49號）第41條第1號（從事附表第一第六號〈不含林業〉或第七號所列事業者，不適用勞動時間・休息・休假的規定）・第37條第4項（深夜〈午後10時至午前5時〉加給2成5分以上，農業亦適用）・第39條（年度有薪假，農業亦適用）・第15條第1項（勞動條件明示）・第89條（就業規則製作・申報）\n- 勞動基準法附表第一 第六號（土地的耕作或開墾，或植物的栽植、栽培、採取或伐採的事業及其他農林事業）・第七號（動物的飼育，或水產動植物的採捕或養殖的事業及其他畜產、養蠶或水產事業）\n- 最低工資法（昭和34年法律第137號）── 地區別最低工資不問國籍・在留資格一律適用\n- 勞動契約法（平成19年法律第128號）第5條（雇主的安全照顧義務）\n- 出入國在留管理廳「特定技能」農業領域運用要領・領域別運用方針、育成勞動（取代技能實習的制度）相關法令（2026年10月1日參照）\n- 厚生勞動省「對外國人勞工的勞動條件明示」2024年（令和6年）4月1日施行的勞動條件明示事項追加（就業場所・業務變更範圍等，勞動基準法施行規則第5條修正）的說明（2026年10月1日參照）\n- 個人經營農業的社會保險適用與否、特定技能・育成勞動的個別運用要件認定，將因個案而異。本文不作個別結論（**未驗證**）\n\n本文為一般性資訊提供。依個別情事的判斷，由有資格者於面談後進行。四葉社会保険労務士事務所可就農業的勞動時間・深夜加給・年度有薪假的整理，以及外國人的勞動條件通知（母語併記）・就業規則・社會保險・勞災的整備提供諮詢。在留資格「特定技能」的申請・支援計畫屬行政書士（申請取次）或律師，源泉徵收與租稅協定屬稅理士。各自作為獨立的事業體另行簽約，本所不收取介紹費。常見問題整理於[常見問題](/zh-tw/labor/faq)。撰文為[浦松丈二](/zh-tw/about/uramatsu)（社會保險勞務士・行政書士・宅地建物取引士）。",
+        "category": "勞務實務",
+        "keywords": [
+          "農業 勞動時間 適用除外",
+          "勞動基準法第41條 農業",
+          "特定技能 農業 勞務",
+          "外國人 農業 最低工資",
+          "深夜加給 農業",
+          "勞動條件通知 外國人"
+        ],
+        "tags": [
+          "農業",
+          "特定技能",
+          "勞動時間適用除外",
+          "外國人雇用",
+          "深夜加給",
+          "年度有薪假"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社會保險勞務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "農業不必付加班費是真的嗎？",
+            "answer": "就加班・休假加給而言是真的。農業勞動時間・休息・休假規定適用除外（第41條第1號），即使超過1日8小時・週40小時也不生加班加給。但使其於午後10時〜午前5時工作的深夜加給（第37條第4項）須支付，年度有薪假與最低工資亦適用。"
+          },
+          {
+            "question": "特定技能外國人可否以低於日本人的工資雇用？",
+            "answer": "不可。特定技能報酬須為日本人從事同業務時的同等額以上。最低工資法亦不問國籍一律適用，不得低於地區別最低工資。工資的佐證資料與勞動條件通知書的整備由社會保險勞務士負責。"
+          },
+          {
+            "question": "林業也與農業相同，勞動時間適用除外嗎？",
+            "answer": "不是。勞動基準法第41條第1號將林業排除於附表第一第六號之外。故林業適用勞動時間・休息・休假規定，加班・休假勞動須加給。與農業・畜產・養蠶・水產的處理不同。"
+          },
+          {
+            "question": "在留資格申請也可委託社會保險勞務士嗎？",
+            "answer": "不可。在留資格「特定技能」的申請・變更與支援計畫申報屬行政書士（申請取次）或律師的領域，社會保險勞務士不能代辦在留申請取次。社會保險勞務士負責勞動條件・就業規則・社會保險・勞災等勞務。行政書士・稅理士各自作為獨立的事業體，由您直接簽約。"
+          }
+        ]
+      },
+      "zh": {
+        "title": "农业雇用特定技能外国人时，劳动时间的处理与劳务如何进行？",
+        "excerpt": "农业依劳动基准法第41条第1号，劳动时间・休息・休假的规定适用除外，但深夜加给（第37条）・年度有薪假（第39条）・最低工资仍适用。雇用外国人时劳务规则相同，在留资格手续属行政书士的领域，各自作为独立的事业体另行签约。",
+        "content": "**结论（先讲重点）**：农业依劳动基准法第41条第1号，劳动时间・休息・休假的规定适用除外，但深夜加给（第37条）・年度有薪假（第39条）・最低工资仍适用。雇用外国人时劳务规则相同，在留资格手续属行政书士的领域。\n\n在农业・畜产雇用特定技能或育成劳动的外国人时，最容易造成事故的，是「农业不适用劳动时间规定，故可自由使其工作」的误解。本文在外国人雇用的脉络下，整理适用除外的范围与仍适用的范围。\n\n## 农业的劳动时间・休假规则与其他行业不同，是真的吗？\n\n是真的。从事农业・畜产・养蚕・水产事业者，劳动基准法中劳动时间・休息・休假的规定不适用（第41条第1号）。因其受天候、季节与生物照料左右，不适合1日8小时・周40小时的一律框架。\n\n但「不适用」仅限劳动时间・休息・休假的规定。深夜加给・年度有薪假・最低工资・安全卫生・劳灾等其他规则对农业仍适用。若理解为「一切自由」，便会形成加给未付或未给假等违规。\n\n## 第41条适用除外的是什么，仍适用的又是什么（深夜・年假・最低工资）？\n\n适用除外者为1日・1周的法定劳动时间（第32条）、休息（第34条）、休假（第35条），以及加班・休假加给（第36条与第37条中加班・休假部分）。反之，仍适用者如下。\n\n| 项目 | 依据条文 | 农业的处理 |\n|---|---|---|\n| 劳动时间・休息・休假 | 第32条・第34条・第35条 | **适用除外**（第41条第1号）。即使超过1日8小时也不生加班加给 |\n| 深夜加给 | 第37条第4项 | **适用**。午后10时〜午前5时须2成5分以上加给 |\n| 年度有薪假 | 第39条 | **适用**。符合要件即生给予义务与年5日的时季指定义务 |\n| 最低工资 | 最低工资法 | **适用**。须支付地区别最低工资以上 |\n| 安全卫生・健康诊断 | 劳动安全卫生法 | **适用**。须雇入时・定期健康诊断等 |\n| 劳灾保险 | 劳动者灾害补偿保险法 | 不问国籍・在留资格一律适用 |\n\n第41条第1号所指，为劳动基准法附表第一第六号（不含林业的土地耕作・植物栽植等）与第七号（动物饲育・水产动植物采捕等）的事业。林业被排除于此适用除外之外，故适用劳动时间规定。\n\n## 农业雇用特定技能・育成劳动外国人时，在留与劳务的接点为何？\n\n以在留资格「特定技能」农业领域，或取代技能实习的育成劳动接收外国人时，劳务规则与日本人相同。劳动条件明示（第15条）、社会保险・雇用保险（符合要件即不问国籍）、最低工资、安全卫生、劳灾皆适用。特定技能的报酬须为日本人从事同等业务时的同等额以上。\n\n接点上容易出问题的，是以「农业劳动时间适用除外」为由使外国人过度长时间工作。即使适用除外，深夜加给・年假・最低工资・安全照顾义务仍在，故劳动时间本身仍须确实记录。外国人雇用的全貌请见[外国人雇用的窗口如何划分](/zh/labor/services/gaikokujin-koyo)，同等以上报酬与劳动条件通知请见[外国人的同等工资与劳动条件通知](/zh/labor/column/gaikokujin-doto-chingin-rissho-roudou-joken-tsuchi)。\n\n## 繁忙期的长时间劳动可到何种程度？（适用除外的界限与安全照顾）\n\n于收获期等繁忙期请其长时间工作，在劳动时间规定适用除外的农业，本身可不伴随加班加给而为之。但并非「无限制」。雇主负有确保劳工生命・身体安全的安全照顾义务（劳动契约法第5条），防止过重劳动造成健康障害的责任仍在。且及于深夜须深夜加给，亦有年度有薪假的给予义务。母语沟通不充分的外国人越难以提出休息、休假或身体不适，故不应仗恃适用除外，而应将休息与安全的机制落实于就业规则・劳动条件通知。\n\n## 社会保险・劳灾・劳动条件通知（母语对应）如何整备？\n\n农业中，法人亦强制适用社会保险（个人经营依行业・人数而异，须个别确认）。劳灾保险不问国籍・在留资格一律适用，雇用保险符合被保险者要件者亦加入。劳动条件明示自2024年（令和6年）4月1日起增加明示事项（就业场所・业务变更范围等），对外国人须以本人可理解的方式明示。\n\n| 整备项目 | 依据 | 重点 |\n|---|---|---|\n| 劳动条件通知书（母语并记） | 劳动基准法第15条第1项・外国人指针 | 反映2024年4月的追加事项，以可理解方式明示 |\n| 社会保险・雇用保险加入 | 健康保险法・厚生年金法・雇用保险法 | 法人强制适用，符合要件即不问国籍 |\n| 劳灾保险 | 劳动者灾害补偿保险法 | 不问国籍・在留资格一律适用 |\n| 就业规则 | 劳动基准法第89条 | 恒常10人以上须制作・申报，明记深夜・年假・安全 |\n\n## 在留手续・劳务・税务由谁负责？\n\n在留资格「特定技能」的申请・支援计划制作・申报，以及育成劳动相关入管手续，属行政书士（申请取次）的领域，社会保险劳务士不能代办在留申请取次。薪资源泉征收与租税协定适用属税理士的领域。劳动条件・就业规则・社会保险・劳灾等劳务由社会保险劳务士负责。各自作为独立的事业体另行签约，本所不收取介绍费。\n\n初次咨询免费。费用请见[报酬额表](/zh/labor/ryokin)，并参阅[服务内容](/zh/labor/services)与[咨询流程](/zh/labor/nagare)。\n\n## 常见问题\n\n**Q. 农业不必付加班费是真的吗？**\nA. 就加班・休假加给而言是真的。农业劳动时间・休息・休假规定适用除外（第41条第1号），即使超过1日8小时・周40小时也不生加班加给。但使其于午后10时〜午前5时工作的深夜加给（第37条第4项）须支付，年度有薪假与最低工资亦适用。\n\n**Q. 特定技能外国人可否以低于日本人的工资雇用？**\nA. 不可。特定技能报酬须为日本人从事同业务时的同等额以上。最低工资法亦不问国籍一律适用，不得低于地区别最低工资。工资的佐证资料与劳动条件通知书的整备由社会保险劳务士负责。\n\n**Q. 林业也与农业相同，劳动时间适用除外吗？**\nA. 不是。劳动基准法第41条第1号将林业排除于附表第一第六号之外。故林业适用劳动时间・休息・休假规定，加班・休假劳动须加给。与农业・畜产・养蚕・水产的处理不同。\n\n**Q. 在留资格申请也可委托社会保险劳务士吗？**\nA. 不可。在留资格「特定技能」的申请・变更与支援计划申报属行政书士（申请取次）或律师的领域，社会保险劳务士不能代办在留申请取次。社会保险劳务士负责劳动条件・就业规则・社会保险・劳灾等劳务。行政书士・税理士各自作为独立的事业体，由您直接签约。\n\n## 本文根据\n\n- 劳动基准法（昭和22年法律第49号）第41条第1号（从事附表第一第六号〈不含林业〉或第七号所列事业者，不适用劳动时间・休息・休假的规定）・第37条第4项（深夜〈午后10时至午前5时〉加给2成5分以上，农业亦适用）・第39条（年度有薪假，农业亦适用）・第15条第1项（劳动条件明示）・第89条（就业规则制作・申报）\n- 劳动基准法附表第一 第六号（土地的耕作或开垦，或植物的栽植、栽培、采取或伐采的事业及其他农林事业）・第七号（动物的饲育，或水产动植物的采捕或养殖的事业及其他畜产、养蚕或水产事业）\n- 最低工资法（昭和34年法律第137号）── 地区别最低工资不问国籍・在留资格一律适用\n- 劳动契约法（平成19年法律第128号）第5条（雇主的安全照顾义务）\n- 出入国在留管理厅「特定技能」农业领域运用要领・领域别运用方针、育成劳动（取代技能实习的制度）相关法令（2026年10月1日参照）\n- 厚生劳动省「对外国人劳工的劳动条件明示」2024年（令和6年）4月1日施行的劳动条件明示事项追加（就业场所・业务变更范围等，劳动基准法施行规则第5条修正）的说明（2026年10月1日参照）\n- 个人经营农业的社会保险适用与否、特定技能・育成劳动的个别运用要件认定，将因个案而异。本文不作个别结论（**未验证**）\n\n本文为一般性资讯提供。依个别情事的判断，由有资格者于面谈后进行。四葉社会保険労務士事務所可就农业的劳动时间・深夜加给・年度有薪假的整理，以及外国人的劳动条件通知（母语并记）・就业规则・社会保险・劳灾的整备提供咨询。在留资格「特定技能」的申请・支援计划属行政书士（申请取次）或律师，源泉征收与租税协定属税理士。各自作为独立的事业体另行签约，本所不收取介绍费。常见问题整理于[常见问题](/zh/labor/faq)。撰文为[浦松丈二](/zh/about/uramatsu)（社会保险劳务士・行政书士・宅地建物取引士）。",
+        "category": "劳务实务",
+        "keywords": [
+          "农业 劳动时间 适用除外",
+          "劳动基准法第41条 农业",
+          "特定技能 农业 劳务",
+          "外国人 农业 最低工资",
+          "深夜加给 农业",
+          "劳动条件通知 外国人"
+        ],
+        "tags": [
+          "农业",
+          "特定技能",
+          "劳动时间适用除外",
+          "外国人雇用",
+          "深夜加给",
+          "年度有薪假"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社会保险劳务士・行政书士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "农业不必付加班费是真的吗？",
+            "answer": "就加班・休假加给而言是真的。农业劳动时间・休息・休假规定适用除外（第41条第1号），即使超过1日8小时・周40小时也不生加班加给。但使其于午后10时〜午前5时工作的深夜加给（第37条第4项）须支付，年度有薪假与最低工资亦适用。"
+          },
+          {
+            "question": "特定技能外国人可否以低于日本人的工资雇用？",
+            "answer": "不可。特定技能报酬须为日本人从事同业务时的同等额以上。最低工资法亦不问国籍一律适用，不得低于地区别最低工资。工资的佐证资料与劳动条件通知书的整备由社会保险劳务士负责。"
+          },
+          {
+            "question": "林业也与农业相同，劳动时间适用除外吗？",
+            "answer": "不是。劳动基准法第41条第1号将林业排除于附表第一第六号之外。故林业适用劳动时间・休息・休假规定，加班・休假劳动须加给。与农业・畜产・养蚕・水产的处理不同。"
+          },
+          {
+            "question": "在留资格申请也可委托社会保险劳务士吗？",
+            "answer": "不可。在留资格「特定技能」的申请・变更与支援计划申报属行政书士（申请取次）或律师的领域，社会保险劳务士不能代办在留申请取次。社会保险劳务士负责劳动条件・就业规则・社会保险・劳灾等劳务。行政书士・税理士各自作为独立的事业体，由您直接签约。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "business": "labor",
+    "slug": "teiki-kenko-shindan-jisshi-gimu-hiyo-jikan",
+    "title": "従業員の定期健康診断は、どこまで実施義務があり費用と時間は誰持ち？",
+    "date": "2026-10-04",
+    "category": "労務のしくみ",
+    "excerpt": "定期健康診断は、常時使用する労働者に1年以内ごとに1回実施する事業者の義務です（労働安全衛生規則第44条）。雇入時（同規則第43条）、深夜業など特定業務従事者は6か月以内ごとに1回＝年2回（同規則第45条）、有害業務は特殊健康診断（労働安全衛生法第66条第2項・第3項）が重なります。パート・短時間労働者も、契約期間と週所定労働時間が通常の労働者の4分の3以上などの要件を満たせば対象です。費用は事業者負担が原則（行政通達）で、受診時間の賃金は一般健診は労使協議、特殊健診は労働時間として支払います。常時50人以上の事業場は定期健康診断結果報告書を所轄労働基準監督署長へ提出します（同規則第52条）。健診の実施や特殊健診は産業医・医療機関、費用の税務処理は税理士の領域で、実施体制・報告の労務は社会保険労務士が、それぞれ独立した事業体として別々にご契約いただきます。",
+    "content": "**結論（先に要点）**：定期健康診断は、常時使用する労働者に1年以内ごとに1回実施する事業者の義務です（労働安全衛生規則第44条）。費用は事業者負担が原則で、受診時間の賃金は一般健診は労使協議、特殊健診は労働時間として支払います。\n\n従業員を雇ったら健康診断をしなければならない、とは聞くものの、「誰まで対象か」「パートはどうか」「費用と受診時間の賃金は誰持ちか」で迷う経営者は多いはずです。実施義務の範囲と、費用・時間の扱いを順に整理します。\n\n## 定期健康診断は、誰に・いつ実施する義務がある？\n\n事業者は、常時使用する労働者に対し、医師による健康診断を行わなければなりません（労働安全衛生法第66条第1項）。具体的には、雇入れの際（労働安全衛生規則第43条）と、その後1年以内ごとに1回（同規則第44条）の定期健康診断です。これは労働者の人数にかかわらず課される事業者の義務で、健診を受けさせていないと法令違反になります。\n\n| 区分 | 根拠 | 時期 |\n|---|---|---|\n| 雇入時の健康診断 | 労働安全衛生規則第43条 | 常時使用する労働者を雇い入れるとき |\n| 定期健康診断 | 労働安全衛生規則第44条 | 1年以内ごとに1回 |\n| 特定業務従事者の健康診断 | 労働安全衛生規則第45条 | 配置替えの際及び6月以内ごとに1回（年2回） |\n| 特殊健康診断 | 労働安全衛生法第66条第2項・第3項と各特別規則 | 有害業務に従事する労働者に対し定期に |\n\n## パート・短時間労働者は、どこから対象になる？\n\n「常時使用する労働者」には、正社員だけでなく一定のパート・短時間労働者も含まれます。行政通達の目安では、次の両方を満たす短時間労働者が対象です。\n\n| 要件 | 内容 |\n|---|---|\n| 契約期間 | 期間の定めがない、または契約更新で1年以上使用される見込み（特定業務従事者は6か月）／すでに1年以上（同6か月）使用されている |\n| 労働時間 | 1週間の所定労働時間が、同種の業務に従事する通常の労働者の4分の3以上 |\n\n4分の3未満でも、おおむね2分の1以上であれば実施することが望ましいとされています。アルバイトだから一律に対象外、ではない点に注意します。社会保険の加入判定とは基準が別なので、混同しないようにします。短時間労働者の社会保険は[106万円の壁の撤廃で事業者がすること](/labor/column/106man-no-kabe-teppai-jigyousha-yaru-koto)で整理しています。\n\n## 深夜業など特定業務従事者の年2回健診とは？\n\n深夜業を含む業務や、暑熱・寒冷・坑内・有害放射線などの特定業務に常時従事する労働者には、配置替えの際と6か月以内ごとに1回（＝年2回）の健康診断が必要です（労働安全衛生規則第45条）。通常の定期健康診断が年1回なのに対し、回数が倍になります。\n\n深夜業は、小売・外食・運送・警備・ガソリンスタンドなど幅広い業種で生じます。胸部エックス線検査など一部の項目は1年以内ごとに1回で足りますが、血圧・血液・心電図などは年2回行います。深夜業の労務との関係は[ガソリンスタンドの労務と危険物の人員配置](/labor/column/gasoline-stand-ss-kikenbutsu-haichi-roumu-shinya)でも触れています。50人未満の事業場でのストレスチェックの動きは[ストレスチェックの50人未満への拡大](/labor/column/stress-check-50nin-miman-2028)を参照してください。\n\n## 有機溶剤・石綿などの特殊健康診断は、どんな場合に必要？\n\n有害業務に従事する労働者には、一般健康診断とは別に、業務ごとの特別規則にもとづく特殊健康診断が必要です（労働安全衛生法第66条第2項・第3項）。\n\n| 業務 | 根拠規則 |\n|---|---|\n| 有機溶剤を扱う業務 | 有機溶剤中毒予防規則 |\n| 鉛を扱う業務 | 鉛中毒予防規則 |\n| 特定化学物質を扱う業務 | 特定化学物質障害予防規則 |\n| 石綿を扱う業務 | 石綿障害予防規則 |\n| 電離放射線にさらされる業務 | 電離放射線障害防止規則 |\n| 高圧室内・潜水の業務 | 高気圧作業安全衛生規則 |\n\n特殊健康診断は、対象業務に従事する限り続く義務で、配置替えの際と定期に行います。業務をやめた後も一定の健康管理が求められる物質もあります。\n\n## 健診の費用と、受診している時間の賃金は誰が負担する？\n\n健康診断の費用は、法令で事業者に実施義務が課されている以上、当然に事業者が負担すべきものとされています（行政通達）。一方、受診している時間の賃金は、健診の種類で考え方が分かれます。\n\n| 対象 | 費用 | 受診時間の賃金 |\n|---|---|---|\n| 一般健康診断（雇入時・定期・特定業務） | 事業者負担 | 労使の協議で定めるべきもの（当然には賃金支払い義務はないが、支払うのが望ましいとされる） |\n| 特殊健康診断 | 事業者負担 | 労働時間として扱い、賃金を支払う |\n\n一般健康診断の受診時間を有給とするかは、就業規則や労使協定で明確にしておくとトラブルを防げます。常時50人以上の労働者を使用する事業場では、定期健康診断を行ったときに定期健康診断結果報告書（様式第6号）を所轄労働基準監督署長へ提出します（労働安全衛生規則第52条）。\n\n## 実施・報告・費用処理は、誰が担う？\n\n健康診断そのものの実施や特殊健康診断は、産業医・医療機関の領域です。健診費用の税務処理は税理士の領域です。実施体制の設計、就業規則・労使協定での受診時間の扱いの整理、定期健康診断結果報告書の作成・提出といった労務は社会保険労務士が担います。それぞれ独立した事業体として別々にご契約いただき、当事務所は紹介料を受け取りません。\n\nご相談は無料です。費用は[報酬額表](/labor/ryokin)に、[サービス内容](/labor/services)と[ご相談の流れ](/labor/nagare)もあわせてご覧ください。\n\n## よくある質問\n\n**Q. 週3日のパートにも健康診断は必要ですか？**\nA. 契約が1年以上見込まれ、かつ1週間の所定労働時間が同種業務の通常の労働者の4分の3以上であれば、定期健康診断の対象になります（行政通達の目安）。4分の3未満でもおおむね2分の1以上なら実施が望ましいとされています。社会保険の加入基準とは別の基準なので、分けて判断します。\n\n**Q. 健康診断の費用は従業員に負担させてよいですか？**\nA. いいえ。健康診断は法令で事業者に実施義務があるため、費用は事業者が負担すべきものとされています（行政通達）。従業員に自己負担させるのは適切ではありません。受診している時間の賃金については、一般健診は労使協議で定めるべきもの、特殊健診は労働時間として賃金の支払いが必要です。\n\n**Q. 従業員が健康診断を受けたがりません。拒否できますか？**\nA. 労働者には受診義務がありますが、事業者が指定した医師以外の医師の健康診断を受けて結果を証明する書面を提出することもできます（労働安全衛生法第66条第5項）。事業者は実施義務を果たす必要があるため、就業規則で受診を求める定めを置き、実態に合わせて運用します。個別の対応は事案ごとに分かれます。\n\n**Q. 50人未満の会社でも報告書の提出は要りますか？**\nA. 定期健康診断結果報告書の提出義務は、常時50人以上の労働者を使用する事業場に課されます（労働安全衛生規則第52条）。50人未満の事業場は提出義務はありませんが、健康診断の実施義務そのものは人数にかかわらずあります。実施と記録は50人未満でも必要です。\n\n## この記事の根拠\n\n- 労働安全衛生法（昭和47年法律第57号）第66条第1項（事業者は労働者に対し医師による健康診断を行わなければならない）・第66条第2項・第3項（有害業務に係る特殊健康診断）・第66条第5項（労働者は事業者が指定した医師以外の医師の健康診断を受け、結果を証明する書面を提出できる）\n- 労働安全衛生規則（昭和47年労働省令第32号）第43条（雇入時の健康診断）・第44条（定期健康診断・1年以内ごとに1回）・第45条（特定業務従事者の健康診断・配置替えの際及び6月以内ごとに1回。胸部エックス線等一部項目は1年以内ごとに1回で足りる）・第52条（常時50人以上の労働者を使用する事業者は定期健康診断結果報告書〈様式第6号〉を所轄労働基準監督署長に提出）\n- 特殊健康診断の各特別規則（有機溶剤中毒予防規則・鉛中毒予防規則・特定化学物質障害予防規則・石綿障害予防規則・電離放射線障害防止規則・高気圧作業安全衛生規則 等）\n- 短時間労働者の健康診断の対象（契約期間と所定労働時間4分の3以上の目安、2分の1以上は実施が望ましい）に関する行政通達（短時間労働者の雇用管理の改善等に関する法律の施行通達）\n- 健康診断の費用は事業者負担とする行政解釈（昭和47年9月18日基発第602号）、受診時間の賃金の考え方（一般健診は労使協議、特殊健診は労働時間）── 厚生労働省の解説（2026年10月1日参照）\n- 個別の労働者が「常時使用する労働者」に当たるか、受診時間を有給とするかの就業規則・労使協定の定め方は、事案ごとに分かれます。本記事では個別の結論を出していません（**未検証**）\n\n本記事は一般的な情報提供です。個別のご事情に応じた判断は、面談のうえ有資格者が行います。四葉社会保険労務士事務所では、健康診断の実施体制の設計、受診時間の賃金の就業規則・労使協定への落とし込み、特定業務従事者・特殊健康診断の対象整理、定期健康診断結果報告書の作成・提出についてご相談いただけます。健診の実施や特殊健診は産業医・医療機関、費用の税務処理は税理士が担います。それぞれ独立した事業体として別々にご契約いただき、当事務所は紹介料を受け取りません。よくいただくご質問は[よくあるご質問](/labor/faq)にまとめています。執筆は[浦松丈二](/about/uramatsu)（社会保険労務士・行政書士・宅地建物取引士）です。",
+    "status": "published",
+    "author": {
+      "name": "浦松 丈二",
+      "title": "社会保険労務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+    },
+    "keywords": [
+      "定期健康診断 実施義務",
+      "健康診断 パート 対象 4分の3",
+      "深夜業 特定業務従事者 健康診断 年2回",
+      "特殊健康診断 有機溶剤 石綿",
+      "健康診断 費用 事業者負担",
+      "健康診断 受診時間 賃金"
+    ],
+    "tags": [
+      "健康診断",
+      "労働安全衛生",
+      "特殊健康診断",
+      "費用負担",
+      "定期健康診断結果報告",
+      "パート"
+    ],
+    "locales": [],
+    "faq": [
+      {
+        "question": "週3日のパートにも健康診断は必要ですか？",
+        "answer": "契約が1年以上見込まれ、かつ1週間の所定労働時間が同種業務の通常の労働者の4分の3以上であれば、定期健康診断の対象になります（行政通達の目安）。4分の3未満でもおおむね2分の1以上なら実施が望ましいとされています。社会保険の加入基準とは別の基準なので、分けて判断します。"
+      },
+      {
+        "question": "健康診断の費用は従業員に負担させてよいですか？",
+        "answer": "いいえ。健康診断は法令で事業者に実施義務があるため、費用は事業者が負担すべきものとされています（行政通達）。従業員に自己負担させるのは適切ではありません。受診している時間の賃金については、一般健診は労使協議で定めるべきもの、特殊健診は労働時間として賃金の支払いが必要です。"
+      },
+      {
+        "question": "従業員が健康診断を受けたがりません。拒否できますか？",
+        "answer": "労働者には受診義務がありますが、事業者が指定した医師以外の医師の健康診断を受けて結果を証明する書面を提出することもできます（労働安全衛生法第66条第5項）。事業者は実施義務を果たす必要があるため、就業規則で受診を求める定めを置き、実態に合わせて運用します。個別の対応は事案ごとに分かれます。"
+      },
+      {
+        "question": "50人未満の会社でも報告書の提出は要りますか？",
+        "answer": "定期健康診断結果報告書の提出義務は、常時50人以上の労働者を使用する事業場に課されます（労働安全衛生規則第52条）。50人未満の事業場は提出義務はありませんが、健康診断の実施義務そのものは人数にかかわらずあります。実施と記録は50人未満でも必要です。"
+      }
+    ],
+    "translations": {
+      "en": {
+        "title": "Employee periodic health checks: how far does the duty go, and who pays for the cost and the time?",
+        "excerpt": "A periodic health check is the employer's duty, done once within each year for regularly employed workers (Industrial Safety and Health Regulations Article 44). The cost is in principle borne by the employer; pay for the time is by labour-management discussion for general checks and treated as working time for special checks. The medical side belongs to an industrial physician, and tax to a tax accountant, engaged separately as independent entities.",
+        "content": "**Bottom line first**: A periodic health check is the employer's duty, done once within each year for regularly employed workers (Industrial Safety and Health Regulations Article 44). The cost is in principle borne by the employer; pay for the time is set by labour-management discussion for general checks and treated as working time for special checks.\n\nYou hear that you must give health checks once you hire staff, but owners often get stuck on \"who is covered,\" \"what about part-timers,\" and \"who bears the cost and the pay for the time.\" This article sets out the scope of the duty and the treatment of cost and time, in order.\n\n## Who must have a periodic health check, and when?\n\nAn employer must have a physician give a health check to regularly employed workers (Industrial Safety and Health Act Article 66(1)): on hiring (Industrial Safety and Health Regulations Article 43) and once within each year thereafter (Article 44). This duty applies regardless of headcount; not giving checks is a breach.\n\n| Type | Basis | Timing |\n|---|---|---|\n| Hiring health check | ISH Regulations Art. 43 | When hiring a regular worker |\n| Periodic health check | ISH Regulations Art. 44 | Once within each year |\n| Specified-task-worker check | ISH Regulations Art. 45 | On reassignment and once every six months (twice a year) |\n| Special health check | ISH Act Art. 66(2)(3) and each special rule | Periodically, for workers in hazardous tasks |\n\n## From where are part-timers and short-hour workers covered?\n\n\"Regularly employed workers\" includes not only full-timers but certain part-time and short-hour workers. By the administrative-notice guide, a short-hour worker is covered when both hold:\n\n| Requirement | Content |\n|---|---|\n| Contract term | No fixed term, or expected to be used for 1 year or more on renewal (6 months for specified-task workers) / already used for 1 year or more (6 months) |\n| Working hours | Weekly contracted hours are 3/4 or more of a comparable regular worker's |\n\nWhere they are under 3/4 but roughly 1/2 or more, the check is desirable. Being a part-timer does not uniformly put someone outside the scope. Note the standard differs from the social-insurance eligibility test — do not confuse them. See [what employers do as the ¥1.06m wall is removed](/en/labor/column/106man-no-kabe-teppai-jigyousha-yaru-koto).\n\n## What is the twice-a-year check for specified-task workers such as night workers?\n\nWorkers who regularly do specified tasks — those including night work, or heat, cold, underground, hazardous radiation and the like — need a check on reassignment and once every six months (twice a year) (Industrial Safety and Health Regulations Article 45). That is double the once-a-year periodic check. Night work arises across retail, food service, transport, security and petrol stations. Some items, such as chest X-rays, need only be done once a year, while blood pressure, blood tests and ECG are done twice. See [petrol-station labour and hazardous-materials staffing](/en/labor/column/gasoline-stand-ss-kikenbutsu-haichi-roumu-shinya), and for the move to extend stress checks to workplaces under 50, [extending the stress check to under 50](/en/labor/column/stress-check-50nin-miman-2028).\n\n## When is a special health check for organic solvents, asbestos and the like needed?\n\nWorkers in hazardous tasks need, separately from the general check, a special health check under the rule for each task (Industrial Safety and Health Act Article 66(2)(3)).\n\n| Task | Governing rule |\n|---|---|\n| Work with organic solvents | Ordinance on Prevention of Organic Solvent Poisoning |\n| Work with lead | Ordinance on Prevention of Lead Poisoning |\n| Work with specified chemical substances | Ordinance on Prevention of Hazards due to Specified Chemical Substances |\n| Work with asbestos | Ordinance on Prevention of Asbestos Hazards |\n| Work exposed to ionising radiation | Ordinance on Prevention of Ionising Radiation Hazards |\n| High-pressure/diving work | Ordinance on Safety and Health of Work under High Pressure |\n\nA special check is a continuing duty while the worker is in the task, done on reassignment and periodically. For some substances health management is required even after the work ends.\n\n## Who bears the cost of the check, and the pay for the time spent?\n\nBecause the law places the duty to conduct checks on the employer, the cost is to be borne by the employer (administrative notice). Pay for the time spent, however, differs by type of check.\n\n| Target | Cost | Pay for the time |\n|---|---|---|\n| General check (hiring, periodic, specified-task) | Employer | To be set by labour-management discussion (not automatically payable, but payment is desirable) |\n| Special check | Employer | Treated as working time; pay it |\n\nWhether to pay for general-check time is best made clear in the work rules or a labour-management agreement to avoid disputes. Where 50 or more workers are regularly employed, a periodic-health-check results report (Form No. 6) goes to the head of the Labour Standards Inspection Office when a periodic check is done (Industrial Safety and Health Regulations Article 52).\n\n## Who handles conducting, reporting and cost processing?\n\nThe check itself and special checks belong to an industrial physician and medical institutions. The tax handling of check costs belongs to a tax accountant. The labour side — designing the system, setting out the treatment of check time in the work rules and a labour-management agreement, and preparing and submitting the results report — is a Shakai Hoken Roumushi's. Each is engaged as a separate, independent entity under separate contracts, and this office takes no referral fee.\n\nYour first consultation is free. Please see the [fee schedule](/en/labor/ryokin), the [services](/en/labor/services) and [how we work](/en/labor/nagare).\n\n## Frequently asked questions\n\n**Q. Does a three-day-a-week part-timer need a health check?**\nA. If the contract is expected to last 1 year or more and weekly contracted hours are 3/4 or more of a comparable regular worker's, the person is covered by the periodic check (administrative-notice guide). Under 3/4 but roughly 1/2 or more, it is desirable. This is a different test from social-insurance eligibility, so judge them separately.\n\n**Q. Can we make employees bear the cost of the health check?**\nA. No. Because the law places the duty to conduct checks on the employer, the cost is to be borne by the employer (administrative notice). Making employees pay is not appropriate. As for pay for the time, general-check time is set by labour-management discussion, while special-check time is working time and must be paid.\n\n**Q. An employee refuses a health check. Can they refuse?**\nA. Workers have a duty to undergo the check, but they may instead undergo a check by a physician other than the one the employer designates and submit a document certifying the result (Industrial Safety and Health Act Article 66(5)). As the employer must fulfil the conducting duty, set a provision in the work rules requiring the check and operate it to fit the facts. Individual handling varies case by case.\n\n**Q. Must a company under 50 also submit the results report?**\nA. The duty to submit the periodic-health-check results report falls on workplaces that regularly employ 50 or more workers (Industrial Safety and Health Regulations Article 52). Under 50 there is no submission duty, but the duty to conduct the checks itself applies regardless of headcount. Conducting and recording are needed even under 50.\n\n## This article's basis\n\n- Industrial Safety and Health Act (Act No. 57 of 1972) Article 66(1) (the employer must have a physician give a health check to workers), Article 66(2)(3) (special health checks for hazardous tasks), Article 66(5) (a worker may undergo a check by a physician other than the one designated and submit a certifying document)\n- Industrial Safety and Health Regulations (Ministry of Labour Order No. 32 of 1972) Article 43 (hiring health check), Article 44 (periodic check once within each year), Article 45 (specified-task-worker check, on reassignment and once every six months; some items such as chest X-rays once a year suffice), Article 52 (employers of 50 or more regular workers submit the periodic-health-check results report, Form No. 6, to the head of the Labour Standards Inspection Office)\n- The special rules for special health checks (Organic Solvent Poisoning, Lead Poisoning, Specified Chemical Substances, Asbestos Hazards, Ionising Radiation Hazards, High-Pressure Work, etc.)\n- Administrative notice on the scope of health checks for short-hour workers (the guide of contract term and weekly hours of 3/4 or more; roughly 1/2 or more is desirable), under the enforcement notice of the Act on Improvement of Employment Management for Part-Time Workers\n- Administrative interpretation that the cost of health checks is borne by the employer (18 September 1972, Kihatsu No. 602), and the view on pay for the time (general checks by labour-management discussion, special checks as working time) — Ministry of Health, Labour and Welfare explanation (accessed 1 October 2026)\n- Whether a particular worker is a \"regularly employed worker,\" and how to set out paid check-time in the work rules and a labour-management agreement, vary case by case. This article does not give an individual conclusion (**unverified**).\n\nThis article is general information. An individual judgment on your circumstances is made by a qualified professional after a meeting. At the Yotsuba Shakai Hoken Roumushi Office we can advise on designing the health-check system, setting out the treatment of check time in the work rules and a labour-management agreement, identifying specified-task and special-check targets, and preparing and submitting the periodic-health-check results report. Conducting checks and special checks belong to an industrial physician and medical institutions, and the tax processing of costs to a tax accountant — each a separate, independent entity engaged under separate contracts, with no referral fee. Common questions are gathered in the [FAQ](/en/labor/faq). Written by [Joji Uramatsu](/en/about/uramatsu) (Shakai Hoken Roumushi, Gyoseishoshi, Licensed Real Estate Transaction Agent).",
+        "category": "Working practices",
+        "keywords": [
+          "periodic health check duty",
+          "part-timer health check scope",
+          "night-work twice-a-year check",
+          "special health check organic solvent asbestos",
+          "health-check cost employer",
+          "health-check time wages"
+        ],
+        "tags": [
+          "Health check",
+          "Industrial safety and health",
+          "Part-timers",
+          "Special health check",
+          "Cost burden",
+          "Working time"
+        ],
+        "author": {
+          "name": "Joji Uramatsu",
+          "title": "Shakai Hoken Roumushi (Certified Social Insurance and Labor Consultant), Gyoseishoshi (Certified Administrative Procedures Legal Specialist), Registered Real Estate Transaction Specialist — 四葉社会保険労務士事務所／四葉行政書士事務所"
+        },
+        "faq": [
+          {
+            "question": "Does a three-day-a-week part-timer need a health check?",
+            "answer": "If the contract is expected to last 1 year or more and weekly contracted hours are 3/4 or more of a comparable regular worker's, the person is covered by the periodic check (administrative-notice guide). Under 3/4 but roughly 1/2 or more, it is desirable. This is a different test from social-insurance eligibility, so judge them separately."
+          },
+          {
+            "question": "Can we make employees bear the cost of the health check?",
+            "answer": "No. Because the law places the duty to conduct checks on the employer, the cost is to be borne by the employer (administrative notice). Making employees pay is not appropriate. As for pay for the time, general-check time is set by labour-management discussion, while special-check time is working time and must be paid."
+          },
+          {
+            "question": "An employee refuses a health check. Can they refuse?",
+            "answer": "Workers have a duty to undergo the check, but they may instead undergo a check by a physician other than the one the employer designates and submit a document certifying the result (Industrial Safety and Health Act Article 66(5)). As the employer must fulfil the conducting duty, set a provision in the work rules requiring the check and operate it to fit the facts. Individual handling varies case by case."
+          },
+          {
+            "question": "Must a company under 50 also submit the results report?",
+            "answer": "The duty to submit the periodic-health-check results report falls on workplaces that regularly employ 50 or more workers (Industrial Safety and Health Regulations Article 52). Under 50 there is no submission duty, but the duty to conduct the checks itself applies regardless of headcount. Conducting and recording are needed even under 50."
+          }
+        ]
+      },
+      "zh-tw": {
+        "title": "員工定期健康診斷，義務範圍到哪裡？費用與時間由誰負擔？",
+        "excerpt": "定期健康診斷是雇主的義務，對恆常使用的勞工每年1次（勞動安全衛生規則第44條）。費用原則由雇主負擔；受診時間的工資，一般健診由勞資協議，特殊健診作為勞動時間支付。健診實施屬產業醫・醫療機關，稅務屬稅理士，各自作為獨立的事業體另行簽約。",
+        "content": "**結論（先講重點）**：定期健康診斷是雇主的義務，對恆常使用的勞工每年1次（勞動安全衛生規則第44條）。費用原則由雇主負擔；受診時間的工資，一般健診由勞資協議，特殊健診作為勞動時間支付。\n\n雇用員工後必須實施健康診斷，話雖如此，經營者常卡在「對象到誰」「兼職如何」「費用與受診時間的工資由誰負擔」。本文依序整理實施義務的範圍與費用・時間的處理。\n\n## 定期健康診斷，對誰・何時有實施義務？\n\n雇主須對恆常使用的勞工實施醫師的健康診斷（勞動安全衛生法第66條第1項）：雇入時（勞動安全衛生規則第43條）及其後每年1次（第44條）。此義務不問人數，未使其受診即屬違規。\n\n| 區分 | 依據 | 時期 |\n|---|---|---|\n| 雇入時健康診斷 | 勞動安全衛生規則第43條 | 雇入恆常使用的勞工時 |\n| 定期健康診斷 | 勞動安全衛生規則第44條 | 每年1次 |\n| 特定業務從業者健診 | 勞動安全衛生規則第45條 | 配置替換時及每6個月以內1次（年2次） |\n| 特殊健康診斷 | 勞動安全衛生法第66條第2項・第3項與各特別規則 | 對從事有害業務的勞工定期實施 |\n\n## 兼職・短時間勞工，從何時起成為對象？\n\n「恆常使用的勞工」不僅含正職，亦含一定的兼職・短時間勞工。依行政通達的概估，同時符合以下兩者的短時間勞工為對象。\n\n| 要件 | 內容 |\n|---|---|\n| 契約期間 | 無期限，或因更新而預計使用1年以上（特定業務從業者為6個月）／已使用1年以上（同6個月） |\n| 勞動時間 | 1週所定勞動時間為同種業務通常勞工的4分之3以上 |\n\n未達4分之3但約2分之1以上者，則以實施為宜。並非兼職即一律非對象。此基準與社會保險加入判定不同，勿混淆。短時間勞工的社會保險請見[106萬圓之牆撤廢後雇主應做的事](/zh-tw/labor/column/106man-no-kabe-teppai-jigyousha-yaru-koto)。\n\n## 深夜業等特定業務從業者的年2次健診是什麼？\n\n從事含深夜業之業務，或暑熱・寒冷・坑內・有害放射線等特定業務的勞工，須於配置替換時及每6個月以內1次（即年2次）實施健康診斷（勞動安全衛生規則第45條）。較一般定期健康診斷每年1次次數加倍。深夜業廣泛出現於零售・外食・運送・警備・加油站等。胸部X光等部分項目每年1次即足，血壓・血液・心電圖等則每年2次。與深夜業勞務的關係請見[加油站的勞務與危險物人員配置](/zh-tw/labor/column/gasoline-stand-ss-kikenbutsu-haichi-roumu-shinya)。50人以下事業場壓力檢測的動向請參閱[壓力檢測擴大至50人以下](/zh-tw/labor/column/stress-check-50nin-miman-2028)。\n\n## 有機溶劑・石綿等特殊健康診斷在何種情形需要？\n\n從事有害業務的勞工，除一般健康診斷外，尚須依各業務的特別規則實施特殊健康診斷（勞動安全衛生法第66條第2項・第3項）。\n\n| 業務 | 依據規則 |\n|---|---|\n| 處理有機溶劑的業務 | 有機溶劑中毒預防規則 |\n| 處理鉛的業務 | 鉛中毒預防規則 |\n| 處理特定化學物質的業務 | 特定化學物質障害預防規則 |\n| 處理石綿的業務 | 石綿障害預防規則 |\n| 暴露於電離放射線的業務 | 電離放射線障害防止規則 |\n| 高壓室內・潛水的業務 | 高氣壓作業安全衛生規則 |\n\n特殊健康診斷為從事對象業務期間持續的義務，於配置替換時及定期實施。部分物質於停止業務後仍要求一定的健康管理。\n\n## 健診的費用與受診時間的工資由誰負擔？\n\n因法令課予雇主實施義務，費用應由雇主負擔（行政通達）。而受診時間的工資，則依健診種類而異。\n\n| 對象 | 費用 | 受診時間的工資 |\n|---|---|---|\n| 一般健康診斷（雇入時・定期・特定業務） | 雇主負擔 | 應由勞資協議定之（並非當然有工資支付義務，但以支付為宜） |\n| 特殊健康診斷 | 雇主負擔 | 作為勞動時間支付工資 |\n\n一般健康診斷的受診時間是否有薪，宜於就業規則或勞資協定明確，以防糾紛。恆常使用50人以上勞工的事業場，實施定期健康診斷時須向所轄勞動基準監督署長提交定期健康診斷結果報告書（樣式第6號）（勞動安全衛生規則第52條）。\n\n## 實施・報告・費用處理由誰負責？\n\n健康診斷本身的實施與特殊健康診斷屬產業醫・醫療機關的領域。健診費用的稅務處理屬稅理士的領域。實施體制的設計、受診時間工資於就業規則・勞資協定的落實、定期健康診斷結果報告書的製作・提交等勞務由社會保險勞務士負責。各自作為獨立的事業體另行簽約，本所不收取介紹費。\n\n初次諮詢免費。費用請見[報酬額表](/zh-tw/labor/ryokin)，並參閱[服務內容](/zh-tw/labor/services)與[諮詢流程](/zh-tw/labor/nagare)。\n\n## 常見問題\n\n**Q. 每週3天的兼職也需要健康診斷嗎？**\nA. 若契約預計持續1年以上，且1週所定勞動時間為同種業務通常勞工的4分之3以上，即為定期健康診斷的對象（行政通達概估）。未達4分之3但約2分之1以上者以實施為宜。此與社會保險加入基準不同，應分別判斷。\n\n**Q. 健康診斷費用可否讓員工負擔？**\nA. 不可。因健康診斷係法令課予雇主實施義務，費用應由雇主負擔（行政通達）。讓員工自費並不適當。關於受診時間工資，一般健診由勞資協議定之，特殊健診須作為勞動時間支付。\n\n**Q. 員工不願受健康診斷，可以拒絕嗎？**\nA. 勞工有受診義務，但亦可改受雇主指定醫師以外之醫師的健康診斷並提交證明結果的書面（勞動安全衛生法第66條第5項）。因雇主須履行實施義務，宜於就業規則訂定要求受診的規定並依實況運用。個別對應將因個案而異。\n\n**Q. 50人以下的公司也需提交報告書嗎？**\nA. 定期健康診斷結果報告書的提交義務，課予恆常使用50人以上勞工的事業場（勞動安全衛生規則第52條）。50人以下無提交義務，但健康診斷的實施義務本身不問人數皆有。50人以下仍須實施與記錄。\n\n## 本文根據\n\n- 勞動安全衛生法（昭和47年法律第57號）第66條第1項（雇主須對勞工實施醫師的健康診斷）・第66條第2項・第3項（有害業務的特殊健康診斷）・第66條第5項（勞工可改受雇主指定以外醫師的健康診斷並提交證明結果的書面）\n- 勞動安全衛生規則（昭和47年勞動省令第32號）第43條（雇入時健康診斷）・第44條（定期健康診斷・每年1次）・第45條（特定業務從業者健診・配置替換時及每6個月以內1次，胸部X光等部分項目每年1次即足）・第52條（恆常使用50人以上勞工的雇主須向所轄勞動基準監督署長提交定期健康診斷結果報告書〈樣式第6號〉）\n- 特殊健康診斷的各特別規則（有機溶劑中毒預防規則・鉛中毒預防規則・特定化學物質障害預防規則・石綿障害預防規則・電離放射線障害防止規則・高氣壓作業安全衛生規則等）\n- 短時間勞工健康診斷對象（契約期間與所定勞動時間4分之3以上的概估，2分之1以上以實施為宜）的行政通達（兼職勞工雇用管理改善等相關法律施行通達）\n- 健康診斷費用由雇主負擔的行政解釋（昭和47年9月18日發基第602號），以及受診時間工資的考量（一般健診由勞資協議，特殊健診作為勞動時間）── 厚生勞動省的說明（2026年10月1日參照）\n- 個別勞工是否屬「恆常使用的勞工」、受診時間是否有薪的就業規則・勞資協定訂定方式，將因個案而異。本文不作個別結論（**未驗證**）\n\n本文為一般性資訊提供。依個別情事的判斷，由有資格者於面談後進行。四葉社会保険労務士事務所可就健康診斷實施體制的設計、受診時間工資於就業規則・勞資協定的落實、特定業務・特殊健康診斷對象的整理、定期健康診斷結果報告書的製作・提交提供諮詢。健診的實施與特殊健診屬產業醫・醫療機關、費用的稅務處理屬稅理士。各自作為獨立的事業體另行簽約，本所不收取介紹費。常見問題整理於[常見問題](/zh-tw/labor/faq)。撰文為[浦松丈二](/zh-tw/about/uramatsu)（社會保險勞務士・行政書士・宅地建物取引士）。",
+        "category": "勞務實務",
+        "keywords": [
+          "定期健康診斷 義務",
+          "兼職 健康診斷 對象",
+          "深夜業 年2次 健診",
+          "特殊健康診斷 有機溶劑 石綿",
+          "健診費用 雇主",
+          "受診時間 工資"
+        ],
+        "tags": [
+          "健康診斷",
+          "勞動安全衛生",
+          "兼職",
+          "特殊健康診斷",
+          "費用負擔",
+          "勞動時間"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社會保險勞務士・行政書士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "每週3天的兼職也需要健康診斷嗎？",
+            "answer": "若契約預計持續1年以上，且1週所定勞動時間為同種業務通常勞工的4分之3以上，即為定期健康診斷的對象（行政通達概估）。未達4分之3但約2分之1以上者以實施為宜。此與社會保險加入基準不同，應分別判斷。"
+          },
+          {
+            "question": "健康診斷費用可否讓員工負擔？",
+            "answer": "不可。因健康診斷係法令課予雇主實施義務，費用應由雇主負擔（行政通達）。讓員工自費並不適當。關於受診時間工資，一般健診由勞資協議定之，特殊健診須作為勞動時間支付。"
+          },
+          {
+            "question": "員工不願受健康診斷，可以拒絕嗎？",
+            "answer": "勞工有受診義務，但亦可改受雇主指定醫師以外之醫師的健康診斷並提交證明結果的書面（勞動安全衛生法第66條第5項）。因雇主須履行實施義務，宜於就業規則訂定要求受診的規定並依實況運用。個別對應將因個案而異。"
+          },
+          {
+            "question": "50人以下的公司也需提交報告書嗎？",
+            "answer": "定期健康診斷結果報告書的提交義務，課予恆常使用50人以上勞工的事業場（勞動安全衛生規則第52條）。50人以下無提交義務，但健康診斷的實施義務本身不問人數皆有。50人以下仍須實施與記錄。"
+          }
+        ]
+      },
+      "zh": {
+        "title": "员工定期健康诊断，义务范围到哪里？费用与时间由谁负担？",
+        "excerpt": "定期健康诊断是雇主的义务，对恒常使用的劳工每年1次（劳动安全卫生规则第44条）。费用原则由雇主负担；受诊时间的工资，一般健诊由劳资协议，特殊健诊作为劳动时间支付。健诊实施属产业医・医疗机关，税务属税理士，各自作为独立的事业体另行签约。",
+        "content": "**结论（先讲重点）**：定期健康诊断是雇主的义务，对恒常使用的劳工每年1次（劳动安全卫生规则第44条）。费用原则由雇主负担；受诊时间的工资，一般健诊由劳资协议，特殊健诊作为劳动时间支付。\n\n雇用员工后必须实施健康诊断，话虽如此，经营者常卡在「对象到谁」「兼职如何」「费用与受诊时间的工资由谁负担」。本文依序整理实施义务的范围与费用・时间的处理。\n\n## 定期健康诊断，对谁・何时有实施义务？\n\n雇主须对恒常使用的劳工实施医师的健康诊断（劳动安全卫生法第66条第1项）：雇入时（劳动安全卫生规则第43条）及其后每年1次（第44条）。此义务不问人数，未使其受诊即属违规。\n\n| 区分 | 依据 | 时期 |\n|---|---|---|\n| 雇入时健康诊断 | 劳动安全卫生规则第43条 | 雇入恒常使用的劳工时 |\n| 定期健康诊断 | 劳动安全卫生规则第44条 | 每年1次 |\n| 特定业务从业者健诊 | 劳动安全卫生规则第45条 | 配置替换时及每6个月以内1次（年2次） |\n| 特殊健康诊断 | 劳动安全卫生法第66条第2项・第3项与各特别规则 | 对从事有害业务的劳工定期实施 |\n\n## 兼职・短时间劳工，从何时起成为对象？\n\n「恒常使用的劳工」不仅含正职，亦含一定的兼职・短时间劳工。依行政通达的概估，同时符合以下两者的短时间劳工为对象。\n\n| 要件 | 内容 |\n|---|---|\n| 契约期间 | 无期限，或因更新而预计使用1年以上（特定业务从业者为6个月）／已使用1年以上（同6个月） |\n| 劳动时间 | 1周所定劳动时间为同种业务通常劳工的4分之3以上 |\n\n未达4分之3但约2分之1以上者，则以实施为宜。并非兼职即一律非对象。此基准与社会保险加入判定不同，勿混淆。短时间劳工的社会保险请见[106万圆之墙撤废后雇主应做的事](/zh/labor/column/106man-no-kabe-teppai-jigyousha-yaru-koto)。\n\n## 深夜业等特定业务从业者的年2次健诊是什么？\n\n从事含深夜业之业务，或暑热・寒冷・坑内・有害放射线等特定业务的劳工，须于配置替换时及每6个月以内1次（即年2次）实施健康诊断（劳动安全卫生规则第45条）。较一般定期健康诊断每年1次次数加倍。深夜业广泛出现于零售・外食・运送・警备・加油站等。胸部X光等部分项目每年1次即足，血压・血液・心电图等则每年2次。与深夜业劳务的关系请见[加油站的劳务与危险物人员配置](/zh/labor/column/gasoline-stand-ss-kikenbutsu-haichi-roumu-shinya)。50人以下事业场压力检测的动向请参阅[压力检测扩大至50人以下](/zh/labor/column/stress-check-50nin-miman-2028)。\n\n## 有机溶剂・石绵等特殊健康诊断在何种情形需要？\n\n从事有害业务的劳工，除一般健康诊断外，尚须依各业务的特别规则实施特殊健康诊断（劳动安全卫生法第66条第2项・第3项）。\n\n| 业务 | 依据规则 |\n|---|---|\n| 处理有机溶剂的业务 | 有机溶剂中毒预防规则 |\n| 处理铅的业务 | 铅中毒预防规则 |\n| 处理特定化学物质的业务 | 特定化学物质障害预防规则 |\n| 处理石绵的业务 | 石绵障害预防规则 |\n| 暴露于电离放射线的业务 | 电离放射线障害防止规则 |\n| 高压室内・潜水的业务 | 高气压作业安全卫生规则 |\n\n特殊健康诊断为从事对象业务期间持续的义务，于配置替换时及定期实施。部分物质于停止业务后仍要求一定的健康管理。\n\n## 健诊的费用与受诊时间的工资由谁负担？\n\n因法令课予雇主实施义务，费用应由雇主负担（行政通达）。而受诊时间的工资，则依健诊种类而异。\n\n| 对象 | 费用 | 受诊时间的工资 |\n|---|---|---|\n| 一般健康诊断（雇入时・定期・特定业务） | 雇主负担 | 应由劳资协议定之（并非当然有工资支付义务，但以支付为宜） |\n| 特殊健康诊断 | 雇主负担 | 作为劳动时间支付工资 |\n\n一般健康诊断的受诊时间是否有薪，宜于就业规则或劳资协定明确，以防纠纷。恒常使用50人以上劳工的事业场，实施定期健康诊断时须向所辖劳动基准监督署长提交定期健康诊断结果报告书（样式第6号）（劳动安全卫生规则第52条）。\n\n## 实施・报告・费用处理由谁负责？\n\n健康诊断本身的实施与特殊健康诊断属产业医・医疗机关的领域。健诊费用的税务处理属税理士的领域。实施体制的设计、受诊时间工资于就业规则・劳资协定的落实、定期健康诊断结果报告书的制作・提交等劳务由社会保险劳务士负责。各自作为独立的事业体另行签约，本所不收取介绍费。\n\n初次咨询免费。费用请见[报酬额表](/zh/labor/ryokin)，并参阅[服务内容](/zh/labor/services)与[咨询流程](/zh/labor/nagare)。\n\n## 常见问题\n\n**Q. 每周3天的兼职也需要健康诊断吗？**\nA. 若契约预计持续1年以上，且1周所定劳动时间为同种业务通常劳工的4分之3以上，即为定期健康诊断的对象（行政通达概估）。未达4分之3但约2分之1以上者以实施为宜。此与社会保险加入基准不同，应分别判断。\n\n**Q. 健康诊断费用可否让员工负担？**\nA. 不可。因健康诊断系法令课予雇主实施义务，费用应由雇主负担（行政通达）。让员工自费并不适当。关于受诊时间工资，一般健诊由劳资协议定之，特殊健诊须作为劳动时间支付。\n\n**Q. 员工不愿受健康诊断，可以拒绝吗？**\nA. 劳工有受诊义务，但亦可改受雇主指定医师以外之医师的健康诊断并提交证明结果的书面（劳动安全卫生法第66条第5项）。因雇主须履行实施义务，宜于就业规则订定要求受诊的规定并依实况运用。个别对应将因个案而异。\n\n**Q. 50人以下的公司也需提交报告书吗？**\nA. 定期健康诊断结果报告书的提交义务，课予恒常使用50人以上劳工的事业场（劳动安全卫生规则第52条）。50人以下无提交义务，但健康诊断的实施义务本身不问人数皆有。50人以下仍须实施与记录。\n\n## 本文根据\n\n- 劳动安全卫生法（昭和47年法律第57号）第66条第1项（雇主须对劳工实施医师的健康诊断）・第66条第2项・第3项（有害业务的特殊健康诊断）・第66条第5项（劳工可改受雇主指定以外医师的健康诊断并提交证明结果的书面）\n- 劳动安全卫生规则（昭和47年劳动省令第32号）第43条（雇入时健康诊断）・第44条（定期健康诊断・每年1次）・第45条（特定业务从业者健诊・配置替换时及每6个月以内1次，胸部X光等部分项目每年1次即足）・第52条（恒常使用50人以上劳工的雇主须向所辖劳动基准监督署长提交定期健康诊断结果报告书〈样式第6号〉）\n- 特殊健康诊断的各特别规则（有机溶剂中毒预防规则・铅中毒预防规则・特定化学物质障害预防规则・石绵障害预防规则・电离放射线障害防止规则・高气压作业安全卫生规则等）\n- 短时间劳工健康诊断对象（契约期间与所定劳动时间4分之3以上的概估，2分之1以上以实施为宜）的行政通达（兼职劳工雇用管理改善等相关法律施行通达）\n- 健康诊断费用由雇主负担的行政解释（昭和47年9月18日发基第602号），以及受诊时间工资的考量（一般健诊由劳资协议，特殊健诊作为劳动时间）── 厚生劳动省的说明（2026年10月1日参照）\n- 个别劳工是否属「恒常使用的劳工」、受诊时间是否有薪的就业规则・劳资协定订定方式，将因个案而异。本文不作个别结论（**未验证**）\n\n本文为一般性资讯提供。依个别情事的判断，由有资格者于面谈后进行。四葉社会保険労務士事務所可就健康诊断实施体制的设计、受诊时间工资于就业规则・劳资协定的落实、特定业务・特殊健康诊断对象的整理、定期健康诊断结果报告书的制作・提交提供咨询。健诊的实施与特殊健诊属产业医・医疗机关、费用的税务处理属税理士。各自作为独立的事业体另行签约，本所不收取介绍费。常见问题整理于[常见问题](/zh/labor/faq)。撰文为[浦松丈二](/zh/about/uramatsu)（社会保险劳务士・行政书士・宅地建物取引士）。",
+        "category": "劳务实务",
+        "keywords": [
+          "定期健康诊断 义务",
+          "兼职 健康诊断 对象",
+          "深夜业 年2次 健诊",
+          "特殊健康诊断 有机溶剂 石绵",
+          "健诊费用 雇主",
+          "受诊时间 工资"
+        ],
+        "tags": [
+          "健康诊断",
+          "劳动安全卫生",
+          "兼职",
+          "特殊健康诊断",
+          "费用负担",
+          "劳动时间"
+        ],
+        "author": {
+          "name": "浦松 丈二",
+          "title": "社会保险劳务士・行政书士・宅地建物取引士（四葉社会保険労務士事務所／四葉行政書士事務所）"
+        },
+        "faq": [
+          {
+            "question": "每周3天的兼职也需要健康诊断吗？",
+            "answer": "若契约预计持续1年以上，且1周所定劳动时间为同种业务通常劳工的4分之3以上，即为定期健康诊断的对象（行政通达概估）。未达4分之3但约2分之1以上者以实施为宜。此与社会保险加入基准不同，应分别判断。"
+          },
+          {
+            "question": "健康诊断费用可否让员工负担？",
+            "answer": "不可。因健康诊断系法令课予雇主实施义务，费用应由雇主负担（行政通达）。让员工自费并不适当。关于受诊时间工资，一般健诊由劳资协议定之，特殊健诊须作为劳动时间支付。"
+          },
+          {
+            "question": "员工不愿受健康诊断，可以拒绝吗？",
+            "answer": "劳工有受诊义务，但亦可改受雇主指定医师以外之医师的健康诊断并提交证明结果的书面（劳动安全卫生法第66条第5项）。因雇主须履行实施义务，宜于就业规则订定要求受诊的规定并依实况运用。个别对应将因个案而异。"
+          },
+          {
+            "question": "50人以下的公司也需提交报告书吗？",
+            "answer": "定期健康诊断结果报告书的提交义务，课予恒常使用50人以上劳工的事业场（劳动安全卫生规则第52条）。50人以下无提交义务，但健康诊断的实施义务本身不问人数皆有。50人以下仍须实施与记录。"
+          }
+        ]
+      }
+    }
   }
 ];

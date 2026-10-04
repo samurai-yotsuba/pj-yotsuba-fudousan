@@ -2136,6 +2136,26 @@ const ARTICLES: ArticleSpec[] = [
     localesWithTranslations: ["en", "zh-tw", "zh"],
     hubLinks: ["/souzoku"],
   },
+  {
+    file: "105-gasoline-stand-atochi-chika-tank-tenyo-bukken.md",
+    slug: "gasoline-stand-atochi-chika-tank-tenyo-bukken",
+    title: "ガソリンスタンド跡地を事業用に使うとき、地下タンクと土壌はどう確認する？",
+    publishedAt: "2026-10-04",
+    category: "投資・事業用不動産",
+    excerpt:
+      "廃業したガソリンスタンドの跡地を倉庫・店舗・ロードサイド店に転用・購入するなら、契約前に①地下タンクの現況と消防法の廃止届、②土壌汚染のおそれと調査の要否、③用途地域の3点を確かめます。給油所の地下タンク・給油設備は水質汚濁防止法の『有害物質使用特定施設』に当たらないのが一般的で、廃業しても土壌汚染対策法第3条の調査義務は原則かかりません。入口は第4条の届出と自治体の条例、売買での自主調査です。東京都文京区の宅地建物取引士兼行政書士が、消防法・土壌汚染対策法・建築基準法の条文から確認手順を整理します。",
+    keywords: [
+      "ガソリンスタンド跡地 転用",
+      "給油所 地下タンク 撤去 残置",
+      "ガソリンスタンド 土壌汚染 調査",
+      "土壌汚染対策法 3条 4条 有害物質使用特定施設",
+      "消防法 12条の6 廃止届 危険物施設",
+    ],
+    tags: ["事業用不動産", "許認可", "消防法", "土壌汚染"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/toushi", "/office"],
+  },
 ];
 
 function toPlainText(md: string): string {
