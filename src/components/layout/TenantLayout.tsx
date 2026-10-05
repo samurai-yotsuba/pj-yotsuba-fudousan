@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { addLocalePrefix, stripLocalePrefix } from "@/lib/locale";
 import { Menu, X, CalendarDays, ChevronDown } from "lucide-react";
-import { groupBusinesses, GROUP_SITE_ORIGIN } from "@/config/group";
+import { groupBusinesses, groupLogoDimensions, GROUP_SITE_ORIGIN } from "@/config/group";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { GroupSwitcher } from "@/components/ui/GroupSwitcher";
@@ -526,6 +526,7 @@ function TenantHeader({ businessKey, columnLocales }: { businessKey: string; col
   const { locale } = useLanguage();
 
   const biz = groupBusinesses.find((b) => b.key === businessKey)!;
+  const logoDimensions = groupLogoDimensions[businessKey as BusinessKey];
 
   const allNav = useMemo(() => {
     const hrefs = NAV_HREFS[businessKey] ?? [];
@@ -592,9 +593,9 @@ function TenantHeader({ businessKey, columnLocales }: { businessKey: string; col
               <Image
                 src={biz.logo.horizontal}
                 alt={t(`${businessKey}.name`)}
-                width={businessKey === "labor" ? 5020 : 260}
-                height={businessKey === "labor" ? 713 : 72}
-                sizes={businessKey === "labor" ? "(min-width: 640px) 395px, (min-width: 370px) 282px, calc(100vw - 88px)" : businessKey === "realestate" ? "(min-width: 640px) 205px, 146px" : undefined}
+                width={logoDimensions.horizontal.width}
+                height={logoDimensions.horizontal.height}
+                sizes={businessKey === "labor" ? "(min-width: 640px) 395px, (min-width: 370px) 282px, calc(100vw - 88px)" : businessKey === "realestate" ? "(min-width: 640px) 205px, 146px" : "(min-width: 640px) 307px, 219px"}
                 className={businessKey === "labor" ? "h-auto w-[min(282px,calc(100vw-88px))] sm:h-14 sm:w-auto" : "h-10 w-auto sm:h-14"}
                 priority
               />
@@ -754,6 +755,7 @@ function TenantHeader({ businessKey, columnLocales }: { businessKey: string; col
 function TenantFooter({ businessKey }: { businessKey: string }) {
   const currentYear = new Date().getFullYear();
   const biz = groupBusinesses.find((b) => b.key === businessKey)!;
+  const logoDimensions = groupLogoDimensions[businessKey as BusinessKey];
   const { t } = useTranslation();
   const { locale } = useLanguage();
   const pathname = usePathname();
@@ -802,8 +804,9 @@ function TenantFooter({ businessKey }: { businessKey: string }) {
               <Image
                 src={biz.logo.square}
                 alt={t(`${businessKey}.name`)}
-                width={160}
-                height={140}
+                width={logoDimensions.square.width}
+                height={logoDimensions.square.height}
+                sizes={`${Math.ceil(112 * logoDimensions.square.width / logoDimensions.square.height)}px`}
                 className="h-28 w-auto"
               />
             </Link>

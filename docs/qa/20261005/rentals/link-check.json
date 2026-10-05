@@ -1,0 +1,322 @@
+[
+  {
+    "path": "/gakku/rekisen/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/yanagicho/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/sasugaya/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/hayashicho/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/meika/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/aoyagi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/sekiguchidaimachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/kohinatadaimachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/kanatomi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/kubomachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/otsuka/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/yushima/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/seishi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/nezu/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/sendagi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/shiomi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/showa/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/komamoto/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/kagomachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/gakku/hongo/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/rekisen/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/yanagicho/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/sasugaya/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/hayashicho/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/meika/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/aoyagi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/sekiguchidaimachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/kohinatadaimachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/kanatomi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/kubomachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/otsuka/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/yushima/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/seishi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/nezu/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/sendagi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/shiomi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/showa/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/komamoto/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/kagomachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/en/gakku/hongo/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/rekisen/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/yanagicho/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/sasugaya/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/hayashicho/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/meika/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/aoyagi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/sekiguchidaimachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/kohinatadaimachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/kanatomi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/kubomachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/otsuka/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/yushima/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/seishi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/nezu/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/sendagi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/shiomi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/showa/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/komamoto/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/kagomachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh/gakku/hongo/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/rekisen/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/yanagicho/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/sasugaya/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/hayashicho/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/meika/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/aoyagi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/sekiguchidaimachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/kohinatadaimachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/kanatomi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/kubomachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/otsuka/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/yushima/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/seishi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/nezu/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/sendagi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/shiomi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/showa/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/komamoto/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/kagomachi/rentals",
+    "status": 200
+  },
+  {
+    "path": "/zh-tw/gakku/hongo/rentals",
+    "status": 200
+  }
+]

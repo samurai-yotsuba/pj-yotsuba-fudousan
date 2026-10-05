@@ -1,0 +1,38 @@
+[
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "home": {
+      "height": 6156.64,
+      "outer": 6157.640625,
+      "clip": "hidden",
+      "scroll": 6158
+    },
+    "rentals": {
+      "height": 35780.2,
+      "outer": 35780.25,
+      "clip": "hidden",
+      "scroll": 35780
+    }
+  },
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "home": {
+      "height": 5208.62,
+      "outer": 5180.625,
+      "clip": "hidden",
+      "scroll": 5181
+    },
+    "rentals": {
+      "height": 33288.5,
+      "outer": 33219.5,
+      "clip": "hidden",
+      "scroll": 33220
+    }
+  }
+]

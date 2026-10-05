@@ -220,8 +220,8 @@ html {
 }
 
 /* Keep offscreen mobile content searchable without laying it all out during
-   the hero paint. Desktop decorations depend on the full document height;
-   placeholder heights there would move visible background artwork (CLS). */
+   the hero paint. Background decorations freeze their inner region height, so
+   correcting these placeholder heights cannot move the artwork. */
 @media screen and (max-width: 767px) {
   .defer-page-sections > section,
   .defer-footer {

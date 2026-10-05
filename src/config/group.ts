@@ -5,6 +5,13 @@ export type NavItem = { href: string; label: string };
 // Canonical host for cross-site navigation, including visits from a tenant alias domain.
 export const GROUP_SITE_ORIGIN = "https://luck428.com";
 
+/** public/yotsuba の元画像寸法。h固定/w-autoのロゴ領域を読み込み前から確保する。 */
+export const groupLogoDimensions = {
+  realestate: { horizontal: { width: 2601, height: 713 }, square: { width: 1741, height: 1410 } },
+  legal: { horizontal: { width: 3900, height: 713 }, square: { width: 3246, height: 1410 } },
+  labor: { horizontal: { width: 5020, height: 713 }, square: { width: 3520, height: 1410 } },
+} as const;
+
 export const groupBusinesses = [
   {
     key: "realestate",
