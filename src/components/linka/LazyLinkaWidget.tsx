@@ -27,7 +27,7 @@ export function LazyLinkaWidget({ deferUntilVisible = false, ...props }: WidgetP
     if (!("IntersectionObserver" in window)) return; // The open button remains usable.
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) setRequested(true);
-    }, { rootMargin: "200px" });
+    }, { rootMargin: "0px" });
     observer.observe(container.current);
     return () => observer.disconnect();
   }, [deferUntilVisible, requested]);
@@ -35,11 +35,17 @@ export function LazyLinkaWidget({ deferUntilVisible = false, ...props }: WidgetP
   useEffect(() => {
     if (!requested) return;
     let cancelled = false;
-    import("./LinkaWidget").then((module) => {
+    const load = () => import("./LinkaWidget").then((module) => {
       if (!cancelled) setWidget(() => module.LinkaWidget);
     }).catch(() => { if (!cancelled) setFailed(true); });
-    return () => { cancelled = true; };
-  }, [requested]);
+    // Explicit clicks stay immediate; automatic inline loading yields to paint.
+    if (!deferUntilVisible || focusOnLoad.current || !("requestIdleCallback" in window)) {
+      void load();
+      return () => { cancelled = true; };
+    }
+    const idle = window.requestIdleCallback(() => { void load(); }, { timeout: 1000 });
+    return () => { cancelled = true; window.cancelIdleCallback(idle); };
+  }, [requested, deferUntilVisible]);
 
   useEffect(() => {
     if (Widget && focusOnLoad.current) {

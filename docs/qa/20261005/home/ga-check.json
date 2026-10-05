@@ -1,0 +1,37 @@
+{
+  "before": {
+    "scripts": [
+      "https://www.googletagmanager.com/gtag/js?id=G-DKFGP8LKNJ"
+    ],
+    "layer": [
+      [
+        "js",
+        "2026-10-05T13:20:19.663Z"
+      ],
+      [
+        "config",
+        "G-DKFGP8LKNJ"
+      ]
+    ],
+    "initCount": 1
+  },
+  "after": {
+    "scripts": [
+      "https://www.googletagmanager.com/gtag/js?id=G-DKFGP8LKNJ"
+    ],
+    "layer": [
+      [
+        "js",
+        "2026-10-05T13:20:19.663Z"
+      ],
+      [
+        "config",
+        "G-DKFGP8LKNJ"
+      ]
+    ],
+    "initCount": 1
+  },
+  "loads": 1,
+  "googleHits": "blocked",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+}

@@ -1,0 +1,308 @@
+{
+  "before": {
+    "mobile": [
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3100/_next/image?url=%2Fhero%2Fbunkyo-sakura-16x9.webp&w=750&q=60",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 27.286000072956085,
+            "networkRequestTime": 27.64900004863739,
+            "networkEndTime": 508.398000061512,
+            "finished": true,
+            "transferSize": 93052,
+            "resourceSize": 92422,
+            "statusCode": 200,
+            "mimeType": "image/webp",
+            "resourceType": "Image",
+            "priority": "High",
+            "isLinkPreload": true,
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 211404,
+        "css": 88640
+      },
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3100/_next/image?url=%2Fhero%2Fbunkyo-sakura-16x9.webp&w=750&q=60",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 16.92299997806549,
+            "networkRequestTime": 17.48600000143051,
+            "networkEndTime": 24.212000012397766,
+            "finished": true,
+            "transferSize": 93051,
+            "resourceSize": 92422,
+            "statusCode": 200,
+            "mimeType": "image/webp",
+            "resourceType": "Image",
+            "priority": "High",
+            "isLinkPreload": true,
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 211404,
+        "css": 88640
+      },
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3100/_next/image?url=%2Fhero%2Fbunkyo-sakura-16x9.webp&w=750&q=60",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 12.069999992847443,
+            "networkRequestTime": 12.53300005197525,
+            "networkEndTime": 17.87200003862381,
+            "finished": true,
+            "transferSize": 93051,
+            "resourceSize": 92422,
+            "statusCode": 200,
+            "mimeType": "image/webp",
+            "resourceType": "Image",
+            "priority": "High",
+            "isLinkPreload": true,
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 211404,
+        "css": 88640
+      }
+    ],
+    "desktop": [
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3100/_next/image?url=%2Fhero%2Fbunkyo-sakura-16x9.webp&w=1200&q=60",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 11.874000012874603,
+            "networkRequestTime": 12.203999996185303,
+            "networkEndTime": 19.29799997806549,
+            "finished": true,
+            "transferSize": 222270,
+            "resourceSize": 221640,
+            "statusCode": 200,
+            "mimeType": "image/webp",
+            "resourceType": "Image",
+            "priority": "High",
+            "isLinkPreload": true,
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 304079,
+        "css": 91640
+      },
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3100/_next/image?url=%2Fhero%2Fbunkyo-sakura-16x9.webp&w=1200&q=60",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 13.894999980926514,
+            "networkRequestTime": 14.223999977111816,
+            "networkEndTime": 24.10199999809265,
+            "finished": true,
+            "transferSize": 222270,
+            "resourceSize": 221640,
+            "statusCode": 200,
+            "mimeType": "image/webp",
+            "resourceType": "Image",
+            "priority": "High",
+            "isLinkPreload": true,
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 304079,
+        "css": 91640
+      },
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3100/_next/image?url=%2Fhero%2Fbunkyo-sakura-16x9.webp&w=1200&q=60",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 81.96900004148483,
+            "networkRequestTime": 83.56299996376038,
+            "networkEndTime": 114.70899999141693,
+            "finished": true,
+            "transferSize": 222270,
+            "resourceSize": 221640,
+            "statusCode": 200,
+            "mimeType": "image/webp",
+            "resourceType": "Image",
+            "priority": "High",
+            "isLinkPreload": true,
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 304079,
+        "css": 91640
+      }
+    ]
+  },
+  "after": {
+    "mobile": [
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3102/hero/bunkyo-sakura-750.avif",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 34.060000002384186,
+            "networkRequestTime": 39.656999945640564,
+            "networkEndTime": 50.38499999046326,
+            "finished": true,
+            "transferSize": 60946,
+            "resourceSize": 60384,
+            "statusCode": 200,
+            "mimeType": "image/avif",
+            "resourceType": "Image",
+            "priority": "High",
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 209295,
+        "css": 88571
+      },
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3102/hero/bunkyo-sakura-750.avif",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 14.659999966621399,
+            "networkRequestTime": 15.294000029563904,
+            "networkEndTime": 23.162999987602234,
+            "finished": true,
+            "transferSize": 60946,
+            "resourceSize": 60384,
+            "statusCode": 200,
+            "mimeType": "image/avif",
+            "resourceType": "Image",
+            "priority": "High",
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 209295,
+        "css": 88571
+      },
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3102/hero/bunkyo-sakura-750.avif",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 23.25599992275238,
+            "networkRequestTime": 23.699999928474426,
+            "networkEndTime": 28.914999961853027,
+            "finished": true,
+            "transferSize": 60946,
+            "resourceSize": 60384,
+            "statusCode": 200,
+            "mimeType": "image/avif",
+            "resourceType": "Image",
+            "priority": "High",
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 209295,
+        "css": 88571
+      }
+    ],
+    "desktop": [
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3102/hero/bunkyo-sakura-1200.avif",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 33.85899996757507,
+            "networkRequestTime": 34.44999998807907,
+            "networkEndTime": 42.54000002145767,
+            "finished": true,
+            "transferSize": 142467,
+            "resourceSize": 141903,
+            "statusCode": 200,
+            "mimeType": "image/avif",
+            "resourceType": "Image",
+            "priority": "High",
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 218956,
+        "css": 91571
+      },
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3102/hero/bunkyo-sakura-1200.avif",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 38.360000014305115,
+            "networkRequestTime": 42.35499995946884,
+            "networkEndTime": 56.59299999475479,
+            "finished": true,
+            "transferSize": 142467,
+            "resourceSize": 141903,
+            "statusCode": 200,
+            "mimeType": "image/avif",
+            "resourceType": "Image",
+            "priority": "High",
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 218956,
+        "css": 91571
+      },
+      {
+        "hero": [
+          {
+            "url": "http://localhost:3102/hero/bunkyo-sakura-1200.avif",
+            "sessionTargetType": "page",
+            "protocol": "http/1.1",
+            "cache": "none",
+            "rendererStartTime": 16.214999973773956,
+            "networkRequestTime": 16.499000012874603,
+            "networkEndTime": 23.317000031471252,
+            "finished": true,
+            "transferSize": 142467,
+            "resourceSize": 141903,
+            "statusCode": 200,
+            "mimeType": "image/avif",
+            "resourceType": "Image",
+            "priority": "High",
+            "experimentalFromMainFrame": true,
+            "entity": "localhost"
+          }
+        ],
+        "js": 218956,
+        "css": 91571
+      }
+    ]
+  }
+}

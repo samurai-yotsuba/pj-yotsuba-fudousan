@@ -1,4 +1,4 @@
-import { RentalEntry } from "@/components/bukken/RentalCampaignCta";
+import { RentalEntry } from "@/components/bukken/RentalEntry";
 import { CustomerVoicesPreview } from "@/components/shared/CustomerVoices";
 import Image from "next/image";
 // /（型F・二本柱トップ）本文＝原稿_不動産 #1（E-1差し戻し対応・2026-07-10）
@@ -420,6 +420,12 @@ export default async function HomePageContent() {
       {/* ヒーロー（H1＝全ロケール先頭に社名・回答ファースト・桜=bunkyo-sakura） */}
       <section className="relative">
         <div className="relative mx-auto max-w-6xl overflow-hidden rounded-b-3xl sm:mt-4 sm:rounded-3xl">
+          <picture>
+          <source
+            type="image/avif"
+            srcSet={[420, 750, 828, 1200, 1600].map(width => `/hero/bunkyo-sakura-${width}.avif ${width}w`).join(", ")}
+            sizes="(min-width: 1152px) 1152px, 100vw"
+          />
           <Image
             src="/hero/bunkyo-sakura-16x9.webp"
             quality={60}
@@ -431,6 +437,7 @@ export default async function HomePageContent() {
             loading="eager"
             fetchPriority="high"
           />
+          </picture>
           {/* SP・小タブレット＝画像の下に縦積み（DESIGN.md§8「モバイルのヒーローは縦積み」＝パネルのクリップ/ヘッダーかぶり防止）／md+＝画像上のオーバーレイ */}
           <div className="md:absolute md:inset-0 md:flex md:items-center">
             <div className="hero-fade-in bg-surface p-5 md:m-8 md:max-w-2xl md:rounded-2xl md:bg-white/30 md:p-7 md:backdrop-blur-sm">
