@@ -16,7 +16,7 @@ type Props = {
   contactLabel: string;
   telHref: string;
   telLabel: string;
-  /** コピペ用テンプレート（物件条件バリアントのみ渡される） */
+  /** コピペ用テンプレート（物件条件・会社設立バリアント） */
   template?: string;
   copyLabel: string;
   copiedLabel: string;

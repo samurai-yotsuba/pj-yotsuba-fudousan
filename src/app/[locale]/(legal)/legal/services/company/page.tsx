@@ -36,7 +36,7 @@ const COPY: Record<LangCode, CompanyCopy> = {
   ja: {
     metaTitle: "会社設立・各種許認可｜四葉行政書士事務所",
     metaDesc:
-      "株式会社・合同会社の設立書類、建設業・宅建業・古物・飲食などの許認可申請を、文京区の四葉行政書士事務所が支援します。定款作成から許認可まで対応。外国人の経営管理ビザと会社設立の同時進行にも中国語・英語で対応します。",
+      "株式会社・合同会社の設立書類と各種許認可申請を、文京区の四葉行政書士事務所が支援します。海外に住み続ける場合と、日本に住むため在留資格も必要な場合を分けて相談できます。中国語・英語にも対応します。",
     crumbLabel: "会社設立・各種許認可",
     heroAlt: "会社設立・許認可のイメージ（オフィスと設立書類）",
     h1: "会社設立・各種許認可",
@@ -57,10 +57,10 @@ const COPY: Record<LangCode, CompanyCopy> = {
     s1Body: "事業に必要な許認可はご相談ください。",
     s1Note: "障害福祉サービスの事業者指定は、専用ページで詳しく解説しています →",
     s1NoteLinkLabel: "障害福祉サービスの指定申請",
-    s2Heading: "外国人の会社設立・経営管理ビザにも対応できますか？",
+    s2Heading: "海外に住んだままの設立と、在留資格の相談は分けられますか？",
     s2Body: (
       <>
-        できます。外国人の方が日本で起業する場合、<strong>会社設立と「経営・管理」の在留資格は一体</strong>で進みます。四葉行政書士事務所は両方を扱えるため、順序と要件を整理して同時進行できます。中国語・英語での相談にも対応します。
+        <strong>海外に住み続ける方</strong>は、事業内容・設立希望時期をもとに、会社設立の準備事項を整理します。<strong>日本で暮らす予定があり、在留資格も必要な方</strong>は、会社設立の相談と在留資格の相談を分けて、順序や確認事項を整理します。日本に住む予定が未定でもご相談いただけます。個別の可否は資格者が確認します。口座開設・許認可・在留資格の取得を保証するものではありません。中国語・英語でも相談できます。
       </>
     ),
     s2LinkLabel: "在留資格・ビザ申請の業務内容",
@@ -71,7 +71,7 @@ const COPY: Record<LangCode, CompanyCopy> = {
   en: {
     metaTitle: "Company Formation & Licensing｜四葉行政書士事務所",
     metaDesc:
-      "Incorporation documents for kabushiki kaisha (K.K.) and godo kaisha (LLC), plus license applications for construction, real estate brokerage, secondhand-goods dealing, food service and more—supported by 四葉行政書士事務所 (Yotsuba Gyoseishoshi Office) in Bunkyo, Tokyo. Integrated support from drafting the articles of incorporation through licensing. Foreign founders can pursue company formation and the business manager visa in parallel, with consultations in Chinese and English.",
+      "四葉行政書士事務所 in Bunkyo, Tokyo supports incorporation documents and business licence applications. Consult about forming a company while remaining overseas, or formation with a Japanese residence status. Chinese and English consultations are available.",
     crumbLabel: "Company Formation & Licensing",
     heroAlt: "Company formation and licensing—an office and incorporation documents",
     h1: "Company Formation & Licensing",
@@ -90,10 +90,10 @@ const COPY: Record<LangCode, CompanyCopy> = {
     s1Body: "Please consult us about any license or permit your business requires.",
     s1Note: "Designation as a disability-welfare service provider is explained in detail on its own page →",
     s1NoteLinkLabel: "Disability-Welfare Service Designation",
-    s2Heading: "Do you also help foreign nationals with company formation and the business manager visa?",
+    s2Heading: "Can I consult about formation while remaining overseas, or formation with residence status?",
     s2Body: (
       <>
-        Yes. When a foreign national starts a business in Japan, <strong>company formation and the &ldquo;Business Manager&rdquo; residence status move forward as one</strong>. Because 四葉行政書士事務所 handles both, we can sort out the sequence and requirements and run them in parallel. Consultations are available in Chinese and English.
+        <strong>If you plan to remain overseas</strong>, we discuss preparation for company formation based on your business activity and desired timing. <strong>If you plan to live in Japan and also need a residence status</strong>, we distinguish formation from residence status consultation and organize the sequence and matters to check. You can also consult if your plans are undecided. A qualified professional reviews each case. Bank account opening, business licences and residence status approvals are not guaranteed. Consultations are available in Chinese and English.
       </>
     ),
     s2LinkLabel: "Details of our visa & residence status services",
@@ -104,7 +104,7 @@ const COPY: Record<LangCode, CompanyCopy> = {
   "zh-tw": {
     metaTitle: "公司設立・各類許可｜四葉行政書士事務所",
     metaDesc:
-      "株式會社・合同會社的設立文件，以及建設業、宅建業（不動產交易）、古物商、餐飲等許可申請，由東京文京區的四葉行政書士事務所提供協助。從章程（定款）製作到取得許可，一貫對應。外國人的經營管理簽證與公司設立同步進行，亦可以中文・英文諮詢。",
+      "東京文京區的四葉行政書士事務所協助製作株式會社・合同會社的設立文件及申請各類許可。可分別諮詢繼續居住海外的公司設立，以及計畫在日本居住且需要在留資格的情況。亦可用中文・英文諮詢。",
     crumbLabel: "公司設立・各類許可",
     heroAlt: "公司設立・許可申請的示意圖（辦公室與設立文件）",
     h1: "公司設立・各類許可",
@@ -123,10 +123,10 @@ const COPY: Record<LangCode, CompanyCopy> = {
     s1Body: "事業所需的各類許可，歡迎與我們洽詢。",
     s1Note: "障礙福祉服務的事業者指定，另設專頁詳細說明 →",
     s1NoteLinkLabel: "障礙福祉服務指定申請",
-    s2Heading: "也能協助外國人辦理公司設立與經營管理簽證嗎？",
+    s2Heading: "可以分別諮詢居住海外的公司設立與在留資格嗎？",
     s2Body: (
       <>
-        可以。外國人在日本創業時，<strong>公司設立與「經營・管理」在留資格是一體</strong>推進的。四葉行政書士事務所兩者皆可承辦，因此能整理先後順序與要件、同步進行。亦提供中文・英文諮詢。
+        <strong>計畫繼續居住海外者</strong>，我們會依事業內容及希望設立時期，整理公司設立的準備事項。<strong>計畫在日本居住且需要在留資格者</strong>，則分別整理公司設立與在留資格諮詢的順序及確認事項。居住計畫未定也可諮詢。個別可否由具資格的專業人士確認，不保證銀行開戶、許可或在留資格獲准。亦可用中文・英文諮詢。
       </>
     ),
     s2LinkLabel: "在留資格（簽證）申請的業務內容",
@@ -137,7 +137,7 @@ const COPY: Record<LangCode, CompanyCopy> = {
   zh: {
     metaTitle: "公司设立・各类许可｜四葉行政書士事務所",
     metaDesc:
-      "株式会社・合同会社的设立文件，以及建设业、宅建业（不动产交易）、古物商、餐饮等许可申请，由东京文京区的四葉行政書士事務所提供协助。从章程（定款）制作到取得许可，一贯对应。外国人的经营管理签证与公司设立同步进行，亦可以中文・英文咨询。",
+      "东京文京区的四葉行政書士事務所协助制作株式会社・合同会社的设立文件及申请各类许可。可分别咨询继续居住海外的公司设立，以及计划在日本居住且需要在留资格的情况。亦可用中文・英文咨询。",
     crumbLabel: "公司设立・各类许可",
     heroAlt: "公司设立・许可申请的示意图（办公室与设立文件）",
     h1: "公司设立・各类许可",
@@ -156,10 +156,10 @@ const COPY: Record<LangCode, CompanyCopy> = {
     s1Body: "事业所需的各类许可，欢迎向我们咨询。",
     s1Note: "残障福祉服务的事业者指定，另设专页详细说明 →",
     s1NoteLinkLabel: "残障福祉服务指定申请",
-    s2Heading: "也能协助外国人办理公司设立与经营管理签证吗？",
+    s2Heading: "可以分别咨询居住海外的公司设立与在留资格吗？",
     s2Body: (
       <>
-        可以。外国人在日本创业时，<strong>公司设立与“经营・管理”在留资格是一体</strong>推进的。四葉行政書士事務所两者皆可承办，因此能梳理先后顺序与要件、同步进行。亦提供中文・英文咨询。
+        <strong>计划继续居住海外者</strong>，我们会根据业务内容及希望设立时间，整理公司设立的准备事项。<strong>计划在日本居住且需要在留资格者</strong>，则分别整理公司设立与在留资格咨询的顺序及确认事项。居住计划未定也可咨询。个别可否由具资格的专业人士确认，不保证银行开户、许可或在留资格获批。亦可用中文・英文咨询。
       </>
     ),
     s2LinkLabel: "在留资格（签证）申请的业务内容",
@@ -199,7 +199,7 @@ export default async function Page() {
         </p>
       }
       internalLinks={c.internalLinks}
-      ctaVariant="property"
+      ctaVariant="company"
     >
       <div>
         <H2>{c.s1Heading}</H2>

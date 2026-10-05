@@ -32,6 +32,7 @@ import {
   PROPERTY_TEMPLATE_GH_JA,
   TEMPLATE_COPY_LABELS,
 } from "@/lib/shared/property-intake";
+import { COMPANY_CTA, COMPANY_TEMPLATE, COMPANY_CONTACT_INTENT } from "@/lib/shared/company-intake";
 import { CtaBandActions } from "@/components/shared/CtaBandActions";
 import { getRequestLocale } from "@/lib/getRequestLocale";
 import { addLocalePrefix } from "@/lib/locale";
@@ -41,9 +42,10 @@ import type { LangCode } from "@/config/languages";
  * CTA帯のバリアント（2026-07-24）。
  * property=物件条件インテーク（事業用寄り・4ロケール）／property-general=トップ等の入口向け
  * （住まい・事業用の両対応・4ロケール）／property-gh=GH向け（jaのみ・他ロケールは既定）
+ * ／company=会社設立向け（4ロケール・既存kyoninkaカテゴリ連携）
  * ／sale=売却・相続向け（4ロケール・テンプレなし・intent既定"sale"。2026-09-05 月次点検 INIT-04/NEW-SALE-2）
  */
-export type CtaBandVariant = "property" | "property-general" | "property-gh" | "sale";
+export type CtaBandVariant = "property" | "property-general" | "property-gh" | "sale" | "company";
 
 // 部品内共通ラベル（SR名なし・汎用語のみ）。ja=現行文字列そのまま（バイト不変）。
 // en=HomePageContent既存訳（Chat on LINE (free)/Contact/Call）準拠。zh系=監修前ドラフト。
@@ -117,7 +119,14 @@ export async function CtaBand({
   let vLineLabel: string | undefined;
   let template: string | undefined;
   let intent = "";
-  if (variant === "property") {
+  if (variant === "company") {
+    const company = COMPANY_CTA[locale];
+    vHeading = company.heading;
+    vLead = company.lead;
+    vLineLabel = company.line;
+    template = COMPANY_TEMPLATE[locale];
+    intent = COMPANY_CONTACT_INTENT;
+  } else if (variant === "property") {
     const p = PROPERTY_CONDITIONS_CTA_I18N[locale] ?? PROPERTY_CONDITIONS_CTA_I18N.ja;
     vHeading = p.ctaHeading;
     vLead = p.ctaLead;
@@ -176,7 +185,7 @@ export async function CtaBand({
         telHref={OFFICE.telHref}
         telLabel={`${l.tel} ${OFFICE.tel}`}
         template={template}
-        copyLabel={copyLabels.copy}
+        copyLabel={variant === "company" ? COMPANY_CTA[locale].copy : copyLabels.copy}
         copiedLabel={copyLabels.copied}
         trustNote={TRUST_I18N[locale] ?? TRUST_I18N.ja}
       />

@@ -38,7 +38,7 @@ export async function Breadcrumb({ items, baseUrl = "https://luck428.com" }: Pro
     })),
   };
   return (
-    <nav aria-label="パンくず" className="mx-auto max-w-5xl px-4 py-3">
+    <nav aria-label={{ ja: "パンくず", en: "Breadcrumbs", "zh-tw": "麵包屑導覽", zh: "面包屑导航" }[locale]} className="mx-auto max-w-5xl px-4 py-3">
       <ol className="flex flex-wrap items-center gap-1 text-xs text-text-muted">
         {localized.map((c, i) => {
           const last = i === localized.length - 1;

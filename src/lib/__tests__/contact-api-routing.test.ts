@@ -13,6 +13,7 @@ describe("contact routing (all email delivery mocked)", () => {
   it.each([
     ["realestate", "bukken", "四葉不動産", "物件を探してほしい（希望条件）"],
     ["legal", "visa", "四葉行政書士事務所", "ビザ・在留資格"],
+    ["legal", "kyoninka", "四葉行政書士事務所", "会社設立・各種許認可"],
     ["labor", "labor", "四葉社会保険労務士事務所", "社会保険・労務"],
   ])("preserves recipients and data for %s", async (business, category, label, categoryLabel) => {
     const response = await POST(request({ ...sample, business, category }));

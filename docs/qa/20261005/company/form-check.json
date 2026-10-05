@@ -1,0 +1,538 @@
+[
+  {
+    "locale": "ja",
+    "device": "mobile",
+    "category": "kyoninka",
+    "template": "事業内容：\n設立希望時期：\n日本に住む予定（なし／あり／未定）：\n在留資格の相談（不要／必要／未定）：",
+    "submitted": {
+      "name": "Local Form Test",
+      "email": "local-test@example.invalid",
+      "phone": "",
+      "category": "kyoninka",
+      "source": "",
+      "message": "事業内容：\n設立希望時期：\n日本に住む予定（なし／あり／未定）：\n在留資格の相談（不要／必要／未定）：\nLocal synthetic inquiry",
+      "business": "legal"
+    },
+    "events": [
+      [
+        "event",
+        "cta_contact_click",
+        {
+          "transport_type": "beacon",
+          "location": "cta_band"
+        }
+      ],
+      [
+        "event",
+        "contact_submit",
+        {
+          "transport_type": "beacon",
+          "business": "legal",
+          "category": "kyoninka",
+          "source": "unanswered",
+          "intent": "kyoninka"
+        }
+      ]
+    ],
+    "links": [
+      {
+        "path": "/legal/services/visa",
+        "status": 200
+      },
+      {
+        "path": "/legal/services/shogai-fukushi",
+        "status": 200
+      },
+      {
+        "path": "/legal/ryokin",
+        "status": 200
+      },
+      {
+        "path": "/line",
+        "status": 200
+      },
+      {
+        "path": "/legal/contact",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "locale": "ja",
+    "device": "desktop",
+    "category": "kyoninka",
+    "template": "事業内容：\n設立希望時期：\n日本に住む予定（なし／あり／未定）：\n在留資格の相談（不要／必要／未定）：",
+    "submitted": {
+      "name": "Local Form Test",
+      "email": "local-test@example.invalid",
+      "phone": "",
+      "category": "kyoninka",
+      "source": "",
+      "message": "事業内容：\n設立希望時期：\n日本に住む予定（なし／あり／未定）：\n在留資格の相談（不要／必要／未定）：\nLocal synthetic inquiry",
+      "business": "legal"
+    },
+    "events": [
+      [
+        "event",
+        "cta_contact_click",
+        {
+          "transport_type": "beacon",
+          "location": "cta_band"
+        }
+      ],
+      [
+        "event",
+        "contact_submit",
+        {
+          "transport_type": "beacon",
+          "business": "legal",
+          "category": "kyoninka",
+          "source": "unanswered",
+          "intent": "kyoninka"
+        }
+      ]
+    ],
+    "links": [
+      {
+        "path": "/legal/services/visa",
+        "status": 200
+      },
+      {
+        "path": "/legal/services/shogai-fukushi",
+        "status": 200
+      },
+      {
+        "path": "/legal/ryokin",
+        "status": 200
+      },
+      {
+        "path": "/line",
+        "status": 200
+      },
+      {
+        "path": "/legal/contact",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "locale": "/en",
+    "device": "mobile",
+    "category": "kyoninka",
+    "template": "Business activity:\nDesired incorporation timing:\nPlans to live in Japan (no / yes / undecided):\nResidence status consultation (not needed / needed / undecided):",
+    "submitted": {
+      "name": "Local Form Test",
+      "email": "local-test@example.invalid",
+      "phone": "",
+      "category": "kyoninka",
+      "source": "",
+      "message": "Business activity:\nDesired incorporation timing:\nPlans to live in Japan (no / yes / undecided):\nResidence status consultation (not needed / needed / undecided):\nLocal synthetic inquiry",
+      "business": "legal"
+    },
+    "events": [
+      [
+        "event",
+        "cta_contact_click",
+        {
+          "transport_type": "beacon",
+          "location": "cta_band"
+        }
+      ],
+      [
+        "event",
+        "contact_submit",
+        {
+          "transport_type": "beacon",
+          "business": "legal",
+          "category": "kyoninka",
+          "source": "unanswered",
+          "intent": "kyoninka"
+        }
+      ]
+    ],
+    "links": [
+      {
+        "path": "/en/legal/services/visa",
+        "status": 200
+      },
+      {
+        "path": "/en/legal/services/shogai-fukushi",
+        "status": 200
+      },
+      {
+        "path": "/en/legal/ryokin",
+        "status": 200
+      },
+      {
+        "path": "/en/line",
+        "status": 200
+      },
+      {
+        "path": "/en/legal/contact",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "locale": "/en",
+    "device": "desktop",
+    "category": "kyoninka",
+    "template": "Business activity:\nDesired incorporation timing:\nPlans to live in Japan (no / yes / undecided):\nResidence status consultation (not needed / needed / undecided):",
+    "submitted": {
+      "name": "Local Form Test",
+      "email": "local-test@example.invalid",
+      "phone": "",
+      "category": "kyoninka",
+      "source": "",
+      "message": "Business activity:\nDesired incorporation timing:\nPlans to live in Japan (no / yes / undecided):\nResidence status consultation (not needed / needed / undecided):\nLocal synthetic inquiry",
+      "business": "legal"
+    },
+    "events": [
+      [
+        "event",
+        "cta_contact_click",
+        {
+          "transport_type": "beacon",
+          "location": "cta_band"
+        }
+      ],
+      [
+        "event",
+        "contact_submit",
+        {
+          "transport_type": "beacon",
+          "business": "legal",
+          "category": "kyoninka",
+          "source": "unanswered",
+          "intent": "kyoninka"
+        }
+      ]
+    ],
+    "links": [
+      {
+        "path": "/en/legal/services/visa",
+        "status": 200
+      },
+      {
+        "path": "/en/legal/services/shogai-fukushi",
+        "status": 200
+      },
+      {
+        "path": "/en/legal/ryokin",
+        "status": 200
+      },
+      {
+        "path": "/en/line",
+        "status": 200
+      },
+      {
+        "path": "/en/legal/contact",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "locale": "/zh",
+    "device": "mobile",
+    "category": "kyoninka",
+    "template": "业务内容：\n希望设立时间：\n是否计划在日本居住（否／是／未定）：\n是否需要在留资格咨询（不需要／需要／未定）：",
+    "submitted": {
+      "name": "Local Form Test",
+      "email": "local-test@example.invalid",
+      "phone": "",
+      "category": "kyoninka",
+      "source": "",
+      "message": "业务内容：\n希望设立时间：\n是否计划在日本居住（否／是／未定）：\n是否需要在留资格咨询（不需要／需要／未定）：\nLocal synthetic inquiry",
+      "business": "legal"
+    },
+    "events": [
+      [
+        "event",
+        "cta_contact_click",
+        {
+          "transport_type": "beacon",
+          "location": "cta_band"
+        }
+      ],
+      [
+        "event",
+        "contact_submit",
+        {
+          "transport_type": "beacon",
+          "business": "legal",
+          "category": "kyoninka",
+          "source": "unanswered",
+          "intent": "kyoninka"
+        }
+      ]
+    ],
+    "links": [
+      {
+        "path": "/zh/legal/services/visa",
+        "status": 200
+      },
+      {
+        "path": "/zh/legal/services/shogai-fukushi",
+        "status": 200
+      },
+      {
+        "path": "/zh/legal/ryokin",
+        "status": 200
+      },
+      {
+        "path": "/zh/line",
+        "status": 200
+      },
+      {
+        "path": "/zh/legal/contact",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "locale": "/zh",
+    "device": "desktop",
+    "category": "kyoninka",
+    "template": "业务内容：\n希望设立时间：\n是否计划在日本居住（否／是／未定）：\n是否需要在留资格咨询（不需要／需要／未定）：",
+    "submitted": {
+      "name": "Local Form Test",
+      "email": "local-test@example.invalid",
+      "phone": "",
+      "category": "kyoninka",
+      "source": "",
+      "message": "业务内容：\n希望设立时间：\n是否计划在日本居住（否／是／未定）：\n是否需要在留资格咨询（不需要／需要／未定）：\nLocal synthetic inquiry",
+      "business": "legal"
+    },
+    "events": [
+      [
+        "event",
+        "cta_contact_click",
+        {
+          "transport_type": "beacon",
+          "location": "cta_band"
+        }
+      ],
+      [
+        "event",
+        "contact_submit",
+        {
+          "transport_type": "beacon",
+          "business": "legal",
+          "category": "kyoninka",
+          "source": "unanswered",
+          "intent": "kyoninka"
+        }
+      ]
+    ],
+    "links": [
+      {
+        "path": "/zh/legal/services/visa",
+        "status": 200
+      },
+      {
+        "path": "/zh/legal/services/shogai-fukushi",
+        "status": 200
+      },
+      {
+        "path": "/zh/legal/ryokin",
+        "status": 200
+      },
+      {
+        "path": "/zh/line",
+        "status": 200
+      },
+      {
+        "path": "/zh/legal/contact",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "locale": "/zh-tw",
+    "device": "mobile",
+    "category": "kyoninka",
+    "template": "事業內容：\n希望設立時期：\n是否計畫在日本居住（否／是／未定）：\n是否需要在留資格諮詢（不需要／需要／未定）：",
+    "submitted": {
+      "name": "Local Form Test",
+      "email": "local-test@example.invalid",
+      "phone": "",
+      "category": "kyoninka",
+      "source": "",
+      "message": "事業內容：\n希望設立時期：\n是否計畫在日本居住（否／是／未定）：\n是否需要在留資格諮詢（不需要／需要／未定）：\nLocal synthetic inquiry",
+      "business": "legal"
+    },
+    "events": [
+      [
+        "event",
+        "cta_contact_click",
+        {
+          "transport_type": "beacon",
+          "location": "cta_band"
+        }
+      ],
+      [
+        "event",
+        "contact_submit",
+        {
+          "transport_type": "beacon",
+          "business": "legal",
+          "category": "kyoninka",
+          "source": "unanswered",
+          "intent": "kyoninka"
+        }
+      ]
+    ],
+    "links": [
+      {
+        "path": "/zh-tw/legal/services/visa",
+        "status": 200
+      },
+      {
+        "path": "/zh-tw/legal/services/shogai-fukushi",
+        "status": 200
+      },
+      {
+        "path": "/zh-tw/legal/ryokin",
+        "status": 200
+      },
+      {
+        "path": "/zh-tw/line",
+        "status": 200
+      },
+      {
+        "path": "/zh-tw/legal/contact",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "locale": "/zh-tw",
+    "device": "desktop",
+    "category": "kyoninka",
+    "template": "事業內容：\n希望設立時期：\n是否計畫在日本居住（否／是／未定）：\n是否需要在留資格諮詢（不需要／需要／未定）：",
+    "submitted": {
+      "name": "Local Form Test",
+      "email": "local-test@example.invalid",
+      "phone": "",
+      "category": "kyoninka",
+      "source": "",
+      "message": "事業內容：\n希望設立時期：\n是否計畫在日本居住（否／是／未定）：\n是否需要在留資格諮詢（不需要／需要／未定）：\nLocal synthetic inquiry",
+      "business": "legal"
+    },
+    "events": [
+      [
+        "event",
+        "cta_contact_click",
+        {
+          "transport_type": "beacon",
+          "location": "cta_band"
+        }
+      ],
+      [
+        "event",
+        "contact_submit",
+        {
+          "transport_type": "beacon",
+          "business": "legal",
+          "category": "kyoninka",
+          "source": "unanswered",
+          "intent": "kyoninka"
+        }
+      ]
+    ],
+    "links": [
+      {
+        "path": "/zh-tw/legal/services/visa",
+        "status": 200
+      },
+      {
+        "path": "/zh-tw/legal/services/shogai-fukushi",
+        "status": 200
+      },
+      {
+        "path": "/zh-tw/legal/ryokin",
+        "status": 200
+      },
+      {
+        "path": "/zh-tw/line",
+        "status": 200
+      },
+      {
+        "path": "/zh-tw/legal/contact",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "locale": "ja",
+    "intent": "bukken",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "ja",
+    "intent": "bukken-general",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "ja",
+    "intent": "bukken-gh",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/en",
+    "intent": "bukken",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/en",
+    "intent": "bukken-general",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/en",
+    "intent": "bukken-gh",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/zh",
+    "intent": "bukken",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/zh",
+    "intent": "bukken-general",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/zh",
+    "intent": "bukken-gh",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/zh-tw",
+    "intent": "bukken",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/zh-tw",
+    "intent": "bukken-general",
+    "category": "bukken",
+    "propertyRegression": true
+  },
+  {
+    "locale": "/zh-tw",
+    "intent": "bukken-gh",
+    "category": "bukken",
+    "propertyRegression": true
+  }
+]

@@ -5,12 +5,8 @@ import { useRouter } from "next/navigation";
 import type { FormEvent } from "react";
 import { useTranslation } from "@/hooks/useTranslation";
 import { addLocalePrefix } from "@/lib/locale";
-import {
-  BUKKEN_CATEGORY_LABEL,
-  PROPERTY_TEMPLATE,
-  PROPERTY_TEMPLATE_GENERAL,
-  PROPERTY_TEMPLATE_GH_JA,
-} from "@/lib/shared/property-intake";
+import { BUKKEN_CATEGORY_LABEL, PROPERTY_TEMPLATE_GENERAL } from "@/lib/shared/property-intake";
+import { contactIntentPreset } from "@/lib/shared/contact-intent-preset";
 import {
   CATEGORY_ORDER_BY_BUSINESS,
   CATEGORY_ORDER_DEFAULT,
@@ -67,39 +63,21 @@ export function ContactForm({ thanksPath = "/thanks", business = "realestate" }:
   // 来訪元（?intent=）。送信完了イベントに付け、どのページから来た相談かを GA4 で数える（2026-09-23）
   const [intentParam, setIntentParam] = useState("none");
 
-  // 2026-07-24 CTA刷新v2：CTA帯から ?intent=bukken* で遷移した場合、カテゴリと本文テンプレを
-  // 自動プリセット（空欄のときのみ＝入力途中を上書きしない）。useSearchParamsは使わない
-  // （Suspense境界不要のwindow参照＝静的レンダリング維持）。
-  // v2.2：intentを3値化＝来訪元バリアントとテンプレの取り違え防止（トップ・GHから来た人に
-  // 「居抜き・業種」の事業用テンプレを出さない）。
-  //   bukken=事業用ピラー／bukken-general=トップ等の入口（住まい・事業用両対応）／bukken-gh=GH系（ja）
+  // CTA intent selects a displayed category and its matching localized template.
+  // Use window inside the effect to keep static rendering; preserve already-entered values.
   useEffect(() => {
     const sp = new URLSearchParams(window.location.search);
     const intent = sp.get("intent") ?? "";
     setIntentParam(contactIntentParam(intent));
     if (!intent) return;
-    if (intent.startsWith("bukken")) {
-      const template =
-        intent === "bukken-gh"
-          ? PROPERTY_TEMPLATE_GH_JA
-          : intent === "bukken-general"
-            ? (PROPERTY_TEMPLATE_GENERAL[locale as LangCode] ?? PROPERTY_TEMPLATE_GENERAL.ja)
-            : (PROPERTY_TEMPLATE[locale as LangCode] ?? PROPERTY_TEMPLATE.ja);
-      setCategory((c) => c || "bukken");
-      setMessage((m) => m || template);
-      return;
-    }
-    // 2026-07-27：物件以外も ?intent=<カテゴリキー> でプリセットする（本文テンプレは挿入しない）。
-    // 当該フォームに出さないキーは無視する＝存在しない選択肢を選ばせない。
-    const keys = CATEGORY_ORDER_BY_BUSINESS[business] ?? CATEGORY_ORDER_DEFAULT;
-    if (keys.includes(intent)) {
-      setCategory((c) => c || intent);
-      // 2026-09-24：送り元ページが遷移の直前に用意した「ご相談内容」を受け取る（例：/wakeari の出口チェックリストの
-      // 回答の要約）。intent が一致するときだけ1回読んで消す。入力途中の本文は上書きしない。
-      const prefill = takeContactPrefill(intent);
-      if (prefill) setMessage((m) => m || prefill);
-    }
-  }, [locale, business]);
+    const preset = contactIntentPreset(intent, business, lang);
+    if (!preset) return;
+    setCategory((c) => c || preset.category);
+    // A sender's saved draft takes precedence over a blank template. Never overwrite user input.
+    const prefill = takeContactPrefill(intent);
+    if (prefill) setMessage((m) => m || prefill);
+    else if (preset.message) setMessage((m) => m || preset.message);
+  }, [lang, business]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

@@ -6,6 +6,7 @@
 // 2026-07-11 ロケール保持（診断_ロケール保持リンク_v1 §B-6）：async化し、シェルが直接描画する
 //   internalLinks の素Linkのみ addLocalePrefix（ここで1回だけ付与）。Breadcrumb/CtaBand/CrossLinkBanner
 //   は各部品が自前付与＝シェルでは触らない（二重適用禁止）。Service JSON-LD の url は接頭辞なし維持（診断§C-3）。
+import type { LangCode } from "@/config/languages";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,6 +21,38 @@ import { PERSON_ID } from "@/lib/seo";
 import { SR_BIO } from "@/lib/shared/sr-label";
 
 const SITE = "https://luck428.com";
+
+// Shared shell text was still Japanese on translated service pages.
+const SHELL_COPY: Record<LangCode, { home: string; services: string; area: string; related: string; author: string; authorAlt: string; bio: string }> = {
+  ja: {
+    home: "ホーム", services: "業務案内",
+    area: "対応エリア：東京都内。手続の窓口・運用は自治体ごとに異なるため、着手時に管轄の窓口で確認します。",
+    related: "このページの関連リンク", author: "この記事の著者",
+    authorAlt: "四葉行政書士事務所 代表 浦松丈二",
+    bio: `浦松 丈二｜四葉行政書士事務所 代表行政書士（登録番号 第25087022号）・宅地建物取引士。元毎日新聞中国総局長（記者歴34年）。${SR_BIO.ja}。`,
+  },
+  en: {
+    home: "Home", services: "Services",
+    area: "Service area: Tokyo. Procedures vary by municipality; we confirm with the relevant office before starting.",
+    related: "Related links", author: "About the author",
+    authorAlt: "Joji Uramatsu, representative of 四葉行政書士事務所",
+    bio: `Joji Uramatsu | Representative gyoseishoshi at 四葉行政書士事務所 (registration no. 25087022) and licensed real estate transaction specialist. Former China bureau chief of the Mainichi Shimbun, with 34 years in journalism. ${SR_BIO.en}.`,
+  },
+  "zh-tw": {
+    home: "首頁", services: "業務介紹",
+    area: "服務區域：東京都內。手續窗口及作業方式因自治體而異，開始辦理時將向管轄窗口確認。",
+    related: "本頁相關連結", author: "本文作者",
+    authorAlt: "四葉行政書士事務所 代表 浦松丈二",
+    bio: `浦松丈二｜四葉行政書士事務所 代表行政書士（登錄編號 第25087022號）・宅地建物取引士。曾任每日新聞中國總局長，新聞工作資歷34年。${SR_BIO.zhTw}。`,
+  },
+  zh: {
+    home: "首页", services: "业务介绍",
+    area: "服务区域：东京都内。手续窗口及办理方式因自治体而异，开始办理时将向管辖窗口确认。",
+    related: "本页相关链接", author: "本文作者",
+    authorAlt: "四葉行政書士事務所 代表 浦松丈二",
+    bio: `浦松丈二｜四葉行政書士事務所 代表行政书士（登记编号 第25087022号）・宅地建物取引士。曾任每日新闻中国总局长，新闻工作经历34年。${SR_BIO.zh}。`,
+  },
+};
 
 export type ServiceQA = { q: string; a: string };
 export type LegalServicePageProps = {
@@ -36,7 +69,7 @@ export type LegalServicePageProps = {
   lead: ReactNode; // 結論（回答ファースト）
   internalLinks: { href: string; label: string }[];
   /**
-   * CtaBandバリアント（2026-07-24 CTA刷新v2）。"property"=物件条件インテーク（4ロケール）。
+   * CtaBandバリアント（2026-07-24 CTA刷新v2）。"property"=物件条件／"company"=会社設立インテーク（4ロケール）。
    * 文言解決はCtaBand内部で行う。
    */
   ctaVariant?: CtaBandVariant;
@@ -54,6 +87,7 @@ export type LegalServicePageProps = {
 
 export async function LegalServicePage(p: LegalServicePageProps) {
   const locale = await getRequestLocale();
+  const copy = SHELL_COPY[locale];
   const path = `/legal/services/${p.slug}`;
   const url = SITE + path;
   const crossLinks = getCrossLinks(path, SR_LAUNCHED);
@@ -83,8 +117,8 @@ export async function LegalServicePage(p: LegalServicePageProps) {
 
       <Breadcrumb
         items={[
-          { name: "ホーム", href: "/legal" },
-          { name: "業務案内", href: "/legal/services" },
+          { name: copy.home, href: "/legal" },
+          { name: copy.services, href: "/legal/services" },
           { name: p.crumbLabel },
         ]}
       />
@@ -115,12 +149,12 @@ export async function LegalServicePage(p: LegalServicePageProps) {
         <section className="mt-8 space-y-8">{p.children}</section>
 
         <p className="mt-8 text-sm text-text-muted">
-          対応エリア：東京都内。手続の窓口・運用は自治体ごとに異なるため、着手時に管轄の窓口で確認します。
+          {copy.area}
         </p>
 
         {/* 内部リンク束（サイロ内・コンパクト） */}
-        <nav aria-label="関連リンク" className="mt-8 rounded-xl border border-border bg-surface p-4 text-sm">
-          <div className="font-medium text-ink">このページの関連リンク</div>
+        <nav aria-label={copy.related} className="mt-8 rounded-xl border border-border bg-surface p-4 text-sm">
+          <div className="font-medium text-ink">{copy.related}</div>
           <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-primary">
             {p.internalLinks.map((l) => (
               <li key={l.href}>
@@ -137,9 +171,9 @@ export async function LegalServicePage(p: LegalServicePageProps) {
 
         {/* 署名（E-E-A-T） */}
         <aside className="mt-8 flex items-start gap-3 rounded-xl border border-border bg-surface p-4">
-          <img src="/staff/uramatsu-square.webp" alt="四葉行政書士事務所 代表 浦松丈二" width={48} height={48} className="h-12 w-12 flex-shrink-0 rounded-full object-cover" />
+          <img src="/staff/uramatsu-square.webp" alt={copy.authorAlt} width={48} height={48} className="h-12 w-12 flex-shrink-0 rounded-full object-cover" />
           <p className="text-xs leading-relaxed text-text-muted">
-            <strong>この記事の著者</strong> 浦松 丈二｜四葉行政書士事務所 代表行政書士（登録番号 第25087022号）・宅地建物取引士。元毎日新聞中国総局長（記者歴34年）。{SR_BIO.ja}。
+            <strong>{copy.author}</strong> {copy.bio}
           </p>
         </aside>
       </article>
