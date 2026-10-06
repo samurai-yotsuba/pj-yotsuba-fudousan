@@ -2156,6 +2156,46 @@ const ARTICLES: ArticleSpec[] = [
     localesWithTranslations: ["en", "zh-tw", "zh"],
     hubLinks: ["/toushi", "/office"],
   },
+  {
+    file: "106-jinko-toseki-clinic-bukken-youken-kyusuihaisui.md",
+    slug: "jinko-toseki-clinic-bukken-youken-kyusuihaisui",
+    title: "人工透析クリニックの物件は何が特殊か──給排水・RO水処理・電源・床荷重",
+    publishedAt: "2026-10-06",
+    category: "投資・事業用不動産",
+    excerpt:
+      "人工透析クリニックの物件は、内科クリニックと同じ感覚では決められません。用途地域の扱いは同じ『診療所』で変わりませんが、物件で効くのは医療法ではなく建物のインフラ――大量の給排水とRO（逆浸透）水処理装置、透析装置とRO装置を同時に動かす電源容量と非常電源、装置・タンク・ベッドを並べる床荷重です。具体の数値は機器構成と建物で変わるため【未検証】とし、建築士・設備設計者の試算を前提にします。東京都文京区の宅地建物取引士兼行政書士が、医療法・建築基準法・下水道法の条文から契約前の確認手順を整理します。",
+    keywords: [
+      "人工透析 クリニック 物件",
+      "透析クリニック RO水処理装置 給排水",
+      "透析 クリニック 電源容量 非常電源 床荷重",
+      "診療所 用途地域 建築基準法48条 別表第二",
+      "下水道法 12条 除害施設 透析排水",
+    ],
+    tags: ["事業用不動産", "許認可", "用途地域", "医療法"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/toushi", "/office"],
+  },
+  {
+    file: "107-chugokugo-buyer-kanri-kiyaku-shuzen-keikaku-check.md",
+    slug: "chugokugo-buyer-kanri-kiyaku-shuzen-keikaku-check",
+    title: "中国語圏の買主は中古マンションの管理規約と修繕計画をどこまで確認すべきか",
+    publishedAt: "2026-10-06",
+    category: "投資・事業用不動産",
+    excerpt:
+      "中古区分マンションでは、重要事項説明の一般チェックの前に管理組合の運営リスクを読みます。長期修繕計画と修繕積立金の値上げ・一時金、管理規約の民泊禁止・ペット・用途制限、滞納（区分所有法第8条で買主＝特定承継人に承継）、管理会社変更・大規模修繕の履歴の4点です。これらは重要事項説明でも説明事項（宅建業法第35条第1項第6号・施行規則第16条の2）ですが、プロの買主は先に資料で読むのが安全。東京都文京区の宅地建物取引士兼行政書士が、区分所有法・宅建業法と国交省の資料から整理します。",
+    keywords: [
+      "中古マンション 管理規約 修繕計画 確認",
+      "長期修繕計画 修繕積立金 値上げ 一時金",
+      "管理規約 民泊 禁止 住宅宿泊事業法",
+      "滞納 管理費 区分所有法 8条 特定承継人",
+      "中国語圏 買主 区分マンション 重要事項説明",
+    ],
+    tags: ["投資・事業用不動産", "区分所有法", "管理規約", "中国語圏"],
+    locales: ["ja", "en", "zh-tw", "zh"],
+    localesWithTranslations: ["en", "zh-tw", "zh"],
+    hubLinks: ["/toushi"],
+  },
 ];
 
 function toPlainText(md: string): string {
