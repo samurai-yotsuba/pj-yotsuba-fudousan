@@ -7,7 +7,8 @@
   "git": {
     "deploymentEnabled": {
       "feat/nonresident-company-review-20261006": false,
-      "feat/nonresident-company-column-publish-20261006": false
+      "feat/nonresident-company-column-publish-20261006": false,
+      "feat/nonresident-bank-terms-review-20261006": false
     }
   }
 }

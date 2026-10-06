@@ -3,7 +3,7 @@
 // フェーズI多言語化＝COPY: Record<LangCode,…>＋getRequestLocale方式（手本=/legal page.tsx）。
 // en/zh-tw/zh=監修前ドラフト（フェーズI・2026-07-10）。固有名詞（四葉行政書士事務所・浦松丈二・登録番号）は全ロケール同一表記。
 // serviceName＝JSON-LD Service name（非可視）のためja固定。Placeholder＝内部メモのためja固定・全ロケール共通位置。
-import { NonresidentCompanyReview } from "@/components/legal/NonresidentCompanyReview";
+import { NonresidentCompanyServices } from "@/components/legal/NonresidentCompanyReview";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
 import { getRequestLocale } from "@/lib/getRequestLocale";
@@ -222,7 +222,7 @@ export default async function Page() {
         </p>
       </div>
 
-      <NonresidentCompanyReview locale={locale} />
+      <NonresidentCompanyServices locale={locale} />
 
       <div>
         <H2>{c.s3Heading}</H2>

@@ -3,7 +3,7 @@
 // en/zh-tw/zh=監修前ドラフト。JSON-LD＝Service＋PriceSpecification(確定値のみ)＋BreadcrumbList（Breadcrumb部品が出力）＝ja固定で不変。
 // 【重要】公開用列のみ／確定値のみ／SPはカード化。金額は「税込の目安」＋実費別＋事案により見積り。
 // C7（→/labor/ryokin）は SR_LAUNCHED=false の間 getCrossLinks が返さない＝非表示（開業日に自動開通・リード文はja固定）。
-import { getNonresidentReview } from "@/lib/legal/nonresident-review";
+import { getNonresidentServices } from "@/lib/legal/nonresident-review";
 import { NonresidentFeeTable, NonresidentReviewLinks } from "@/components/legal/NonresidentCompanyReview";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
@@ -410,10 +410,10 @@ function jsonLd() {
 export default async function Page() {
   const locale = await getRequestLocale();
   const c = COPY[locale] ?? COPY.ja;
-  const review = await getNonresidentReview(locale);
-  // Replace the existing K.K. fee in review; preserve LLC and all other services.
-  const sections = review ? SECTIONS.map(s => s.href === "/legal/services/company"
-    ? { ...s, rows: s.rows.filter(r => r.name !== "会社設立（定款作成等）") } : s) : SECTIONS;
+  const services = await getNonresidentServices(locale);
+  // The published table contains the existing K.K. fee; preserve LLC and all other services.
+  const sections = SECTIONS.map(s => s.href === "/legal/services/company"
+    ? { ...s, rows: s.rows.filter(r => r.name !== "会社設立（定款作成等）") } : s);
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd()) }} />
@@ -429,9 +429,9 @@ export default async function Page() {
           {sections.map((s, i) => (
             <div key={s.title}>
               <FeeTable s={s} title={c.sectionTitles[i] ?? s.title} c={c} locale={locale} />
-              {review && s.href === "/legal/services/company" && <>
-                <NonresidentFeeTable copy={review} />
-                <NonresidentReviewLinks copy={review} locale={locale} />
+              {s.href === "/legal/services/company" && <>
+                <NonresidentFeeTable copy={services} />
+                <NonresidentReviewLinks copy={services} locale={locale} />
               </>}
             </div>
           ))}

@@ -12,3 +12,9 @@ export async function getNonresidentReview(locale: LangCode) {
   const { NONRESIDENT_COPY } = await import("./nonresident-review-copy");
   return NONRESIDENT_COPY[locale];
 }
+
+/** Fees and service terms approved for publication by the user on 2026-10-06. */
+export async function getNonresidentServices(locale: LangCode) {
+  const { NONRESIDENT_COPY } = await import("./nonresident-review-copy");
+  return NONRESIDENT_COPY[locale];
+}
