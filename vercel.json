@@ -3,5 +3,10 @@
   "regions": [
     "hnd1"
   ],
-  "ignoreCommand": "BASE=\"${VERCEL_GIT_PREVIOUS_SHA:-HEAD^}\"; git cat-file -e \"$BASE^{commit}\" 2>/dev/null || BASE=HEAD^; git diff --quiet \"$BASE\" HEAD -- . \":(exclude)tasks/ai-visibility-v2\" || exit 1"
+  "ignoreCommand": "BASE=\"${VERCEL_GIT_PREVIOUS_SHA:-HEAD^}\"; git cat-file -e \"$BASE^{commit}\" 2>/dev/null || BASE=HEAD^; git diff --quiet \"$BASE\" HEAD -- . \":(exclude)tasks/ai-visibility-v2\" || exit 1",
+  "git": {
+    "deploymentEnabled": {
+      "feat/nonresident-company-review-20261006": false
+    }
+  }
 }

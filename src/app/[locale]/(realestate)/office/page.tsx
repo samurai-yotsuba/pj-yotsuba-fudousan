@@ -33,6 +33,8 @@
 //   本PRは generateMetadata に locale:"ja" を固定して4URLを /office に正規化するだけ。本文・FAQ・内部リンクは一切変更しない
 //   （本文強化は 2026-07-22／07-24／07-25 に3回実施済みで引用×が続いており、同じ段階を4度目に触らない）。
 //   ※この欠陥が未索引の原因であることは未検証（確定にはGSCの重複レポートが要るが、AIはGSCを操作しない）。
+import { NonresidentPropertyReview } from "@/components/legal/NonresidentCompanyReview";
+import { getRequestLocale } from "@/lib/getRequestLocale";
 import type { Metadata } from "next";
 import { PropertySearchSampleTeaser } from "@/components/shared/PropertySearchSample";
 import Link from "next/link";
@@ -107,6 +109,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Page() {
+  const reviewLocale = await getRequestLocale();
   return (
     <RealestateServicePage
       path="/office"
@@ -246,6 +249,7 @@ export default async function Page() {
 
       {/* FAQPage JSON-LD＝faqJa参照（サイト内で文言一致） */}
       <Faq items={pickFaqJa(JA_FAQ_QUESTIONS)} heading="よくある質問" withJsonLd bare openFirst={false} />
+      {reviewLocale === "ja" && <NonresidentPropertyReview locale="ja" />}
     </RealestateServicePage>
   );
 }

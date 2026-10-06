@@ -1,3 +1,5 @@
+import { NonresidentPropertyReview } from "@/components/legal/NonresidentCompanyReview";
+import { NONRESIDENT_PROPERTY_COLUMN_SLUG } from "@/lib/legal/nonresident-review";
 import { notFound } from "next/navigation";
 import { getColumnBySlug, getColumns, getLocalizedColumn, isLocaleAllowed, pickRelatedColumns } from "@/lib/columns";
 import { buildPageMetadata } from "@/lib/seo";
@@ -119,7 +121,10 @@ export default async function ColumnDetailPage({ params }: Props) {
         // 2026-09-23：既存コラム → 受け皿（/wakeari 配下）の1本。対応表（WAKEARI_HUB_BY_COLUMN_SLUG）に無い slug は何も出ない。
         // 受け皿は ja 先行公開のため ja のときだけ渡す（他ロケールに存在しないページへのリンクを作らない）。
         wakeariHubSlug={locale === "ja" ? slug : undefined}
-        afterBody={consultWindows ? <RelatedConsultWindows windows={consultWindows} /> : undefined}
+        afterBody={<>
+          {consultWindows && <RelatedConsultWindows windows={consultWindows} />}
+          {slug === NONRESIDENT_PROPERTY_COLUMN_SLUG && <NonresidentPropertyReview locale={locale} />}
+        </>}
       />
       {/* ★2026-08-13 追加：コラム記事の末尾にCTA帯を置く。
           3レーンとも column/[slug]・column・about にだけ CtaBand が無く、
