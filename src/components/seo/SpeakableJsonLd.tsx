@@ -1,3 +1,4 @@
+import type { LangCode } from "@/config/languages";
 import { JsonLd } from "./JsonLd";
 import { canonicalUrl, BUSINESS_SEO } from "@/lib/seo";
 
@@ -8,6 +9,7 @@ export function SpeakableJsonLd({
   summary,
   cssSelector = [".article-headline", ".article-summary"],
   dateModified,
+  locale = "ja",
 }: {
   businessKey: string;
   path: string;
@@ -20,11 +22,12 @@ export function SpeakableJsonLd({
   cssSelector?: string[];
   /** WebPage の dateModified（ISO 日付）。省略時はキー自体を出さない＝既存出力は不変 */
   dateModified?: string;
+  locale?: LangCode;
 }) {
   const biz = BUSINESS_SEO[businessKey];
   if (!biz) return null;
 
-  const url = canonicalUrl(businessKey, path);
+  const url = canonicalUrl(businessKey, path, locale);
 
   return (
     <JsonLd

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getLegalColumnBySlug, getLegalColumns, getLocalizedColumn, isLocaleAllowed } from "@/lib/columns";
 import { buildPageMetadata } from "@/lib/seo";
+import { NONRESIDENT_ARTICLE_SLUG } from "@/lib/legal/nonresident-review";
 import { getRequestLocale } from "@/lib/getRequestLocale";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { BlogPostingJsonLd } from "@/components/seo/BlogPostingJsonLd";
@@ -15,6 +16,11 @@ import LegalColumnDetailContent from "./LegalColumnDetailContent";
 import type { Metadata } from "next";
 import type { LangCode } from "@/config/languages";
 
+
+const BREADCRUMBS: Record<LangCode, [string, string]> = {
+  ja: ["ホーム", "コラム"], en: ["Home", "Articles"],
+  "zh-tw": ["首頁", "專欄"], zh: ["首页", "专栏"],
+};
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -82,13 +88,13 @@ export default async function LegalColumnDetailPage({ params }: Props) {
         image={illustration.src}
         locale={locale}
       />
-      <BreadcrumbJsonLd businessKey="legal" items={[
-        { name: "ホーム", href: "/legal" },
-        { name: "コラム", href: "/legal/column" },
+      <BreadcrumbJsonLd businessKey="legal" locale={locale} items={[
+        { name: BREADCRUMBS[locale][0], href: "/legal" },
+        { name: BREADCRUMBS[locale][1], href: "/legal/column" },
         { name: col.title, href: `/legal/column/${col.slug}` },
       ]} />
       {col.faq && col.faq.length > 0 && <FAQJsonLd items={col.faq} />}
-      <SpeakableJsonLd businessKey="legal" path={`/legal/column/${col.slug}`} headline={col.title} summary={col.excerpt} />
+      <SpeakableJsonLd businessKey="legal" locale={locale} path={`/legal/column/${col.slug}`} headline={col.title} summary={col.excerpt} />
       <LegalColumnDetailContent
         column={col}
         prev={prev}
@@ -102,7 +108,7 @@ export default async function LegalColumnDetailPage({ params }: Props) {
           コラムは検索・AIから直接入ってくる入口で、読み終えた直後がいちばん動く。
           contact / thanks には入れない（フォームの前後で導線が割れるため）。 */}
       <div className="mx-auto max-w-3xl px-4">
-        <CtaBand businessKey="legal" />
+        <CtaBand businessKey="legal" variant={slug === NONRESIDENT_ARTICLE_SLUG ? "company" : undefined} />
       </div>
     </div>
   );

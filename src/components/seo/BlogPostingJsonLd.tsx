@@ -21,7 +21,7 @@ export function BlogPostingJsonLd({
   const biz = BUSINESS_SEO[businessKey];
   if (!biz) return null;
 
-  const url = canonicalUrl(businessKey, `${biz.columnBasePath}/${column.slug}`);
+  const url = canonicalUrl(businessKey, `${biz.columnBasePath}/${column.slug}`, locale);
   // 静的アセットはルート配信のため SITE_URL に結合する（SEO監査2026-08-24 P0-3）。
   // 旧実装の biz.url 結合は legal で https://luck428.com/legal + パス という実在しないURLを生んでいた
   // （さらに legal は ogImage:"" だったため image が /legal そのものになっていた）。
@@ -32,7 +32,7 @@ export function BlogPostingJsonLd({
       : imagePath
     : undefined;
   // コラム一覧のURL。旧実装 `${biz.url}${biz.columnBasePath}` は legal で /legal/legal/column に二重化していた
-  const blogUrl = canonicalUrl(businessKey, biz.columnBasePath);
+  const blogUrl = canonicalUrl(businessKey, biz.columnBasePath, locale);
 
   // 優先順位: 明示 props > column.author > フォールバック
   const resolvedAuthorName =
