@@ -1,3 +1,5 @@
+import { FAMILY_TRUST_COPY } from "./family-trust-copy";
+
 /**
  * /legal/ryokin（報酬額表）の行ラベル・単位・金額欄の4言語化。2026-09-24。
  *
@@ -71,7 +73,6 @@ const NAMES: Record<string, Tr> = {
   "古物商許可": { en: "Secondhand dealer license", "zh-tw": "古物商許可", zh: "古物商许可" },
   "遺言執行手続": { en: "Will execution procedures", "zh-tw": "遺囑執行手續", zh: "遗嘱执行手续" },
   "遺言書案作成": { en: "Drafting a will", "zh-tw": "遺囑草案製作", zh: "遗嘱草案制作" },
-  "信託（家族信託）契約書作成": { en: "Trust (family trust) agreement drafting", "zh-tw": "信託（家族信託）契約書製作", zh: "信托（家族信托）合同书制作" },
   "遺産分割協議書の作成": { en: "Estate division agreement drafting", "zh-tw": "遺產分割協議書製作", zh: "遗产分割协议书制作" },
   "改葬許可申請（墓じまい）": { en: "Reburial permit application (closing a family grave)", "zh-tw": "改葬許可申請（遷墓・結束墓地）", zh: "改葬许可申请（迁墓・结束墓地）" },
   "金融機関 解約・名義変更": { en: "Closing accounts / changing account holders at financial institutions", "zh-tw": "金融機構　解約・名義變更", zh: "金融机构　解约・名义变更" },
@@ -94,11 +95,6 @@ const PHRASES: Record<string, Tr> = {
   "手数料無料": { en: "No fee", "zh-tw": "免手續費", zh: "免手续费" },
   "外務省手数料無料": { en: "No Ministry of Foreign Affairs fee", "zh-tw": "外務省免手續費", zh: "外务省免手续费" },
   "認証手数料は国により別途": { en: "Legalization fees vary by country and are charged separately", "zh-tw": "認證手續費依國家另計", zh: "认证手续费依国家另计" },
-  "別途お見積り（財産評価額連動・登記は司法書士）": {
-    en: "Quoted individually (linked to the appraised value of the assets; registration is handled by a judicial scrivener)",
-    "zh-tw": "另行報價（依財產評估額而定・登記由司法書士辦理）",
-    zh: "另行报价（依财产评估额而定・登记由司法书士办理）",
-  },
   "相談は無料（初回・2回目以降とも）／申請代行は別途お見積り": {
     en: "Consultation is free (both the first session and the 2nd and later sessions) / application on your behalf is quoted individually",
     "zh-tw": "諮詢免費（首次及第2次以後皆同）／代辦申請另行報價",
@@ -177,6 +173,8 @@ function withNote(base: string, note: string, loc: NonJa) {
 export function localizeFeeText(ja: string, locale: LangCode): string | null {
   if (locale === "ja") return ja;
   const loc = locale as NonJa;
+  if (ja === FAMILY_TRUST_COPY.ja.price) return FAMILY_TRUST_COPY[locale].price;
+  if (ja === FAMILY_TRUST_COPY.ja.unit) return FAMILY_TRUST_COPY[locale].unit;
   if (PHRASES[ja]) return PHRASES[ja][loc];
   let m = ja.match(/^([\d,]+)円$/);
   if (m) return money(m[1], loc);
@@ -194,5 +192,6 @@ export function localizeFeeText(ja: string, locale: LangCode): string | null {
 /** サービス名の訳。辞書に無いときは null */
 export function localizeFeeName(ja: string, locale: LangCode): string | null {
   if (locale === "ja") return ja;
+  if (ja === FAMILY_TRUST_COPY.ja.name) return FAMILY_TRUST_COPY[locale].name;
   return NAMES[ja]?.[locale as NonJa] ?? null;
 }

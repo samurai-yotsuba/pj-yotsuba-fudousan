@@ -5718,7 +5718,12 @@ function verify(cols: SeedColumn[]): string[] {
       if (tr.faq && tr.faq.length !== c.faq.length) {
         notes.push(`NG: ${c.slug} ${loc} のFAQ件数不一致（${tr.faq.length}/${c.faq.length}）`);
       }
-      if (/\]\(\/(?!\/)/.test(tr.content)) notes.push(`NG: ${c.slug} ${loc} に相対内部リンクあり`);
+      // 2026-10-07 浦松の実装指示：家族信託の料金詳細は対応言語の相対パスへ。
+      // 今回承認された既存料金ページのアンカーだけ許可し、従来の検査は維持する。
+      const relativeLinks = [...tr.content.matchAll(/\]\((\/(?!\/)[^)]+)\)/g)].map(m => m[1]);
+      if (relativeLinks.some(href => c.slug !== "kazoku-shintaku-gyosei-yakuwari-kumisei" || href !== `/${loc}/legal/ryokin#family-trust`)) {
+        notes.push(`NG: ${c.slug} ${loc} に未承認の相対内部リンクあり`);
+      }
     }
     if (!c.translations.en.content.toLowerCase().includes("independent business")) {
       notes.push(`NG: ${c.slug} en に分離受任の明示なし`);

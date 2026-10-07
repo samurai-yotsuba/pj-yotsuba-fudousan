@@ -57,6 +57,8 @@ category: "繼承手續（行政書士的實務現場）"
 
 與遺囑的分別使用，亦請參考[自書遺囑與公正證書遺囑](https://luck428.com/legal/column/jihitsu-kosei-yuigon)。四葉行政書士事務所與四葉不動產股份有限公司及各合作有資格者，各為不同事業體。本所僅以獨立的事業體承接信託契約書的製作協助，公正證書化由公證人、登記由司法書士、稅務由稅理士、糾紛由律師，分別簽約。本所不收取介紹費。繼承、遺囑、信託的全貌請見[繼承・遺囑・信託服務](https://luck428.com/legal/services/inheritance)、受任流程請見[受任流程](https://luck428.com/legal/nagare)、費用請見[報酬表](https://luck428.com/legal/ryokin)、繼承不動產全貌請見[繼承不動產完整指南](https://luck428.com/souzoku)。
 
+日本家族信託契約擬定協助的報酬按每份契約計算。費率、最低報酬、持分的評估、夫妻兩份契約、另行費用，以及契約訂立後一般諮詢與實際工作的區別，請參閱[報酬額表的家族信託詳情](/zh-tw/legal/ryokin#family-trust)。
+
 ## 常見問題
 
 **Q. 家族信託人人都能組嗎？**

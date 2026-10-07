@@ -1,3 +1,5 @@
+import { FamilyTrustFees } from "@/components/legal/FamilyTrustFees";
+
 // /legal/ryokin（型C・報酬額表）＝原稿_行政書士 #7（全8区分転記済み・公開用列のみ）
 // フェーズI多言語化（2026-07-10・浦松承認）：サービス名（rows.name）・金額は日本語のまま＝見出し・列ラベル・免責・導線のみ4ロケール化。
 // en/zh-tw/zh=監修前ドラフト。JSON-LD＝Service＋PriceSpecification(確定値のみ)＋BreadcrumbList（Breadcrumb部品が出力）＝ja固定で不変。
@@ -429,6 +431,7 @@ export default async function Page() {
           {sections.map((s, i) => (
             <div key={s.title}>
               <FeeTable s={s} title={c.sectionTitles[i] ?? s.title} c={c} locale={locale} />
+              {s.href === "/legal/services/inheritance" && <FamilyTrustFees locale={locale} />}
               {s.href === "/legal/services/company" && <>
                 <NonresidentFeeTable copy={services} />
                 <NonresidentReviewLinks copy={services} locale={locale} />

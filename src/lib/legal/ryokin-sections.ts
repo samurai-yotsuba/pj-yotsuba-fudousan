@@ -1,3 +1,5 @@
+import { FAMILY_TRUST_COPY, FAMILY_TRUST_PATH } from "./family-trust-copy";
+
 // /legal/ryokin の報酬額データ（2026-09-24 に page.tsx から移設＝テストで全行の訳の網羅と数値の一致を検査するため）。
 // 中身・コメントは移設前と同一。金額を変えるときはこのファイルを直す。
 // 2026-08-11：行単位の遷移先。設定した行は名称がリンクになる（定点#26・#27）
@@ -116,7 +118,7 @@ export const SECTIONS: Section[] = [
     rows: [
       { name: "遺言執行手続", unit: "一式", price: "330,000円〜（遺産額により変動する場合あり）" },
       { name: "遺言書案作成", unit: "1件", price: "165,000円（証人費用・公証人手数料別途）", value: 165000 },
-      { name: "信託（家族信託）契約書作成", unit: "一式", price: "別途お見積り（財産評価額連動・登記は司法書士）" },
+      { name: FAMILY_TRUST_COPY.ja.name, unit: FAMILY_TRUST_COPY.ja.unit, price: FAMILY_TRUST_COPY.ja.price, href: FAMILY_TRUST_PATH },
       { name: "遺産分割協議書の作成", unit: "一式", price: "99,000円〜（遺産総額連動）" },
       { name: "改葬許可申請（墓じまい）", unit: "1件", price: "88,000円〜" },
       { name: "金融機関 解約・名義変更", unit: "1件", price: "55,000円/1行", value: 55000 },

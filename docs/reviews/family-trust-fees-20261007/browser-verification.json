@@ -1,0 +1,158 @@
+[
+  {
+    "locale": "ja",
+    "viewport": "desktop",
+    "status": 200,
+    "pageOverflow": false,
+    "detailOverflow": false,
+    "cellOverflow": false,
+    "h1": 1,
+    "tables": 5,
+    "canonical": "https://luck428.com/legal/ryokin",
+    "screenshot": "family-trust-ja-desktop.png"
+  },
+  {
+    "locale": "ja",
+    "viewport": "mobile",
+    "status": 200,
+    "pageOverflow": false,
+    "detailOverflow": false,
+    "cellOverflow": false,
+    "h1": 1,
+    "tables": 5,
+    "canonical": "https://luck428.com/legal/ryokin",
+    "screenshot": "family-trust-ja-mobile.png"
+  },
+  {
+    "locale": "ja",
+    "route": "faq",
+    "status": 200
+  },
+  {
+    "locale": "ja",
+    "route": "services/inheritance",
+    "status": 200
+  },
+  {
+    "locale": "ja",
+    "route": "column/kazoku-shintaku-gyosei-yakuwari-kumisei",
+    "status": 200
+  },
+  {
+    "locale": "en",
+    "viewport": "desktop",
+    "status": 200,
+    "pageOverflow": false,
+    "detailOverflow": false,
+    "cellOverflow": false,
+    "h1": 1,
+    "tables": 5,
+    "canonical": "https://luck428.com/en/legal/ryokin",
+    "screenshot": "family-trust-en-desktop.png"
+  },
+  {
+    "locale": "en",
+    "viewport": "mobile",
+    "status": 200,
+    "pageOverflow": false,
+    "detailOverflow": false,
+    "cellOverflow": false,
+    "h1": 1,
+    "tables": 5,
+    "canonical": "https://luck428.com/en/legal/ryokin",
+    "screenshot": "family-trust-en-mobile.png"
+  },
+  {
+    "locale": "en",
+    "route": "faq",
+    "status": 200
+  },
+  {
+    "locale": "en",
+    "route": "services/inheritance",
+    "status": 200
+  },
+  {
+    "locale": "en",
+    "route": "column/kazoku-shintaku-gyosei-yakuwari-kumisei",
+    "status": 200
+  },
+  {
+    "locale": "zh-tw",
+    "viewport": "desktop",
+    "status": 200,
+    "pageOverflow": false,
+    "detailOverflow": false,
+    "cellOverflow": false,
+    "h1": 1,
+    "tables": 5,
+    "canonical": "https://luck428.com/zh-tw/legal/ryokin",
+    "screenshot": "family-trust-zh-tw-desktop.png"
+  },
+  {
+    "locale": "zh-tw",
+    "viewport": "mobile",
+    "status": 200,
+    "pageOverflow": false,
+    "detailOverflow": false,
+    "cellOverflow": false,
+    "h1": 1,
+    "tables": 5,
+    "canonical": "https://luck428.com/zh-tw/legal/ryokin",
+    "screenshot": "family-trust-zh-tw-mobile.png"
+  },
+  {
+    "locale": "zh-tw",
+    "route": "faq",
+    "status": 200
+  },
+  {
+    "locale": "zh-tw",
+    "route": "services/inheritance",
+    "status": 200
+  },
+  {
+    "locale": "zh-tw",
+    "route": "column/kazoku-shintaku-gyosei-yakuwari-kumisei",
+    "status": 200
+  },
+  {
+    "locale": "zh",
+    "viewport": "desktop",
+    "status": 200,
+    "pageOverflow": false,
+    "detailOverflow": false,
+    "cellOverflow": false,
+    "h1": 1,
+    "tables": 5,
+    "canonical": "https://luck428.com/zh/legal/ryokin",
+    "screenshot": "family-trust-zh-desktop.png"
+  },
+  {
+    "locale": "zh",
+    "viewport": "mobile",
+    "status": 200,
+    "pageOverflow": false,
+    "detailOverflow": false,
+    "cellOverflow": false,
+    "h1": 1,
+    "tables": 5,
+    "canonical": "https://luck428.com/zh/legal/ryokin",
+    "screenshot": "family-trust-zh-mobile.png"
+  },
+  {
+    "locale": "zh",
+    "route": "faq",
+    "status": 200
+  },
+  {
+    "locale": "zh",
+    "route": "services/inheritance",
+    "status": 200
+  },
+  {
+    "locale": "zh",
+    "route": "column/kazoku-shintaku-gyosei-yakuwari-kumisei",
+    "status": 200
+  }
+]

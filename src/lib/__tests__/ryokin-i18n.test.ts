@@ -8,6 +8,7 @@ const KANA = /[ぁ-んァ-ヶー]/;
 /** 数値の多重集合。「15万」「9萬」は 150000・90000 に直し、桁区切りは外す */
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 function numbers(text: string): string[] {
+  text = text.replace(/(\d[\d,]*(?:\.\d+)?)\s*[億亿]/g, (_, n) => String(Number(n.replace(/,/g, "")) * 100000000));
   const out: string[] = [];
   MONTHS.forEach((m, i) => {
     if (text.includes(m)) out.push(String(i + 1));

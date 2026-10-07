@@ -57,6 +57,8 @@ There are points that tend to trip people up in the design and operation.
 
 For the distinction from a will, please also refer to [Holographic and notarial wills](https://luck428.com/legal/column/jihitsu-kosei-yuigon). Yotsuba Administrative Scrivener Office and Yotsuba Real Estate Co., Ltd. and each affiliated qualified professional are respectively separate businesses. Our office handles only support for preparing the trust deed as an independent business, and the notarisation is by the notary, the registration by the judicial scrivener, the tax by the tax accountant and the disputes by the attorney, each contracted separately. Our office receives no referral fee. For the whole picture of inheritance, wills and trusts, see [Inheritance, Wills and Trusts](https://luck428.com/legal/services/inheritance); for the flow of engagement, see [Engagement Flow](https://luck428.com/legal/nagare); for fees, see [Fee Schedule](https://luck428.com/legal/ryokin); and for the whole picture of inherited real estate, see [Complete Guide to Inherited Real Estate](https://luck428.com/souzoku).
 
+Fees for family/private trust agreement drafting support in Japan are calculated per agreement. For rates, the minimum fee, valuation of ownership shares, two separate agreements for spouses, separate costs and the distinction between ordinary consultations and substantive work after completion, see the [family trust fee details](/en/legal/ryokin#family-trust).
+
 ## FAQ
 
 **Q. Can anyone create a family trust?**
