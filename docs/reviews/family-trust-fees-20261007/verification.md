@@ -1,7 +1,7 @@
 # 家族信託報酬表示・実装検証報告（2026-10-07）
 
 対象：yotsuba-samurai2/pj-yotsuba-fudousan。main `a053b94` から専用worktreeを作成。
-ブランチ：`fix/legal-family-trust-fees-20261007`。PRは当ブランチのGitHub Pull Requestを参照。
+ブランチ：`fix/legal-family-trust-fees-20261007`。[PR #473](https://github.com/yotsuba-samurai2/pj-yotsuba-fudousan/pull/473)。
 
 ## 変更対象と表示経路
 

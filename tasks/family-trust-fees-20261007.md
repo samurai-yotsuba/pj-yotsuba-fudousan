@@ -4,7 +4,7 @@
 - [x] 既存コラムは料金詳細への導線のみ追記、seed再生成（DB投入なし）
 - [x] 金額・持分・2契約・税込・端数未決定を検証
 - [x] lint / 型チェック / テスト / build / 4言語PC・SP表示を確認
-- [ ] 差分と未決事項を添えてPR作成（マージ・公開なし）
+- [x] 差分と未決事項を添えて[PR #473](https://github.com/yotsuba-samurai2/pj-yotsuba-fudousan/pull/473)作成（マージ・公開なし）
 
 ## レビュー結果
 4言語原稿全文一致・全1,878テスト成功・型チェック成功・lintエラー0・build成功。PC/SP全8表示で横はみ出し0。Notion候補は旧料金のまま未更新、PR #472との重複なし。公開後のコラムDB更新と端数・適用開始等は浦松判断。画面・詳細検証は docs/reviews/family-trust-fees-20261007/verification.md を参照。
